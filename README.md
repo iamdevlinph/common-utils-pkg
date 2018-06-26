@@ -6,6 +6,7 @@ A collection of common ulitities
 - Array
   <!-- - `toString(arr, delimeter)` -->
 - Date
+- File
 - String
   <!-- - `toArray(string, delimeter)` -->
   <!-- - `toSentenceCase(string)` -->
