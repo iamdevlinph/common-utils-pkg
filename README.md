@@ -10,3 +10,5 @@ A collection of common ulitities
 - String
   <!-- - `toArray(string, delimeter)` -->
   <!-- - `toSentenceCase(string)` -->
+
+<!-- https://github.com/Travelport-Ukraine/npm-module-boilerplate -->

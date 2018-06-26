@@ -4,14 +4,19 @@
   "description": "A collection of common utilities",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "",
+    "prepublish": ""
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/codesandcoffees/common-utils.git"
   },
   "keywords": [
-    "utilities"
+    "utilities",
+    "npm",
+    "module",
+    "javascript"
   ],
   "author": "iamdevlinph <iamdevlinph@gmail.com>",
   "license": "ISC",
@@ -20,9 +25,17 @@
   },
   "homepage": "https://github.com/codesandcoffees/common-utils#readme",
   "devDependencies": {
-    "eslint": "5.0.0",
-    "eslint-config-airbnb-base": "13.0.0",
-    "eslint-plugin-import": "2.13.0"
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.2.5",
+    "babel-preset-env": "1.7.0",
+    "chai": "4.1.2",
+    "cross-env": "5.2.0",
+    "eslint": "5.0.1",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-plugin-import": "2.13.0",
+    "istanbul": "0.4.5",
+    "mocha": "5.2.0",
+    "rimraf": "2.6.2"
   },
   "dependencies": {}
 }
