@@ -1,0 +1,22 @@
+{
+  "name": "common-utils",
+  "version": "1.0.0",
+  "description": "A collection of common utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/codesandcoffees/common-utils.git"
+  },
+  "keywords": [
+    "utilities"
+  ],
+  "author": "iamdevlinph <iamdevlinph@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codesandcoffees/common-utils/issues"
+  },
+  "homepage": "https://github.com/codesandcoffees/common-utils#readme"
+}
