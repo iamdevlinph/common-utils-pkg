@@ -29,8 +29,8 @@
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --require babel-core/register --recursive",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-core/register --colors src/**/*.spec.js && eslint src/",
-    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js",
-    "prepublish": ""
+    "test:watch": "mocha --require babel-core/register --colors -w src/**/*.spec.js",
+    "prepublish": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
