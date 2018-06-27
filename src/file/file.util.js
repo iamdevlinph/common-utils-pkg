@@ -1,5 +1,7 @@
+const test = () => 'File OK';
+
 const FileUtil = {
-  test: () => 'File OK'
+  test
 };
 
 export default FileUtil;

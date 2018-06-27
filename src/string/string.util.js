@@ -1,5 +1,7 @@
+const test = () => 'String OK';
+
 const StringUtil = {
-  test: () => 'String OK'
+  test
 };
 
 export default StringUtil;

@@ -1,5 +1,7 @@
+const test = () => 'Date OK';
+
 const DateUtil = {
-  test: () => 'Date OK'
+  test
 };
 
 export default DateUtil;

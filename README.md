@@ -5,6 +5,8 @@ A collection of common ulitities
 
 - Array
   - `toString(arr, delimeter)`
+- Color
+  - `randomPastelColor()`
 - Date
 - File
 - String
