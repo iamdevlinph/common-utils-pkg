@@ -1,0 +1,6 @@
+.vscode/*
+docs/*
+.babelrc
+.eslintignore
+.npmignore
+webpack.config.js
