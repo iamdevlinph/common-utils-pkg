@@ -18,7 +18,9 @@ describe('CORE', () => {
 
   describe('isNull', () => {
     it('should throw an error if value is null or undefined', () => {
-      expect(CoreUtil.isNull(null, 'utilName')).to.throw(new Error('invalid value passed: null at utilName'));
+      expect(() => {
+        CoreUtil.isNull(null, 'utilName');
+      }).to.throw(Error);
     });
   });
 });
