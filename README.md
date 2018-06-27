@@ -5,6 +5,7 @@ A collection of common ulitities
 
 - Array
  - `toArray(str, delimeter)`
+- Boolean
 - Color
   - `randomPastelColor()`
 - Date
