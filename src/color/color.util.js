@@ -1,3 +1,4 @@
+// const utilName = 'ColorUtil';
 const test = () => 'Color OK';
 
 const randomPastelColor = () => {
