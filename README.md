@@ -12,3 +12,4 @@ A collection of common ulitities
   <!-- - `toSentenceCase(string)` -->
 
 <!-- https://github.com/Travelport-Ukraine/npm-module-boilerplate -->
+<!-- https://github.com/krasimir/webpack-library-starter -->
