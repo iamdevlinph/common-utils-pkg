@@ -1,14 +1,14 @@
-const test = () => 'Common OK';
+const test = () => 'Core OK';
 
-const isNull = (val) => {
+const isNull = (val, utilName) => {
   if (val === null || val === undefined) {
-    throw Error(`invalid value passed: + ${val}`);
+    throw Error(`invalid value passed: ${val} at ${utilName}`);
   }
 };
 
-const CommonUtil = {
+const CoreUtil = {
   test,
   isNull
 };
 
-export default CommonUtil;
+export default CoreUtil;

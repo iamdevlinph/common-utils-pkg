@@ -1,7 +1,7 @@
 /* global describe, it */
 
 import chai from 'chai';
-import CommonUtil from './common.util';
+import CoreUtil from './core.util';
 
 chai.expect();
 
@@ -9,16 +9,16 @@ const {
   expect
 } = chai;
 
-describe('COMMON', () => {
+describe('CORE', () => {
   describe('when i run test', () => {
-    it('should "Common OK"', () => {
-      expect(CommonUtil.test()).to.be.equal('Common OK');
+    it('should "Core OK"', () => {
+      expect(CoreUtil.test()).to.be.equal('Core OK');
     });
   });
 
   describe('isNull', () => {
     it('should throw an error if value is null or undefined', () => {
-      expect(CommonUtil.isNull(null)).to.throw(new Error('invalid value passed: null'));
+      expect(CoreUtil.isNull(null, 'utilName')).to.throw(new Error('invalid value passed: null at utilName'));
     });
   });
 });

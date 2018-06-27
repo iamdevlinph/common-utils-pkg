@@ -9,6 +9,8 @@ A collection of common ulitities
   - `toBool(val)`
 - Color
   - `randomPastelColor()`
+- Core
+  - `isNull(val)`
 - Date
 - File
 - String
