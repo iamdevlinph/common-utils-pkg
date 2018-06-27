@@ -22,4 +22,16 @@ describe('STRING', () => {
       expect(StringUtil.toString([1, 2], '-')).to.be.a('string');
     });
   });
+
+  describe('toTitleCase', () => {
+    it('should convert string to "Title Case"', () => {
+      expect(StringUtil.toTitleCase('the quick brown')).to.be.equal('The Quick Brown');
+    });
+  });
+
+  describe('toSentenceCase', () => {
+    it('should convert string to "Sentence case"', () => {
+      expect(StringUtil.toSentenceCase('THE QUICK BROWN')).to.be.equal('The quick brown');
+    });
+  });
 });

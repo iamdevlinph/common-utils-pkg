@@ -14,8 +14,9 @@ A collection of common ulitities
 - Date
 - File
 - String
+  - `toSentenceCase(str)`
   - `toString(arr, delimeter)`
-  <!-- - `toSentenceCase(string)` -->
+  - `toTitleCase(str)`
 
 <!-- https://github.com/Travelport-Ukraine/npm-module-boilerplate -->
 <!-- https://github.com/krasimir/webpack-library-starter -->
