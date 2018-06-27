@@ -1,8 +1,8 @@
 {
-  "name": "@codes-and-coffees/common-utilities",
+  "name": "common-functions",
   "version": "1.0.1",
-  "description": "A collection of common utilities",
-  "main": "./lib/common-utilities.min.js",
+  "description": "A collection of common functions",
+  "main": "./lib/common-functions.min.js",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
@@ -46,19 +46,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/codesandcoffees/common-utilities.git"
+    "url": "git+ssh://git@github.com/codesandcoffees/common-functions.git"
   },
   "keywords": [
     "utilities",
     "npm",
     "module",
     "javascript",
-    "es6"
+    "es6",
+    "functions"
   ],
   "author": "iamdevlinph@codes-and-coffees",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codesandcoffees/common-utilities/issues"
+    "url": "https://github.com/codesandcoffees/common-functions/issues"
   },
-  "homepage": "https://github.com/codesandcoffees/common-utilities#readme"
+  "homepage": "https://github.com/codesandcoffees/common-functions#readme"
 }
