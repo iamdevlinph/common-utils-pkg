@@ -27,7 +27,7 @@
   "dependencies": {},
   "scripts": {
     "clean": "rimraf lib",
-    "build": "npm run clean && webpack --env dev && webpack --env build && npm run test",
+    "build": "npm run test && npm run clean && webpack --env dev && webpack --env build",
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --require babel-core/register --recursive",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-core/register --colors src/**/*.spec.js && eslint src/",
