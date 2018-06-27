@@ -25,5 +25,5 @@ A collection of common ulitities
 
 ## Packages
 
+## To Do's
 - [ ] Coverage
-- [ ] Unminified build for dev
