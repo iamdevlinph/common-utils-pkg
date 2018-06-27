@@ -1,5 +1,5 @@
 {
-  "name": "common-utilities",
+  "name": "@codes-and-coffees/common-utilities",
   "version": "1.0.0",
   "description": "A collection of common utilities",
   "main": "./lib/common-utilities.min.js",
@@ -46,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/codesandcoffees/common-utils.git"
+    "url": "git+ssh://git@github.com/codesandcoffees/common-utilities.git"
   },
   "keywords": [
     "utilities",
@@ -58,7 +58,7 @@
   "author": "iamdevlinph <iamdevlinph@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codesandcoffees/common-utils/issues"
+    "url": "https://github.com/codesandcoffees/common-utilities/issues"
   },
-  "homepage": "https://github.com/codesandcoffees/common-utils#readme"
+  "homepage": "https://github.com/codesandcoffees/common-utilities#readme"
 }
