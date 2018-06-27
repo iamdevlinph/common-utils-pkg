@@ -15,4 +15,11 @@ describe('ARRAY', () => {
       expect(ArrayUtil.test()).to.be.equal('Array OK');
     });
   });
+
+  describe('toArray', () => {
+    it('should covert string to array', () => {
+      expect(ArrayUtil.toArray('a,b', ',')).to.deep.equal(['a', 'b']);
+      expect(ArrayUtil.toArray('a,b', ',')).to.be.an('array');
+    });
+  });
 });

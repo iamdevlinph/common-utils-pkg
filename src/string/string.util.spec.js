@@ -19,6 +19,7 @@ describe('STRING', () => {
   describe('toString', () => {
     it('should convert array to string', () => {
       expect(StringUtil.toString([1, 2], '-')).to.be.equal('1-2');
+      expect(StringUtil.toString([1, 2], '-')).to.be.a('string');
     });
   });
 });
