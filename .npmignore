@@ -4,3 +4,4 @@ docs/*
 .eslintignore
 .npmignore
 webpack.config.js
+.eslintrc.js
