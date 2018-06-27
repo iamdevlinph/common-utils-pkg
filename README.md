@@ -1,5 +1,5 @@
-# Common Utilities
-A collection of common ulitities
+# Common Utilities Package
+A package of commonly used utilities
 
 ## Available Functions
 
