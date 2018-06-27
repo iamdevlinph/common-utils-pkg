@@ -1,8 +1,8 @@
 {
-  "name": "common-utils",
+  "name": "common-utilities",
   "version": "1.0.0",
   "description": "A collection of common utilities",
-  "main": "./lib/common-utils.min.js",
+  "main": "./lib/common-utilities.min.js",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
@@ -34,7 +34,7 @@
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-core/register --colors src/**/*.spec.js && eslint src/",
     "test:watch": "mocha --require babel-core/register --colors -w src/**/*.spec.js",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "install-lint": "npm i lint-staged husky",
     "precommit": "lint-staged"
   },
@@ -52,7 +52,8 @@
     "utilities",
     "npm",
     "module",
-    "javascript"
+    "javascript",
+    "es6"
   ],
   "author": "iamdevlinph <iamdevlinph@gmail.com>",
   "license": "ISC",
