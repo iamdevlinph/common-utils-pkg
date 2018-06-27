@@ -17,10 +17,8 @@ describe('CORE', () => {
   });
 
   describe('isNull', () => {
-    it('should throw an error if value is null or undefined', () => {
-      expect(() => {
-        CoreUtil.isNull(null, 'utilName');
-      }).to.throw(Error);
+    it('return true if value is null or undefined', () => {
+      expect(CoreUtil.isNull(undefined, 'utilName')).to.be.equal(true);
     });
   });
 });

@@ -9,6 +9,7 @@ module.exports = {
     "max-len": ["error", {
       "code": 120
     }],
-    "comma-dangle": ["error", "never"]
+    "comma-dangle": ["error", "never"],
+    "no-console": ["error", { allow: ["error"] }]
   }
 };
