@@ -11,12 +11,14 @@
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-preset-env": "1.7.0",
     "chai": "4.1.2",
-    "cross-env": "^5.2.0",
+    "cross-env": "5.2.0",
     "eslint": "5.0.1",
     "eslint-config-airbnb": "17.0.0",
     "eslint-loader": "2.0.0",
     "eslint-plugin-import": "2.13.0",
-    "istanbul": "^0.4.5",
+    "husky": "0.14.3",
+    "istanbul": "0.4.5",
+    "lint-staged": "7.2.0",
     "mocha": "5.2.0",
     "rimraf": "2.6.2",
     "uglifyjs-webpack-plugin": "1.2.7",
@@ -32,7 +34,15 @@
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-core/register --colors src/**/*.spec.js && eslint src/",
     "test:watch": "mocha --require babel-core/register --colors -w src/**/*.spec.js",
-    "prepublish": "npm run test && npm run build"
+    "prepublish": "npm run test && npm run build",
+    "install-lint": "npm i lint-staged husky",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
