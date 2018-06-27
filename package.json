@@ -2,7 +2,7 @@
   "name": "common-utils",
   "version": "1.0.0",
   "description": "A collection of common utilities",
-  "main": "index.js",
+  "main": "./lib/common-utils.min.js",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
