@@ -1,7 +1,7 @@
 /* global describe, it */
 
 import chai from 'chai';
-import BooleanUtil from './boolean.util';
+import BoolUtil from './boolean.util';
 
 chai.expect();
 
@@ -12,25 +12,25 @@ const {
 describe('BOOLEAN', () => {
   describe('when i run test', () => {
     it('should "Boolean OK"', () => {
-      expect(BooleanUtil.test()).to.be.equal('Boolean OK');
+      expect(BoolUtil.test()).to.be.equal('Boolean OK');
     });
   });
 
   describe('toBool', () => {
     it('should return Bolean', () => {
-      expect(BooleanUtil.toBool(true)).to.be.equal(true);
-      expect(BooleanUtil.toBool('true')).to.be.equal(true);
-      expect(BooleanUtil.toBool('yes')).to.be.equal(true);
-      expect(BooleanUtil.toBool('y')).to.be.equal(true);
-      expect(BooleanUtil.toBool(1)).to.be.equal(true);
-      expect(BooleanUtil.toBool('1')).to.be.equal(true);
+      expect(BoolUtil.toBool(true)).to.be.equal(true);
+      expect(BoolUtil.toBool('true')).to.be.equal(true);
+      expect(BoolUtil.toBool('yes')).to.be.equal(true);
+      expect(BoolUtil.toBool('y')).to.be.equal(true);
+      expect(BoolUtil.toBool(1)).to.be.equal(true);
+      expect(BoolUtil.toBool('1')).to.be.equal(true);
 
-      expect(BooleanUtil.toBool(false)).to.be.equal(false);
-      expect(BooleanUtil.toBool('false')).to.be.equal(false);
-      expect(BooleanUtil.toBool('no')).to.be.equal(false);
-      expect(BooleanUtil.toBool('n')).to.be.equal(false);
-      expect(BooleanUtil.toBool(0)).to.be.equal(false);
-      expect(BooleanUtil.toBool('0')).to.be.equal(false);
+      expect(BoolUtil.toBool(false)).to.be.equal(false);
+      expect(BoolUtil.toBool('false')).to.be.equal(false);
+      expect(BoolUtil.toBool('no')).to.be.equal(false);
+      expect(BoolUtil.toBool('n')).to.be.equal(false);
+      expect(BoolUtil.toBool(0)).to.be.equal(false);
+      expect(BoolUtil.toBool('0')).to.be.equal(false);
     });
   });
 });

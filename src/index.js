@@ -1,5 +1,5 @@
 import ArrayUtil from './array/array.util';
-import BooleanUtil from './boolean/boolean.util';
+import BoolUtil from './boolean/boolean.util';
 import ColorUtil from './color/color.util';
 import CoreUtil from './core/core.util';
 import DateUtil from './date/date.util';
@@ -8,7 +8,7 @@ import StringUtil from './string/string.util';
 
 export {
   ArrayUtil,
-  BooleanUtil,
+  BoolUtil,
   ColorUtil,
   CoreUtil,
   DateUtil,

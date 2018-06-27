@@ -1,6 +1,6 @@
 import CoreUtil from '../core/core.util';
 
-const utilName = 'BooleanUtil';
+const utilName = 'BoolUtil';
 const test = () => 'Boolean OK';
 
 const toBool = (val) => {
@@ -10,9 +10,9 @@ const toBool = (val) => {
   return trueValesArr.includes(valToTest);
 };
 
-const BooleanUtil = {
+const BoolUtil = {
   test,
   toBool
 };
 
-export default BooleanUtil;
+export default BoolUtil;

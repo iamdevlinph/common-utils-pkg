@@ -2,7 +2,9 @@ const test = () => 'Core OK';
 
 const isNull = (val, utilName) => {
   if (val === null || val === undefined) {
-    throw Error(`invalid value passed: ${val} at ${utilName}`);
+    const { stack } = new Error();
+    const caller = stack.split('\n')[2].trim().replace(/Object./g, '');
+    throw Error(`invalid value of ${val} passed: ${utilName} ${caller}()`);
   }
 };
 

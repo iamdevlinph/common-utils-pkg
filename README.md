@@ -1,19 +1,19 @@
 # Common Utilities Package
 A package of commonly used utilities
 
-## Available Functions
+## Available Utilities
 
-- Array
+- ArrayUtil
   - `toArray(str, delimeter)`
-- Boolean
+- BoolUtil
   - `toBool(val)`
-- Color
+- ColorUtil
   - `randomPastelColor()`
-- Core
+- CoreUtil
   - `isNull(val)`
-- Date
-- File
-- String
+- DateUtil
+- FileUtil
+- StringUtil
   - `toSentenceCase(str)`
   - `toString(arr, delimeter)`
   - `toTitleCase(str)`
@@ -21,9 +21,9 @@ A package of commonly used utilities
 <!-- https://github.com/Travelport-Ukraine/npm-module-boilerplate -->
 <!-- https://github.com/krasimir/webpack-library-starter -->
 
-##
+## Features
 
-## Packages
+## Commands
 
 ## To Do's
 - [ ] Coverage
