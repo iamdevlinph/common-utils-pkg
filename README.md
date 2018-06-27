@@ -4,7 +4,7 @@ A collection of common ulitities
 ## Available Functions
 
 - Array
-  <!-- - `toString(arr, delimeter)` -->
+  - `toString(arr, delimeter)`
 - Date
 - File
 - String

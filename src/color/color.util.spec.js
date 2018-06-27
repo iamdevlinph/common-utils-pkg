@@ -1,7 +1,7 @@
 /* global describe, it */
 
 import chai from 'chai';
-import FileUtil from './file.util';
+import Color from './color.util';
 
 chai.expect();
 
@@ -9,10 +9,10 @@ const {
   expect
 } = chai;
 
-describe('FILE', () => {
+describe('COLOR', () => {
   describe('when i run test', () => {
-    it('should "File OK"', () => {
-      expect(FileUtil.test()).to.be.equal('File OK');
+    it('should "Color OK"', () => {
+      expect(Color.test()).to.be.equal('Color OK');
     });
   });
 });

@@ -1,15 +1,14 @@
 module.exports = {
   "extends": "airbnb-base",
-  "globals": {
-  },
+  "globals": {},
   "rules": {
-      // generic rules
-        "indent": ["error", 2, {
-            "SwitchCase": 1
-        }],
-      "max-len": ["error", {
-          "code": 120
-      }],
-      "comma-dangle": ["error", "never"]
+    // generic rules
+    "indent": ["error", 2, {
+      "SwitchCase": 1
+    }],
+    "max-len": ["error", {
+      "code": 120
+    }],
+    "comma-dangle": ["error", "never"]
   }
 };
