@@ -1,6 +1,6 @@
 import CoreUtil from '../core/core.util';
 
-const utilName = 'ArrayUtil';
+// const utilName = 'ArrayUtil';
 const test = () => 'Array OK';
 
 /**
@@ -9,8 +9,11 @@ const test = () => 'Array OK';
  * @param {String} delimeter split on which
  */
 const strToArray = (str, delimeter) => {
-  CoreUtil.isNull(str, utilName);
-  return str.split(delimeter);
+  let retStrToArray = null;
+  if (CoreUtil.isExpected(str, 'string')) {
+    retStrToArray = str.split(delimeter);
+  }
+  return retStrToArray;
 };
 
 const ArrayUtil = {
