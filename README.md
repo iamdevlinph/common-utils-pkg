@@ -11,6 +11,7 @@ A package of commonly used utilities
   - `randomPastelColor()`
 - CoreUtil
   - `isNull(val)`
+  - `isExpected(val, expectedType)`
 - DateUtil
 - FileUtil
 - StringUtil
