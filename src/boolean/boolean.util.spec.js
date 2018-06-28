@@ -32,5 +32,8 @@ describe('BOOLEAN', () => {
       expect(BoolUtil.toBool(0)).to.be.equal(false);
       expect(BoolUtil.toBool('0')).to.be.equal(false);
     });
+    it('should return an error if the value cannot be parsed to boolean', () => {
+      expect(BoolUtil.toBool(null)).to.be.an('error');
+    });
   });
 });

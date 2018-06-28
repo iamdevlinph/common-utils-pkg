@@ -9,8 +9,11 @@ const test = () => 'String OK';
  * @param {String} delimeter delimeter to use when changed to string
  */
 const arrToString = (arr, delimeter) => {
-  CoreUtil.isNull(arr, utilName);
-  return arr.join(delimeter);
+  let retArrToString;
+  if (!CoreUtil.isNull(arr, utilName)) {
+    retArrToString = arr.join(delimeter);
+  }
+  return retArrToString;
 };
 
 /**
@@ -18,9 +21,12 @@ const arrToString = (arr, delimeter) => {
  * @param {String} str string to change to sentence case
  */
 const toSentenceCase = (str) => {
-  CoreUtil.isNull(str, utilName);
-  const returnStr = str.toLowerCase();
-  return returnStr.charAt(0).toUpperCase() + returnStr.slice(1);
+  let retToSentenceCase;
+  if (!CoreUtil.isNull(str, utilName)) {
+    const returnStr = str.toLowerCase();
+    retToSentenceCase = returnStr.charAt(0).toUpperCase() + returnStr.slice(1);
+  }
+  return retToSentenceCase;
 };
 
 /**
@@ -28,13 +34,16 @@ const toSentenceCase = (str) => {
  * @param {String} str string to change to title case
  */
 const toTitleCase = (str) => {
-  CoreUtil.isNull(str, utilName);
-  const returnStr = str.toLowerCase();
-  // https://stackoverflow.com/a/196991/4620773
-  return returnStr.replace(
-    /\w\S*/g,
-    txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-  );
+  let retToTitleCase;
+  if (!CoreUtil.isNull(str, utilName)) {
+    const returnStr = str.toLowerCase();
+    // https://stackoverflow.com/a/196991/4620773
+    retToTitleCase = returnStr.replace(
+      /\w\S*/g,
+      txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+    );
+  }
+  return retToTitleCase;
 };
 
 
