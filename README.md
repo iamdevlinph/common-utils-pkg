@@ -27,3 +27,4 @@ A package of commonly used utilities
 
 ## To Do's
 - [ ] Coverage
+- [ ] Wrap functions to check if arguments are valid and expected

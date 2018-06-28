@@ -1,6 +1,8 @@
 module.exports = {
   "extends": "airbnb-base",
-  "globals": {},
+  "globals": {
+    "arguments": true
+  },
   "rules": {
     // generic rules
     "indent": ["error", 2, {
