@@ -2,3 +2,7 @@ node_modules/*
 
 # build files
 lib/
+
+coverage
+
+.nyc_output
