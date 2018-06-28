@@ -12,6 +12,8 @@ module.exports = {
       "code": 120
     }],
     "comma-dangle": ["error", "never"],
-    "no-console": ["error", { allow: ["error"] }]
+    "no-console": ["error", {
+      allow: ["error"]
+    }]
   }
 };

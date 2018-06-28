@@ -42,7 +42,6 @@ A package of commonly used utilities
 
 ## To Do's
 - [ ] Coverage
-- [ ] Wrap functions to check if arguments are valid and expected
 
 [contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg
 [contributor-url]: https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors
