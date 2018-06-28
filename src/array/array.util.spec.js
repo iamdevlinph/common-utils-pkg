@@ -16,10 +16,10 @@ describe('ARRAY', () => {
     });
   });
 
-  describe('toArray', () => {
+  describe('strToArray', () => {
     it('should covert string to array', () => {
-      expect(ArrayUtil.toArray('a,b', ',')).to.deep.equal(['a', 'b']);
-      expect(ArrayUtil.toArray('a,b', ',')).to.be.an('array');
+      expect(ArrayUtil.strToArray('a,b', ',')).to.deep.equal(['a', 'b']);
+      expect(ArrayUtil.strToArray('a,b', ',')).to.be.an('array');
     });
   });
 });

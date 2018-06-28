@@ -8,7 +8,7 @@ const test = () => 'String OK';
  * @param {Array} arr array to change
  * @param {String} delimeter delimeter to use when changed to string
  */
-const toString = (arr, delimeter) => {
+const arrToString = (arr, delimeter) => {
   CoreUtil.isNull(arr, utilName);
   return arr.join(delimeter);
 };
@@ -41,7 +41,7 @@ const toTitleCase = (str) => {
 const StringUtil = {
   test,
   toSentenceCase,
-  toString,
+  arrToString,
   toTitleCase
 };
 

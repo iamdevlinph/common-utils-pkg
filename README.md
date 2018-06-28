@@ -4,7 +4,7 @@ A package of commonly used utilities
 ## Available Utilities
 
 - ArrayUtil
-  - `toArray(str, delimeter)`
+  - `strToArray(str, delimeter)`
 - BoolUtil
   - `toBool(val)`
 - ColorUtil
@@ -15,7 +15,7 @@ A package of commonly used utilities
 - FileUtil
 - StringUtil
   - `toSentenceCase(str)`
-  - `toString(arr, delimeter)`
+  - `arrToString(arr, delimeter)`
   - `toTitleCase(str)`
 
 <!-- https://github.com/Travelport-Ukraine/npm-module-boilerplate -->
