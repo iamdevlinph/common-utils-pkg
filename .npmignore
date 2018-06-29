@@ -1,7 +1,10 @@
+.nyc_output/*
 .vscode/*
+coverage/*
 docs/*
+
 .babelrc
 .eslintignore
+.eslintrc.js
 .npmignore
 webpack.config.js
-.eslintrc.js
