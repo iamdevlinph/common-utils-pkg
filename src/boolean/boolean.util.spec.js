@@ -10,12 +10,6 @@ const {
 } = chai;
 
 describe('BOOLEAN', () => {
-  describe('when i run test', () => {
-    it('should "Boolean OK"', () => {
-      expect(BoolUtil.test()).to.be.equal('Boolean OK');
-    });
-  });
-
   describe('toBool', () => {
     it('should return Bolean', () => {
       expect(BoolUtil.toBool(true)).to.be.equal(true);
@@ -31,9 +25,9 @@ describe('BOOLEAN', () => {
       expect(BoolUtil.toBool('n')).to.be.equal(false);
       expect(BoolUtil.toBool(0)).to.be.equal(false);
       expect(BoolUtil.toBool('0')).to.be.equal(false);
-    });
-    it('should return an error if the value cannot be parsed to boolean', () => {
-      expect(BoolUtil.toBool(null)).to.be.an('error');
+
+      expect(BoolUtil.toBool(null)).to.be.equal(false);
+      expect(BoolUtil.toBool(undefined)).to.be.equal(false);
     });
   });
 });

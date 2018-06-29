@@ -24,13 +24,12 @@ A package of commonly used utilities
 - ColorUtil
   - `randomPastelColor()`
 - CoreUtil
-  - `isNull(val)`
-  - `isExpected(val, expectedType)`
+  - `isExpected(fn, expectedType)`
 - DateUtil
 - FileUtil
 - StringUtil
-  - `toSentenceCase(str)`
   - `arrToString(arr, delimeter)`
+  - `toSentenceCase(str)`
   - `toTitleCase(str)`
 
 <!-- https://github.com/Travelport-Ukraine/npm-module-boilerplate -->

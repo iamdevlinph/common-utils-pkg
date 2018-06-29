@@ -1,20 +1,18 @@
-import CoreUtil from '../core/core.util';
-
-const utilName = 'BoolUtil';
-const test = () => 'Boolean OK';
+// import CoreUtil from '../core/core.util';
+// const utilName = 'BoolUtil';
 
 const toBool = (val) => {
-  let retToBool = new Error('value can\'t be parsed to boolean');
-  if (!CoreUtil.isNull(val, utilName)) {
-    const valToTest = val.toString().toLowerCase();
-    const trueValesArr = ['true', 'yes', 'y', '1'];
-    retToBool = trueValesArr.includes(valToTest);
+  let valToTest;
+  try {
+    valToTest = val.toString().toLowerCase();
+  } catch (e) {
+    valToTest = val;
   }
-  return retToBool;
+  const trueValuesArr = ['true', 'yes', 'y', '1'];
+  return trueValuesArr.includes(valToTest);
 };
 
 const BoolUtil = {
-  test,
   toBool
 };
 
