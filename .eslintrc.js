@@ -14,6 +14,7 @@ module.exports = {
     "comma-dangle": ["error", "never"],
     "no-console": ["error", {
       allow: ["error"]
-    }]
+    }],
+    "default-case": 0
   }
 };
