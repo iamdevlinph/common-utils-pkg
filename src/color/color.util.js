@@ -1,4 +1,3 @@
-// const utilName = 'ColorUtil';
 const randomPastelColor = () => {
   const pastel = `hsl(${360 * Math.random()},${
     25 + 70 * Math.random()}%,${

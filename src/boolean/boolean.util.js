@@ -1,6 +1,3 @@
-// import CoreUtil from '../core/core.util';
-// const utilName = 'BoolUtil';
-
 const toBool = (val) => {
   let valToTest;
   try {
