@@ -1,5 +1,5 @@
 # Common Utilities Package
-A package of commonly used utilities
+A package of commonly used utilities. Read the docs [here](https://codes-and-coffees.gitbook.io/common-utils-pkg/)
 
 #### Package Details
 
@@ -18,7 +18,7 @@ A package of commonly used utilities
 ## Available Utilities
 
 - ArrayUtil
-  - `strToArray(str, delimeter)`
+  - `strToArray(string, delimiter)`
 - BoolUtil
   - `toBool(val)`
 - ColorUtil
@@ -28,9 +28,9 @@ A package of commonly used utilities
 - DateUtil
 - FileUtil
 - StringUtil
-  - `arrToString(arr, delimeter)`
-  - `toSentenceCase(str)`
-  - `toTitleCase(str)`
+  - `arrToString(array, delimiter)`
+  - `toSentenceCase(string)`
+  - `toTitleCase(string)`
 
 <!-- https://github.com/Travelport-Ukraine/npm-module-boilerplate -->
 <!-- https://github.com/krasimir/webpack-library-starter -->

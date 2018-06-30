@@ -1,6 +1,6 @@
 import CoreUtil from '../core/core.util';
 
-const strToArray = (str, delimeter) => str.split(delimeter);
+const strToArray = (string, delimiter) => string.split(delimiter);
 
 const ArrayUtil = {
   strToArray: CoreUtil.isExpected(strToArray, 'string')
