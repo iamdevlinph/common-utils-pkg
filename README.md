@@ -10,7 +10,27 @@ A package of commonly used utilities. Read the docs [here](https://codes-and-cof
 
 [![](https://img.shields.io/github/issues/codesandcoffees/common-utils-pkg.svg)](https://github.com/codesandcoffees/common-utils-pkg/issues) [![](https://img.shields.io/github/issues-pr/codesandcoffees/common-utils-pkg.svg)](https://github.com/codesandcoffees/common-utils-pkg/pulls) ![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/common-utils-pkg.svg) [![](https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg)](https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors)
 
-## Available Utilities
+## Installation
+
+```
+npm i --save common-utils-pkg
+```
+
+## Getting started
+
+Import the utilty that you need to use
+
+```
+import ArrayUtil from 'common-util-pkg;
+```
+
+or import multiple utilities
+
+```
+import { ArrayUtil, Boolutil, ColorUtil} from 'common-util-pkg';
+```
+
+### Available Utilities
 
 * ArrayUtil
   * `strToArray(string, delimiter)`
@@ -18,8 +38,6 @@ A package of commonly used utilities. Read the docs [here](https://codes-and-cof
   * `toBool(val)`
 * ColorUtil
   * `randomPastelColor()`
-* CoreUtil
-  * `isExpected(fn, expectedType)`
 * DateUtil
 * FileUtil
   * `convertBytes(number, decimals)`
