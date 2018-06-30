@@ -22,6 +22,7 @@ A package of commonly used utilities. Read the docs [here](https://codes-and-cof
   * `isExpected(fn, expectedType)`
 * DateUtil
 * FileUtil
+  * `convertBytes(number, decimals)`
 * StringUtil
   * `arrToString(array, delimiter)`
   * `toSentenceCase(string)`
