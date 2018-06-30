@@ -1,7 +1,3 @@
 {
-  "root": "docs",
-  "structure": {
-    "readme": "GITBOOK.md",
-    "summary": "SUMMARY.md"
-  }
+  "root": "docs"
 }
