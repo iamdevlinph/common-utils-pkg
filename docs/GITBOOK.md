@@ -2,7 +2,4 @@
 description: A package of commonly used utilities
 ---
 
-# Common Utilities Package v1
-
-
-
+# Common Utilities Package
