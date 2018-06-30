@@ -27,7 +27,7 @@ import ArrayUtil from 'common-util-pkg;
 or import multiple utilities
 
 ```
-import { ArrayUtil, Boolutil, ColorUtil} from 'common-util-pkg';
+import { ArrayUtil, Boolutil, ColorUtil } from 'common-util-pkg';
 ```
 
 ### Available Utilities
