@@ -8,3 +8,4 @@ Returns a random pastel color
 ColorUtil.randomPastelColor();
 // => "hsl(249.04111471268033,46.23084940935615%,85.57489568301683%)"
 ```
+

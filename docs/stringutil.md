@@ -26,3 +26,4 @@ Converts a string to a title case - the first letter of every word is capitalize
 StringUtil.toTitleCase('the quick brown fox');
 // => 'The Quick Brown Fox'
 ```
+

@@ -20,4 +20,3 @@ This method uses the following to determine if the value is true
 All values are parsed into strings and compared to the default list of true values
 {% endhint %}
 
-
