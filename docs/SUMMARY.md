@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Common Utilities Package](GITBOOK.md)
+* [Common Utilities Package](README.md)
 * [ArrayUtil](arrayutil.md)
 * [BoolUtil](boolutil.md)
 * [ColorUtil](colorutil.md)
