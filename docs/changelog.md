@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+* Code coverage
+
 ## 1.0.9
 
 * Here's some docs to make this look legit
