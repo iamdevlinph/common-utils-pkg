@@ -18,19 +18,42 @@ npm i --save common-utils-pkg
 
 ## Getting started
 
-Import the utilty that you need to use
+### Import a single utility
 
 ```
 import ArrayUtil from 'common-util-pkg;
 ```
 
-or import multiple utilities
+### Import multiple utilities
 
 ```
 import { ArrayUtil, Boolutil, ColorUtil } from 'common-util-pkg';
 ```
 
-### Available Utilities
+### Use `UNPKG`
+
+To use the latest version
+
+```
+<script src="https://unpkg.com/common-utils-pkg"></script>
+```
+
+You can also specify a version
+
+```
+<script src="https://unpkg.com/common-utils-pkg@1.0.9"></script>
+```
+
+Use by getting the exposed 'common-utils-pkg'
+
+```
+<script>
+  const CU = window['common-utils-pkg];
+  CU.ColorUtil.randomPastelColor(); // "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+</script>
+```
+
+#### Available Utilities
 
 * ArrayUtil
   * `strToArray(string, delimiter)`
