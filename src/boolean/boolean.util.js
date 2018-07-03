@@ -1,11 +1,11 @@
-const toBool = (val) => {
+const predefinedTrueValues = ['true', 'yes', 'y', '1'];
+const toBool = (val, trueValuesArr = predefinedTrueValues) => {
   let valToTest;
   try {
     valToTest = val.toString().toLowerCase();
   } catch (e) {
     valToTest = val;
   }
-  const trueValuesArr = ['true', 'yes', 'y', '1'];
   return trueValuesArr.includes(valToTest);
 };
 

@@ -58,12 +58,12 @@ Use by getting the exposed 'common-utils-pkg'
 * ArrayUtil
   * `strToArray(string, delimiter)`
 * BoolUtil
-  * `toBool(val)`
+  * `toBool(val, [trueValuesArr])`
 * ColorUtil
   * `randomPastelColor()`
 * DateUtil
 * FileUtil
-  * `convertBytes(number, decimals)`
+  * `convertBytes(number, [decimals])`
 * StringUtil
   * `arrToString(array, delimiter)`
   * `toSentenceCase(string)`
@@ -75,5 +75,6 @@ Use by getting the exposed 'common-utils-pkg'
 
 ## To Do's
 
-* [ ] Coverage
+* [ ] Proper documentation. Include `arguments` and `return value`
+* [ ] Demo playground
 
