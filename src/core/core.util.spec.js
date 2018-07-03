@@ -5,9 +5,7 @@ import CoreUtil from './core.util';
 
 chai.expect();
 
-const {
-  expect
-} = chai;
+const { expect } = chai;
 
 describe('CORE', () => {
   describe.skip('takes', () => {
