@@ -3,7 +3,6 @@ const isWholeNum = number => number % 1 === 0;
 /**
  * Converts a number of bytes to a human readable file size
  *
- *
  * @category FileUtil
  * @param {Number} bytes number of bytes to show
  * @param {Number} decimals number of decimals to show
