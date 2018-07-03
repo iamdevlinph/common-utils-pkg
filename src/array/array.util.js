@@ -1,9 +1,9 @@
 import CoreUtil from '../core/core.util';
 
-const strToArray = (string, delimiter) => string.split(delimiter);
+import strToArray from './utils/strToArray';
 
 const ArrayUtil = {
-  strToArray: CoreUtil.isExpected(strToArray, 'string')
+  strToArray: CoreUtil.takes(strToArray, 'string')
 };
 
 export default ArrayUtil;
