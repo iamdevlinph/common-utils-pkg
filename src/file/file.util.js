@@ -12,7 +12,7 @@ const convertBytes = (bytes, decimals) => {
 };
 
 const FileUtil = {
-  convertBytes: CoreUtil.isExpected(convertBytes, 'number')
+  convertBytes: CoreUtil.takes(convertBytes, 'number')
 };
 
 export default FileUtil;

@@ -15,9 +15,9 @@ const toTitleCase = string => string.toLowerCase().replace(
 
 
 const StringUtil = {
-  arrToString: CoreUtil.isExpected(arrToString, 'array'),
-  toSentenceCase: CoreUtil.isExpected(toSentenceCase, 'string'),
-  toTitleCase: CoreUtil.isExpected(toTitleCase, 'string')
+  arrToString: CoreUtil.takes(arrToString, 'array'),
+  toSentenceCase: CoreUtil.takes(toSentenceCase, 'string'),
+  toTitleCase: CoreUtil.takes(toTitleCase, 'string')
 };
 
 export default StringUtil;
