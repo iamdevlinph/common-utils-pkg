@@ -26,6 +26,10 @@ describe('BOOLEAN', () => {
       expect(BoolUtil.toBool(0)).to.be.equal(false);
       expect(BoolUtil.toBool('0')).to.be.equal(false);
 
+      expect(BoolUtil.toBool('a', ['a'])).to.be.equal(true);
+      expect(BoolUtil.toBool('b', ['a'])).to.be.equal(false);
+      expect(BoolUtil.toBool('c', ['a', 'b', 'c'])).to.be.equal(true);
+
       expect(BoolUtil.toBool(null)).to.be.equal(false);
       expect(BoolUtil.toBool(undefined)).to.be.equal(false);
     });
