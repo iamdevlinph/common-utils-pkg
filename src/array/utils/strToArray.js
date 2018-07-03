@@ -10,8 +10,6 @@
  * ArrayUtil.strToArray('apple;banana;orange', ';');
  * // => ['apple', 'banana', 'orange']
  */
-function strToArray(string, delimiter) {
-  return string.split(delimiter);
-}
+const strToArray = (string, delimiter) => string.split(delimiter);
 
 export default strToArray;
