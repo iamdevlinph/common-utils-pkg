@@ -1,14 +1,14 @@
 const predefinedTrueValues = ['true', 'yes', 'y', '1'];
 
 /**
- * Converts any value to a Boolean equivalent
+ * Converts any value to a Boolean equivalent.
  *
- * **Note:** If no user-defined array is passed, the default true values are: ['true', 'yes', 'y', '1']
+ * **Note:** If no user-defined array is passed, the default true values are: ['true', 'yes', 'y', '1'].
  *
  * @category BoolUtil
  * @param {*} val value to check if true or false
  * @param {Array} [trueValuesArr] array of user defined true values
- * @returns {Boolean} Returns a boolean equivalent of the value
+ * @returns {Boolean} Returns a boolean equivalent of the value.
  * @example
  *
  * BoolUtil.toBool('y');
