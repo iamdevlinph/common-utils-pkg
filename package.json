@@ -12,6 +12,8 @@
     "babel-preset-env": "1.7.0",
     "chai": "4.1.2",
     "cross-env": "5.2.0",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
     "eslint": "5.0.1",
     "eslint-config-airbnb": "17.0.0",
     "eslint-loader": "2.0.0",
@@ -29,15 +31,18 @@
   },
   "dependencies": {},
   "scripts": {
+    "install-lint": "npm i lint-staged husky",
+    "precommit": "lint-staged",
     "clean": "rimraf lib",
-    "build": "npm run test && npm run clean && webpack --env dev && webpack --env build",
+    "build": "npm run cover && npm run clean && webpack --env dev && webpack --env build",
     "cover": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text ./node_modules/mocha/bin/_mocha src/**/*.spec.js",
-    "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-core/register --colors src/**/*.spec.js && eslint src/",
     "test:watch": "mocha --require babel-core/register --colors -w src/**/*.spec.js",
     "prepublish": "npm run build",
-    "install-lint": "npm i lint-staged husky",
-    "precommit": "lint-staged"
+    "esdocs": "rimraf esdocs && ./node_modules/.bin/esdoc",
+    "esdocs:remove": "npm uninstall esdoc esdoc-standard-plugin && rm .esdoc.json && rimraf esdocs",
+    "documentation": "rimraf documentation && documentation build src/index.js -f html -o documentation",
+    "documentation:remove": "rimraf documentation"
   },
   "lint-staged": {
     "*.js": [
