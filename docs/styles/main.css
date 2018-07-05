@@ -1,0 +1,28 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: #263238;
+  color: white;
+}
+
+* {
+  /* border: 1px solid white; */
+}
+
+.home-page {
+  display: grid;
+  grid-template-columns: auto 1000px auto;
+  grid-template-rows: 50px auto;
+  grid-template-areas:
+    'pad pad pad'
+    'left main right';
+}
+
+.main {
+  grid-area: main;
+}
+
+.center {
+  text-align: center;
+}
