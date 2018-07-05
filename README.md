@@ -84,6 +84,9 @@ Use by getting the exposed 'common-utils-pkg'
 * [ ] Proper documentation. Include `arguments` and `return value`
 * [ ] Demo playground
 
+<!-- ## Documentation Generation -->
+<!-- documentation build src/index.js -f html -o documentation -->
+
 [contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg
 [contributor-url]: https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors
 [deps-img]: https://img.shields.io/david/codesandcoffees/common-utils-pkg.svg

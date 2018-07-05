@@ -41,6 +41,7 @@
   },
   "lint-staged": {
     "*.js": [
+      "npm run test",
       "npm run cover",
       "git add"
     ]
@@ -50,6 +51,9 @@
     "include": [
       "src/**/*.js"
     ],
+    "exclude": [
+      "documentation/*"
+    ],
     "require": [
       "babel-register"
     ],
@@ -58,8 +62,7 @@
       "text"
     ],
     "sourceMap": false,
-    "instrument": false,
-    "all": true
+    "instrument": false
   },
   "repository": {
     "type": "git",
