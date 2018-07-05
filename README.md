@@ -85,7 +85,10 @@ Use by getting the exposed 'common-utils-pkg'
 * [ ] Demo playground
 
 <!-- ## Documentation Generation -->
-<!-- documentation build src/index.js -f html -o documentation -->
+<!-- Manually generate documentation for now. No existing suits the current requirements -->
+<!-- Possible tools: -->
+<!-- https://esdoc.org/ -->
+<!-- https://documentation.js.org/ -->
 
 [contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg
 [contributor-url]: https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors
