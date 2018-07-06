@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="./styles/materialize.min.css">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles//highlight.css">
+  <script src="./js/highlight.js"></script>
 </head>
 
 <body>
@@ -22,22 +24,29 @@
       <p class="center">A package of commonly used JavaScript utilities.</p>
 
       <h4>Installation</h4>
-      <code>
-        npm i --save common-utils-pkg
-      </code>
+      <pre>
+          <code class="bash">
+            npm i --save common-utils-pkg
+          </code>
+        </pre>
 
       <h4>Usage</h4>
       <h5>Import a single utility</h5>
-      <code>
-        import ArrayUtil from 'common-utils-pkg';
-      </code>
+      <pre>
+        <code class="javascript">
+          import ArrayUtil from 'common-utils-pkg';
+        </code>
+      </pre>
 
       <h5>Import multiple utilities</h5>
-      <code>
-        import { ArrayUtil, BoolUtil, ColorUtil } from 'common-utils-pkg';
-      </code>
+      <pre>
+        <code class="javascript">
+          import { ArrayUtil, BoolUtil, ColorUtil } from 'common-utils-pkg';
+        </code>
+      </pre>
     </section>
   </div>
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>
