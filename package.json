@@ -35,7 +35,7 @@
     "precommit": "lint-staged",
     "clean": "rimraf lib",
     "build": "npm run cover && npm run clean && webpack --env dev && webpack --env build",
-    "cover": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text ./node_modules/mocha/bin/_mocha src/**/*.spec.js",
+    "cover": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text ./node_modules/mocha/bin/_mocha src/**/*.spec.js && codecov",
     "test": "mocha --require babel-core/register --colors src/**/*.spec.js && eslint src/",
     "test:watch": "mocha --require babel-core/register --colors -w src/**/*.spec.js",
     "prepublish": "npm run build",
