@@ -1,6 +1,6 @@
 # Common Utilities Package
 
-A package of commonly used utilities. Read the docs [here](https://codes-and-coffees.gitbook.io/common-utils-pkg/)
+A package of commonly used utilities. [Website](https://codesandcoffees.github.io/common-utils-pkg/)
 
 #### Package Details
 
