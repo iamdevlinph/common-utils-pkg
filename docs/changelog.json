@@ -1,0 +1,15 @@
+[
+  {
+    "version": "1.0.9",
+    "description": [
+      "Here's some docs to make this look legit",
+      "We start at 1.0.9"
+    ]
+  },
+  {
+    "version": "1.1.0",
+    "description": [
+      "Code coverage"
+    ]
+  }
+]
