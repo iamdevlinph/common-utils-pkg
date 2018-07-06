@@ -45,3 +45,7 @@ body {
 .center {
   text-align: center;
 }
+
+pre {
+  white-space: normal;
+}
