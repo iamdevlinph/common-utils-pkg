@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "fira-code";
+  src: url("../fonts/FiraCode-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: #263238;
+  /* color: white; */
+}
+
+* {
+  /* border: 1px solid white; */
+}
+
+.center {
+  text-align: center;
+}
+
+pre {
+  white-space: normal;
+}
+
+code {
+  font-family: "fira-code";
+  white-space: pre-line;
+}
+
+.heading {
+  margin-top: 30px;
+}
+
+/* main page */
+.home-page {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 50px 100px 100px min-content 100px;
+  grid-template-areas:
+    "left pad right"
+    "left banner-top right"
+    "left banner-bottom right"
+    "left main right"
+    "left footer right";
+}
+.home-page .banner {
+  grid-area: banner-top/banner-bottom;
+  text-align: center;
+  z-index: 1;
+}
+.home-page .banner .banner__logo {
+  height: 200px;
+}
+.home-page .color-only {
+  grid-area: banner-bottom;
+  background: white;
+}
+.home-page .main {
+  grid-area: main;
+  background: white;
+  padding: 0 20px 20px;
+}

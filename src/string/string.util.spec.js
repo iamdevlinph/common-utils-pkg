@@ -5,9 +5,7 @@ import StringUtil from './string.util';
 
 chai.expect();
 
-const {
-  expect
-} = chai;
+const { expect } = chai;
 
 describe('STRING', () => {
   describe('arrToString', () => {
