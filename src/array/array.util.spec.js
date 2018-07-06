@@ -5,9 +5,7 @@ import ArrayUtil from './array.util';
 
 chai.expect();
 
-const {
-  expect
-} = chai;
+const { expect } = chai;
 
 describe('ARRAY', () => {
   describe('strToArray', () => {

@@ -1,23 +1,13 @@
 import CoreUtil from '../core/core.util';
 
-const arrToString = (array, delimiter) => array.join(delimiter);
-
-const toSentenceCase = (string) => {
-  const returnStr = string.toLowerCase();
-  return returnStr.charAt(0).toUpperCase() + returnStr.slice(1);
-};
-
-// https://stackoverflow.com/a/196991/4620773
-const toTitleCase = string => string.toLowerCase().replace(
-  /\w\S*/g,
-  txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-);
-
+import arrToString from './utils/arrToString';
+import toSentenceCase from './utils/toSentenceCase';
+import toTitleCase from './utils/toTitleCase';
 
 const StringUtil = {
-  arrToString: CoreUtil.isExpected(arrToString, 'array'),
-  toSentenceCase: CoreUtil.isExpected(toSentenceCase, 'string'),
-  toTitleCase: CoreUtil.isExpected(toTitleCase, 'string')
+  arrToString: CoreUtil.takes(arrToString, 'array'),
+  toSentenceCase: CoreUtil.takes(toSentenceCase, 'string'),
+  toTitleCase: CoreUtil.takes(toTitleCase, 'string')
 };
 
 export default StringUtil;

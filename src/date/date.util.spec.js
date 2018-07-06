@@ -5,9 +5,7 @@ import DateUtil from './date.util';
 
 chai.expect();
 
-const {
-  expect
-} = chai;
+const { expect } = chai;
 
 describe('DATE', () => {
   describe('when i run test', () => {
