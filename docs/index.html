@@ -1,18 +1,43 @@
 <html>
-  <head>
-    <title>Common Utilities Package</title>
-    <meta name="description" content="A package of commonly used utilities" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/materialize.min.css">
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <div class="home-page">
-      <div class="main">
-        <section class="center">
-          <img src="./img/codes-and-coffees-circle.svg" alt="logo">
-        </section>
-      </div>
-    </div>
-  </body>
+
+<head>
+  <title>Common Utilities Package</title>
+  <meta name="description" content="A package of commonly used utilities" />
+  <link rel="shortcut icon" href="./img/codes-and-coffees-circle.svg">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/materialize.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <div class="home-page">
+    <section class="banner">
+      <img src="./img/codes-and-coffees-circle.svg" alt="Logo" class="banner__logo">
+    </section>
+
+    <section class="color-only"></section>
+
+    <section class="main">
+      <h3 class="center">Common Utilities Package</h3>
+      <p class="center">A package of commonly used JavaScript utilities.</p>
+
+      <h4>Installation</h4>
+      <code>
+        npm i --save common-utils-pkg
+      </code>
+
+      <h4>Usage</h4>
+      <h5>Import a single utility</h5>
+      <code>
+        import ArrayUtil from 'common-utils-pkg';
+      </code>
+
+      <h5>Import multiple utilities</h5>
+      <code>
+        import { ArrayUtil, BoolUtil, ColorUtil } from 'common-utils-pkg';
+      </code>
+    </section>
+  </div>
+</body>
+
 </html>

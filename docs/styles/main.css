@@ -2,8 +2,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   height: 100vh;
-  /* background: #263238; */
-  color: white;
+  background: #263238;
+  /* color: white; */
 }
 
 * {
@@ -13,14 +13,33 @@ body {
 .home-page {
   display: grid;
   grid-template-columns: auto 1000px auto;
-  grid-template-rows: 50px auto;
+  grid-template-rows: 100px 100px 100px min-content;
   grid-template-areas:
-    'pad pad pad'
+    'left pad right'
+    'left banner-top right'
+    'left banner-bottom right'
     'left main right';
+}
+
+.banner {
+  grid-area: banner-top / banner-bottom;
+  text-align: center;
+  z-index: 1;
+}
+
+.banner .banner__logo {
+  height: 200px;
+}
+
+.color-only {
+  grid-area: banner-bottom;
+  background: white;
 }
 
 .main {
   grid-area: main;
+  background: white;
+  padding: 0 20px 20px;
 }
 
 .center {
