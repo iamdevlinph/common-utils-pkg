@@ -1,10 +1,112 @@
 <html>
-  <head>
-    <title>Common Utilities Package</title>
-    <meta name="description" content="A package of commonly used utilities" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  </head>
-  <body style="text-align:center;font-family:'Montserrat',sans-serif">
-    <h1>Common Utilities Package Doc</h1>
-  </body>
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100423670-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-100423670-5');
+  </script>
+  <title>Common Utilities Package</title>
+  <meta name="description" content="A package of commonly used JavaScript utilities" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="./img/codes-and-coffees-circle.svg">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/materialize.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/highlight.css">
+</head>
+
+<body>
+  <div class="home-page">
+    <section class="banner">
+      <img src="./img/codes-and-coffees-circle.svg" alt="Logo" class="banner__logo">
+    </section>
+
+    <section class="color-only"></section>
+
+    <section class="main">
+      <h4 class="center">Common Utilities Package</h4>
+      <div class="badges center">
+        <!-- npm -->
+        <a href="https://www.npmjs.com/package/common-utils-pkg"
+          target="blank">
+          <img src="https://img.shields.io/npm/v/common-utils-pkg.svg?style=flat-square" alt="npm" />
+        </a>
+
+        <!-- node -->
+        <a href="https://nodejs.org/en/"
+          target="blank">
+          <img src="https://img.shields.io/node/v/common-utils-pkg.svg?style=flat-square" alt="npm" />
+        </a>
+
+        <!-- devDependencies -->
+        <a href="https://david-dm.org/codesandcoffees/common-utils-pkg?type=dev"
+          target="blank">
+          <img src="https://img.shields.io/david/dev/codesandcoffees/common-utils-pkg.svg?style=flat-square" alt="npm" />
+        </a>
+
+        <!-- build:travis -->
+        <a href="https://travis-ci.com/codesandcoffees/common-utils-pkg"
+          target="blank">
+          <img src="https://img.shields.io/travis/codesandcoffees/common-utils-pkg/master.svg?style=flat-square" alt="npm" />
+        </a>
+
+        <!-- downloads -->
+        <a href="https://npmcharts.com/compare/common-utils-pkg?minimal=true"
+          target="blank">
+          <img src="https://img.shields.io/npm/dm/common-utils-pkg.svg?style=flat-square" alt="npm" />
+        </a>
+      </div>
+      <p class="center">A package of commonly used JavaScript utilities.</p>
+
+      <h5 class="heading">Installation</h5>
+      <pre>
+          <code class="bash">npm i --save common-utils-pkg</code>
+        </pre>
+
+      <h5 class="heading">Usage</h5>
+      <p>ES6 Import</p>
+      <pre>
+        <code class="javascript">import ColorUtil from 'common-utils-pkg';
+          // if you want multiple utilities
+          import { ArrayUtil, BoolUtil, ColorUtil } from 'common-utils-pkg';
+
+          ColorUtil.randomPastelColor();
+          // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+        </code>
+      </pre>
+
+      <p>UNPKG</p>
+      <pre>
+        <!-- convert brackets to HTML entities -->
+        <code class="javascript">&#x3C;script src=&#x22;https://unpkg.com/common-utils-pkg&#x22;&#x3E;&#x3C;/script&#x3E;
+
+            &#x3C;script&#x3E;
+              const CUP = window['common-utils-pkg];
+              CUP.ColorUtil.randomPastelColor();
+              // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+
+              /* Or specify utility */
+              const ColorUtil = window['common-utils-pkg'].ColorUtil;
+              ColorUtil.randomPastelColor();
+            &#x3C;/script&#x3E;
+        </code>
+      </pre>
+
+      <h6>Read the <a href="./docs.html">docs</a></h6>
+
+      <h5 class="heading">Why?</h5>
+      <p>Maybe it's good to compile some useful methods that can help in development.</p>
+    </section>
+  </div>
+
+  <script src="./js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="./js/custom.js"></script>
+  <script src="https://unpkg.com/common-utils-pkg"></script>
+</body>
+
 </html>

@@ -1,0 +1,35 @@
+<svg width="320" height="320" xmlns="http://www.w3.org/2000/svg" id="scene">
+  <!-- <g>
+  <title>background</title>
+  <rect fill="#263238" id="canvas_background" height="302" width="302" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+  <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+</g> -->
+  <g>
+    <!-- table -->
+    <circle id="table" r="160" cy="160" cx="160" fill="#263238" />
+    <!-- coaster -->
+    <circle id="coaster" r="150" cy="160" cx="160" fill="#9e9e9e" />
+    <!-- mug & handle -->
+    <g>
+      <circle id="mug" r="100" cy="160" cx="160" fill="#ffffff" />
+      <rect id="handle" height="12" width="50" y="150" x="21.5" fill="#ffffff" />
+    </g>
+    <!-- coffee -->
+    <circle id="coffee" r="88" cy="160" cx="160" fill="#4e342e" />
+    <!-- code symbol-->
+    <g id="code symbol">
+      <line id="symbol_u_l" stroke-linecap="null" stroke-linejoin="null" y2="161.35783" x2="94.63826" y1="132.49609" x1="123.5"
+        stroke-width="8" stroke="#e8d0ac" fill="none" />
+      <line id="symbol_u_r" stroke-linecap="null" stroke-linejoin="null" y2="131.49609" x2="189.5" y1="163.49609" x1="221.5"
+        stroke-width="8" stroke="#e8d0ac" fill="none" />
+      <line id="symbol_l_l" stroke-linecap="null" stroke-linejoin="null" y2="157.49609" x2="92.5" y1="189.49609" x1="124.5"
+        stroke-width="8" stroke="#e8d0ac" fill="none" />
+      <line id="symbol_l_r" stroke-linecap="null" stroke-linejoin="null" y2="189.35783" x2="189.63826" y1="160.49609" x1="218.5"
+        stroke-width="8" stroke="#e8d0ac" fill="none" />
+      <line id="symbol_slash" stroke-linecap="null" stroke-linejoin="null" y2="201.49609" x2="129.5" y1="121.49609" x1="182.5"
+        stroke-width="8" stroke="#e8d0ac" fill="none" />
+    </g>
+  </g>
+</svg>

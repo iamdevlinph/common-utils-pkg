@@ -5,9 +5,7 @@ import ColorUtil from './color.util';
 
 chai.expect();
 
-const {
-  expect
-} = chai;
+const { expect } = chai;
 
 describe('COLOR', () => {
   describe('randomPastelColor', () => {

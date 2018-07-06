@@ -21,7 +21,7 @@ const argTypesMatch = (arg, expectedType) => {
 // to do:
 // pass an array of expected types
 // check if the arguments match the array of expected tyes
-const isExpected = (someFunction, expected) => {
+const takes = (someFunction, expected) => {
   // eslint-disable-next-line func-names
   const wrappedFunction = function () {
     // eslint-disable-next-line prefer-rest-params
@@ -41,7 +41,7 @@ const isExpected = (someFunction, expected) => {
 };
 
 const CoreUtil = {
-  isExpected
+  takes
 };
 
 export default CoreUtil;
