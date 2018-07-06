@@ -12,8 +12,8 @@ body {
 
 .home-page {
   display: grid;
-  grid-template-columns: auto 1000px auto;
-  grid-template-rows: 100px 100px 100px min-content;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 50px 100px 100px min-content;
   grid-template-areas:
     'left pad right'
     'left banner-top right'
