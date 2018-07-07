@@ -11,5 +11,11 @@
     "description": [
       "Code coverage"
     ]
+  },
+  {
+    "version": "1.2.0",
+    "description": [
+      "Travis, Codecov, etc"
+    ]
   }
 ]
