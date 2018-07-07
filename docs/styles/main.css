@@ -34,6 +34,11 @@ code {
   margin-top: 30px;
 }
 
+/* temporary */
+.white-text {
+  color: white;
+}
+
 /* main page */
 .home-page {
   display: grid;
