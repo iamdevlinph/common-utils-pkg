@@ -1,12 +1,15 @@
 # Common Utilities Package
 
-A package of commonly used utilities. [Website](https://codesandcoffees.github.io/common-utils-pkg/)
+A package of commonly used utilities.
+
+[Site](https://codesandcoffees.github.io/common-utils-pkg/) | [Docs](https://codesandcoffees.github.io/common-utils-pkg/docs.html)
 
 #### Package Details
 
 [![npm version][npm-img]][npm-url]
 [![node version][node-img]][node-url]
 [![build][travis-img]][travis-url]
+[![coverage][codecov-img]][codecov-url]
 [![dev deps][devdeps-img]][devdeps-url]
 [![downloads][downloads-img]][downloads-url]
 
@@ -109,3 +112,9 @@ Use by getting the exposed 'common-utils-pkg'
 [pr-url]: https://github.com/codesandcoffees/common-utils-pkg/pulls
 [travis-img]: https://img.shields.io/travis/codesandcoffees/common-utils-pkg/master.svg?style=flat-square
 [travis-url]: https://travis-ci.com/codesandcoffees/common-utils-pkg
+[codecov-img]: https://img.shields.io/codecov/c/github/codesandcoffees/common-utils-pkg.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/codesandcoffees/common-utils-pkg
+[forks-img]: https://img.shields.io/github/forks/codesandcoffees/common-utils-pkg.svg?style=social&label=Fork
+[forks-url]: https://github.com/codesandcoffees/common-utils-pkg/network/members
+[stars-img]: https://img.shields.io/github/stars/codesandcoffees/common-utils-pkg.svg?style=social&label=Stars
+[stars-url]: https://github.com/codesandcoffees/common-utils-pkg/stargazers
