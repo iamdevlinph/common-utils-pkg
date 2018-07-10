@@ -7,7 +7,7 @@ const predefinedTrueValues = ['true', 'yes', 'y', '1'];
  *
  * @category BoolUtil
  * @param {*} val value to check if true or false
- * @param {Array} [trueValuesArr] array of user defined true values
+ * @param {Array} [trueValuesArr] optional array of user defined true values
  * @returns {Boolean} Returns a boolean equivalent of the value.
  * @example
  *

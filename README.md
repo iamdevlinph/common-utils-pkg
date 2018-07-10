@@ -86,6 +86,7 @@ Use by getting the exposed 'common-utils-pkg'
 ## To Do's
 
 * [ ] Proper documentation. Include `arguments` and `return value`
+* [ ] Up coming documentation will be a placeholder while figuring out how to automate it in accordance to the requirements
 * [ ] Demo playground
 
 <!-- ## Documentation Generation -->

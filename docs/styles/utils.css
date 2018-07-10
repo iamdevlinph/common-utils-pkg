@@ -1,0 +1,47 @@
+.reference .card .util:not(:first-of-type) {
+  padding-top: 25px;
+}
+
+.util__section {
+  padding-top: 10px;
+}
+.util__func {
+  font-weight: bold;
+  font-family: monospace;
+}
+.util p {
+  padding-left: 20px;
+}
+.util__desc {
+  padding-left: 0px !important;
+}
+
+.arg {}
+.arg__list {
+  padding-left: 20px !important;
+}
+.arg__name {
+  color: #00a0f0;
+}
+.arg__type {
+  color: #00a0f0;
+  font-weight: bold;
+  font-style: italic;
+}
+.arg__desc {}
+.arg__optional {
+  font-weight: bold;
+}
+
+.return {}
+.return__type {
+  color: #00a0f0;
+  font-weight: bold;
+  font-style: italic;
+}
+.return__desc {}
+
+.example {}
+.example__code {
+  margin: 0;
+}

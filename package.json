@@ -46,7 +46,6 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run test",
       "npm run cover",
       "git add"
     ]

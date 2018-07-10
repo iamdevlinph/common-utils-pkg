@@ -1,7 +1,7 @@
 // https://stackoverflow.com/a/196991/4620773
 
 /**
- * Converts a string to a Title Case
+ * Converts a string to a Title Case.
  *
  * @category StringUtil
  * @param {String} string string to convert to Title Case
