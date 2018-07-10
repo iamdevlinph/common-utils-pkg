@@ -17,10 +17,6 @@ body {
   /* border: 1px solid white; */
 }
 
-.center {
-  text-align: center;
-}
-
 pre {
   white-space: normal;
 }
@@ -30,41 +26,131 @@ code {
   white-space: pre-line;
 }
 
+ul {
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .heading {
   margin-top: 30px;
 }
 
-/* temporary */
-.white-text {
-  color: white;
-}
-
 /* main page */
+
 .home-page {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 50px 100px 100px min-content 100px;
-  grid-template-areas:
-    "left pad right"
-    "left banner-top right"
-    "left banner-bottom right"
-    "left main right"
-    "left footer right";
+  grid-template-rows: 50px 100px 100px min-content 90px;
+  grid-template-areas: "left pad right" "left banner-top right" "left banner-bottom right" "left main right" "left footer right";
 }
+
 .home-page .banner {
   grid-area: banner-top/banner-bottom;
   text-align: center;
   z-index: 1;
 }
+
 .home-page .banner .banner__logo {
   height: 200px;
 }
+
 .home-page .color-only {
   grid-area: banner-bottom;
   background: white;
 }
+
 .home-page .main {
   grid-area: main;
   background: white;
   padding: 0 20px 20px;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+/* docs */
+
+.docs {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 50px min-content;
+  grid-template-areas: "header header" "sidebar reference";
+}
+
+.docs .header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 90px auto;
+  color: white;
+}
+
+.docs .header .logo {
+  width: 50px;
+}
+
+.docs .header .logo-link {
+  text-align: center;
+}
+
+.docs .header .package-name {
+  line-height: 18px;
+}
+
+.docs .sidebar {
+  grid-area: sidebar;
+  color: white;
+  padding: 0 20px;
+}
+
+.docs .sidebar a {
+  color: #DEDEDE;
+}
+
+.docs .sidebar a:hover {
+  color: white;
+}
+
+.docs .sidebar ul {
+  padding-left: 10px;
+  border-left: 1px dashed #dcdcdc;
+  font-size: 12px;
+}
+
+.docs .sidebar .util-name:not(:first-child) {
+  margin-top: 20px;
+}
+
+.docs .reference {
+  grid-area: reference;
+  padding: 0 20px;
+}
+
+/* footer */
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer span {
+  display: block;
+}
+
+/* override materializecss */
+.card:first-of-type {
+  margin-top: 0px;
 }

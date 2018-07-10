@@ -1,5 +1,5 @@
 /**
- * Splits a string to an array on `delimeter`.
+ * Splits a string to an array on `delimiter`.
  *
  * @category ArrayUtil
  * @param {String} string string to convert to array

@@ -4,7 +4,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100423670-5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-100423670-5');
@@ -14,9 +14,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" href="./img/codes_and_coffees.ico">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/highlight.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="./js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="./js/custom.js"></script>
+  <script src="https://unpkg.com/common-utils-pkg"></script>
 </head>
 
 <body>
@@ -33,57 +39,48 @@
       <div class="badges center">
         <div id="badges__1st">
           <!-- npm -->
-          <a href="https://www.npmjs.com/package/common-utils-pkg"
-            target="blank">
+          <a href="https://www.npmjs.com/package/common-utils-pkg" target="blank">
             <img src="https://img.shields.io/npm/v/common-utils-pkg.svg?style=flat-square" alt="npm" />
           </a>
 
           <!-- node -->
-          <a href="https://nodejs.org/en/"
-            target="blank">
+          <a href="https://nodejs.org/en/" target="blank">
             <img src="https://img.shields.io/node/v/common-utils-pkg.svg?style=flat-square" alt="npm" />
           </a>
 
           <!-- build:travis -->
-          <a href="https://travis-ci.com/codesandcoffees/common-utils-pkg"
-            target="blank">
+          <a href="https://travis-ci.com/codesandcoffees/common-utils-pkg" target="blank">
             <img src="https://img.shields.io/travis/codesandcoffees/common-utils-pkg/master.svg?style=flat-square" alt="npm" />
           </a>
 
           <!-- codecov -->
-          <a href="https://codecov.io/gh/codesandcoffees/common-utils-pkg"
-            target="blank">
+          <a href="https://codecov.io/gh/codesandcoffees/common-utils-pkg" target="blank">
             <img src="https://img.shields.io/codecov/c/github/codesandcoffees/common-utils-pkg.svg?style=flat-square" alt="codecov">
           </a>
 
           <!-- devDependencies -->
-          <a href="https://david-dm.org/codesandcoffees/common-utils-pkg?type=dev"
-            target="blank">
+          <a href="https://david-dm.org/codesandcoffees/common-utils-pkg?type=dev" target="blank">
             <img src="https://img.shields.io/david/dev/codesandcoffees/common-utils-pkg.svg?style=flat-square" alt="npm" />
           </a>
 
           <!-- downloads -->
-          <a href="https://npmcharts.com/compare/common-utils-pkg?minimal=true"
-            target="blank">
+          <a href="https://npmcharts.com/compare/common-utils-pkg?minimal=true" target="blank">
             <img src="https://img.shields.io/npm/dm/common-utils-pkg.svg?style=flat-square" alt="npm" />
           </a>
         </div>
         <div id="badges_2nd">
           <!-- stars -->
-          <a href="https://github.com/codesandcoffees/common-utils-pkg/stargazers"
-            target="blank">
+          <a href="https://github.com/codesandcoffees/common-utils-pkg/stargazers" target="blank">
             <img src="https://img.shields.io/github/stars/codesandcoffees/common-utils-pkg.svg?style=social&label=Stars" alt="stars">
           </a>
 
           <!-- forks -->
-          <a href="https://github.com/codesandcoffees/common-utils-pkg/network/members"
-            target="blank">
+          <a href="https://github.com/codesandcoffees/common-utils-pkg/network/members" target="blank">
             <img src="https://img.shields.io/github/forks/codesandcoffees/common-utils-pkg.svg?style=social&label=Fork" alt="fork">
           </a>
 
           <!-- contributors -->
-          <a href="https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors"
-            target="blank">
+          <a href="https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors" target="blank">
             <img src="https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg?style=social" alt="contributors">
           </a>
         </div>
@@ -128,12 +125,12 @@
       <h5 class="heading">Why?</h5>
       <p>Maybe it's good to compile some useful methods that can help in development.</p>
     </section>
-  </div>
 
-  <script src="./js/highlight.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script src="./js/custom.js"></script>
-  <script src="https://unpkg.com/common-utils-pkg"></script>
+    <section class="footer">
+      <span>&copy; <a href="http://www.codesandcoffees.com/">codesandcoffees</a> 2018</span>
+      <span><a href="https://iamdevlinph.me/">iamdevlinph</a></span>
+    </section>
+  </div>
 </body>
 
 </html>

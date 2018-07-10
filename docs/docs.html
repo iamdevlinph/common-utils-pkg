@@ -1,33 +1,331 @@
 <html>
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100423670-5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100423670-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-100423670-5');
-    </script>
-    <title>Common Utilities Package | Docs</title>
-    <meta name="description" content="A package of commonly used JavaScript utilities" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="./img/codes_and_coffees.ico">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/materialize.min.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/highlight.css">
-  </head>
+    gtag('config', 'UA-100423670-5');
+  </script>
+  <title>Common Utilities Package | Docs</title>
+  <meta name="description" content="A package of commonly used JavaScript utilities" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="./img/codes_and_coffees.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/utils.css">
+  <link rel="stylesheet" href="./styles/highlight.css">
 
-<body>
-  <div class="white-text">
-    <h4>The documentation will follow</h4>
-  </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   <script src="./js/highlight.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <script src="./js/custom.js"></script>
   <script src="https://unpkg.com/common-utils-pkg"></script>
+</head>
+
+<body>
+  <div class="docs">
+    <section class="header">
+      <a href="/" class="logo-link"><img class="logo" src="./img/codes-and-coffees-circle.svg" alt="logo"></a>
+      <h5 class="package-name">Common Utilities Package</h5>
+    </section>
+
+    <section class="sidebar">
+      <h6 class="util-name">ArrayUtil</h6>
+      <ul>
+        <li><a href="#strToArray">strToArray</a></li>
+      </ul>
+      <h6 class="util-name">BoolUtil</h6>
+      <ul>
+        <li><a href="#toBool">toBool</a></li>
+      </ul>
+      <h6 class="util-name">ColorUtil</h6>
+      <ul>
+        <li><a href="#randomPastelColor">randomPastelColor</a></li>
+      </ul>
+      <h6 class="util-name">FileUtil</h6>
+      <ul>
+        <li><a href="#convertBytes">convertBytes</a></li>
+      </ul>
+      <h6 class="util-name">Stringutil</h6>
+      <ul>
+        <li><a href="#arrToString">arrToString</a></li>
+        <li><a href="#toSentenceCase">toSentenceCase</a></li>
+        <li><a href="#toTitleCase">toTitleCase</a></li>
+      </ul>
+    </section>
+
+    <section class="reference">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">ArrayUtil</span>
+
+          <section class="util">
+            <h5 class="util__func" id="strToArray">strToArray(string, delimiter)</h5>
+            <p class="util__desc">Splits a string to an array based on the delimiter passed.</p>
+            <div class="util__section arg">
+              <span class="bold">Arguments</span>
+              <ul class="arg__list">
+                <li>
+                  <span class="arg__name">string</span>
+                  <span class="arg__type">(String)</span>
+                  <span class="arg__desc">string to convert to array</span>
+                </li>
+                <li>
+                  <span class="arg__name">delimiter</span>
+                  <span class="arg__type">(Number)</span>
+                  <span class="arg__desc">where to split the string</span>
+                </li>
+              </ul>
+            </div>
+            <div class="util__section return">
+              <span class="bold">Returns</span>
+              <p class="">
+                <span class="return__type">(Array)</span>
+                <span class="return__desc">Returns an array of the split string.</span>
+              </p>
+            </div>
+            <div class="util__section example">
+              <span class="bold">Example</span>
+              <pre class="example__code">
+                <code class="javascript">ArrayUtil.strToArray('apple;banana;orange', ';');
+                // => ['apple', 'banana', 'orange']
+                </code>
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">BoolUtil</span>
+
+          <section class="util">
+            <h5 class="util__func" id="toBool">toBool(val, [trueValuesArr])</h5>
+            <p class="util__desc">Converts any value to a Boolean equivalent.</p>
+            <div class="util__section arg">
+              <span class="bold">Arguments</span>
+              <ul class="arg__list">
+                <li>
+                  <span class="arg__name">val</span>
+                  <span class="arg__type">(*)</span>
+                  <span class="arg__desc">value to check if true or false</span>
+                </li>
+                <li>
+                  <span class="arg__name">[trueValuesArr]</span>
+                  <span class="arg__type">(Array)</span>
+                  <span class="arg__desc">
+                    <span class="arg__optional">optional</span>
+                    array of user defined true values
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="util__section return">
+              <span class="bold">Returns</span>
+              <p class="">
+                <span class="return__type">(Boolean)</span>
+                <span class="return__desc">Returns a boolean equivalent of the value.</span>
+              </p>
+            </div>
+            <div class="util__section example">
+              <span class="bold">Example</span>
+              <pre class="example__code">
+                  <code class="javascript">BoolUtil.toBool('y');
+                  // => true
+
+                  BoolUtil.toBool(null);
+                  // => false
+                  </code>
+                </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">ColorUtil</span>
+
+          <section class="util">
+            <h5 class="util__func" id="randomPastelColor">randomPastelColor()</h5>
+            <p class="util__desc">Get a random pastel color.</p>
+            <div class="util__section return">
+              <span class="bold">Returns</span>
+              <p class="">
+                <span class="return__type">(String)</span>
+                <span class="return__desc">Returns an HSL color.</span>
+              </p>
+            </div>
+            <div class="util__section example">
+              <span class="bold">Example</span>
+              <pre class="example__code">
+                <code class="javascript">ColorUtil.randomPastelColor();
+                // => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'
+                </code>
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">DateUtil</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">FileUtil</span>
+
+          <section class="util">
+            <h5 class="util__func" id="convertBytes">convertBytes(bytes, decimals)</h5>
+            <p class="util__desc">Converts a number of bytes to a human readable file size.</p>
+            <div class="util__section arg">
+              <span class="bold">Arguments</span>
+              <ul class="arg__list">
+                <li>
+                  <span class="arg__name">bytes</span>
+                  <span class="arg__type">(Number)</span>
+                  <span class="arg__desc">number of bytes to show</span>
+                </li>
+                <li>
+                  <span class="arg__name">decimals</span>
+                  <span class="arg__type">(Number)</span>
+                  <span class="arg__desc">number of decimals to show</span>
+                </li>
+              </ul>
+            </div>
+            <div class="util__section return">
+              <span class="bold">Returns</span>
+              <p class="">
+                <span class="return__type">(String)</span>
+                <span class="return__desc">Returns a human readable file size.</span>
+              </p>
+            </div>
+            <div class="util__section example">
+              <span class="bold">Example</span>
+              <pre class="example__code">
+                <code class="javascript">FileUtil.convertBytes(1234);
+                // => 1.205078125 kB
+
+                FileUtil.convertBytes(1234, 2);
+                // => 1.21 kB
+                </code>
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">StringUtil</span>
+
+          <section class="util">
+            <h5 class="util__func" id="arrToString">arrToString(array, delimiter)</h5>
+            <p class="util__desc">Convert an array to a string and combine on the delimiter passed.</p>
+            <div class="util__section arg">
+              <span class="bold">Arguments</span>
+              <ul class="arg__list">
+                <li>
+                  <span class="arg__name">array</span>
+                  <span class="arg__type">(Array)</span>
+                  <span class="arg__desc">array to convert to string</span>
+                </li>
+                <li>
+                  <span class="arg__name">delimiter</span>
+                  <span class="arg__type">(String)</span>
+                  <span class="arg__desc">characater to use in combining to string</span>
+                </li>
+              </ul>
+            </div>
+            <div class="util__section return">
+              <span class="bold">Returns</span>
+              <p class="">
+                <span class="return__type">(String)</span>
+                <span class="return__desc">Returns a string from the array.</span>
+              </p>
+            </div>
+            <div class="util__section example">
+              <span class="bold">Example</span>
+              <pre class="example__code">
+                <code class="javascript">StringUtil.arrToString(['The', 'quick', 'brown'], '-');
+                // => 'The-brown-fox'
+                </code>
+              </pre>
+            </div>
+          </section>
+
+          <section class="util">
+            <h5 class="util__func" id="toSentenceCase">toSentenceCase(string)</h5>
+            <p class="util__desc">Converts a string to Sentence case.</p>
+            <div class="util__section arg">
+              <span class="bold">Arguments</span>
+              <ul class="arg__list">
+                <li>
+                  <span class="arg__name">string</span>
+                  <span class="arg__type">(String)</span>
+                  <span class="arg__desc">string to convert to Sentence case</span>
+                </li>
+              </ul>
+            </div>
+            <div class="util__section return">
+              <span class="bold">Returns</span>
+              <p class="">
+                <span class="return__type">(String)</span>
+                <span class="return__desc">Returns a Sentence case string.</span>
+              </p>
+            </div>
+            <div class="util__section example">
+              <span class="bold">Example</span>
+              <pre class="example__code">
+                <code class="javascript">StringUtil.toSentenceCase('THE QUICK BROWN FOX');
+                // => 'The quick brown fox'
+                </code>
+              </pre>
+            </div>
+          </section>
+
+          <section class="util">
+            <h5 class="util__func" id="toTitleCase">toTitleCase(string)</h5>
+            <p class="util__desc">Converts a string to a Title Case.</p>
+            <div class="util__section arg">
+              <span class="bold">Arguments</span>
+              <ul class="arg__list">
+                <li>
+                  <span class="arg__name">string</span>
+                  <span class="arg__type">(String)</span>
+                  <span class="arg__desc">string to convert to Title Case</span>
+                </li>
+              </ul>
+            </div>
+            <div class="util__section return">
+              <span class="bold">Returns</span>
+              <p class="">
+                <span class="return__type">(String)</span>
+                <span class="return__desc">Returns a Tile Case string.</span>
+              </p>
+            </div>
+            <div class="util__section example">
+              <span class="bold">Example</span>
+              <pre class="example__code">
+                  <code class="javascript">StringUtil.toTitleCase('the quick brown fox');
+                  // => 'The Quick Brown Fox'
+                  </code>
+                </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+
 </body>
 
 </html>
