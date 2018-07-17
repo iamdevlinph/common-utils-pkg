@@ -1,8 +1,9 @@
 {
   "name": "common-utils-pkg",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A package of commonly used utilities",
   "main": "./lib/common-utils-pkg.min.js",
+  "types": "./lib/index.d.ts",
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-eslint": "8.2.5",
@@ -34,7 +35,7 @@
     "install-lint": "npm i lint-staged husky",
     "precommit": "lint-staged",
     "clean": "rimraf lib",
-    "build": "npm run clean && webpack --env dev && webpack --env build",
+    "build": "npm run clean && webpack --env dev && webpack --env build && cp -r src/ts/* lib/",
     "cover": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text ./node_modules/mocha/bin/_mocha src/**/*.spec.js && codecov",
     "test": "mocha --require babel-core/register --colors src/**/*.spec.js && eslint src/",
     "test:watch": "mocha --require babel-core/register --colors -w src/**/*.spec.js",
