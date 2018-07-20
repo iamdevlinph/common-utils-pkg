@@ -3,7 +3,8 @@
 /**
  * Converts a string to a Title Case.
  *
- * @category StringUtil
+ * @module StringUtil
+ * @name toTitleCase
  * @param {String} string string to convert to Title Case
  * @returns {String} Returns a Tile Case string.
  * @example

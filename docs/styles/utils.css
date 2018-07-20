@@ -8,6 +8,8 @@
 .util__func {
   font-weight: bold;
   font-family: monospace;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 .util p {
   padding-left: 20px;
@@ -44,4 +46,12 @@
 .example {}
 .example__code {
   margin: 0;
+}
+
+.divider--fade {
+  border: 0;
+  height: 1px;
+  background: red;
+  background-image: linear-gradient(90deg, red, #fff, #fff);
+  margin-bottom: 10px;
 }

@@ -3,6 +3,13 @@ node_modules/*
 # build files
 lib/
 
+# istanbul
 coverage
 
+# nyc
 .nyc_output
+
+# jekyll
+*/_site
+*/.sass-cache
+*/.jekyll-metadata

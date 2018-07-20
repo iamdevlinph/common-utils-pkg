@@ -1,7 +1,8 @@
 /**
  * Convert an array to a string and combine on the delimiter passed.
  *
- * @category StringUtil
+ * @module StringUtil
+ * @name arrToString
  * @param {Array} array array to convert to string
  * @param {String} delimiter characater to use in  combining to string
  * @returns {String} Returns a string from the array.

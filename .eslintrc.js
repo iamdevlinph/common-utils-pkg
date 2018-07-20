@@ -13,7 +13,7 @@ module.exports = {
     }],
     "comma-dangle": ["error", "never"],
     "no-console": ["error", {
-      allow: ["error"]
+      allow: ["error", "info"]
     }],
     "default-case": 0
   }
