@@ -1,7 +1,8 @@
 /**
- * Splits a string to an array on `delimiter`.
+ * Splits a string to an array based on the delimiter passed.
  *
- * @category ArrayUtil
+ * @module ArrayUtil
+ * @name strToArray
  * @param {String} string string to convert to array
  * @param {String} delimiter where to split the string
  * @returns {Array} Returns an array of the split string.

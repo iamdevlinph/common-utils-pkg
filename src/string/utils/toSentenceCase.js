@@ -1,7 +1,8 @@
 /**
  * Converts a string to Sentence case.
  *
- * @category StringUtil
+ * @module StringUtil
+ * @name toSentenceCase
  * @param {String} string string to convert to Sentence case
  * @returns {String} Returns a Sentence case string.
  * @example

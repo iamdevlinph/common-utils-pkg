@@ -28,7 +28,7 @@
 <body>
   <div class="home-page">
     <section class="banner">
-      <img src="./img/codes-and-coffees-circle.svg" alt="Logo" class="banner__logo">
+      <a href="./index.html"><img src="./img/codes-and-coffees-circle.svg" alt="Logo" class="banner__logo" title="Common Utilities Package"></a>
     </section>
 
     <section class="color-only"></section>
@@ -92,43 +92,44 @@
         </pre>
 
       <h5 class="heading">Usage</h5>
-      <p>ES6 Import</p>
+      <p>ES6</p>
       <pre>
-        <code class="javascript">import ColorUtil from 'common-utils-pkg';
-          // if you want multiple utilities
-          import { ArrayUtil, BoolUtil, ColorUtil } from 'common-utils-pkg';
+        <code class="javascript">import { ColorUtil } from 'common-util-pkg';
 
           ColorUtil.randomPastelColor();
-          // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+          // "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
         </code>
       </pre>
 
-      <p>UNPKG</p>
+      <p id="unpkg-usage">Browser</p>
       <pre>
         <!-- convert brackets to HTML entities -->
         <code class="javascript">&#x3C;script src=&#x22;https://unpkg.com/common-utils-pkg&#x22;&#x3E;&#x3C;/script&#x3E;
-
             &#x3C;script&#x3E;
-              const CUP = window['common-utils-pkg];
-              CUP.ColorUtil.randomPastelColor();
-              // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
-
-              /* Or specify utility */
-              const ColorUtil = window['common-utils-pkg'].ColorUtil;
+              const ColorUtil = window['common-utils-pkg].ColorUtil;
               ColorUtil.randomPastelColor();
+              // "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
             &#x3C;/script&#x3E;
         </code>
       </pre>
 
-      <h6>Read the <a href="./docs.html">docs</a></h6>
+      Read more about the usage <a href="./usage.html">here</a>
 
-      <h5 class="heading">Why?</h5>
-      <p>Maybe it's good to compile some useful methods that can help in development.</p>
+      <h5 class="heading">Available Utilities</h5>
+      <ul class="styled">
+        <li>- ArrayUtil</li>
+        <li>- BoolUtil</li>
+        <li>- ColorUtil</li>
+        <li>- FileUtil</li>
+        <li>- StringUtil</li>
+      </ul>
+
+      Read more about the available methods <a href="./docs.html">here</a>
     </section>
 
     <section class="footer">
       <span>&copy; <a href="http://www.codesandcoffees.com/">codesandcoffees</a> 2018</span>
-      <span><a href="https://iamdevlinph.me/">iamdevlinph</a></span>
+      <span><a href="https://iamdevlinph.com/">iamdevlinph</a></span>
     </section>
   </div>
 </body>

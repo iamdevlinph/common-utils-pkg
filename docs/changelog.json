@@ -23,5 +23,11 @@
     "description": [
       "Add TypeScript type definitions for intellisense"
     ]
+  },
+  {
+    "version": "1.4.0",
+    "description": [
+      "Automated documentation"
+    ]
   }
 ]

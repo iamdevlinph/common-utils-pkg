@@ -26,74 +26,63 @@ A package of commonly used utilities.
 npm i --save common-utils-pkg
 ```
 
-## Getting started
+## Usage
 
-### Import a single utility
-
-```
-import ArrayUtil from 'common-util-pkg;
-```
-
-### Import multiple utilities
+### ES6
 
 ```
-import { ArrayUtil, Boolutil, ColorUtil } from 'common-util-pkg';
+import { ColorUtil } from 'common-util-pkg';
+
+ColorUtil.randomPastelColor();
+// "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
 ```
 
-### Use `UNPKG`
-
-To use the latest version
+### Browser
 
 ```
 <script src="https://unpkg.com/common-utils-pkg"></script>
-```
-
-You can also specify a version
-
-```
-<script src="https://unpkg.com/common-utils-pkg@1.0.9"></script>
-```
-
-Use by getting the exposed 'common-utils-pkg'
-
-```
 <script>
-  const CU = window['common-utils-pkg];
-  CU.ColorUtil.randomPastelColor(); // "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+  const ColorUtil = window['common-utils-pkg].ColorUtil;
+  ColorUtil.randomPastelColor();
+  // "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
 </script>
 ```
 
-#### Available Utilities
+Read more about the usage [here](https://codesandcoffees.github.io/common-utils-pkg/usage.html)
 
+## Available Utilities
 * ArrayUtil
-  * `strToArray(string, delimiter)`
 * BoolUtil
-  * `toBool(val, [trueValuesArr])`
 * ColorUtil
-  * `randomPastelColor()`
-* DateUtil
 * FileUtil
-  * `convertBytes(number, [decimals])`
 * StringUtil
-  * `arrToString(array, delimiter)`
-  * `toSentenceCase(string)`
-  * `toTitleCase(string)`
+
+Read more about the methods available [here](https://codesandcoffees.github.io/common-utils-pkg/docs.html)
 
 ## Features
+* Transpile ES6 to ES5 using [Babel](https://github.com/babel/babel)
+* Coverage using [Istanbul](https://github.com/gotwarlost/istanbul) with [nyc](https://github.com/istanbuljs/nyc) and report by [Codecov](https://github.com/codecov/codecov-node)
+* Create the bundle using [webpack](https://github.com/webpack/webpack)
+* Run tests using [Mocha](https://github.com/mochajs/mocha) and [chai](https://github.com/chaijs/chai)
+* Lint stuff using [ESLint](https://github.com/eslint/eslint)
+* Build status by [Travis](https://github.com/travis-ci/travis-ci)
+* Precommit using [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky)
+* Provides TypeScript type definitions
+![typedef](./docs/img/ts-type-def.png)
 
 ## Commands
+* npm run build:clean - Deletes the build folder.
+* npm run build - Builds `dev` and `prod` ready files.
+* npm cun cover - Run coverage tool.
+* npm run docu - Generated a `.json` documentation file that will be used by the `docs.html` page.
+* npm run install-lint - Install precommit related tools. It sometimes doesn't install properly.
+* npm run precommit - The precommit hook which runs `lint-staged`.
+* npm prepublish - Runs `cover`, `docu`, and `build` before publishing a new version of the package.
+* npm run test:watch - Re-run tests on file changes.
+* npm run test - Run the tests
 
 ## To Do's
-
-* [ ] Proper documentation. Include `arguments` and `return value`
-* [ ] Up coming documentation will be a placeholder while figuring out how to automate it in accordance to the requirements
-* [ ] Demo playground
-
-<!-- ## Documentation Generation -->
-<!-- Manually generate documentation for now. No existing suits the current requirements -->
-<!-- Possible tools: -->
-<!-- https://esdoc.org/ -->
-<!-- https://documentation.js.org/ -->
+- [ ] Immutable arrays and objects
 
 [contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg?style=flat-square
 [contributor-url]: https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors

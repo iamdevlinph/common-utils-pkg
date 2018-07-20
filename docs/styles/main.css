@@ -48,7 +48,11 @@ ul {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 50px 100px 100px min-content 90px;
-  grid-template-areas: "left pad right" "left banner-top right" "left banner-bottom right" "left main right" "left footer right";
+  grid-template-areas: "left pad right"
+    "left banner-top right"
+    "left banner-bottom right"
+    "left main right"
+    "left footer right";
 }
 
 .home-page .banner {
@@ -83,9 +87,11 @@ ul {
 
 .docs {
   display: grid;
-  grid-template-columns: 200px auto;
-  grid-template-rows: 50px min-content;
-  grid-template-areas: "header header" "sidebar reference";
+  grid-template-columns: 250px auto;
+  grid-template-rows: 50px min-content 90px;
+  grid-template-areas: "header header"
+    "sidebar reference"
+    "sidebar footer";
 }
 
 .docs .header {
@@ -93,6 +99,10 @@ ul {
   display: grid;
   grid-template-columns: 90px auto;
   color: white;
+  position: fixed;
+  width: 100vw;
+  background: #263238;
+  z-index: 2;
 }
 
 .docs .header .logo {
@@ -111,6 +121,8 @@ ul {
   grid-area: sidebar;
   color: white;
   padding: 0 20px;
+  position: fixed;
+  top: 50px;
 }
 
 .docs .sidebar a {
@@ -151,6 +163,11 @@ ul {
 }
 
 /* override materializecss */
+
 .card:first-of-type {
   margin-top: 0px;
+}
+
+ul.styled {
+  padding: 0 0 10px 20px;
 }
