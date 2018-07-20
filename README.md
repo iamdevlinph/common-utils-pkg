@@ -71,15 +71,16 @@ Read more about the methods available [here](https://codesandcoffees.github.io/c
 ![typedef](./docs/img/ts-type-def.png)
 
 ## Commands
-* npm run build:clean - Deletes the build folder.
-* npm run build - Builds `dev` and `prod` ready files.
-* npm cun cover - Run coverage tool.
-* npm run docu - Generated a `.json` documentation file that will be used by the `docs.html` page.
-* npm run install-lint - Install precommit related tools. It sometimes doesn't install properly.
-* npm run precommit - The precommit hook which runs `lint-staged`.
-* npm prepublish - Runs `cover`, `docu`, and `build` before publishing a new version of the package.
-* npm run test:watch - Re-run tests on file changes.
-* npm run test - Run the tests
+Run by `npm run <command>` if necessary
+* `build:clean` - Deletes the build folder.
+* `build` - Builds `dev` and `prod` ready files.
+* `cover` - Run coverage tool.
+* `docu` - Generated a `.json` documentation file that will be used by the `docs.html` page.
+* `install-lint` - Install precommit related tools. It sometimes doesn't install properly.
+* `precommit` - The precommit hook which runs `lint-staged`.
+* `prepare` - Runs `build` before publishing a new version of the package.
+* `test:watch` - Re-run tests on file changes.
+* `test` - Run the tests
 
 ## To Do's
 - [ ] Immutable arrays and objects

@@ -37,13 +37,14 @@
     "docu": "node node_modules/documentation/bin/documentation.js build src/index.js -f json > docs/source.json && node scripts/documentation.js",
     "install-lint": "npm i lint-staged husky",
     "precommit": "lint-staged",
-    "prepublish": "npm run cover && npm run docu && npm run build",
+    "prepublish": "npm run cover && npm run build",
     "test:watch": "mocha --require babel-core/register --colors -w src/**/*.spec.js",
     "test": "mocha --require babel-core/register --colors src/**/*.spec.js && eslint src/"
   },
   "lint-staged": {
     "*.js": [
       "npm run cover",
+      "npm run docu",
       "git add"
     ]
   },
