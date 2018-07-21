@@ -76,7 +76,8 @@ Run by `npm run <command>` if necessary
 * `build` - Builds `dev` and `prod` ready files.
 * `cover` - Run coverage tool.
 * `docu` - Generated a `.json` documentation file that will be used by the `docs.html` page.
-* `install-lint` - Install precommit related tools. It sometimes doesn't install properly.
+* `lint:install` - Install precommit related tools. It sometimes doesn't install properly.
+* `lint` - Runs the ESLint linter on the `src/` folder.
 * `precommit` - The precommit hook which runs `lint-staged` to lint staged files on commit.
 * `prepare` - Runs `build` before publishing a new version of the package.
 * `test:watch` - Re-run tests on file changes.
