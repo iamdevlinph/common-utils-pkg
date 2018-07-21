@@ -44,5 +44,11 @@
     "description": [
       "Add typing for CoreUtil.argTypesMatch()"
     ]
+  },
+  {
+    "version": "1.5.2",
+    "description": [
+      "Update dependencies"
+    ]
   }
 ]
