@@ -38,5 +38,11 @@
       "Add tests to takes()",
       "Add a new method argTypesMatch()"
     ]
+  },
+  {
+    "version": "1.5.1",
+    "description": [
+      "Add typing for CoreUtil.argTypesMatch()"
+    ]
   }
 ]

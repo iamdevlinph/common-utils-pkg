@@ -9,8 +9,13 @@ export namespace ArrayUtil {
 export namespace BoolUtil {
   export function toBool(val: any, trueValuesArr?: Array<string>): boolean
 }
+
 export namespace ColorUtil {
   export function randomColorPastel(): string
+}
+
+export namespace CoreUtil {
+  export function argTypesMatch(arg: any, expectedType: any): boolean
 }
 
 export namespace DateUtil { }
