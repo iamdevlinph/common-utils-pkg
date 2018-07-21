@@ -1,6 +1,9 @@
 {
   "eslint.autoFixOnSave": true,
   "files.exclude": {
+    "**/.nyc_output": true
+  },
+  "search.exclude": {
     "**/coverage": true,
     "**/.nyc_output": true
   },

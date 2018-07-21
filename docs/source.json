@@ -1004,6 +1004,341 @@
           "children": [
             {
               "type": "text",
+              "value": "Checks if the type of the value is the expected type.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 54,
+                  "offset": 53
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 54,
+              "offset": 53
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 54,
+          "offset": 53
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "module",
+        "description": null,
+        "lineNumber": 3,
+        "type": null,
+        "name": "CoreUtil"
+      },
+      {
+        "title": "name",
+        "description": null,
+        "lineNumber": 4,
+        "name": "argTypesMatch"
+      },
+      {
+        "title": "param",
+        "description": "any value to check",
+        "lineNumber": 5,
+        "type": {
+          "type": "AllLiteral"
+        },
+        "name": "arg"
+      },
+      {
+        "title": "param",
+        "description": "the type to check the value against",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        },
+        "name": "expectedType"
+      },
+      {
+        "title": "returns",
+        "description": "Returns a boolean if the type of the value matches to expectedType.",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "example",
+        "description": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'string');\n// => false",
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 16,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 32,
+          "column": 2
+        }
+      },
+      "file": "/mnt/e/common-utils-pkg/src/core/utils/argTypesMatch.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'string');\n// => false"
+      }
+    ],
+    "params": [
+      {
+        "title": "param",
+        "name": "arg",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "any value to check",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 19,
+                  "offset": 18
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 19,
+              "offset": 18
+            }
+          }
+        },
+        "type": {
+          "type": "AllLiteral"
+        }
+      },
+      {
+        "title": "param",
+        "name": "expectedType",
+        "lineNumber": 6,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "the type to check the value against",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 36,
+                      "offset": 35
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 36,
+                  "offset": 35
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 36,
+              "offset": 35
+            }
+          }
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Returns a boolean if the type of the value matches to expectedType.",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 68,
+                      "offset": 67
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 68,
+                  "offset": 67
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 68,
+              "offset": 67
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "kind": "module",
+    "name": "argTypesMatch",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "argTypesMatch",
+        "kind": "module"
+      }
+    ],
+    "namespace": "argTypesMatch"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
               "value": "Converts a number of bytes to a human readable file size.",
               "position": {
                 "start": {
