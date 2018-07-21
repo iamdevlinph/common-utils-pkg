@@ -67,6 +67,33 @@
       "utilArgs": "randomPastelColor()"
     }
   ],
+  "CoreUtil": [
+    {
+      "description": "Checks if the type of the value is the expected type.",
+      "args": [
+        {
+          "description": "any value to check",
+          "param": "arg",
+          "type": "*",
+          "optional": false
+        },
+        {
+          "description": "the type to check the value against",
+          "param": "expectedType",
+          "type": "String",
+          "optional": false
+        }
+      ],
+      "module": "CoreUtil",
+      "util": "argTypesMatch",
+      "returns": {
+        "desc": "Returns a boolean if the type of the value matches to expectedType.",
+        "type": "Boolean"
+      },
+      "example": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'string');\n// => false",
+      "utilArgs": "argTypesMatch(arg, expectedType)"
+    }
+  ],
   "FileUtil": [
     {
       "description": "Converts a number of bytes to a human readable file size.",

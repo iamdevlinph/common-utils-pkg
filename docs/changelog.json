@@ -29,5 +29,14 @@
     "description": [
       "Automated documentation"
     ]
+  },
+  {
+    "version": "1.5.0",
+    "description": [
+      "Changes to CoreUtil",
+      "Clean-up CoreUtil",
+      "Add tests to takes()",
+      "Add a new method argTypesMatch()"
+    ]
   }
 ]
