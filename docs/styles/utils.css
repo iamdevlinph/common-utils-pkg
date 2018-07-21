@@ -45,7 +45,12 @@
 
 .example {}
 .example__code {
-  margin: 0;
+  margin: 0 -24px;
+}
+.example__code code {
+  padding: 10px 24px;
+  background: #E3CCA8;
+  color: black;
 }
 
 .divider--fade {
@@ -54,4 +59,8 @@
   background: red;
   background-image: linear-gradient(90deg, red, #fff, #fff);
   margin-bottom: 10px;
+}
+
+.card .card-content {
+  padding: 24px 24px 0 24px;
 }

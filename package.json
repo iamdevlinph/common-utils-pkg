@@ -12,6 +12,7 @@
     "babel-plugin-istanbul": "4.1.6",
     "babel-preset-env": "1.7.0",
     "chai": "4.1.2",
+    "codecov": "3.0.4",
     "cross-env": "5.2.0",
     "documentation": "8.0.1",
     "eslint": "5.0.1",
@@ -33,7 +34,7 @@
   "scripts": {
     "build:clean": "rimraf lib",
     "build": "npm run build:clean && webpack --env dev && webpack --env build && cp -r src/ts/* lib/",
-    "cover": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text ./node_modules/mocha/bin/_mocha src/**/*.spec.js && codecov",
+    "cover": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text ./node_modules/mocha/bin/_mocha src/**/*.spec.js && node_modules/codecov/bin/codecov",
     "docu": "node node_modules/documentation/bin/documentation.js build src/index.js -f json > docs/source.json && node scripts/documentation.js",
     "install-lint": "npm i lint-staged husky",
     "precommit": "lint-staged",
@@ -44,7 +45,6 @@
   "lint-staged": {
     "*.js": [
       "npm run cover",
-      "npm run docu",
       "git add"
     ]
   },
