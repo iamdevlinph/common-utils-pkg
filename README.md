@@ -54,6 +54,7 @@ Read more about the usage [here](https://codesandcoffees.github.io/common-utils-
 * ArrayUtil
 * BoolUtil
 * ColorUtil
+* CoreUtil
 * FileUtil
 * StringUtil
 

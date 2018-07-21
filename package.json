@@ -39,7 +39,7 @@
     "lint:install": "npm i lint-staged husky",
     "lint": "node_modules/eslint/bin/eslint.js src/",
     "precommit": "lint-staged",
-    "prepare": "npm run cover && npm run build",
+    "prepare": "npm run lint && npm run cover && npm run build",
     "test:watch": "mocha --require babel-core/register --colors -w src/**/*.spec.js",
     "test": "mocha --require babel-core/register --colors src/**/*.spec.js && eslint src/"
   },
