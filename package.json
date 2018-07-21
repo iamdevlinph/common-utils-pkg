@@ -1,6 +1,6 @@
 {
   "name": "common-utils-pkg",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A package of commonly used utilities",
   "main": "./lib/common-utils-pkg.min.js",
   "types": "./lib/index.d.ts",
