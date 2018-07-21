@@ -14,7 +14,7 @@
  * CoreUtil.argTypesMatch(1, 'number');
  * // => true
  *
- * CoreUtil.argTypesMatch('abc', 'string');
+ * CoreUtil.argTypesMatch('abc', 'number');
  * // => false
  */
 const argTypesMatch = (arg, expectedType) => {
