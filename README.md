@@ -77,7 +77,7 @@ Run by `npm run <command>` if necessary
 * `cover` - Run coverage tool.
 * `docu` - Generated a `.json` documentation file that will be used by the `docs.html` page.
 * `install-lint` - Install precommit related tools. It sometimes doesn't install properly.
-* `precommit` - The precommit hook which runs `lint-staged`.
+* `precommit` - The precommit hook which runs `lint-staged` to lint staged files on commit.
 * `prepare` - Runs `build` before publishing a new version of the package.
 * `test:watch` - Re-run tests on file changes.
 * `test` - Run the tests
