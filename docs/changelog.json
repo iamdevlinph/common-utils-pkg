@@ -50,5 +50,11 @@
     "description": [
       "Update dependencies"
     ]
+  },
+  {
+    "version": "1.6.0",
+    "description": [
+      "Overhaul on the structure"
+    ]
   }
 ]

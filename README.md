@@ -71,11 +71,16 @@ Read more about the methods available [here](https://codesandcoffees.github.io/c
 * Provides TypeScript type definitions
 ![typedef](./docs/img/ts-type-def.png)
 
+# Contributing
+Have something to pitch in? Open a [pull request](https://github.com/codesandcoffees/common-utils-pkg/pulls) or an [issue](https://github.com/codesandcoffees/common-utils-pkg/issues/new).
+
 ## Commands
 Run by `npm run <command>` if necessary
 * `build:clean` - Deletes the build folder.
 * `build` - Builds `dev` and `prod` ready files.
+* `cover:serve` - Serve the coverage report page. Open at `http://localhost:8080/`.
 * `cover` - Run coverage tool.
+* `docu:serve` - Serve the documentation page. Open at `http://localhost:8080/`.
 * `docu` - Generated a `.json` documentation file that will be used by the `docs.html` page.
 * `lint:install` - Install precommit related tools. It sometimes doesn't install properly.
 * `lint` - Runs the ESLint linter on the `src/` folder.
