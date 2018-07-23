@@ -35,8 +35,8 @@
     "description": [
       "Changes to CoreUtil",
       "Clean-up CoreUtil",
-      "Add tests to takes()",
-      "Add a new method argTypesMatch()"
+      "Add tests to CoreUtil.takes()",
+      "Add a new method CoreUtil.argTypesMatch()"
     ]
   },
   {
@@ -55,6 +55,12 @@
     "version": "1.6.0",
     "description": [
       "Overhaul on the structure"
+    ]
+  },
+  {
+    "version": "1.6.1",
+    "description": [
+      "Add ColorUtil.invertHexColor()"
     ]
   }
 ]
