@@ -11,6 +11,7 @@ export namespace BoolUtil {
 }
 
 export namespace ColorUtil {
+  export function invertHexColor(hex: string): string
   export function randomColorPastel(): string
 }
 

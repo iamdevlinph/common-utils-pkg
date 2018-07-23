@@ -1,6 +1,6 @@
 {
   "name": "common-utils-pkg",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "A package of commonly used utilities",
   "main": "./lib/common-utils-pkg.min.js",
   "types": "./lib/index.d.ts",
@@ -35,9 +35,9 @@
   "scripts": {
     "build:clean": "rimraf lib",
     "build": "npm run build:clean && webpack --env dev && webpack --env build && cp -r src/ts/* lib/",
-    "cover:serve": "node_modules/http-server/bin/http-server coverage/lcov-report -o",
+    "cover:serve": "npm run cover && node_modules/http-server/bin/http-server coverage/lcov-report -o",
     "cover": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text node_modules/mocha/bin/_mocha src/**/specs/*.spec.js && node_modules/codecov/bin/codecov",
-    "docu:serve": "node_modules/http-server/bin/http-server docs/ -o",
+    "docu:serve": "npm run docu && node_modules/http-server/bin/http-server docs/ -o",
     "docu": "node_modules/documentation/bin/documentation.js build src/index.js -f json > docs/source.json && node scripts/documentation.js",
     "lint:install": "npm i lint-staged husky",
     "lint": "node_modules/eslint/bin/eslint.js src/",

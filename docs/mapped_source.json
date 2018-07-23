@@ -55,6 +55,25 @@
   ],
   "ColorUtil": [
     {
+      "description": "Inverts a HEX color.",
+      "args": [
+        {
+          "description": "hex color to convert",
+          "param": "hex",
+          "type": "String",
+          "optional": false
+        }
+      ],
+      "module": "ColorUtil",
+      "util": "invertColor",
+      "returns": {
+        "desc": "Returns a HEX color string.",
+        "type": "String"
+      },
+      "example": "ColorUtil.invertColor('#E3CCA8');\n// => '#1C3357'\n\nColorUtil.invertColor('ccc');\n// => '#333333'",
+      "utilArgs": "invertColor(hex)"
+    },
+    {
       "description": "Get a random pastel color.",
       "args": [],
       "module": "ColorUtil",
