@@ -18,7 +18,7 @@ const predefinedTrueValues = ['true', 'yes', 'y', '1'];
  * BoolUtil.toBool(null);
  * // => false
  */
-const toBool = (val, trueValuesArr = predefinedTrueValues) => {
+const toBool = (val = null, trueValuesArr = predefinedTrueValues) => {
   let valToTest;
   try {
     valToTest = val.toString().toLowerCase();

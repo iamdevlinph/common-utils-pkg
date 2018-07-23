@@ -1,7 +1,7 @@
 /* global describe, it */
 
 import chai from 'chai';
-import randomPastelColor from '../utils/randomPastelColor';
+import ColorUtil from '../color.util';
 
 chai.expect();
 
@@ -9,6 +9,6 @@ const { expect } = chai;
 
 describe('randomPastelColor', () => {
   it('should return random HSL color', () => {
-    expect(randomPastelColor()).to.include('hsl');
+    expect(ColorUtil.randomPastelColor()).to.include('hsl');
   });
 });
