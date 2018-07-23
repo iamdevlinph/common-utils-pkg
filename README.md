@@ -91,6 +91,9 @@ Run by `npm run <command>` if necessary
 
 ## To Do's
 - [ ] Immutable arrays and objects
+- [ ] Update `takes(func, [...required])` to `takes(func, [...required], [...optional])`
+- [ ] Update `takes` to support `typeof` `any`
+- [ ] Update `argTypesMatch` to support `typeof` `any`
 
 [contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg?style=flat-square
 [contributor-url]: https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors

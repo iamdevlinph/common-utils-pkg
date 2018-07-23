@@ -2,10 +2,14 @@ import argTypesMatch from './argTypesMatch';
 
 const { stack } = new Error();
 
-// currently only checks the first aguments
+// currently only checks the first agument
 // to do:
-// pass an array of expected types
+// 1. pass an array of expected types
 // check if the arguments match the array of expected tyes
+// 2. support array of optional parameters types
+// 3. support typeof *
+// in the end might look something like this
+// CoreUtil.takes(func, [...requiredTypes], [...optionalTypes])
 const takes = (someFunction, expected) => {
   // eslint-disable-next-line func-names
   const wrappedFunction = function () {

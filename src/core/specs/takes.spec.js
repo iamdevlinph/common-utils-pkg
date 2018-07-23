@@ -1,14 +1,14 @@
 /* global describe, it */
 
 import chai from 'chai';
-import takes from '../utils/takes';
+import CoreUtil from '../core.util';
 
 const func = {
-  array: takes(() => {}, 'array'),
-  boolean: takes(() => {}, 'boolean'),
-  number: takes(() => {}, 'number'),
-  object: takes(() => {}, 'object'),
-  string: takes(() => {}, 'string')
+  array: CoreUtil.takes(() => {}, 'array'),
+  boolean: CoreUtil.takes(() => {}, 'boolean'),
+  number: CoreUtil.takes(() => {}, 'number'),
+  object: CoreUtil.takes(() => {}, 'object'),
+  string: CoreUtil.takes(() => {}, 'string')
 };
 
 chai.expect();
