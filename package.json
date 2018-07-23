@@ -85,7 +85,7 @@
   "bugs": {
     "url": "https://github.com/codesandcoffees/common-utils-pkg/issues"
   },
-  "homepage": "https://github.com/codesandcoffees/common-utils-pkg#readme",
+  "homepage": "https://common-utils-pkg.js.org/",
   "engines": {
     "node": "8.11.3"
   }
