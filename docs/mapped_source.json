@@ -90,7 +90,7 @@
         "desc": "Returns a boolean if the type of the value matches to expectedType.",
         "type": "Boolean"
       },
-      "example": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'string');\n// => false",
+      "example": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'number');\n// => false",
       "utilArgs": "argTypesMatch(arg, expectedType)"
     }
   ],
@@ -105,10 +105,10 @@
           "optional": false
         },
         {
-          "description": "number of decimals to show",
+          "description": "optional number of decimals to show",
           "param": "decimals",
           "type": "Number",
-          "optional": false
+          "optional": true
         }
       ],
       "module": "FileUtil",
@@ -118,7 +118,7 @@
         "type": "String"
       },
       "example": "FileUtil.convertBytes(1234);\n// => 1.205078125 kB\n\nFileUtil.convertBytes(1234, 2);\n// => 1.21 kB",
-      "utilArgs": "convertBytes(bytes, decimals)"
+      "utilArgs": "convertBytes(bytes, [decimals])"
     }
   ],
   "StringUtil": [

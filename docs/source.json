@@ -1092,28 +1092,28 @@
       },
       {
         "title": "example",
-        "description": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'string');\n// => false",
+        "description": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'number');\n// => false",
         "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 1,
+        "line": 4,
         "column": 0
       },
       "end": {
-        "line": 16,
+        "line": 19,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 17,
+          "line": 20,
           "column": 0
         },
         "end": {
-          "line": 32,
+          "line": 35,
           "column": 2
         }
       },
@@ -1122,7 +1122,7 @@
     "augments": [],
     "examples": [
       {
-        "description": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'string');\n// => false"
+        "description": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'number');\n// => false"
       }
     ],
     "params": [
@@ -1409,11 +1409,14 @@
       },
       {
         "title": "param",
-        "description": "number of decimals to show",
+        "description": "optional number of decimals to show",
         "lineNumber": 6,
         "type": {
-          "type": "NameExpression",
-          "name": "Number"
+          "type": "OptionalType",
+          "expression": {
+            "type": "NameExpression",
+            "name": "Number"
+          }
         },
         "name": "decimals"
       },
@@ -1535,7 +1538,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "number of decimals to show",
+                  "value": "optional number of decimals to show",
                   "position": {
                     "start": {
                       "line": 1,
@@ -1544,8 +1547,8 @@
                     },
                     "end": {
                       "line": 1,
-                      "column": 27,
-                      "offset": 26
+                      "column": 36,
+                      "offset": 35
                     },
                     "indent": []
                   }
@@ -1559,8 +1562,8 @@
                 },
                 "end": {
                   "line": 1,
-                  "column": 27,
-                  "offset": 26
+                  "column": 36,
+                  "offset": 35
                 },
                 "indent": []
               }
@@ -1574,14 +1577,17 @@
             },
             "end": {
               "line": 1,
-              "column": 27,
-              "offset": 26
+              "column": 36,
+              "offset": 35
             }
           }
         },
         "type": {
-          "type": "NameExpression",
-          "name": "Number"
+          "type": "OptionalType",
+          "expression": {
+            "type": "NameExpression",
+            "name": "Number"
+          }
         }
       }
     ],
