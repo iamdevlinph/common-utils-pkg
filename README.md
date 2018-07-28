@@ -75,7 +75,7 @@ Read more about the methods available [here](https://codesandcoffees.github.io/c
 Have something to pitch in? Open a [pull request](https://github.com/codesandcoffees/common-utils-pkg/pulls) or an [issue](https://github.com/codesandcoffees/common-utils-pkg/issues/new).
 
 ## Commands
-Run by `npm run <command>` if necessary
+Run by `npm run <script>`
 * `build:clean` - Deletes the build folder.
 * `build` - Builds `dev` and `prod` ready files.
 * `cover:serve` - Serve the coverage report page. Open at `http://localhost:8080/`.
