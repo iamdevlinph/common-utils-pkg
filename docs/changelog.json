@@ -62,5 +62,11 @@
     "description": [
       "Add ColorUtil.invertHexColor()"
     ]
+  },
+  {
+    "version": "1.6.2",
+    "description": [
+      "Changes to shield badge maxAge"
+    ]
   }
 ]

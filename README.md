@@ -17,7 +17,7 @@ A package of commonly used utilities.
 
 [![open issues][issues-img]][issues-url]
 [![open prs][pr-img]][pr-url]
-![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=3600)
+![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400)
 [![contributors][contributor-img]][contributor-url]
 
 ## Installation
@@ -95,27 +95,27 @@ Run by `npm run <script>`
 - [ ] Update `takes` to support `typeof` `any`
 - [ ] Update `argTypesMatch` to support `typeof` `any`
 
-[contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=3600
+[contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [contributor-url]: https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors
-[deps-img]: https://img.shields.io/david/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=3600
+[deps-img]: https://img.shields.io/david/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [deps-url]: https://david-dm.org/codesandcoffees/common-utils-pkg
-[devdeps-img]: https://img.shields.io/david/dev/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=3600
+[devdeps-img]: https://img.shields.io/david/dev/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [devdeps-url]: https://david-dm.org/codesandcoffees/common-utils-pkg?type=dev
-[downloads-img]: https://img.shields.io/npm/dm/common-utils-pkg.svg?style=flat-square&maxAge=3600
+[downloads-img]: https://img.shields.io/npm/dm/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [downloads-url]: https://npmcharts.com/compare/common-utils-pkg?minimal=true
-[issues-img]: https://img.shields.io/github/issues/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=3600
+[issues-img]: https://img.shields.io/github/issues/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [issues-url]: https://github.com/codesandcoffees/common-utils-pkg/issues
-[node-img]: https://img.shields.io/node/v/common-utils-pkg.svg?style=flat-square&maxAge=3600
+[node-img]: https://img.shields.io/node/v/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [node-url]: https://nodejs.org/en/
-[npm-img]: https://img.shields.io/npm/v/common-utils-pkg.svg?style=flat-square&maxAge=3600
+[npm-img]: https://img.shields.io/npm/v/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [npm-url]: https://www.npmjs.com/package/common-utils-pkg
-[pr-img]: https://img.shields.io/github/issues-pr/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=3600
+[pr-img]: https://img.shields.io/github/issues-pr/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [pr-url]: https://github.com/codesandcoffees/common-utils-pkg/pulls
-[travis-img]: https://img.shields.io/travis/codesandcoffees/common-utils-pkg/master.svg?style=flat-square&maxAge=3600
+[travis-img]: https://img.shields.io/travis/codesandcoffees/common-utils-pkg/master.svg?style=flat-square&maxAge=86400
 [travis-url]: https://travis-ci.com/codesandcoffees/common-utils-pkg
-[codecov-img]: https://img.shields.io/codecov/c/github/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=3600
+[codecov-img]: https://img.shields.io/codecov/c/github/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [codecov-url]: https://codecov.io/gh/codesandcoffees/common-utils-pkg
-[forks-img]: https://img.shields.io/github/forks/codesandcoffees/common-utils-pkg.svg?style=social&label=Fork&maxAge=3600
+[forks-img]: https://img.shields.io/github/forks/codesandcoffees/common-utils-pkg.svg?style=social&label=Fork&maxAge=86400
 [forks-url]: https://github.com/codesandcoffees/common-utils-pkg/network/members
-[stars-img]: https://img.shields.io/github/stars/codesandcoffees/common-utils-pkg.svg?style=social&label=Stars&maxAge=3600
+[stars-img]: https://img.shields.io/github/stars/codesandcoffees/common-utils-pkg.svg?style=social&label=Stars&maxAge=86400
 [stars-url]: https://github.com/codesandcoffees/common-utils-pkg/stargazers
