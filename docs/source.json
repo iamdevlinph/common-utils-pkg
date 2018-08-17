@@ -122,7 +122,7 @@
           "column": 66
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/array/utils/strToArray.js"
+      "file": "/mnt/e/common-utils-pkg/src/array/methods/strToArray.js"
     },
     "augments": [],
     "examples": [
@@ -585,7 +585,7 @@
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/boolean/utils/toBool.js"
+      "file": "/mnt/e/common-utils-pkg/src/boolean/methods/toBool.js"
     },
     "augments": [],
     "examples": [
@@ -914,7 +914,7 @@
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/color/utils/invertHexColor.js"
+      "file": "/mnt/e/common-utils-pkg/src/color/methods/invertHexColor.js"
     },
     "augments": [],
     "examples": [
@@ -1170,7 +1170,7 @@
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/color/utils/randomPastelColor.js"
+      "file": "/mnt/e/common-utils-pkg/src/color/methods/randomPastelColor.js"
     },
     "augments": [],
     "examples": [
@@ -1383,7 +1383,7 @@
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/core/utils/argTypesMatch.js"
+      "file": "/mnt/e/common-utils-pkg/src/core/methods/argTypesMatch.js"
     },
     "augments": [],
     "examples": [
@@ -1722,7 +1722,7 @@
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/file/utils/convertBytes.js"
+      "file": "/mnt/e/common-utils-pkg/src/file/methods/convertBytes.js"
     },
     "augments": [],
     "examples": [
@@ -2042,7 +2042,7 @@
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/key/utils/guid.js"
+      "file": "/mnt/e/common-utils-pkg/src/key/methods/guid.js"
     },
     "augments": [],
     "examples": [
@@ -2256,7 +2256,7 @@
           "column": 64
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/string/utils/arrToString.js"
+      "file": "/mnt/e/common-utils-pkg/src/string/methods/arrToString.js"
     },
     "augments": [],
     "examples": [
@@ -2583,7 +2583,7 @@
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/string/utils/toSentenceCase.js"
+      "file": "/mnt/e/common-utils-pkg/src/string/methods/toSentenceCase.js"
     },
     "augments": [],
     "examples": [
@@ -2849,7 +2849,7 @@
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/string/utils/toTitleCase.js"
+      "file": "/mnt/e/common-utils-pkg/src/string/methods/toTitleCase.js"
     },
     "augments": [],
     "examples": [

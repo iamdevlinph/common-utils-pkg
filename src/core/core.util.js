@@ -1,5 +1,5 @@
-import argTypesMatch from './utils/argTypesMatch';
-import takes from './utils/takes';
+import argTypesMatch from './methods/argTypesMatch';
+import takes from './methods/takes';
 
 const CoreUtil = {
   argTypesMatch,

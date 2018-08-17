@@ -1,4 +1,4 @@
-import toBool from './utils/toBool';
+import toBool from './methods/toBool';
 
 const BoolUtil = {
   toBool
