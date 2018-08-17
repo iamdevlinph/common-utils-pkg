@@ -56,6 +56,7 @@ Read more about the usage [here](https://codesandcoffees.github.io/common-utils-
 * ColorUtil
 * CoreUtil
 * FileUtil
+* KeyUtil
 * StringUtil
 
 Read more about the methods available [here](https://codesandcoffees.github.io/common-utils-pkg/docs.html)

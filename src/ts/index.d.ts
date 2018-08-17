@@ -25,6 +25,10 @@ export namespace FileUtil {
   export function convertBytes(bytes: number, demicals?: number): string
 }
 
+export namespace FileUtil {
+  export function guid(): string
+}
+
 export namespace StringUtil {
   export function arrToString(array: Array<string>, delimiter: string): string
   export function toSentenceCase(string: string): string
