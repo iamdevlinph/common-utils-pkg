@@ -42,6 +42,10 @@ ul {
   margin-top: 30px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* main page */
 
 .home-page {

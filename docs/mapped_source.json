@@ -140,6 +140,20 @@
       "utilArgs": "convertBytes(bytes, [decimals])"
     }
   ],
+  "KeyUtil": [
+    {
+      "description": "Generates a GUID.",
+      "args": [],
+      "module": "KeyUtil",
+      "util": "guid",
+      "returns": {
+        "desc": "guid string",
+        "type": "String"
+      },
+      "example": "KeyUtil.guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\"",
+      "utilArgs": "guid()"
+    }
+  ],
   "StringUtil": [
     {
       "description": "Convert an array to a string and combine on the delimiter passed.",
