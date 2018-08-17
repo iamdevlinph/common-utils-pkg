@@ -35,7 +35,7 @@
         utilSection.innerHTML = '<h5 class="util__func" id="' + val.util + '">' + val.utilArgs + '</h5>' +
         '<hr class="divider--fade" />' +
         '<p class="util__desc">' + val.description + '</p>' +
-        '<div class="util__section arg">' +
+        '<div class="util__section arg ' + (val.args.length > 0 ? '' : 'hidden') + '">' +
           '<span class="bold">Arguments</span>' +
           '<ul class="arg__list">' +
             formatArgs(val.args) +
