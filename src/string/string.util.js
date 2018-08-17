@@ -1,8 +1,8 @@
 import CoreUtil from '../core/core.util';
 
-import arrToString from './utils/arrToString';
-import toSentenceCase from './utils/toSentenceCase';
-import toTitleCase from './utils/toTitleCase';
+import arrToString from './methods/arrToString';
+import toSentenceCase from './methods/toSentenceCase';
+import toTitleCase from './methods/toTitleCase';
 
 const StringUtil = {
   arrToString: CoreUtil.takes(arrToString, 'array'),

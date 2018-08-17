@@ -1,6 +1,6 @@
 import CoreUtil from '../core/core.util';
 
-import strToArray from './utils/strToArray';
+import strToArray from './methods/strToArray';
 
 const ArrayUtil = {
   strToArray: CoreUtil.takes(strToArray, 'string')

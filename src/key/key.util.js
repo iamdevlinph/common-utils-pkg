@@ -1,4 +1,4 @@
-import guid from './utils/guid';
+import guid from './methods/guid';
 
 const KeyUtil = {
   guid
