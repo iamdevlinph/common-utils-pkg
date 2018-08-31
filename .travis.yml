@@ -15,3 +15,9 @@ branches:
 cache:
   directories:
     - "node_modules"
+deploy:
+  - provider: npm
+    email: iamdevlinph@gmail.com
+    api_key: mos6XhsuyTJL8lOmZcsuWNaFM+ZB84dZ6Frz1ANc2XKBIOBIbZN3KXWg2Ut9sxdUOTDS64NRnfZp8eQaGstgUPK/AhTIojmsgH1YgcQEHCX65JCxFWM+HyN5rX1DbDDLyTG/M2LPNZjjCovi+nTi+AZO7rqQy5KUFf+J3iUezyTPqOVJGyVlNGIjkq1v2nMNpYO2ztHv0AnvoeBw8wV0qG8sq1taBph327MHU2ru56u1/AuLPnVcqK01EydyKtjhSp1gj9FaZdYwDGaKoDRHM3gPm57To2qDYdfOhbdAh6R/YDHOaRHTyQmNChz7evNM4qpWER9CvXEfd2qH1m8WXknG1TTAmXthPo/U+X/OGhm9erRyG0JjP5f9eyu0twVdhsyOUXEInbyS1ahEwynjVLypwOSTZpO9I6Qok/5nYR04zC52K/a5hcfVMyAbbgprJWpbG2/eX3RdPmhAC8gPBJZCSoVglAqcyZkrPfJARPzb3/b/ZgI1qU45azmtcBEX7ZOqXeFkZyXQkmZ0bEU263ccaO9t6VvK0zAeGvVAZpxK4mCLEklkm9lmBdGwU87AMwJyc71THxu9ZBPZHfIdlK7XwbkOmWPNsKtDF/zfby5I7pCBqPjvWk/ibfoPknZFv/KjlQ3RZFXwV15lssQRvJ157+sra1y1sQZhLkxHTJ8=
+    on:
+      branch: master
