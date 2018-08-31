@@ -68,5 +68,11 @@
     "description": [
       "Changes to shield badge maxAge"
     ]
+  },
+  {
+    "version": "1.7.1",
+    "description": [
+      "Add ColorUtil.brightness"
+    ]
   }
 ]

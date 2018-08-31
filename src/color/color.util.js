@@ -1,9 +1,11 @@
 import CoreUtil from '../core/core.util';
 
+import brightness from './methods/brightness';
 import invertHexColor from './methods/invertHexColor';
 import randomPastelColor from './methods/randomPastelColor';
 
 const ColorUtil = {
+  brightness,
   invertHexColor: CoreUtil.takes(invertHexColor, 'string'),
   randomPastelColor
 };

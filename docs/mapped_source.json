@@ -55,6 +55,31 @@
   ],
   "ColorUtil": [
     {
+      "description": "Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.",
+      "args": [
+        {
+          "description": "HEX color to change brightness",
+          "param": "hex",
+          "type": "String",
+          "optional": false
+        },
+        {
+          "description": "positive or negative percentage",
+          "param": "amount",
+          "type": "Number",
+          "optional": false
+        }
+      ],
+      "module": "ColorUtil",
+      "util": "brightness",
+      "returns": {
+        "desc": "Returns a manipulated HEX color",
+        "type": "String"
+      },
+      "example": "ColorUtil.brightness('#3CB878', 50);\n// => '#6EEAAA'\n\nColorUtil.brightness('#3CB878', -50);\n// => '#A8646'",
+      "utilArgs": "brightness(hex, amount)"
+    },
+    {
       "description": "Inverts a HEX color.",
       "args": [
         {
