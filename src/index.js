@@ -5,6 +5,7 @@ import CoreUtil from './core/core.util';
 import DateUtil from './date/date.util';
 import FileUtil from './file/file.util';
 import KeyUtil from './key/key.util';
+import ObjectUtil from './object/object.util';
 import StringUtil from './string/string.util';
 
 export {
@@ -15,5 +16,6 @@ export {
   DateUtil,
   FileUtil,
   KeyUtil,
+  ObjectUtil,
   StringUtil
 };
