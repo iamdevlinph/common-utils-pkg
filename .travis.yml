@@ -6,8 +6,16 @@ script:
   - npm run lint
   - npm run cover
   - npm run build
+  - npm run docu
 deploy:
-  provider: npm
+- provider: pages
+  local-dir: docs
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  on:
+    branch: master
+- provider: npm
   email: iamdevlinph@gmail.com
   api_key:
     secure: HNj4UWd4PDG7NaUpaPTqYsIXMPRInoKY+LK2cIhuH+FsD/YBbyrbym+DCDsyJwVUsXbDqp13uQVBLVwwPfueDFcwuz2YMbqzHmvp5WjijoJbOrcSbCWxwk02jBAnjdKgfk+uIrubuT50S7XFJaZU+Xqq3t3ziceYCA9rKUo/tyJl4dQwwRlms0TmYIB8RGtrQixv5UGiTLNoA9MvM0aLqkXaCf5uXfzxu7UR4qqOYW7a+u3m3Wrv3QmVumqZPIB/HJBActwzoUth30CxeVfd7Qa91n1iz/cdyX8PiSePI9BD3lEuAlJrDs5EWvN4oKt60wI+dRqftuspXwhUQ9B/IuJirsk/hLW/jtpWTTWvxE1CM5YwaMfypKaCM1AULCplLb/1t3wAQMfstRC0+KseZhwUEk011rem/aojSL2rvZffDyM147/nUnzviP1Y4V32lZxCQAaEMHx+vKNZYECFbxWdwlGRR1vLiS6CUZn1KD8qEf7XROWEW2xysyrulSVkTzpHZnGf6hV7ip1wf7XOFQAQ2TXvhBmna/hKTOjIQNe2N0HveLEeCFP6o7LG3gSe/bqXDNRH6WMVvNUjF2bmpDkW+nPrUCRsBpk7LfXc5OIBa30rog0FbqYTFyrJmQC9n1ocnHC9HqYMu9TyvPFfP2QfPVEqb8fVvw4QO1nkWcQ=
