@@ -1,5 +1,6 @@
 before_install:
   - npm i -g codecov
+  - rm package-lock.json
 install:
   - npm i
 script:
