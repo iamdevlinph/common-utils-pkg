@@ -13,6 +13,3 @@ coverage
 */_site
 */.sass-cache
 */.jekyll-metadata
-
-# npm
-package-lock.json

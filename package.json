@@ -87,6 +87,6 @@
   },
   "homepage": "https://common-utils-pkg.js.org/",
   "engines": {
-    "node": "8.11.3"
+    "node": "> 8"
   }
 }
