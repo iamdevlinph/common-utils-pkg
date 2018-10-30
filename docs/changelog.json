@@ -74,5 +74,11 @@
     "description": [
       "Add ColorUtil.brightness"
     ]
+  },
+  {
+    "version": "1.7.2",
+    "description": [
+      "Travis"
+    ]
   }
 ]

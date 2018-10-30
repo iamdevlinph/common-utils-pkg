@@ -1,6 +1,3 @@
-language: node_js
-node_js:
-  - '8'
 before_install:
   - npm i -g codecov
 install:
@@ -9,17 +6,20 @@ script:
   - npm run lint
   - npm run cover
   - npm run build
-branches:
-  only:
-    - master
-cache:
-  directories:
-    - node_modules
+  - npm run docu
 deploy:
-  provider: npm
+- provider: pages
+  local-dir: docs
   skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  on:
+    branch: master
+- provider: npm
   email: iamdevlinph@gmail.com
   api_key:
-    secure: UHCPYmmPPW2lzznKXn+pLmy3Ncfa8EPwm9X9DuoT56a3CSNIyXrbmHRp2gTmUxE24TNneLA5zHn/kZ9lo1VXIky8WN2qGDO4yojHEGoedeei8pS2hXcQlqqVXOMHypp+10Syfd15+Bo0zkUwR26shZ0y3omEXdgncn7Vcz8a+15EOC1uOnk0J4FHmQlhxKpH/lwo1yI+Nm0dAEJKAkujKQFKMdpI3Wcm9l5POUEJXRo0Um6V4qWrbF2Ukt760tkawPCy8GJ+PoQcSUaE7bUhHZWRUa0O7IM/87iWOZMjVXsh9EPDUZ/67HYgIej1pATvJC64bUnfKMdowUdE6ezZiFYRMYSQDy1lTk65kxY0YxW8McHl3Cfi7qDlQseJkKyXX56k+rPcgVH5dfWTx0M0TexodktG50RNwqpFeQSFmm7BgQy17NEjXuURpIT9xnmc4dyc+4YNZ8HdIFumoouqm/uE2WhSVEnQLSxu0VHRivC7zlNN2bebdfDAOjPGeLLtkPQr1MFSNbiwsoytvOKAhemXnLp7QAQx5i10dRBpgKSR/9AAZeQ+1HPQma3LlKCTV5deaqRVOT5paxH6cv+StkMyywoHrx7nzLqJTbss/0AQqTk/oj03IGjVWziBOZ3+fe0boMguTLApErGZhg4R0W0ZDsDGkgfosbunuC9fzmc=
+    secure: HNj4UWd4PDG7NaUpaPTqYsIXMPRInoKY+LK2cIhuH+FsD/YBbyrbym+DCDsyJwVUsXbDqp13uQVBLVwwPfueDFcwuz2YMbqzHmvp5WjijoJbOrcSbCWxwk02jBAnjdKgfk+uIrubuT50S7XFJaZU+Xqq3t3ziceYCA9rKUo/tyJl4dQwwRlms0TmYIB8RGtrQixv5UGiTLNoA9MvM0aLqkXaCf5uXfzxu7UR4qqOYW7a+u3m3Wrv3QmVumqZPIB/HJBActwzoUth30CxeVfd7Qa91n1iz/cdyX8PiSePI9BD3lEuAlJrDs5EWvN4oKt60wI+dRqftuspXwhUQ9B/IuJirsk/hLW/jtpWTTWvxE1CM5YwaMfypKaCM1AULCplLb/1t3wAQMfstRC0+KseZhwUEk011rem/aojSL2rvZffDyM147/nUnzviP1Y4V32lZxCQAaEMHx+vKNZYECFbxWdwlGRR1vLiS6CUZn1KD8qEf7XROWEW2xysyrulSVkTzpHZnGf6hV7ip1wf7XOFQAQ2TXvhBmna/hKTOjIQNe2N0HveLEeCFP6o7LG3gSe/bqXDNRH6WMVvNUjF2bmpDkW+nPrUCRsBpk7LfXc5OIBa30rog0FbqYTFyrJmQC9n1ocnHC9HqYMu9TyvPFfP2QfPVEqb8fVvw4QO1nkWcQ=
   on:
+    tags: true
+    repo: codesandcoffees/common-utils-pkg
     branch: master
