@@ -5,6 +5,7 @@
   "main": "./lib/common-utils-pkg.min.js",
   "types": "./lib/index.d.ts",
   "devDependencies": {
+    "@babel/core": "7.1.2",
     "babel-core": "6.26.3",
     "babel-eslint": "8.2.6",
     "babel-loader": "7.1.5",
