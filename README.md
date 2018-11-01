@@ -15,7 +15,7 @@ A package of commonly used utilities.
 
 #### Repo Details
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/codesandcoffees/common-utils-pkg.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/codesandcoffees/common-utils-pkg.svg?style=flat-square)](https://greenkeeper.io/)
 [![open issues][issues-img]][issues-url]
 [![open prs][pr-img]][pr-url]
 ![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400)
