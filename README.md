@@ -1,5 +1,7 @@
 # Common Utilities Package
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/codesandcoffees/common-utils-pkg.svg)](https://greenkeeper.io/)
+
 A package of commonly used utilities.
 
 [Site](https://codesandcoffees.github.io/common-utils-pkg/) | [Docs](https://codesandcoffees.github.io/common-utils-pkg/docs.html)
