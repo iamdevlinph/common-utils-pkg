@@ -80,5 +80,12 @@
     "description": [
       "Travis"
     ]
+  },
+  {
+    "version": "1.7.3",
+    "description": [
+      "Update dependencies",
+      "Add greenkeeper"
+    ]
   }
 ]
