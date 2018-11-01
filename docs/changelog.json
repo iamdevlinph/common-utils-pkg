@@ -87,5 +87,11 @@
       "Update dependencies",
       "Add greenkeeper"
     ]
+  },
+  {
+    "version": "1.7.4",
+    "description": [
+      "Fix npm deploy from travis"
+    ]
   }
 ]
