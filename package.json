@@ -41,10 +41,14 @@
     "docu": "node_modules/documentation/bin/documentation.js build src/index.js -f json > docs/source.json && node scripts/documentation.js",
     "lint:install": "npm i lint-staged husky",
     "lint": "node_modules/eslint/bin/eslint.js src/",
-    "precommit": "lint-staged",
     "prepare": "npm run lint && npm run cover && npm run build",
     "test:watch": "mocha --require @babel/register --colors -w src/**/specs/*.spec.js",
     "test": "mocha --require @babel/register --colors src/**/specs/*.spec.js"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": [
