@@ -15,6 +15,8 @@ deploy:
   github-token: "$GITHUB_TOKEN"
   keep-history: true
   on:
+    tags: true
+    repo: codesandcoffees/common-utils-pkg
     branch: master
 - provider: npm
   email: iamdevlinph@gmail.com
