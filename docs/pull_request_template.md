@@ -1,5 +1,4 @@
 - [ ] This PR will add a **new utility**
-- [ ] **Bump package version to minor 1.x.0**
 - [ ] **Added the Utility name** under `Available Utilities` in [README.md](../README.md)
 - [ ] **Created and exported a main utility file** under `src/<utility_name>/<utility-name>.util.js`
 - [ ] **Imported the Utility** in the [entry js file](../src/index.js)
@@ -15,5 +14,5 @@
 
 ----
 
-- [ ] **Bump package version to patch 1.1.x**
+- [ ] **Bump package version to patch 1.1.x (minor) OR 1.x.0 (patch)**
 - [ ] Update the [changelog.json](./changelog.json)
