@@ -7,7 +7,6 @@
 ----
 
 - [ ] This PR will add a **new method**
-- [ ] **Bump package version to patch 1.1.x**
 - [ ] **Created and exported a method file** under `src/<utility_name>/methods/<method_name>.js`
 - [ ] **Imported the method file** in the main utility file under `src/<utility_name>/<utility-name>.util.js`
 - [ ] **Created a test** under `src/<utility_name>/specs/<method_name>.spec.js`
@@ -16,4 +15,5 @@
 
 ----
 
+- [ ] **Bump package version to patch 1.1.x**
 - [ ] Update the [changelog.json](./changelog.json)
