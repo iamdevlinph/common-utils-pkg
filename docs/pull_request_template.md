@@ -7,8 +7,8 @@
 
 - [ ] This PR will add a **new method**
 - [ ] **Created and exported a method file** under `src/<utility_name>/methods/<method_name>.js`
-- [ ] **Created a test** under `src/<utility_name>/specs/<method_name>.spec.js`
 - [ ] **Added jsdoc comments** in the method file
+- [ ] **Created a test** under `src/<utility_name>/specs/<method_name>.spec.js`
 - [ ] **Imported the method file** in the main utility file under `src/<utility_name>/<utility-name>.util.js`
 - [ ] **Generate docs**
 
