@@ -23,4 +23,3 @@ deploy:
   on:
     tags: true
     repo: codesandcoffees/common-utils-pkg
-    branch: master
