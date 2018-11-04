@@ -179,6 +179,27 @@
       "utilArgs": "guid()"
     }
   ],
+  "ObjectUtil": [
+    {
+      "description": "Check if a given object is empty.",
+      "args": [
+        {
+          "description": "object to check",
+          "param": "object",
+          "type": "Object",
+          "optional": false
+        }
+      ],
+      "module": "ObjectUtil",
+      "util": "isEmpty",
+      "returns": {
+        "desc": "Returns a boolean if the object is empty or not.",
+        "type": "Boolean"
+      },
+      "example": "ObjectUtil.isEmpty({});\n// => true\n\nObjectUtil.isEmpty({ a: 1 });\n// => false",
+      "utilArgs": "isEmpty(object)"
+    }
+  ],
   "StringUtil": [
     {
       "description": "Convert an array to a string and combine on the delimiter passed.",
