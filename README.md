@@ -59,6 +59,7 @@ Read more about the usage [here](https://codesandcoffees.github.io/common-utils-
 * FileUtil
 * KeyUtil
 * ObjectUtil
+* StorageUtil
 * StringUtil
 
 Read more about the methods available [here](https://codesandcoffees.github.io/common-utils-pkg/docs.html)

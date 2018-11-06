@@ -40,21 +40,21 @@
           '<ul class="arg__list">' +
             formatArgs(val.args) +
           '</ul>' +
-        '</div>' +
+        '</div>' + (val.returns ?
         '<div class="util__section return">' +
           '<span class="bold">Returns</span>' +
           '<p class="">' +
             '<span class="return__type">(' + val.returns.type + ') </span>' +
             '<span class="return__desc">' + val.returns.desc + '</span>' +
           '</p>' +
-        '</div>' +
+        '</div>' : '') + (val.example ?
         '<div class="util__section example">' +
           '<span class="bold">Example</span>' +
           '<pre class="example__code">' +
             '<code class="javascript hljs">' + val.example +
             '</code>' +
           '</pre>' +
-        '</div>';
+        '</div>' : '');
         target.appendChild(utilSection);
 
         // populate the ul with the child list
