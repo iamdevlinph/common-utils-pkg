@@ -31,7 +31,9 @@
     "webpack-cli": "3.1.2",
     "yargs": "12.0.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lz-string": "1.4.4"
+  },
   "scripts": {
     "build:clean": "rimraf lib",
     "build": "npm run build:clean && webpack --env dev && webpack --env build && cp -r src/ts/* lib/",
@@ -92,6 +94,6 @@
   },
   "homepage": "https://common-utils-pkg.js.org/",
   "engines": {
-    "node": "> 8"
+    "node": ">= 8"
   }
 }
