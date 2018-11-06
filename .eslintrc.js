@@ -1,7 +1,8 @@
 module.exports = {
   "extends": "airbnb-base",
   "globals": {
-    "arguments": true
+    "arguments": true,
+    "window": true
   },
   "rules": {
     // generic rules
