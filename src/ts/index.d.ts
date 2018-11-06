@@ -11,6 +11,7 @@ export namespace BoolUtil {
 }
 
 export namespace ColorUtil {
+  export function brightness(hex: string, amount: number): string
   export function invertHexColor(hex: string): string
   export function randomColorPastel(): string
 }
@@ -25,8 +26,19 @@ export namespace FileUtil {
   export function convertBytes(bytes: number, demicals?: number): string
 }
 
-export namespace FileUtil {
+export namespace KeyUtil {
   export function guid(): string
+}
+
+export namespace ObjectUtil {
+  export function isEmpty(object: object): boolean
+}
+
+export namespace StorageUtil {
+  export function clearAll()
+  export function getItem(key: string): any
+  export function removeItem(key: string)
+  export function setItem(key: string, data: any)
 }
 
 export namespace StringUtil {
