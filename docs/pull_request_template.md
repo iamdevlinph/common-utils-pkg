@@ -10,6 +10,7 @@
 - [ ] **Added jsdoc comments** in the method file
 - [ ] **Created a test** under `src/<utility_name>/specs/<method_name>.spec.js`
 - [ ] **Imported the method file** in the main utility file under `src/<utility_name>/<utility-name>.util.js`
+- [ ] **Add entry in the typings**
 - [ ] **Generate docs**
 
 ----
