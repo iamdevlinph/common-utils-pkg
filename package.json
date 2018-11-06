@@ -1,7 +1,7 @@
 {
   "name": "common-utils-pkg",
   "version": "1.8.0",
-  "description": "A package of commonly used utilities",
+  "description": "A package of commonly used JavaScript utilities.",
   "main": "./lib/common-utils-pkg.min.js",
   "types": "./lib/index.d.ts",
   "devDependencies": {

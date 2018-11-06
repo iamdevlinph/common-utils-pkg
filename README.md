@@ -1,6 +1,6 @@
 # Common Utilities Package
 
-A package of commonly used utilities.
+A package of commonly used JavaScript utilities.
 
 [Site](https://codesandcoffees.github.io/common-utils-pkg/) | [Docs](https://codesandcoffees.github.io/common-utils-pkg/docs.html)
 
