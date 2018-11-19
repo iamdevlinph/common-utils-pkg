@@ -11,7 +11,7 @@ chai.expect();
 
 const { expect } = chai;
 
-describe('clear', () => {
+describe('removeItem', () => {
   before(() => {
     StorageUtil.clear();
     StorageUtil.setItem('a', 1);
