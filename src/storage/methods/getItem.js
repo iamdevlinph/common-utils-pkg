@@ -6,7 +6,7 @@ import LZString from 'lz-string';
  * @module StorageUtil
  * @name getItem
  * @param {String} key key to retrieve
- * @returns {*} Returns data from the local storage.
+ * @returns {Any} Returns data from the local storage.
  * @example
  *
  * StorageUtil.getItem('key');

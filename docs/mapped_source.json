@@ -222,7 +222,8 @@
       "module": "StorageUtil",
       "util": "getItem",
       "returns": {
-        "desc": "Returns data from the local storage."
+        "desc": "Returns data from the local storage.",
+        "type": "Any"
       },
       "example": "StorageUtil.getItem('key');",
       "utilArgs": "getItem(key)"

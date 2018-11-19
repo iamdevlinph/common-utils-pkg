@@ -2943,7 +2943,8 @@
         "description": "Returns data from the local storage.",
         "lineNumber": 6,
         "type": {
-          "type": "AllLiteral"
+          "type": "NameExpression",
+          "name": "Any"
         }
       },
       {
@@ -3101,7 +3102,8 @@
         },
         "title": "returns",
         "type": {
-          "type": "AllLiteral"
+          "type": "NameExpression",
+          "name": "Any"
         }
       }
     ],
