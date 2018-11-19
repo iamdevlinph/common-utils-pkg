@@ -26,6 +26,12 @@ const brightness = (hex, amount) => {
     usePound = true;
   }
 
+  // if no amount then return hex as is
+  // reverse logic for pouund symbol since it is spliced on previous statement
+  if (!amount) {
+    return `${!usePound ? '#' : ''}${hex}`;
+  }
+
   const num = parseInt(col, 16);
 
   let r = (num >> 16) + amount;

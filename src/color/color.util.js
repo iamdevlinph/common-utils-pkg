@@ -5,7 +5,7 @@ import invertHexColor from './methods/invertHexColor';
 import randomPastelColor from './methods/randomPastelColor';
 
 const ColorUtil = {
-  brightness,
+  brightness: CoreUtil.takes(brightness, 'string'),
   invertHexColor: CoreUtil.takes(invertHexColor, 'string'),
   randomPastelColor
 };

@@ -200,6 +200,71 @@
       "utilArgs": "isEmpty(object)"
     }
   ],
+  "StorageUtil": [
+    {
+      "description": "Removes all data stored in the local storage.",
+      "args": [],
+      "module": "StorageUtil",
+      "util": "clear",
+      "example": "StorageUtil.clear();",
+      "utilArgs": "clear()"
+    },
+    {
+      "description": "Retrieves data from the local storage.",
+      "args": [
+        {
+          "description": "key to retrieve",
+          "param": "key",
+          "type": "String",
+          "optional": false
+        }
+      ],
+      "module": "StorageUtil",
+      "util": "getItem",
+      "returns": {
+        "desc": "Returns data from the local storage.",
+        "type": "Any"
+      },
+      "example": "StorageUtil.getItem('key');",
+      "utilArgs": "getItem(key)"
+    },
+    {
+      "description": "Removes an entry from the local storage.",
+      "args": [
+        {
+          "description": "key of the entry to remove",
+          "param": "key",
+          "type": "String",
+          "optional": false
+        }
+      ],
+      "module": "StorageUtil",
+      "util": "removeItem",
+      "example": "StorageUtil.removeItem('key');",
+      "utilArgs": "removeItem(key)"
+    },
+    {
+      "description": "Stores data to the local storage.",
+      "args": [
+        {
+          "description": "name of the entry",
+          "param": "key",
+          "type": "String",
+          "optional": false
+        },
+        {
+          "description": "data to store in the local storage",
+          "param": "data",
+          "type": "*",
+          "optional": false
+        }
+      ],
+      "module": "StorageUtil",
+      "util": "setItem",
+      "example": "StorageUtill.setItem('key', data);",
+      "utilArgs": "setItem(key, data)"
+    }
+  ],
   "StringUtil": [
     {
       "description": "Convert an array to a string and combine on the delimiter passed.",
