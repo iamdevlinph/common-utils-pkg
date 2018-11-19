@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.9.0",
+    "description": [
+      "Add StorageUtil.clear()",
+      "Add StorageUtil.getItem()",
+      "Add StorageUtil.removeItem()",
+      "Add StorageUtil.setItem()"
+    ]
+  },
+  {
     "version": "1.8.0",
     "description": [
       "Add ObjectUtil.isEmpty()"
