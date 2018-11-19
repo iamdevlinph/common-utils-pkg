@@ -8,6 +8,6 @@
  *
  * StorageUtil.removeItem('key');
  */
-const removeItem = key => window.location.removeItem(key);
+const removeItem = key => window.localStorage.removeItem(key);
 
 export default removeItem;
