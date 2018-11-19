@@ -205,9 +205,9 @@
       "description": "Removes all data stored in the local storage.",
       "args": [],
       "module": "StorageUtil",
-      "util": "clearAll",
-      "example": "StorageUtil.clearAll();",
-      "utilArgs": "clearAll()"
+      "util": "clear",
+      "example": "StorageUtil.clear();",
+      "utilArgs": "clear()"
     },
     {
       "description": "Retrieves data from the local storage.",

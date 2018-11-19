@@ -2801,11 +2801,11 @@
         "title": "name",
         "description": null,
         "lineNumber": 4,
-        "name": "clearAll"
+        "name": "clear"
       },
       {
         "title": "example",
-        "description": "StorageUtil.clearAll();",
+        "description": "StorageUtil.clear();",
         "lineNumber": 5
       }
     ],
@@ -2827,15 +2827,15 @@
         },
         "end": {
           "line": 11,
-          "column": 47
+          "column": 48
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/storage/methods/clearAll.js"
+      "file": "/mnt/e/common-utils-pkg/src/storage/methods/clear.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "StorageUtil.clearAll();"
+        "description": "StorageUtil.clear();"
       }
     ],
     "params": [],
@@ -2845,7 +2845,7 @@
     "throws": [],
     "todos": [],
     "kind": "module",
-    "name": "clearAll",
+    "name": "clear",
     "members": {
       "global": [],
       "inner": [],
@@ -2855,11 +2855,11 @@
     },
     "path": [
       {
-        "name": "clearAll",
+        "name": "clear",
         "kind": "module"
       }
     ],
-    "namespace": "clearAll"
+    "namespace": "clear"
   },
   {
     "description": {
@@ -2970,7 +2970,7 @@
         },
         "end": {
           "line": 14,
-          "column": 73
+          "column": 77
         }
       },
       "file": "/mnt/e/common-utils-pkg/src/storage/methods/getItem.js"
@@ -3226,7 +3226,7 @@
         },
         "end": {
           "line": 11,
-          "column": 58
+          "column": 62
         }
       },
       "file": "/mnt/e/common-utils-pkg/src/storage/methods/removeItem.js"
