@@ -3,6 +3,7 @@
 
 /**
  * Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.
+ * Will always return with # symbol.
  *
  * @module ColorUtil
  * @name brightness
@@ -18,18 +19,15 @@
  * // => '#A8646'
  */
 const brightness = (hex, amount) => {
-  let usePound = false;
   let col = hex;
 
   if (col[0] == '#') {
     col = col.slice(1);
-    usePound = true;
   }
 
   // if no amount then return hex as is
-  // reverse logic for pouund symbol since it is spliced on previous statement
   if (!amount) {
-    return `${!usePound ? '#' : ''}${hex}`;
+    return `#${col}`;
   }
 
   const num = parseInt(col, 16);
@@ -51,7 +49,7 @@ const brightness = (hex, amount) => {
 
   // pad 0's to the left to make it a valid 6 character hex
   // issue pointed out in the comments under the source code
-  return ((usePound ? '#' : '') + (g | (b << 8) | (r << 16)).toString(16).padStart(6, 0)).toUpperCase();
+  return (`#${(g | (b << 8) | (r << 16)).toString(16).padStart(6, 0)}`).toUpperCase();
 };
 
 export default brightness;

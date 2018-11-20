@@ -55,7 +55,7 @@
   ],
   "ColorUtil": [
     {
-      "description": "Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.",
+      "description": "Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.\nWill always return with # symbol.",
       "args": [
         {
           "description": "HEX color to change brightness",
