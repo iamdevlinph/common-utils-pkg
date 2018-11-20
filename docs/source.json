@@ -810,7 +810,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.",
+              "value": "Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.\nWill always return with # symbol.",
               "position": {
                 "start": {
                   "line": 1,
@@ -818,11 +818,13 @@
                   "offset": 0
                 },
                 "end": {
-                  "line": 1,
-                  "column": 105,
-                  "offset": 104
+                  "line": 2,
+                  "column": 34,
+                  "offset": 138
                 },
-                "indent": []
+                "indent": [
+                  1
+                ]
               }
             }
           ],
@@ -833,11 +835,13 @@
               "offset": 0
             },
             "end": {
-              "line": 1,
-              "column": 105,
-              "offset": 104
+              "line": 2,
+              "column": 34,
+              "offset": 138
             },
-            "indent": []
+            "indent": [
+              1
+            ]
           }
         }
       ],
@@ -848,9 +852,9 @@
           "offset": 0
         },
         "end": {
-          "line": 1,
-          "column": 105,
-          "offset": 104
+          "line": 2,
+          "column": 34,
+          "offset": 138
         }
       }
     },
@@ -858,20 +862,20 @@
       {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "ColorUtil"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "brightness"
       },
       {
         "title": "param",
         "description": "HEX color to change brightness",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -881,7 +885,7 @@
       {
         "title": "param",
         "description": "positive or negative percentage",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -891,7 +895,7 @@
       {
         "title": "returns",
         "description": "Returns a manipulated HEX color",
-        "lineNumber": 7,
+        "lineNumber": 8,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -900,7 +904,7 @@
       {
         "title": "example",
         "description": "ColorUtil.brightness('#3CB878', 50);\n// => '#6EEAAA'\n\nColorUtil.brightness('#3CB878', -50);\n// => '#A8646'",
-        "lineNumber": 8
+        "lineNumber": 9
       }
     ],
     "loc": {
@@ -909,18 +913,18 @@
         "column": 0
       },
       "end": {
-        "line": 19,
+        "line": 20,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 20,
+          "line": 21,
           "column": 0
         },
         "end": {
-          "line": 55,
+          "line": 53,
           "column": 2
         }
       },
@@ -936,7 +940,7 @@
       {
         "title": "param",
         "name": "hex",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "description": {
           "type": "root",
           "children": [
@@ -997,7 +1001,7 @@
       {
         "title": "param",
         "name": "amount",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "description": {
           "type": "root",
           "children": [

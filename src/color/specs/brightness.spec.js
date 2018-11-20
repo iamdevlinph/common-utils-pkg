@@ -28,10 +28,17 @@ describe('brightness', () => {
 
   it('should lighten a hex color', () => {
     expect(ColorUtil.brightness('#3CB878', 200)).to.be.equal('#FFFFFF');
+    expect(ColorUtil.brightness('#F06D06', 20)).to.be.equal('#FF811A');
   });
 
   it('should darken a hex color', () => {
     expect(ColorUtil.brightness('#3CB878', -200)).to.be.equal('#000000');
+    expect(ColorUtil.brightness('#F06D06', -20)).to.be.equal('#DC5900');
+  });
+
+  it('should prepend a pound if no pound is present', () => {
+    expect(ColorUtil.brightness('F06D06', 20)).to.be.equal('#FF811A');
+    expect(ColorUtil.brightness('F06D06', -20)).to.be.equal('#DC5900');
   });
 
   it('should return the same hex color if no amount passed', () => {
