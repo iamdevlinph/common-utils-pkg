@@ -1,5 +1,11 @@
 [
   {
+    "version": "2.0.1",
+    "description": [
+      "Display method name on takes() error"
+    ]
+  },
+  {
     "version": "2.0.0",
     "description": [
       "Update takes() to accept required and optional arguments"
