@@ -25,11 +25,6 @@ const brightness = (hex, amount) => {
     col = col.slice(1);
   }
 
-  // if no amount then return hex as is
-  if (!amount) {
-    return `#${col}`;
-  }
-
   const num = parseInt(col, 16);
 
   let r = (num >> 16) + amount;

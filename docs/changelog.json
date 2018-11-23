@@ -1,5 +1,11 @@
 [
   {
+    "version": "2.0.0",
+    "description": [
+      "Update takes() to accept required and optional arguments"
+    ]
+  },
+  {
     "version": "1.9.1",
     "description": [
       "Update typings"

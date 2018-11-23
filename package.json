@@ -1,6 +1,6 @@
 {
   "name": "common-utils-pkg",
-  "version": "1.9.1",
+  "version": "2.0.0",
   "description": "A package of commonly used JavaScript utilities.",
   "main": "./lib/common-utils-pkg.min.js",
   "types": "./lib/index.d.ts",
@@ -45,8 +45,8 @@
     "lint:install": "npm i lint-staged husky",
     "lint": "node_modules/eslint/bin/eslint.js src/",
     "prepare": "npm run lint && npm run cover && npm run build",
-    "test:watch": "mocha -r @babel/register -r mock-local-storage --colors -w src/**/specs/*.spec.js",
-    "test": "mocha -r @babel/register -r mock-local-storage --colors src/**/specs/*.spec.js"
+    "test:watch": "node_modules/mocha/bin/_mocha -r @babel/register -r mock-local-storage --colors -w src/**/specs/*.spec.js",
+    "test": "node_modules/mocha/bin/_mocha -r @babel/register -r mock-local-storage --colors src/**/specs/*.spec.js"
   },
   "husky": {
     "hooks": {

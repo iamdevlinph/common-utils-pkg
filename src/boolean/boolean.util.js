@@ -1,7 +1,13 @@
+import CoreUtil from '../core/core.util';
+
 import toBool from './methods/toBool';
 
 const BoolUtil = {
-  toBool
+  toBool: CoreUtil.takes(
+    toBool,
+    { 0: 'any' },
+    { 1: 'array' }
+  )
 };
 
 export default BoolUtil;
