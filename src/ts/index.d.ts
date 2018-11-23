@@ -7,7 +7,7 @@ export namespace ArrayUtil {
 }
 
 export namespace BoolUtil {
-  export function toBool(val: any, trueValuesArr?: Array<string>): boolean
+  export function toBool(val: any, trueValuesArr?: Array<any>): boolean
 }
 
 export namespace ColorUtil {
@@ -17,7 +17,7 @@ export namespace ColorUtil {
 }
 
 export namespace CoreUtil {
-  export function argTypesMatch(arg: any, expectedType: any): boolean
+  export function argTypesMatch(arg: any, expectedType: string): boolean
 }
 
 export namespace DateUtil { }
@@ -42,7 +42,7 @@ export namespace StorageUtil {
 }
 
 export namespace StringUtil {
-  export function arrToString(array: Array<string>, delimiter: string): string
+  export function arrToString(array: Array<any>, delimiter: string): string
   export function toSentenceCase(string: string): string
   export function toTitleCase(string: string): string
 }

@@ -1,5 +1,11 @@
 [
   {
+    "version": "1.9.1",
+    "description": [
+      "Update typings"
+    ]
+  },
+  {
     "version": "1.9.0",
     "description": [
       "Add StorageUtil.clear()",
