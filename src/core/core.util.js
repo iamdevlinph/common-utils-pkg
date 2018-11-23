@@ -2,7 +2,11 @@ import argTypesMatch from './methods/argTypesMatch';
 import takes from './methods/takes';
 
 const CoreUtil = {
-  argTypesMatch,
+  argTypesMatch: takes(
+    argTypesMatch,
+    { 0: 'any', 1: 'string' }
+  ),
+
   takes
 };
 
