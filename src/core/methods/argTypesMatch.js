@@ -24,6 +24,8 @@ const argTypesMatch = (arg, expectedType) => {
     case 'string':
     case 'number':
     case 'boolean':
+    case 'function':
+    case 'undefined':
       flag = argType === expectedType;
       break;
     case 'object':
@@ -31,6 +33,9 @@ const argTypesMatch = (arg, expectedType) => {
       break;
     case 'array':
       flag = Array.isArray(arg);
+      break;
+    case 'null':
+      flag = arg === null;
       break;
   }
   return flag;

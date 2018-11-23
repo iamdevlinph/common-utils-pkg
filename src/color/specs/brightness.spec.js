@@ -40,9 +40,4 @@ describe('brightness', () => {
     expect(ColorUtil.brightness('F06D06', 20)).to.be.equal('#FF811A');
     expect(ColorUtil.brightness('F06D06', -20)).to.be.equal('#DC5900');
   });
-
-  it('should return the same hex color if no amount passed', () => {
-    expect(ColorUtil.brightness('#3CB878')).to.be.equal('#3CB878');
-    expect(ColorUtil.brightness('3CB878')).to.be.equal('#3CB878');
-  });
 });
