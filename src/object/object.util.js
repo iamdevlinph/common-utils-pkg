@@ -4,7 +4,7 @@ import isEmpty from './methods/isEmpty';
 
 const ObjectUtil = {
   isEmpty: CoreUtil.takes(
-    isEmpty,
+    isEmpty, 'isEmpty',
     { 0: 'object' }
   )
 };

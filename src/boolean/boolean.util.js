@@ -4,7 +4,7 @@ import toBool from './methods/toBool';
 
 const BoolUtil = {
   toBool: CoreUtil.takes(
-    toBool,
+    toBool, 'toBool',
     { 0: 'any' },
     { 1: 'array' }
   )
