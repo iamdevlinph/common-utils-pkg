@@ -4,7 +4,7 @@ import strToArray from './methods/strToArray';
 
 const ArrayUtil = {
   strToArray: CoreUtil.takes(
-    strToArray,
+    strToArray, 'strToArray',
     { 0: 'string', 1: 'string' }
   )
 };

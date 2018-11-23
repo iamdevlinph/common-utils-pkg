@@ -4,16 +4,16 @@ import chai from 'chai';
 import CoreUtil from '../core.util';
 
 const func = {
-  array: CoreUtil.takes(() => {}, { 0: 'array' }),
-  boolean: CoreUtil.takes(() => {}, { 0: 'boolean' }),
-  number: CoreUtil.takes(() => {}, { 0: 'number' }),
-  object: CoreUtil.takes(() => {}, { 0: 'object' }),
-  string: CoreUtil.takes(() => {}, { 0: 'string' }),
-  null: CoreUtil.takes(() => {}, { 0: 'null' }),
-  undefined: CoreUtil.takes(() => {}, { 0: 'undefined' }),
+  array: CoreUtil.takes(() => {}, 'array', { 0: 'array' }),
+  boolean: CoreUtil.takes(() => {}, 'boolean', { 0: 'boolean' }),
+  number: CoreUtil.takes(() => {}, 'number', { 0: 'number' }),
+  object: CoreUtil.takes(() => {}, 'object', { 0: 'object' }),
+  string: CoreUtil.takes(() => {}, 'string', { 0: 'string' }),
+  null: CoreUtil.takes(() => {}, 'null', { 0: 'null' }),
+  undefined: CoreUtil.takes(() => {}, 'undefined', { 0: 'undefined' }),
   // multiple args
-  testOne: CoreUtil.takes(() => {}, { 0: 'array', 1: 'boolean' }, { 2: 'string' }),
-  testTwo: CoreUtil.takes(() => {}, { 0: 'string' }, { 1: 'boolean', 2: 'object' })
+  testOne: CoreUtil.takes(() => {}, 'testOne', { 0: 'array', 1: 'boolean' }, { 2: 'string' }),
+  testTwo: CoreUtil.takes(() => {}, 'testTwo', { 0: 'string' }, { 1: 'boolean', 2: 'object' })
 };
 
 

@@ -4,7 +4,7 @@ import convertBytes from './methods/convertBytes';
 
 const FileUtil = {
   convertBytes: CoreUtil.takes(
-    convertBytes,
+    convertBytes, 'convertBytes',
     { 0: 'number' },
     { 1: 'number' }
   )

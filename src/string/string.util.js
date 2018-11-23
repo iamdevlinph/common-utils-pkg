@@ -6,17 +6,17 @@ import toTitleCase from './methods/toTitleCase';
 
 const StringUtil = {
   arrToString: CoreUtil.takes(
-    arrToString,
+    arrToString, 'arrToString',
     { 0: 'array', 1: 'string' }
   ),
 
   toSentenceCase: CoreUtil.takes(
-    toSentenceCase,
+    toSentenceCase, 'toSentenceCase',
     { 0: 'string' }
   ),
 
   toTitleCase: CoreUtil.takes(
-    toTitleCase,
+    toTitleCase, 'toTitleCase',
     { 0: 'string' }
   )
 };

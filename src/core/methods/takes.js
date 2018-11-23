@@ -1,6 +1,5 @@
 import argTypesMatch from './argTypesMatch';
 
-const { stack } = new Error();
 let errorMsg = '';
 
 const getType = (val) => {
@@ -17,15 +16,14 @@ const getType = (val) => {
   return type;
 };
 
-const generateErrorMessage = (type, caller, expectType, idx, receivedType) => `Function [${caller}] `
+const generateErrorMessage = (type, caller, expectType, idx, receivedType) => `Method [${caller}] `
   + `expects [${expectType}] type on ${type} parameter [${+idx + 1}] `
   + `but received [${receivedType}]`;
 
-const doTypesMatch = (args, reqArgs, optArgs) => {
+const doTypesMatch = (args, fnName, reqArgs, optArgs) => {
   let theyMatch = true;
   const allArgs = { ...reqArgs, ...optArgs };
   Object.keys(allArgs).forEach((val) => {
-    const caller = stack.split('\n')[2].trim().replace(/Object./g, '');
     const receivedType = getType(args[val]);
     // only return first occurence of error
     // start from required
@@ -39,13 +37,13 @@ const doTypesMatch = (args, reqArgs, optArgs) => {
       && (Object.prototype.hasOwnProperty.call(reqArgs, val)
       && !argTypesMatch(args[val], reqArgs[val]))) {
       // checking for required args
-      errorMsg = generateErrorMessage('required', caller, reqArgs[val], val, receivedType);
+      errorMsg = generateErrorMessage('required', fnName, reqArgs[val], val, receivedType);
       theyMatch = false;
     } else if (theyMatch
       && (Object.prototype.hasOwnProperty.call(optArgs, val)
       && !argTypesMatch(args[val], optArgs[val]))) {
       // if arg has value and it is an optional arg
-      errorMsg = generateErrorMessage('optional', caller, optArgs[val], val, receivedType);
+      errorMsg = generateErrorMessage('optional', fnName, optArgs[val], val, receivedType);
       theyMatch = false;
     }
   });
@@ -57,14 +55,15 @@ const doTypesMatch = (args, reqArgs, optArgs) => {
  *
  * @ignore
  * @param {Function} someFunction function to wrap
+ * @param {String} fnName name of method
  * @param {Object} reqArgs object of required types
  * @param {Object} [optArgs=null] object of expected types
  */
-const takes = (someFunction, reqArgs, optArgs = {}) => {
+const takes = (someFunction, fnName, reqArgs, optArgs = {}) => {
   // eslint-disable-next-line func-names
   const wrappedFunction = function () {
     // eslint-disable-next-line prefer-rest-params
-    if (!doTypesMatch(arguments, reqArgs, optArgs)) {
+    if (!doTypesMatch(arguments, fnName, reqArgs, optArgs)) {
       throw new Error(errorMsg);
     } else {
       // return the function if the types match
