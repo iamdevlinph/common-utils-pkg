@@ -1,5 +1,11 @@
 [
   {
+    "version": "2.0.2",
+    "description": [
+      "Transfer ownership"
+    ]
+  },
+  {
     "version": "2.0.1",
     "description": [
       "Display method name on takes() error"
