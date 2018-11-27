@@ -116,7 +116,7 @@ Run by `npm run <script>`
 [pr-img]: https://img.shields.io/github/issues-pr/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [pr-url]: https://github.com/iamdevlinph/common-utils-pkg/pulls
 [travis-img]: https://img.shields.io/travis/iamdevlinph/common-utils-pkg/master.svg?style=flat-square&maxAge=86400
-[travis-url]: https://travis-ci.com/iamdevlinph/common-utils-pkg
+[travis-url]: https://travis-ci.org/iamdevlinph/common-utils-pkg
 [codecov-img]: https://img.shields.io/codecov/c/github/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [codecov-url]: https://codecov.io/gh/iamdevlinph/common-utils-pkg
 [forks-img]: https://img.shields.io/github/forks/iamdevlinph/common-utils-pkg.svg?style=social&label=Fork&maxAge=86400
