@@ -2,7 +2,7 @@
 
 A package of commonly used JavaScript utilities.
 
-[Site](https://codesandcoffees.github.io/common-utils-pkg/) | [Docs](https://codesandcoffees.github.io/common-utils-pkg/docs.html)
+[Site](https://iamdevlinph.github.io/common-utils-pkg/) | [Docs](https://iamdevlinph.github.io/common-utils-pkg/docs.html)
 
 #### Package Details
 
@@ -15,10 +15,10 @@ A package of commonly used JavaScript utilities.
 
 #### Repo Details
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/codesandcoffees/common-utils-pkg.svg?style=flat-square)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/iamdevlinph/common-utils-pkg.svg?style=flat-square)](https://greenkeeper.io/)
 [![open issues][issues-img]][issues-url]
 [![open prs][pr-img]][pr-url]
-![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400)
+![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=86400)
 [![contributors][contributor-img]][contributor-url]
 
 ## Installation
@@ -49,7 +49,7 @@ ColorUtil.randomPastelColor();
 </script>
 ```
 
-Read more about the usage [here](https://codesandcoffees.github.io/common-utils-pkg/usage.html)
+Read more about the usage [here](https://iamdevlinph.github.io/common-utils-pkg/usage.html)
 
 ## Available Utilities
 * ArrayUtil
@@ -62,7 +62,7 @@ Read more about the usage [here](https://codesandcoffees.github.io/common-utils-
 * StorageUtil
 * StringUtil
 
-Read more about the methods available [here](https://codesandcoffees.github.io/common-utils-pkg/docs.html)
+Read more about the methods available [here](https://iamdevlinph.github.io/common-utils-pkg/docs.html)
 
 ## Features
 * Transpile ES6 to ES5 using [Babel](https://github.com/babel/babel)
@@ -76,7 +76,7 @@ Read more about the methods available [here](https://codesandcoffees.github.io/c
 ![typedef](./docs/img/ts-type-def.png)
 
 # Contributing
-Have something to pitch in? Open a [pull request](https://github.com/codesandcoffees/common-utils-pkg/pulls) or an [issue](https://github.com/codesandcoffees/common-utils-pkg/issues/new).
+Have something to pitch in? Open a [pull request](https://github.com/iamdevlinph/common-utils-pkg/pulls) or an [issue](https://github.com/iamdevlinph/common-utils-pkg/issues/new).
 
 ## Commands
 Run by `npm run <script>`
@@ -99,27 +99,27 @@ Run by `npm run <script>`
 - [ ] Update `takes` to support `typeof` `any`
 - [ ] Update `argTypesMatch` to support `typeof` `any`
 
-[contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
-[contributor-url]: https://github.com/codesandcoffees/common-utils-pkg/graphs/contributors
-[deps-img]: https://img.shields.io/david/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
-[deps-url]: https://david-dm.org/codesandcoffees/common-utils-pkg
-[devdeps-img]: https://img.shields.io/david/dev/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
-[devdeps-url]: https://david-dm.org/codesandcoffees/common-utils-pkg?type=dev
+[contributor-img]: https://img.shields.io/github/contributors/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=86400
+[contributor-url]: https://github.com/iamdevlinph/common-utils-pkg/graphs/contributors
+[deps-img]: https://img.shields.io/david/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=86400
+[deps-url]: https://david-dm.org/iamdevlinph/common-utils-pkg
+[devdeps-img]: https://img.shields.io/david/dev/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=86400
+[devdeps-url]: https://david-dm.org/iamdevlinph/common-utils-pkg?type=dev
 [downloads-img]: https://img.shields.io/npm/dm/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [downloads-url]: https://npmcharts.com/compare/common-utils-pkg?minimal=true
-[issues-img]: https://img.shields.io/github/issues/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
-[issues-url]: https://github.com/codesandcoffees/common-utils-pkg/issues
+[issues-img]: https://img.shields.io/github/issues/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=86400
+[issues-url]: https://github.com/iamdevlinph/common-utils-pkg/issues
 [node-img]: https://img.shields.io/node/v/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [node-url]: https://nodejs.org/en/
 [npm-img]: https://img.shields.io/npm/v/common-utils-pkg.svg?style=flat-square&maxAge=86400
 [npm-url]: https://www.npmjs.com/package/common-utils-pkg
-[pr-img]: https://img.shields.io/github/issues-pr/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
-[pr-url]: https://github.com/codesandcoffees/common-utils-pkg/pulls
-[travis-img]: https://img.shields.io/travis/codesandcoffees/common-utils-pkg/master.svg?style=flat-square&maxAge=86400
-[travis-url]: https://travis-ci.com/codesandcoffees/common-utils-pkg
-[codecov-img]: https://img.shields.io/codecov/c/github/codesandcoffees/common-utils-pkg.svg?style=flat-square&maxAge=86400
-[codecov-url]: https://codecov.io/gh/codesandcoffees/common-utils-pkg
-[forks-img]: https://img.shields.io/github/forks/codesandcoffees/common-utils-pkg.svg?style=social&label=Fork&maxAge=86400
-[forks-url]: https://github.com/codesandcoffees/common-utils-pkg/network/members
-[stars-img]: https://img.shields.io/github/stars/codesandcoffees/common-utils-pkg.svg?style=social&label=Stars&maxAge=86400
-[stars-url]: https://github.com/codesandcoffees/common-utils-pkg/stargazers
+[pr-img]: https://img.shields.io/github/issues-pr/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=86400
+[pr-url]: https://github.com/iamdevlinph/common-utils-pkg/pulls
+[travis-img]: https://img.shields.io/travis/iamdevlinph/common-utils-pkg/master.svg?style=flat-square&maxAge=86400
+[travis-url]: https://travis-ci.com/iamdevlinph/common-utils-pkg
+[codecov-img]: https://img.shields.io/codecov/c/github/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=86400
+[codecov-url]: https://codecov.io/gh/iamdevlinph/common-utils-pkg
+[forks-img]: https://img.shields.io/github/forks/iamdevlinph/common-utils-pkg.svg?style=social&label=Fork&maxAge=86400
+[forks-url]: https://github.com/iamdevlinph/common-utils-pkg/network/members
+[stars-img]: https://img.shields.io/github/stars/iamdevlinph/common-utils-pkg.svg?style=social&label=Stars&maxAge=86400
+[stars-url]: https://github.com/iamdevlinph/common-utils-pkg/stargazers

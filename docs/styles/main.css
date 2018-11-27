@@ -51,7 +51,7 @@ ul {
 .home-page {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 50px 100px 100px min-content 90px;
+  grid-template-rows: 50px 100px 100px min-content 70px;
   grid-template-areas: "left pad right"
     "left banner-top right"
     "left banner-bottom right"
@@ -93,7 +93,7 @@ ul {
 .docs {
   display: grid;
   grid-template-columns: 250px auto;
-  grid-template-rows: 50px min-content 90px;
+  grid-template-rows: 50px min-content 70px;
   grid-template-areas: "header header"
     "sidebar reference"
     "sidebar footer";
