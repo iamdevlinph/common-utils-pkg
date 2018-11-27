@@ -67,6 +67,7 @@ ul {
 
 .home-page .banner .banner__logo {
   height: 200px;
+  border: 5px solid #263238;
 }
 
 .home-page .color-only {

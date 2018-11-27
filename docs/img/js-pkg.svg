@@ -1,0 +1,8 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect id="background" height="400" width="400" fill="#F0DB4F"/>
+    <rect stroke="#000" height="300" width="400" y="50" x="0" stroke-width="0" fill="#C9AA8A"/>
+    <rect stroke="#000" height="50" width="400" y="150" x="0" stroke-width="0" fill="#D6BFA7"/>
+    <rect stroke="#000" height="50" width="400" y="200" x="0" stroke-width="0" fill="#D6BFA7"/>
+    <line y2="200" x2="0" y1="200" x1="400" stroke="#000" />
+    <text stroke="#000" transform="matrix(15.999999613988962,0,0,14.660027875716422,-2475.9999283665693,-2526.620668145713) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_5" y="198.5" x="165.5" fill="#000000">JS</text>
+</svg>
