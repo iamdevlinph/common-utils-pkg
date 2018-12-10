@@ -14,7 +14,7 @@
     "chai": "4.2.0",
     "codecov": "3.1.0",
     "cross-env": "5.2.0",
-    "documentation": "9.0.0-alpha.1",
+    "documentation": "9.0.0",
     "eslint": "5.9.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-loader": "2.1.1",
