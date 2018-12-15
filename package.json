@@ -24,7 +24,7 @@
     "istanbul": "0.4.5",
     "lint-staged": "8.1.0",
     "mocha": "5.2.0",
-    "mock-local-storage": "1.1.7",
+    "mock-local-storage": "1.1.8",
     "nyc": "13.1.0",
     "rimraf": "2.6.2",
     "uglifyjs-webpack-plugin": "2.0.1",
