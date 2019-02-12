@@ -30,7 +30,7 @@
     "uglifyjs-webpack-plugin": "2.0.1",
     "webpack": "4.26.1",
     "webpack-cli": "3.1.2",
-    "yargs": "12.0.5"
+    "yargs": "13.1.0"
   },
   "dependencies": {
     "lz-string": "1.4.4"
