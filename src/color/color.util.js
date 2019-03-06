@@ -6,13 +6,16 @@ import randomPastelColor from './methods/randomPastelColor';
 
 const ColorUtil = {
   brightness: CoreUtil.takes(
-    brightness, 'brightness',
-    { 0: 'string', 1: 'number' }
+    brightness, 'brightness', {
+      0: 'string',
+      1: 'number'
+    }
   ),
 
   invertHexColor: CoreUtil.takes(
-    invertHexColor, 'invertHexColor',
-    { 0: 'string' }
+    invertHexColor, 'invertHexColor', {
+      0: 'string'
+    }
   ),
 
   randomPastelColor
