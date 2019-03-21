@@ -15,5 +15,5 @@
 
 ----
 
-- [ ] **Bump package version to patch 1.1.x (minor) OR 1.x.0 (patch)**
+- [ ] **Bump package version to 1.0.x (patch) OR 1.x.0 (minor)**
 - [ ] Update the [changelog.json](./changelog.json)

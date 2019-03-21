@@ -2,7 +2,9 @@
 
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
-const { env } = require('yargs').argv; // use --env with webpack 2
+const {
+  env
+} = require('yargs').argv; // use --env with webpack 2
 const pkg = require('./package.json');
 
 const libraryName = pkg.name;
@@ -35,7 +37,8 @@ const config = {
     filename: outputFile,
     library: libraryName,
     libraryTarget: 'umd',
-    umdNamedDefine: true
+    umdNamedDefine: true,
+    globalObject: 'typeof self !== \'undefined\' ? self : this'
   },
   module: {
     rules: [{
