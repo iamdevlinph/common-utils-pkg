@@ -222,7 +222,7 @@
       "module": "StorageUtil",
       "util": "getItem",
       "returns": {
-        "desc": "Returns data from the local storage.",
+        "desc": "Returns data from the local storage. Returns '' if key is not found",
         "type": "Any"
       },
       "example": "StorageUtil.getItem('key');",

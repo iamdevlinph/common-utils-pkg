@@ -2944,7 +2944,7 @@
       },
       {
         "title": "returns",
-        "description": "Returns data from the local storage.",
+        "description": "Returns data from the local storage. Returns '' if key is not found",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
@@ -2974,8 +2974,8 @@
           "column": 0
         },
         "end": {
-          "line": 14,
-          "column": 77
+          "line": 23,
+          "column": 2
         }
       },
       "file": "/mnt/e/common-utils-pkg/src/storage/methods/getItem.js"
@@ -3060,7 +3060,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns data from the local storage.",
+                  "value": "Returns data from the local storage. Returns '' if key is not found",
                   "position": {
                     "start": {
                       "line": 1,
@@ -3069,8 +3069,8 @@
                     },
                     "end": {
                       "line": 1,
-                      "column": 37,
-                      "offset": 36
+                      "column": 68,
+                      "offset": 67
                     },
                     "indent": []
                   }
@@ -3084,8 +3084,8 @@
                 },
                 "end": {
                   "line": 1,
-                  "column": 37,
-                  "offset": 36
+                  "column": 68,
+                  "offset": 67
                 },
                 "indent": []
               }
@@ -3099,8 +3099,8 @@
             },
             "end": {
               "line": 1,
-              "column": 37,
-              "offset": 36
+              "column": 68,
+              "offset": 67
             }
           }
         },

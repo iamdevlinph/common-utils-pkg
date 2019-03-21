@@ -33,4 +33,7 @@ describe('getItem', () => {
       key: 'object'
     });
   });
+  it('should return empty string if key is not found', () => {
+    expect(StorageUtil.getItem('empty')).to.be.a('string').and.to.be.equal('');
+  });
 });
