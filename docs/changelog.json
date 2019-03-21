@@ -1,7 +1,13 @@
 [{
+    "version": "2.0.5",
+    "description": [
+      "StorageUtil.getItem - return empty string of key is not found in storage"
+    ]
+  },
+  {
     "version": "2.0.4",
     "description": [
-      "StorageUtil.getItem return JSON.parse(data)"
+      "StorageUtil.getItem - return JSON.parse(data)"
     ]
   },
   {
