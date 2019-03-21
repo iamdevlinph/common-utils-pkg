@@ -9,7 +9,9 @@ window.localStorage = global.localStorage;
 
 chai.expect();
 
-const { expect } = chai;
+const {
+  expect
+} = chai;
 
 describe('getItem', () => {
   before(() => {
@@ -18,6 +20,7 @@ describe('getItem', () => {
     StorageUtil.setItem('b', 2);
   });
   it('should get data from local storage', () => {
-    expect(StorageUtil.getItem('a')).to.be.equal('1');
+    expect(StorageUtil.getItem('a')).to.be.equal(1);
+    expect(StorageUtil.getItem('b')).to.be.equal(2);
   });
 });

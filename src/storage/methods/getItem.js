@@ -11,6 +11,6 @@ import LZString from 'lz-string';
  *
  * StorageUtil.getItem('key');
  */
-const getItem = key => LZString.decompress(window.localStorage.getItem(key));
+const getItem = key => JSON.parse(LZString.decompress(window.localStorage.getItem(key)));
 
 export default getItem;
