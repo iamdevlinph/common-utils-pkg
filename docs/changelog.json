@@ -1,4 +1,10 @@
 [{
+    "version": "2.0.4",
+    "description": [
+      "StorageUtil.getItem return JSON.parse(data)"
+    ]
+  },
+  {
     "version": "2.0.3",
     "description": [
       "Fix SSR issue where window is undefined"
