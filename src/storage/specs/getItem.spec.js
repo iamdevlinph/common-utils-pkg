@@ -16,11 +16,21 @@ const {
 describe('getItem', () => {
   before(() => {
     StorageUtil.clear();
-    StorageUtil.setItem('a', 1);
-    StorageUtil.setItem('b', 2);
+    StorageUtil.setItem('number', 1);
+    StorageUtil.setItem('string', 'b');
+    StorageUtil.setItem('boolean', true);
+    StorageUtil.setItem('array', ['array']);
+    StorageUtil.setItem('object', {
+      key: 'object'
+    });
   });
   it('should get data from local storage', () => {
-    expect(StorageUtil.getItem('a')).to.be.equal(1);
-    expect(StorageUtil.getItem('b')).to.be.equal(2);
+    expect(StorageUtil.getItem('number')).to.be.a('number').and.to.be.equal(1);
+    expect(StorageUtil.getItem('string')).to.be.a('string').and.to.be.equal('b');
+    expect(StorageUtil.getItem('boolean')).to.be.a('boolean').and.to.be.equal(true);
+    expect(StorageUtil.getItem('array')).to.be.an('array').and.to.eql(['array']);
+    expect(StorageUtil.getItem('object')).to.be.an('object').and.to.eql({
+      key: 'object'
+    });
   });
 });
