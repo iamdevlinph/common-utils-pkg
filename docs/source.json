@@ -2828,7 +2828,7 @@
       },
       {
         "title": "example",
-        "description": "SlugUtil.slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nSlugUtil.slugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'",
+        "description": "SlugUtil.slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nSlugUtil.slugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nSlugUtil.slugify('wïth speciäl chærs');\n// => 'with-special-chars'",
         "lineNumber": 7
       }
     ],
@@ -2838,18 +2838,18 @@
         "column": 0
       },
       "end": {
-        "line": 15,
+        "line": 18,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 17,
+          "line": 20,
           "column": 0
         },
         "end": {
-          "line": 35,
+          "line": 38,
           "column": 2
         }
       },
@@ -2858,7 +2858,7 @@
     "augments": [],
     "examples": [
       {
-        "description": "SlugUtil.slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nSlugUtil.slugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'"
+        "description": "SlugUtil.slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nSlugUtil.slugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nSlugUtil.slugify('wïth speciäl chærs');\n// => 'with-special-chars'"
       }
     ],
     "params": [
