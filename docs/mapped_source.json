@@ -200,6 +200,27 @@
       "utilArgs": "isEmpty(object)"
     }
   ],
+  "SlugUtil": [
+    {
+      "description": "Converts a string into a slug for URL usage.",
+      "args": [
+        {
+          "description": "string to convert to slug",
+          "param": "string",
+          "type": "String",
+          "optional": false
+        }
+      ],
+      "module": "SlugUtil",
+      "util": "slugify",
+      "returns": {
+        "desc": "Returns slug version of the string.",
+        "type": "String"
+      },
+      "example": "SlugUtil.slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nSlugUtil.slugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nSlugUtil.slugify('wïth speciäl chærs');\n// => 'with-special-chars'",
+      "utilArgs": "slugify(string)"
+    }
+  ],
   "StorageUtil": [
     {
       "description": "Removes all data stored in the local storage.",
