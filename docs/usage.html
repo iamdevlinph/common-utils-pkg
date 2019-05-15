@@ -29,25 +29,31 @@
 <body>
   <div class="home-page">
     <section class="banner">
-      <a href="./index.html"><img src="./img/js-pkg.svg" alt="Logo" class="banner__logo" title="Common Utilities Package"></a>
+      <a href="./index.html"><img src="./img/js-pkg.svg" alt="Logo" class="banner__logo"
+          title="Common Utilities Package"></a>
     </section>
 
     <section class="color-only"></section>
 
     <section class="main">
       <h4 class="center">How to use?</h4>
-      <p>This package provides multiple utilities that you can import on demand.</p>
+      <!-- <p>This package provides multiple utilities that you can import on demand.</p> -->
 
-      <p>Right now, the available utilities are:</p>
+      <!-- <p>Right now, the available utilities are:</p>
       <ul class="styled" id="utils-list">
-      </ul>
+      </ul> -->
 
       <h5>ES6</h5>
-      <p>For ES6, you can import a single utility like this</p>
-      <pre><code class="javascript">import { ArrayUtil } from 'common-utils-pkg';</code></pre>
+      <p>For ES6, you can import a single method like this</p>
+      <pre><code class="javascript">import { randomPastelColor } from 'common-utils-pkg';</code></pre>
 
-      <p>Or you may choose to import multiple utilities like so</p>
-      <pre><code class="javascript">import { ArrayUtil, BoolUtil } from 'common-utils-pkg';</code></pre>
+      <p>Or you may choose to import multiple methods like so</p>
+      <pre><code class="javascript">import { randomPastelColor, stringToArray } from 'common-utils-pkg';</code></pre>
+
+      <p>Or you can also import all and storre them to a variable</p>
+      <pre>
+        <code class="javascript">import * as VAR from 'common-utils-pkg';</code>
+      </pre>
 
       <h5>Browser</h5>
       <p>You can also use this package directly in your browser by importing the script from UNPKG</p>
