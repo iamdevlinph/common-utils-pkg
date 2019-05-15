@@ -59,6 +59,7 @@ Read more about the usage [here](https://iamdevlinph.github.io/common-utils-pkg/
 * FileUtil
 * KeyUtil
 * ObjectUtil
+* SlugUtil
 * StorageUtil
 * StringUtil
 

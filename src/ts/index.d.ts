@@ -34,6 +34,10 @@ export namespace ObjectUtil {
   export function isEmpty(object: object): boolean
 }
 
+export namespace SlugUtil {
+  export function slugify(string: string): string
+}
+
 export namespace StorageUtil {
   export function clearAll()
   export function getItem(key: string): any
