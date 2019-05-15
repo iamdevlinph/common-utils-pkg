@@ -10,10 +10,10 @@ const isWholeNum = number => number % 1 === 0;
  * @returns {String} Returns a human readable file size.
  * @example
  *
- * FileUtil.readableBytes(1234);
+ * readableBytes(1234);
  * // => 1.205078125 kB
  *
- * FileUtil.readableBytes(1234, 2);
+ * readableBytes(1234, 2);
  * // => 1.21 kB
  */
 const readableBytes = (bytes, decimals = null) => {

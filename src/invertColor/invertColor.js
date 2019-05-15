@@ -16,10 +16,10 @@ const padZero = (str, len) => {
  * @returns {String} Returns a HEX color string.
  * @example
  *
- * ColorUtil.invertColor('#E3CCA8');
+ * invertColor('#E3CCA8');
  * // => '#1C3357'
  *
- * ColorUtil.invertColor('ccc');
+ * invertColor('ccc');
  * // => '#333333'
  */
 const invertColor = (hex) => {

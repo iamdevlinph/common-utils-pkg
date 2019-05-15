@@ -6,7 +6,7 @@
  * @returns {String} Returns an HSL color.
  * @example
  *
- * ColorUtil.randomPastelColor();
+ * randomPastelColor();
  * // => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'
  */
 const randomPastelColor = () => {

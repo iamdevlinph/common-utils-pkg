@@ -7,13 +7,13 @@
  * @returns {String} Returns slug version of the string.
  * @example
  *
- * SlugUtil.slugify('The quick brown fox');
+ * slugify('The quick brown fox');
  * // => 'the-quick-brown-fox'
  *
- * SlugUtil.slugify('A. more-Complicated string!..');
+ * slugify('A. more-Complicated string!..');
  * // => 'a-more-complicated-string'
  *
- * SlugUtil.slugify('wïth speciäl chærs');
+ * slugify('wïth speciäl chærs');
  * // => 'with-special-chars'
  */
 

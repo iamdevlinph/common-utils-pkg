@@ -6,7 +6,7 @@
  * @returns {String} guid string
  * @example
  *
- * KeyUtil.guid();
+ * guid();
  * // => "0153a717-3ba2-b1ac-67f1-49db6551a28d"
  */
 const guid = () => {
