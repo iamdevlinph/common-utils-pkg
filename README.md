@@ -22,9 +22,13 @@ A package of commonly used JavaScript utilities.
 [![contributors][contributor-img]][contributor-url]
 
 ## Installation
-
+NPM
 ```
 npm i --save common-utils-pkg
+```
+Yarn
+```
+yarn add common-utils-pkg
 ```
 
 ## Usage
@@ -32,9 +36,9 @@ npm i --save common-utils-pkg
 ### ES6
 
 ```
-import { ColorUtil } from 'common-util-pkg';
+import { randomPastelColor } from 'common-util-pkg';
 
-ColorUtil.randomPastelColor();
+randomPastelColor();
 // "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
 ```
 
@@ -43,25 +47,15 @@ ColorUtil.randomPastelColor();
 ```
 <script src="https://unpkg.com/common-utils-pkg"></script>
 <script>
-  const ColorUtil = window['common-utils-pkg].ColorUtil;
-  ColorUtil.randomPastelColor();
+  const randomPastelColor = window['common-utils-pkg].randomPastelColor;
+  randomPastelColor();
   // "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
 </script>
 ```
 
 Read more about the usage [here](https://iamdevlinph.github.io/common-utils-pkg/usage.html)
 
-## Available Utilities
-* ArrayUtil
-* BoolUtil
-* ColorUtil
-* CoreUtil
-* FileUtil
-* KeyUtil
-* ObjectUtil
-* SlugUtil
-* StorageUtil
-* StringUtil
+## Available Methods
 
 Read more about the methods available [here](https://iamdevlinph.github.io/common-utils-pkg/docs.html)
 

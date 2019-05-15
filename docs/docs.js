@@ -1,6 +1,6 @@
 (function () {
   $.getJSON('./mapped_source.json', function (data) {
-    var mapped_source = data;
+    var mapped_source = _(data).toPairs().sortBy(0).fromPairs().value();
     var reference = document.getElementById('reference');
     _.forOwn(mapped_source, function (val, key) {
       // create card
