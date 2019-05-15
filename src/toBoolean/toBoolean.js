@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 const predefinedTrueValues = ['true', 'yes', 'y', '1'];
 
 /**
@@ -28,4 +30,13 @@ const toBoolean = (val = null, trueValuesArr = predefinedTrueValues) => {
   return trueValuesArr.includes(valToTest);
 };
 
-export default toBoolean;
+export default expects(
+  toBoolean,
+  'toBoolean',
+  {
+    0: 'any'
+  },
+  {
+    1: 'array'
+  }
+);

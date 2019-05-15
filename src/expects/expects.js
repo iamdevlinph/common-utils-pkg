@@ -1,4 +1,4 @@
-import doTypesMatch from '../doTypesMatch/doTypesMatch';
+import { doTypesMatch } from '../doTypesMatch/doTypesMatch';
 
 let errorMsg = '';
 

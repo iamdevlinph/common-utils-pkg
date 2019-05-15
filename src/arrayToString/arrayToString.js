@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 /**
  * Convert an array to a string and combine on the delimiter passed.
  *
@@ -13,4 +15,11 @@
  */
 const arrayToString = (array, delimiter) => array.join(delimiter);
 
-export default arrayToString;
+export default expects(
+  arrayToString,
+  'arrayToString',
+  {
+    0: 'array',
+    1: 'string'
+  }
+);

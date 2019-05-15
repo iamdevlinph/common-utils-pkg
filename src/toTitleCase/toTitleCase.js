@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 // https://stackoverflow.com/a/196991/4620773
 
 /**
@@ -17,4 +19,10 @@ const toTitleCase = string => string.toLowerCase().replace(
   txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
 );
 
-export default toTitleCase;
+export default expects(
+  toTitleCase,
+  'toTitleCase',
+  {
+    0: 'string'
+  }
+);

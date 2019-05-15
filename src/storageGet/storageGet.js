@@ -1,4 +1,6 @@
 import LZString from 'lz-string';
+import expects from '../expects/expects';
+
 
 /**
  * Retrieves data from the local storage.
@@ -22,4 +24,10 @@ const storageGet = (key) => {
   return value;
 };
 
-export default storageGet;
+export default expects(
+  storageGet,
+  'storageGet',
+  {
+    0: 'string'
+  }
+);

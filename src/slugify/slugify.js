@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 /**
  * Converts a string into a slug for URL usage.
  *
@@ -38,4 +40,10 @@ const slugify = (string) => {
 };
 
 
-export default slugify;
+export default expects(
+  slugify,
+  'slugify',
+  {
+    0: 'string'
+  }
+);

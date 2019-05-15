@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 // https://stackoverflow.com/a/35970186/4110257
 
 const padZero = (str, len) => {
@@ -42,4 +44,10 @@ const invertColor = (hex) => {
   return `#${padZero(r)}${padZero(g)}${padZero(b)}`.toUpperCase();
 };
 
-export default invertColor;
+export default expects(
+  invertColor,
+  'invertColor',
+  {
+    0: 'string'
+  }
+);

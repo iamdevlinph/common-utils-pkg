@@ -1,4 +1,5 @@
 import LZString from 'lz-string';
+import expects from '../expects/expects';
 
 /**
  * Stores data to the local storage.
@@ -13,4 +14,11 @@ import LZString from 'lz-string';
  */
 const storageSet = (key, data) => window.localStorage.storageSet(key, LZString.compress(JSON.stringify(data)));
 
-export default storageSet;
+export default expects(
+  storageSet,
+  'storageSet',
+  {
+    0: 'string',
+    1: 'any'
+  }
+);

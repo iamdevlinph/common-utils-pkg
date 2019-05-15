@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 /**
  * Removes an entry from the local storage.
  *
@@ -10,4 +12,10 @@
  */
 const storageRemove = key => window.localStorage.removeItem(key);
 
-export default storageRemove;
+export default expects(
+  storageRemove,
+  'storageRemove',
+  {
+    0: 'string'
+  }
+);

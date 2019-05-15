@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 /**
  * Splits a string to an array based on the delimiter passed.
  *
@@ -13,4 +15,11 @@
  */
 const stringToArray = (string, delimiter) => string.split(delimiter);
 
-export default stringToArray;
+export default expects(
+  stringToArray,
+  'stringToArray',
+  {
+    0: 'string',
+    1: 'string'
+  }
+);

@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 /**
  * Converts a string to Sentence case.
  *
@@ -15,4 +17,10 @@ const toSentenceCase = (string) => {
   return returnStr.charAt(0).toUpperCase() + returnStr.slice(1);
 };
 
-export default toSentenceCase;
+export default expects(
+  toSentenceCase,
+  'toSentenceCase',
+  {
+    0: 'string'
+  }
+);

@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 const isWholeNum = number => number % 1 === 0;
 
 /**
@@ -25,4 +27,13 @@ const readableBytes = (bytes, decimals = null) => {
   return `${formatted} ${unit}`;
 };
 
-export default readableBytes;
+export default expects(
+  readableBytes,
+  'readableBytes',
+  {
+    0: 'number'
+  },
+  {
+    1: 'number'
+  }
+);

@@ -1,3 +1,5 @@
+import expects from '../expects/expects';
+
 // https://css-tricks.com/snippets/javascript/lighten-darken-color/
 /* eslint-disable no-bitwise, eqeqeq */
 
@@ -47,4 +49,11 @@ const colorBrightness = (hex, amount) => {
   return (`#${(g | (b << 8) | (r << 16)).toString(16).padStart(6, 0)}`).toUpperCase();
 };
 
-export default colorBrightness;
+export default expects(
+  colorBrightness,
+  'colorBrightness',
+  {
+    0: 'string',
+    1: 'number'
+  }
+);
