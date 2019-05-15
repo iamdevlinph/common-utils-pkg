@@ -1,5 +1,3 @@
-import expects from '../expects/expects';
-
 // To Do: Accept an array of arguments
 // Compare against an array of expected types
 
@@ -43,11 +41,4 @@ const doTypesMatch = (arg, expectedType) => {
   return flag;
 };
 
-export default expects(
-  doTypesMatch,
-  'doTypesMatch',
-  {
-    0: 'any',
-    1: 'string'
-  }
-);
+export default doTypesMatch;
