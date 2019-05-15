@@ -16,6 +16,7 @@ module.exports = {
     "no-console": ["error", {
       allow: ["error", "info"]
     }],
-    "default-case": 0
+    "default-case": 0,
+    "import/prefer-default-export": 0,
   }
 };
