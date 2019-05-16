@@ -1,15 +1,12 @@
-- [ ] This PR will add a **new utility**
-- [ ] **Added the Utility name** under `Available Utilities` in [README.md](../README.md)
-- [ ] **Created and exported a main utility file** under `src/<utility_name>/<utility-name>.util.js`
-- [ ] **Imported the Utility** in the [entry js file](../src/index.js)
+Closes: #
 
 ----
-
 - [ ] This PR will add a **new method**
-- [ ] **Created and exported a method file** under `src/<utility_name>/methods/<method_name>.js`
+- [ ] **New method directory** `src/<method_name>/`
+- [ ] **Created method file** under `src/<method_name>/<method_name>.js`
 - [ ] **Added jsdoc comments** in the method file
-- [ ] **Created a test** under `src/<utility_name>/specs/<method_name>.spec.js`
-- [ ] **Imported the method file** in the main utility file under `src/<utility_name>/<utility-name>.util.js`
+- [ ] **Created a test** under `src/<method_name>/<method_name>.spec.js`
+- [ ] **Export the method file in main entry file** `src/index.js`
 - [ ] **Add entry in the typings**
 - [ ] **Generate docs**
 
