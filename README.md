@@ -21,6 +21,9 @@ A package of commonly used JavaScript utilities.
 ![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=7200)
 [![contributors][contributor-img]][contributor-url]
 
+# :tada: `Version 3` is here
+Version 3 introduces a game-breaking change. Each method is exported independently instead of having them under a "category utility". Read more on how to use it [here](https://iamdevlinph.github.io/common-utils-pkg/usage.html).
+
 ## Installation
 NPM
 ```
