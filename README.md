@@ -36,10 +36,17 @@ yarn add common-utils-pkg
 ### ES6
 
 ```
-import { randomPastelColor } from 'common-util-pkg';
+// Specific methods
 
+import { randomPastelColor } from 'common-utils-pkg';
 randomPastelColor();
-// "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+```
+
+```
+// All methods
+
+import * as UTILS from 'common-utils-pkg';
+UTILS.randomPastelColor();
 ```
 
 ### Browser
@@ -47,9 +54,19 @@ randomPastelColor();
 ```
 <script src="https://unpkg.com/common-utils-pkg"></script>
 <script>
+  // Specific methods
+
   const randomPastelColor = window['common-utils-pkg].randomPastelColor;
   randomPastelColor();
-  // "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+</script>
+```
+
+```
+<script>
+  // All methods
+
+  const UTILS = window['common-utils-pkg'];
+  UTILS.randomPastelColor();
 </script>
 ```
 
@@ -68,12 +85,12 @@ Read more about the methods available [here](https://iamdevlinph.github.io/commo
 * Build status by [Travis](https://github.com/travis-ci/travis-ci)
 * Precommit using [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky)
 * Provides TypeScript type definitions
-![typedef](./docs/img/ts-type-def.png)
+<!-- ![typedef](./docs/img/ts-type-def.png) -->
 
 # Contributing
 Have something to pitch in? Open a [pull request](https://github.com/iamdevlinph/common-utils-pkg/pulls) or an [issue](https://github.com/iamdevlinph/common-utils-pkg/issues/new).
 
-## Commands
+<!-- ## Commands
 Run by `npm run <script>`
 * `build:clean` - Deletes the build folder.
 * `build` - Builds `dev` and `prod` ready files.
@@ -86,13 +103,13 @@ Run by `npm run <script>`
 * `precommit` - The precommit hook which runs `lint-staged` to lint staged files on commit.
 * `prepare` - Runs `build` before publishing a new version of the package.
 * `test:watch` - Re-run tests on file changes.
-* `test` - Run the tests
+* `test` - Run the tests -->
 
-## To Do's
+<!-- ## To Do's
 - [ ] Immutable arrays and objects
 - [ ] Update `takes(func, [...required])` to `takes(func, [...required], [...optional])`
 - [ ] Update `takes` to support `typeof` `any`
-- [ ] Update `argTypesMatch` to support `typeof` `any`
+- [ ] Update `argTypesMatch` to support `typeof` `any` -->
 
 [contributor-img]: https://img.shields.io/github/contributors/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=7200
 [contributor-url]: https://github.com/iamdevlinph/common-utils-pkg/graphs/contributors

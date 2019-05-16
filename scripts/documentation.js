@@ -76,7 +76,7 @@ fs.readFile('docs/source.json', 'utf8', (err, data) => {
           utilObj.module = tag.name;
           break;
         case 'name':
-          utilObj.util = tag.name;
+          utilObj.method = tag.name;
           break;
         case 'param':
           utilObj.args.push(tag);
@@ -93,7 +93,7 @@ fs.readFile('docs/source.json', 'utf8', (err, data) => {
       }
     });
     utilObj.args = getArgs(utilObj.args);
-    utilObj.utilArgs = appendParamsToName(utilObj.util, utilObj.args);
+    utilObj.utilArgs = appendParamsToName(utilObj.method, utilObj.args);
     utils[moduleName].push(utilObj);
   });
   fs.writeFile('docs/mapped_source.json', JSON.stringify(utils, null, 2), (writeError) => {

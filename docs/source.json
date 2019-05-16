@@ -780,26 +780,26 @@
     ],
     "loc": {
       "start": {
-        "line": 6,
+        "line": 4,
         "column": 0
       },
       "end": {
-        "line": 21,
+        "line": 19,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 22,
+          "line": 20,
           "column": 0
         },
         "end": {
-          "line": 44,
+          "line": 42,
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/doTypesMatch/doTypesMatch.js"
+      "file": "/mnt/e/common-utils-pkg/src/doTypesMatch/doTypesMatchFn.js"
     },
     "augments": [],
     "examples": [
@@ -2973,7 +2973,7 @@
         },
         "end": {
           "line": 15,
-          "column": 111
+          "column": 108
         }
       },
       "file": "/mnt/e/common-utils-pkg/src/storageSet/storageSet.js"

@@ -50,9 +50,9 @@
       <p>Or you may choose to import multiple methods like so</p>
       <pre><code class="javascript">import { randomPastelColor, stringToArray } from 'common-utils-pkg';</code></pre>
 
-      <p>Or you can also import all and storre them to a variable</p>
+      <p>Or you can also import all and store them to a variable</p>
       <pre>
-        <code class="javascript">import * as VAR from 'common-utils-pkg';</code>
+        <code class="javascript">import * as UTILS from 'common-utils-pkg';</code>
       </pre>
 
       <h5>Browser</h5>
@@ -61,23 +61,29 @@
       <p>This adds the package to the <span class="bold">window</span> object. You can access the <span
           class="bold">common-utils-pkg</span> variable by</p>
       <pre><code class="javascript">window['common-utils-pkg]</code></pre>
-      <p>And it would be easier to assign the utilities to a variable like</p>
+      <p>And it would be easier to assign the methods to a variable like</p>
       <pre>
         <code class="javascript" id="utils-list-code">&#x3C;script&#x3E;
           const randomPastelColor = window['common-utils-pkg'].randomPastelColor;
           &#x3C;/script&#x3E;
         </code>
       </pre>
-      <p>The usage in the browser is a bit complicated since the package exposes 5 available variables.</p>
+
+      <p>Or you can export the whole package into a variable.</p>
+      <pre>
+        <code class="javascript" id="utils-list-code">&#x3C;script&#x3E;
+          const UTILS = window['common-utils-pkg'];
+          &#x3C;/script&#x3E;
+        </code>
+      </pre>
 
       <h5>Usage</h5>
-      <p>When the utilities are ready for use, you can call the available method like so</p>
+      <!-- <p>When the methods are ready for use, you can call the available method like so</p> -->
       <pre>
-        <code class="javascript">ColorUtil.randomPastelColor()
-          // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+        <code class="javascript">randomPastelColor();
 
-          ArrayUtil.strToArray('apple;banana;orange', ';');
-          // => ['apple', 'banana', 'orange']
+          /-- OR --/
+          UTILS.randomPastelColor();
         </code>
       </pre>
 

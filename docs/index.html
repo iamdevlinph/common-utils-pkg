@@ -111,11 +111,18 @@
       <h5 class="heading">Usage</h5>
       <p>ES6</p>
       <pre>
-        <code class="javascript">import { randomPastelColor } from 'common-util-pkg';
+        <code class="javascript">// Specific methods
 
+          import { randomPastelColor } from 'common-utils-pkg';
           randomPastelColor();
           // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
         </code>
+        <br/>
+        <code class="javascript">// All methods
+
+            import * as UTILS from 'common-utils-pkg';
+            UTILS.randomPastelColor();
+          </code>
       </pre>
 
       <p id="unpkg-usage">Browser</p>
@@ -123,9 +130,17 @@
         <!-- convert brackets to HTML entities -->
         <code class="html">&#x3C;script src=&#x22;https://unpkg.com/common-utils-pkg&#x22;&#x3E;&#x3C;/script&#x3E;
             &#x3C;script&#x3E;
+              // Specific methods
+
               const randomPastelColor = window['common-utils-pkg].randomPastelColor;
               randomPastelColor();
-              // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+            &#x3C;/script&#x3E;
+
+            &#x3C;script&#x3E;
+              // All methods
+
+              const UTILS = window['common-utils-pkg'];
+              UTILS.randomPastelColor();
             &#x3C;/script&#x3E;
         </code>
       </pre>

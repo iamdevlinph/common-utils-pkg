@@ -17,7 +17,7 @@
         }
       ],
       "module": "String",
-      "util": "arrayToString",
+      "method": "arrayToString",
       "returns": {
         "desc": "Returns a string from the array.",
         "type": "String"
@@ -36,7 +36,7 @@
         }
       ],
       "module": "String",
-      "util": "toSentenceCase",
+      "method": "toSentenceCase",
       "returns": {
         "desc": "Returns a Sentence case string.",
         "type": "String"
@@ -55,7 +55,7 @@
         }
       ],
       "module": "String",
-      "util": "toTitleCase",
+      "method": "toTitleCase",
       "returns": {
         "desc": "Returns a Tile Case string.",
         "type": "String"
@@ -82,7 +82,7 @@
         }
       ],
       "module": "Color",
-      "util": "colorBrightness",
+      "method": "colorBrightness",
       "returns": {
         "desc": "Returns a manipulated HEX color",
         "type": "String"
@@ -101,7 +101,7 @@
         }
       ],
       "module": "Color",
-      "util": "invertColor",
+      "method": "invertColor",
       "returns": {
         "desc": "Returns a HEX color string.",
         "type": "String"
@@ -113,7 +113,7 @@
       "description": "Get a random pastel color.",
       "args": [],
       "module": "Color",
-      "util": "randomPastelColor",
+      "method": "randomPastelColor",
       "returns": {
         "desc": "Returns an HSL color.",
         "type": "String"
@@ -140,7 +140,7 @@
         }
       ],
       "module": "Core",
-      "util": "doTypesMatch",
+      "method": "doTypesMatch",
       "returns": {
         "desc": "Returns a boolean if the type of the value matches to expectedType.",
         "type": "Boolean"
@@ -154,7 +154,7 @@
       "description": "Generates a GUID.",
       "args": [],
       "module": "Key",
-      "util": "guid",
+      "method": "guid",
       "returns": {
         "desc": "guid string",
         "type": "String"
@@ -181,7 +181,7 @@
         }
       ],
       "module": "File",
-      "util": "readableBytes",
+      "method": "readableBytes",
       "returns": {
         "desc": "Returns a human readable file size.",
         "type": "String"
@@ -202,7 +202,7 @@
         }
       ],
       "module": "Slug",
-      "util": "slugify",
+      "method": "slugify",
       "returns": {
         "desc": "Returns slug version of the string.",
         "type": "String"
@@ -216,7 +216,7 @@
       "description": "Removes all data stored in the local storage.",
       "args": [],
       "module": "Storage",
-      "util": "storageClear",
+      "method": "storageClear",
       "example": "storageClear();",
       "utilArgs": "storageClear()"
     },
@@ -231,7 +231,7 @@
         }
       ],
       "module": "Storage",
-      "util": "storageGet",
+      "method": "storageGet",
       "returns": {
         "desc": "Returns data from the local storage. Returns '' if key is not found",
         "type": "Any"
@@ -250,7 +250,7 @@
         }
       ],
       "module": "Storage",
-      "util": "storageRemove",
+      "method": "storageRemove",
       "example": "storageRemove('key');",
       "utilArgs": "storageRemove(key)"
     },
@@ -271,7 +271,7 @@
         }
       ],
       "module": "Storage",
-      "util": "storageSet",
+      "method": "storageSet",
       "example": "storageSet('key', data);",
       "utilArgs": "storageSet(key, data)"
     }
@@ -294,7 +294,7 @@
         }
       ],
       "module": "Array",
-      "util": "stringToArray",
+      "method": "stringToArray",
       "returns": {
         "desc": "Returns an array of the split string.",
         "type": "Array"
@@ -321,7 +321,7 @@
         }
       ],
       "module": "Boolean",
-      "util": "toBoolean",
+      "method": "toBoolean",
       "returns": {
         "desc": "Returns a boolean equivalent of the value.",
         "type": "Boolean"
