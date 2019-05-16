@@ -1,6 +1,6 @@
 (function () {
   $.getJSON('./mapped_source.json', function (data) {
-    var mapped_source = data;
+    var mapped_source = _(data).toPairs().sortBy(0).fromPairs().value();
     var reference = document.getElementById('reference');
     _.forOwn(mapped_source, function (val, key) {
       // create card
@@ -32,7 +32,7 @@
         var target = document.getElementById(key + '-card');
         var utilSection = document.createElement('section');
         utilSection.setAttribute('class', 'util');
-        utilSection.innerHTML = '<h5 class="util__func" id="' + val.util + '">' + val.utilArgs + '</h5>' +
+        utilSection.innerHTML = '<h5 class="util__func" id="' + val.method + '">' + val.utilArgs + '</h5>' +
         '<hr class="divider--fade" />' +
         '<p class="util__desc">' + val.description + '</p>' +
         '<div class="util__section arg ' + (val.args.length > 0 ? '' : 'hidden') + '">' +
@@ -60,7 +60,7 @@
         // populate the ul with the child list
         var targetList = document.getElementById(key + '-list');
         var list = document.createElement('li');
-        list.innerHTML = '<a href="#' + val.util + '">' + val.util + '</a>';
+        list.innerHTML = '<a href="#' + val.method + '">' + val.method + '</a>';
         targetList.appendChild(list);
 
       });

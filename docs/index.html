@@ -28,7 +28,8 @@
 <body>
   <div class="home-page">
     <section class="banner">
-      <a href="./index.html"><img src="./img/js-pkg.svg" alt="Logo" class="banner__logo" title="Common Utilities Package"></a>
+      <a href="./index.html"><img src="./img/js-pkg.svg" alt="Logo" class="banner__logo"
+          title="Common Utilities Package"></a>
     </section>
 
     <section class="color-only"></section>
@@ -50,17 +51,22 @@
 
           <!-- build:travis -->
           <a href="https://travis-ci.org/iamdevlinph/common-utils-pkg" target="blank">
-            <img src="https://img.shields.io/travis/iamdevlinph/common-utils-pkg/master.svg?style=flat-square&maxAge=7200" alt="npm" />
+            <img
+              src="https://img.shields.io/travis/iamdevlinph/common-utils-pkg/master.svg?style=flat-square&maxAge=7200"
+              alt="npm" />
           </a>
 
           <!-- codecov -->
           <a href="https://codecov.io/gh/iamdevlinph/common-utils-pkg" target="blank">
-            <img src="https://img.shields.io/codecov/c/github/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=7200" alt="codecov">
+            <img
+              src="https://img.shields.io/codecov/c/github/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=7200"
+              alt="codecov">
           </a>
 
           <!-- devDependencies -->
           <a href="https://david-dm.org/iamdevlinph/common-utils-pkg?type=dev" target="blank">
-            <img src="https://img.shields.io/david/dev/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=7200" alt="npm" />
+            <img src="https://img.shields.io/david/dev/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=7200"
+              alt="npm" />
           </a>
 
           <!-- downloads -->
@@ -71,34 +77,52 @@
         <div id="badges_2nd">
           <!-- stars -->
           <a href="https://github.com/iamdevlinph/common-utils-pkg" target="blank">
-            <img src="https://img.shields.io/github/stars/iamdevlinph/common-utils-pkg.svg?style=social&label=Stars&maxAge=7200" alt="stars">
+            <img
+              src="https://img.shields.io/github/stars/iamdevlinph/common-utils-pkg.svg?style=social&label=Stars&maxAge=7200"
+              alt="stars">
           </a>
 
           <!-- forks -->
           <a href="https://github.com/iamdevlinph/common-utils-pkg/network/members" target="blank">
-            <img src="https://img.shields.io/github/forks/iamdevlinph/common-utils-pkg.svg?style=social&label=Fork&maxAge=7200" alt="fork">
+            <img
+              src="https://img.shields.io/github/forks/iamdevlinph/common-utils-pkg.svg?style=social&label=Fork&maxAge=7200"
+              alt="fork">
           </a>
 
           <!-- contributors -->
           <a href="https://github.com/iamdevlinph/common-utils-pkg/graphs/contributors" target="blank">
-            <img src="https://img.shields.io/github/contributors/iamdevlinph/common-utils-pkg.svg?style=social&maxAge=7200" alt="contributors">
+            <img
+              src="https://img.shields.io/github/contributors/iamdevlinph/common-utils-pkg.svg?style=social&maxAge=7200"
+              alt="contributors">
           </a>
         </div>
       </div>
 
       <h5 class="heading">Installation</h5>
+      <p>NPM</p>
       <pre>
-          <code class="bash">npm i --save common-utils-pkg</code>
-        </pre>
+        <code class="bash">npm i --save common-utils-pkg</code>
+      </pre>
+      <p>Yarn</p>
+      <pre>
+        <code class="bash">yarn add common-utils-pkg</code>
+      </pre>
 
       <h5 class="heading">Usage</h5>
       <p>ES6</p>
       <pre>
-        <code class="javascript">import { ColorUtil } from 'common-util-pkg';
+        <code class="javascript">// Specific methods
 
-          ColorUtil.randomPastelColor();
+          import { randomPastelColor } from 'common-utils-pkg';
+          randomPastelColor();
           // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
         </code>
+        <br/>
+        <code class="javascript">// All methods
+
+            import * as UTILS from 'common-utils-pkg';
+            UTILS.randomPastelColor();
+          </code>
       </pre>
 
       <p id="unpkg-usage">Browser</p>
@@ -106,19 +130,24 @@
         <!-- convert brackets to HTML entities -->
         <code class="html">&#x3C;script src=&#x22;https://unpkg.com/common-utils-pkg&#x22;&#x3E;&#x3C;/script&#x3E;
             &#x3C;script&#x3E;
-              const ColorUtil = window['common-utils-pkg].ColorUtil;
-              ColorUtil.randomPastelColor();
-              // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+              // Specific methods
+
+              const randomPastelColor = window['common-utils-pkg].randomPastelColor;
+              randomPastelColor();
+            &#x3C;/script&#x3E;
+
+            &#x3C;script&#x3E;
+              // All methods
+
+              const UTILS = window['common-utils-pkg'];
+              UTILS.randomPastelColor();
             &#x3C;/script&#x3E;
         </code>
       </pre>
 
       Read more about the usage <a class="dashed" href="./usage.html">here</a>
 
-      <h5 class="heading">Available Utilities</h5>
-      <ul class="styled" id="avail-utils">
-      </ul>
-
+      <h5 class="heading">Available methods</h5>
       Read more about the available methods <a class="dashed" href="./docs.html">here</a>
 
       <h5 class="heading">Changelog</h5>

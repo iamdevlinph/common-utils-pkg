@@ -1,5 +1,12 @@
 [
   {
+    "version": "3.0.0",
+    "description": [
+      "Major revision!",
+      "Able each method separately"
+    ]
+  },
+  {
     "version": "2.1.0",
     "description": [
       "Add SlugUtil.slugify()"

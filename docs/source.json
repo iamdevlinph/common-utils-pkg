@@ -8,7 +8,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Splits a string to an array based on the delimiter passed.",
+              "value": "Convert an array to a string and combine on the delimiter passed.",
               "position": {
                 "start": {
                   "line": 1,
@@ -17,8 +17,8 @@
                 },
                 "end": {
                   "line": 1,
-                  "column": 59,
-                  "offset": 58
+                  "column": 66,
+                  "offset": 65
                 },
                 "indent": []
               }
@@ -32,8 +32,8 @@
             },
             "end": {
               "line": 1,
-              "column": 59,
-              "offset": 58
+              "column": 66,
+              "offset": 65
             },
             "indent": []
           }
@@ -47,8 +47,8 @@
         },
         "end": {
           "line": 1,
-          "column": 59,
-          "offset": 58
+          "column": 66,
+          "offset": 65
         }
       }
     },
@@ -58,27 +58,27 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "ArrayUtil"
+        "name": "String"
       },
       {
         "title": "name",
         "description": null,
         "lineNumber": 4,
-        "name": "strToArray"
+        "name": "arrayToString"
       },
       {
         "title": "param",
-        "description": "string to convert to array",
+        "description": "array to convert to string",
         "lineNumber": 5,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "Array"
         },
-        "name": "string"
+        "name": "array"
       },
       {
         "title": "param",
-        "description": "where to split the string",
+        "description": "characater to use in  combining to string",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
@@ -88,52 +88,52 @@
       },
       {
         "title": "returns",
-        "description": "Returns an array of the split string.",
+        "description": "Returns a string from the array.",
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "Array"
+          "name": "String"
         }
       },
       {
         "title": "example",
-        "description": "ArrayUtil.strToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
+        "description": "arrayToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'",
         "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 1,
+        "line": 3,
         "column": 0
       },
       "end": {
-        "line": 13,
+        "line": 15,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 14,
+          "line": 16,
           "column": 0
         },
         "end": {
-          "line": 14,
+          "line": 16,
           "column": 66
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/array/methods/strToArray.js"
+      "file": "/mnt/e/common-utils-pkg/src/arrayToString/arrayToString.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "ArrayUtil.strToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']"
+        "description": "arrayToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'"
       }
     ],
     "params": [
       {
         "title": "param",
-        "name": "string",
+        "name": "array",
         "lineNumber": 5,
         "description": {
           "type": "root",
@@ -143,7 +143,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "string to convert to array",
+                  "value": "array to convert to string",
                   "position": {
                     "start": {
                       "line": 1,
@@ -189,7 +189,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "Array"
         }
       },
       {
@@ -204,7 +204,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "where to split the string",
+                  "value": "characater to use in  combining to string",
                   "position": {
                     "start": {
                       "line": 1,
@@ -213,8 +213,8 @@
                     },
                     "end": {
                       "line": 1,
-                      "column": 26,
-                      "offset": 25
+                      "column": 42,
+                      "offset": 41
                     },
                     "indent": []
                   }
@@ -228,8 +228,8 @@
                 },
                 "end": {
                   "line": 1,
-                  "column": 26,
-                  "offset": 25
+                  "column": 42,
+                  "offset": 41
                 },
                 "indent": []
               }
@@ -243,8 +243,8 @@
             },
             "end": {
               "line": 1,
-              "column": 26,
-              "offset": 25
+              "column": 42,
+              "offset": 41
             }
           }
         },
@@ -265,7 +265,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns an array of the split string.",
+                  "value": "Returns a string from the array.",
                   "position": {
                     "start": {
                       "line": 1,
@@ -274,8 +274,8 @@
                     },
                     "end": {
                       "line": 1,
-                      "column": 38,
-                      "offset": 37
+                      "column": 33,
+                      "offset": 32
                     },
                     "indent": []
                   }
@@ -289,8 +289,8 @@
                 },
                 "end": {
                   "line": 1,
-                  "column": 38,
-                  "offset": 37
+                  "column": 33,
+                  "offset": 32
                 },
                 "indent": []
               }
@@ -304,15 +304,15 @@
             },
             "end": {
               "line": 1,
-              "column": 38,
-              "offset": 37
+              "column": 33,
+              "offset": 32
             }
           }
         },
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "Array"
+          "name": "String"
         }
       }
     ],
@@ -320,7 +320,7 @@
     "throws": [],
     "todos": [],
     "kind": "module",
-    "name": "strToArray",
+    "name": "arrayToString",
     "members": {
       "global": [],
       "inner": [],
@@ -330,476 +330,11 @@
     },
     "path": [
       {
-        "name": "strToArray",
+        "name": "arrayToString",
         "kind": "module"
       }
     ],
-    "namespace": "strToArray"
-  },
-  {
-    "description": {
-      "type": "root",
-      "children": [
-        {
-          "type": "paragraph",
-          "children": [
-            {
-              "type": "text",
-              "value": "Converts any value to a Boolean equivalent.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 44,
-                  "offset": 43
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 44,
-              "offset": 43
-            },
-            "indent": []
-          }
-        },
-        {
-          "type": "paragraph",
-          "children": [
-            {
-              "type": "strong",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "Note:",
-                  "position": {
-                    "start": {
-                      "line": 3,
-                      "column": 3,
-                      "offset": 47
-                    },
-                    "end": {
-                      "line": 3,
-                      "column": 8,
-                      "offset": 52
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 3,
-                  "column": 1,
-                  "offset": 45
-                },
-                "end": {
-                  "line": 3,
-                  "column": 10,
-                  "offset": 54
-                },
-                "indent": []
-              }
-            },
-            {
-              "type": "text",
-              "value": " If no user-defined array is passed, the default true values are: ",
-              "position": {
-                "start": {
-                  "line": 3,
-                  "column": 10,
-                  "offset": 54
-                },
-                "end": {
-                  "line": 3,
-                  "column": 76,
-                  "offset": 120
-                },
-                "indent": []
-              }
-            },
-            {
-              "type": "linkReference",
-              "identifier": "'true', 'yes', 'y', '1'",
-              "referenceType": "shortcut",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "'true', 'yes', 'y', '1'",
-                  "position": {
-                    "start": {
-                      "line": 3,
-                      "column": 77,
-                      "offset": 121
-                    },
-                    "end": {
-                      "line": 3,
-                      "column": 100,
-                      "offset": 144
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 3,
-                  "column": 76,
-                  "offset": 120
-                },
-                "end": {
-                  "line": 3,
-                  "column": 101,
-                  "offset": 145
-                },
-                "indent": []
-              }
-            },
-            {
-              "type": "text",
-              "value": ".",
-              "position": {
-                "start": {
-                  "line": 3,
-                  "column": 101,
-                  "offset": 145
-                },
-                "end": {
-                  "line": 3,
-                  "column": 102,
-                  "offset": 146
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 3,
-              "column": 1,
-              "offset": 45
-            },
-            "end": {
-              "line": 3,
-              "column": 102,
-              "offset": 146
-            },
-            "indent": []
-          }
-        }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 3,
-          "column": 102,
-          "offset": 146
-        }
-      }
-    },
-    "tags": [
-      {
-        "title": "module",
-        "description": null,
-        "lineNumber": 5,
-        "type": null,
-        "name": "BoolUtil"
-      },
-      {
-        "title": "name",
-        "description": null,
-        "lineNumber": 6,
-        "name": "toBool"
-      },
-      {
-        "title": "param",
-        "description": "value to check if true or false",
-        "lineNumber": 7,
-        "type": {
-          "type": "AllLiteral"
-        },
-        "name": "val"
-      },
-      {
-        "title": "param",
-        "description": "optional array of user defined true values",
-        "lineNumber": 8,
-        "type": {
-          "type": "OptionalType",
-          "expression": {
-            "type": "NameExpression",
-            "name": "Array"
-          }
-        },
-        "name": "trueValuesArr"
-      },
-      {
-        "title": "returns",
-        "description": "Returns a boolean equivalent of the value.",
-        "lineNumber": 9,
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      },
-      {
-        "title": "example",
-        "description": "BoolUtil.toBool('y');\n // => true\n\nBoolUtil.toBool(null);\n// => false",
-        "lineNumber": 10
-      }
-    ],
-    "loc": {
-      "start": {
-        "line": 3,
-        "column": 0
-      },
-      "end": {
-        "line": 20,
-        "column": 3
-      }
-    },
-    "context": {
-      "loc": {
-        "start": {
-          "line": 21,
-          "column": 0
-        },
-        "end": {
-          "line": 29,
-          "column": 2
-        }
-      },
-      "file": "/mnt/e/common-utils-pkg/src/boolean/methods/toBool.js"
-    },
-    "augments": [],
-    "examples": [
-      {
-        "description": "BoolUtil.toBool('y');\n // => true\n\nBoolUtil.toBool(null);\n// => false"
-      }
-    ],
-    "params": [
-      {
-        "title": "param",
-        "name": "val",
-        "lineNumber": 7,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "value to check if true or false",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 32,
-                      "offset": 31
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 32,
-                  "offset": 31
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 32,
-              "offset": 31
-            }
-          }
-        },
-        "type": {
-          "type": "AllLiteral"
-        }
-      },
-      {
-        "title": "param",
-        "name": "trueValuesArr",
-        "lineNumber": 8,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "optional array of user defined true values",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 43,
-                      "offset": 42
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 43,
-                  "offset": 42
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 43,
-              "offset": 42
-            }
-          }
-        },
-        "type": {
-          "type": "OptionalType",
-          "expression": {
-            "type": "NameExpression",
-            "name": "Array"
-          }
-        }
-      }
-    ],
-    "properties": [],
-    "returns": [
-      {
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "Returns a boolean equivalent of the value.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 43,
-                      "offset": 42
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 43,
-                  "offset": 42
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 43,
-              "offset": 42
-            }
-          }
-        },
-        "title": "returns",
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      }
-    ],
-    "sees": [],
-    "throws": [],
-    "todos": [],
-    "kind": "module",
-    "name": "toBool",
-    "members": {
-      "global": [],
-      "inner": [],
-      "instance": [],
-      "events": [],
-      "static": []
-    },
-    "path": [
-      {
-        "name": "toBool",
-        "kind": "module"
-      }
-    ],
-    "namespace": "toBool"
+    "namespace": "arrayToString"
   },
   {
     "description": {
@@ -864,13 +399,13 @@
         "description": null,
         "lineNumber": 4,
         "type": null,
-        "name": "ColorUtil"
+        "name": "Color"
       },
       {
         "title": "name",
         "description": null,
         "lineNumber": 5,
-        "name": "brightness"
+        "name": "colorBrightness"
       },
       {
         "title": "param",
@@ -903,37 +438,37 @@
       },
       {
         "title": "example",
-        "description": "ColorUtil.brightness('#3CB878', 50);\n// => '#6EEAAA'\n\nColorUtil.brightness('#3CB878', -50);\n// => '#A8646'",
+        "description": "colorBrightness('#3CB878', 50);\n// => '#6EEAAA'\n\ncolorBrightness('#3CB878', -50);\n// => '#A8646'",
         "lineNumber": 9
       }
     ],
     "loc": {
       "start": {
-        "line": 4,
+        "line": 6,
         "column": 0
       },
       "end": {
-        "line": 20,
+        "line": 22,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 21,
+          "line": 23,
           "column": 0
         },
         "end": {
-          "line": 48,
+          "line": 50,
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/color/methods/brightness.js"
+      "file": "/mnt/e/common-utils-pkg/src/colorBrightness/colorBrightness.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "ColorUtil.brightness('#3CB878', 50);\n// => '#6EEAAA'\n\nColorUtil.brightness('#3CB878', -50);\n// => '#A8646'"
+        "description": "colorBrightness('#3CB878', 50);\n// => '#6EEAAA'\n\ncolorBrightness('#3CB878', -50);\n// => '#A8646'"
       }
     ],
     "params": [
@@ -1126,7 +661,7 @@
     "throws": [],
     "todos": [],
     "kind": "module",
-    "name": "brightness",
+    "name": "colorBrightness",
     "members": {
       "global": [],
       "inner": [],
@@ -1136,11 +671,540 @@
     },
     "path": [
       {
-        "name": "brightness",
+        "name": "colorBrightness",
         "kind": "module"
       }
     ],
-    "namespace": "brightness"
+    "namespace": "colorBrightness"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Checks if the type of the value is the expected type.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 54,
+                  "offset": 53
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 54,
+              "offset": 53
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 54,
+          "offset": 53
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "module",
+        "description": null,
+        "lineNumber": 3,
+        "type": null,
+        "name": "Core"
+      },
+      {
+        "title": "name",
+        "description": null,
+        "lineNumber": 4,
+        "name": "doTypesMatch"
+      },
+      {
+        "title": "param",
+        "description": "any value to check",
+        "lineNumber": 5,
+        "type": {
+          "type": "AllLiteral"
+        },
+        "name": "arg"
+      },
+      {
+        "title": "param",
+        "description": "the type to check the value against",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        },
+        "name": "expectedType"
+      },
+      {
+        "title": "returns",
+        "description": "Returns a boolean if the type of the value matches to expectedType.",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "example",
+        "description": "doTypesMatch(1, 'number');\n// => true\n\ndoTypesMatch('abc', 'number');\n// => false",
+        "lineNumber": 8
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 4,
+        "column": 0
+      },
+      "end": {
+        "line": 19,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 42,
+          "column": 2
+        }
+      },
+      "file": "/mnt/e/common-utils-pkg/src/doTypesMatch/doTypesMatchFn.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "doTypesMatch(1, 'number');\n// => true\n\ndoTypesMatch('abc', 'number');\n// => false"
+      }
+    ],
+    "params": [
+      {
+        "title": "param",
+        "name": "arg",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "any value to check",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 19,
+                      "offset": 18
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 19,
+                  "offset": 18
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 19,
+              "offset": 18
+            }
+          }
+        },
+        "type": {
+          "type": "AllLiteral"
+        }
+      },
+      {
+        "title": "param",
+        "name": "expectedType",
+        "lineNumber": 6,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "the type to check the value against",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 36,
+                      "offset": 35
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 36,
+                  "offset": 35
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 36,
+              "offset": 35
+            }
+          }
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Returns a boolean if the type of the value matches to expectedType.",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 68,
+                      "offset": 67
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 68,
+                  "offset": 67
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 68,
+              "offset": 67
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "kind": "module",
+    "name": "doTypesMatch",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "doTypesMatch",
+        "kind": "module"
+      }
+    ],
+    "namespace": "doTypesMatch"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Generates a GUID.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 18,
+                  "offset": 17
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 18,
+              "offset": 17
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 18,
+          "offset": 17
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "module",
+        "description": null,
+        "lineNumber": 3,
+        "type": null,
+        "name": "Key"
+      },
+      {
+        "title": "name",
+        "description": null,
+        "lineNumber": 4,
+        "name": "guid"
+      },
+      {
+        "title": "returns",
+        "description": "guid string",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      },
+      {
+        "title": "example",
+        "description": "guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\"",
+        "lineNumber": 6
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 11,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 2
+        }
+      },
+      "file": "/mnt/e/common-utils-pkg/src/guid/guid.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\""
+      }
+    ],
+    "params": [],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "guid string",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 12,
+                      "offset": 11
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 12,
+                  "offset": 11
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 12,
+              "offset": 11
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "kind": "module",
+    "name": "guid",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "guid",
+        "kind": "module"
+      }
+    ],
+    "namespace": "guid"
   },
   {
     "description": {
@@ -1201,7 +1265,7 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "ColorUtil"
+        "name": "Color"
       },
       {
         "title": "name",
@@ -1230,37 +1294,37 @@
       },
       {
         "title": "example",
-        "description": "ColorUtil.invertColor('#E3CCA8');\n// => '#1C3357'\n\nColorUtil.invertColor('ccc');\n// => '#333333'",
+        "description": "invertColor('#E3CCA8');\n// => '#1C3357'\n\ninvertColor('ccc');\n// => '#333333'",
         "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
-        "line": 10,
+        "line": 12,
         "column": 0
       },
       "end": {
-        "line": 24,
+        "line": 26,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 25,
+          "line": 27,
           "column": 0
         },
         "end": {
-          "line": 43,
+          "line": 45,
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/color/methods/invertHexColor.js"
+      "file": "/mnt/e/common-utils-pkg/src/invertColor/invertColor.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "ColorUtil.invertColor('#E3CCA8');\n// => '#1C3357'\n\nColorUtil.invertColor('ccc');\n// => '#333333'"
+        "description": "invertColor('#E3CCA8');\n// => '#1C3357'\n\ninvertColor('ccc');\n// => '#333333'"
       }
     ],
     "params": [
@@ -1467,7 +1531,7 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "ColorUtil"
+        "name": "Color"
       },
       {
         "title": "name",
@@ -1486,7 +1550,7 @@
       },
       {
         "title": "example",
-        "description": "ColorUtil.randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'",
+        "description": "randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'",
         "lineNumber": 6
       }
     ],
@@ -1511,12 +1575,12 @@
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/color/methods/randomPastelColor.js"
+      "file": "/mnt/e/common-utils-pkg/src/randomPastelColor/randomPastelColor.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "ColorUtil.randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'"
+        "description": "randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'"
       }
     ],
     "params": [],
@@ -1611,341 +1675,6 @@
           "children": [
             {
               "type": "text",
-              "value": "Checks if the type of the value is the expected type.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 54,
-                  "offset": 53
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 54,
-              "offset": 53
-            },
-            "indent": []
-          }
-        }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 54,
-          "offset": 53
-        }
-      }
-    },
-    "tags": [
-      {
-        "title": "module",
-        "description": null,
-        "lineNumber": 3,
-        "type": null,
-        "name": "CoreUtil"
-      },
-      {
-        "title": "name",
-        "description": null,
-        "lineNumber": 4,
-        "name": "argTypesMatch"
-      },
-      {
-        "title": "param",
-        "description": "any value to check",
-        "lineNumber": 5,
-        "type": {
-          "type": "AllLiteral"
-        },
-        "name": "arg"
-      },
-      {
-        "title": "param",
-        "description": "the type to check the value against",
-        "lineNumber": 6,
-        "type": {
-          "type": "NameExpression",
-          "name": "String"
-        },
-        "name": "expectedType"
-      },
-      {
-        "title": "returns",
-        "description": "Returns a boolean if the type of the value matches to expectedType.",
-        "lineNumber": 7,
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      },
-      {
-        "title": "example",
-        "description": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'number');\n// => false",
-        "lineNumber": 8
-      }
-    ],
-    "loc": {
-      "start": {
-        "line": 4,
-        "column": 0
-      },
-      "end": {
-        "line": 19,
-        "column": 3
-      }
-    },
-    "context": {
-      "loc": {
-        "start": {
-          "line": 20,
-          "column": 0
-        },
-        "end": {
-          "line": 42,
-          "column": 2
-        }
-      },
-      "file": "/mnt/e/common-utils-pkg/src/core/methods/argTypesMatch.js"
-    },
-    "augments": [],
-    "examples": [
-      {
-        "description": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'number');\n// => false"
-      }
-    ],
-    "params": [
-      {
-        "title": "param",
-        "name": "arg",
-        "lineNumber": 5,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "any value to check",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 19,
-                      "offset": 18
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 19,
-                  "offset": 18
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 19,
-              "offset": 18
-            }
-          }
-        },
-        "type": {
-          "type": "AllLiteral"
-        }
-      },
-      {
-        "title": "param",
-        "name": "expectedType",
-        "lineNumber": 6,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "the type to check the value against",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 36,
-                      "offset": 35
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 36,
-                  "offset": 35
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 36,
-              "offset": 35
-            }
-          }
-        },
-        "type": {
-          "type": "NameExpression",
-          "name": "String"
-        }
-      }
-    ],
-    "properties": [],
-    "returns": [
-      {
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "Returns a boolean if the type of the value matches to expectedType.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 68,
-                      "offset": 67
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 68,
-                  "offset": 67
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 68,
-              "offset": 67
-            }
-          }
-        },
-        "title": "returns",
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      }
-    ],
-    "sees": [],
-    "throws": [],
-    "todos": [],
-    "kind": "module",
-    "name": "argTypesMatch",
-    "members": {
-      "global": [],
-      "inner": [],
-      "instance": [],
-      "events": [],
-      "static": []
-    },
-    "path": [
-      {
-        "name": "argTypesMatch",
-        "kind": "module"
-      }
-    ],
-    "namespace": "argTypesMatch"
-  },
-  {
-    "description": {
-      "type": "root",
-      "children": [
-        {
-          "type": "paragraph",
-          "children": [
-            {
-              "type": "text",
               "value": "Converts a number of bytes to a human readable file size.",
               "position": {
                 "start": {
@@ -1996,13 +1725,13 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "FileUtil"
+        "name": "File"
       },
       {
         "title": "name",
         "description": null,
         "lineNumber": 4,
-        "name": "convertBytes"
+        "name": "readableBytes"
       },
       {
         "title": "param",
@@ -2038,37 +1767,37 @@
       },
       {
         "title": "example",
-        "description": "FileUtil.convertBytes(1234);\n// => 1.205078125 kB\n\nFileUtil.convertBytes(1234, 2);\n// => 1.21 kB",
+        "description": "readableBytes(1234);\n// => 1.205078125 kB\n\nreadableBytes(1234, 2);\n// => 1.21 kB",
         "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 3,
+        "line": 5,
         "column": 0
       },
       "end": {
-        "line": 18,
+        "line": 20,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 19,
+          "line": 21,
           "column": 0
         },
         "end": {
-          "line": 26,
+          "line": 28,
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/file/methods/convertBytes.js"
+      "file": "/mnt/e/common-utils-pkg/src/readableBytes/readableBytes.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "FileUtil.convertBytes(1234);\n// => 1.205078125 kB\n\nFileUtil.convertBytes(1234, 2);\n// => 1.21 kB"
+        "description": "readableBytes(1234);\n// => 1.205078125 kB\n\nreadableBytes(1234, 2);\n// => 1.21 kB"
       }
     ],
     "params": [
@@ -2264,7 +1993,7 @@
     "throws": [],
     "todos": [],
     "kind": "module",
-    "name": "convertBytes",
+    "name": "readableBytes",
     "members": {
       "global": [],
       "inner": [],
@@ -2274,471 +2003,11 @@
     },
     "path": [
       {
-        "name": "convertBytes",
+        "name": "readableBytes",
         "kind": "module"
       }
     ],
-    "namespace": "convertBytes"
-  },
-  {
-    "description": {
-      "type": "root",
-      "children": [
-        {
-          "type": "paragraph",
-          "children": [
-            {
-              "type": "text",
-              "value": "Generates a GUID.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 18,
-                  "offset": 17
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 18,
-              "offset": 17
-            },
-            "indent": []
-          }
-        }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 18,
-          "offset": 17
-        }
-      }
-    },
-    "tags": [
-      {
-        "title": "module",
-        "description": null,
-        "lineNumber": 3,
-        "type": null,
-        "name": "KeyUtil"
-      },
-      {
-        "title": "name",
-        "description": null,
-        "lineNumber": 4,
-        "name": "guid"
-      },
-      {
-        "title": "returns",
-        "description": "guid string",
-        "lineNumber": 5,
-        "type": {
-          "type": "NameExpression",
-          "name": "String"
-        }
-      },
-      {
-        "title": "example",
-        "description": "KeyUtil.guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\"",
-        "lineNumber": 6
-      }
-    ],
-    "loc": {
-      "start": {
-        "line": 1,
-        "column": 0
-      },
-      "end": {
-        "line": 11,
-        "column": 3
-      }
-    },
-    "context": {
-      "loc": {
-        "start": {
-          "line": 12,
-          "column": 0
-        },
-        "end": {
-          "line": 17,
-          "column": 2
-        }
-      },
-      "file": "/mnt/e/common-utils-pkg/src/key/methods/guid.js"
-    },
-    "augments": [],
-    "examples": [
-      {
-        "description": "KeyUtil.guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\""
-      }
-    ],
-    "params": [],
-    "properties": [],
-    "returns": [
-      {
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "guid string",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 12,
-                      "offset": 11
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 12,
-                  "offset": 11
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 12,
-              "offset": 11
-            }
-          }
-        },
-        "title": "returns",
-        "type": {
-          "type": "NameExpression",
-          "name": "String"
-        }
-      }
-    ],
-    "sees": [],
-    "throws": [],
-    "todos": [],
-    "kind": "module",
-    "name": "guid",
-    "members": {
-      "global": [],
-      "inner": [],
-      "instance": [],
-      "events": [],
-      "static": []
-    },
-    "path": [
-      {
-        "name": "guid",
-        "kind": "module"
-      }
-    ],
-    "namespace": "guid"
-  },
-  {
-    "description": {
-      "type": "root",
-      "children": [
-        {
-          "type": "paragraph",
-          "children": [
-            {
-              "type": "text",
-              "value": "Check if a given object is empty.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 34,
-                  "offset": 33
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 34,
-              "offset": 33
-            },
-            "indent": []
-          }
-        }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 34,
-          "offset": 33
-        }
-      }
-    },
-    "tags": [
-      {
-        "title": "module",
-        "description": null,
-        "lineNumber": 3,
-        "type": null,
-        "name": "ObjectUtil"
-      },
-      {
-        "title": "name",
-        "description": null,
-        "lineNumber": 4,
-        "name": "isEmpty"
-      },
-      {
-        "title": "param",
-        "description": "object to check",
-        "lineNumber": 5,
-        "type": {
-          "type": "NameExpression",
-          "name": "Object"
-        },
-        "name": "object"
-      },
-      {
-        "title": "returns",
-        "description": "Returns a boolean if the object is empty or not.",
-        "lineNumber": 6,
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      },
-      {
-        "title": "example",
-        "description": "ObjectUtil.isEmpty({});\n// => true\n\nObjectUtil.isEmpty({ a: 1 });\n// => false",
-        "lineNumber": 7
-      }
-    ],
-    "loc": {
-      "start": {
-        "line": 2,
-        "column": 0
-      },
-      "end": {
-        "line": 16,
-        "column": 3
-      }
-    },
-    "context": {
-      "loc": {
-        "start": {
-          "line": 17,
-          "column": 0
-        },
-        "end": {
-          "line": 17,
-          "column": 92
-        }
-      },
-      "file": "/mnt/e/common-utils-pkg/src/object/methods/isEmpty.js"
-    },
-    "augments": [],
-    "examples": [
-      {
-        "description": "ObjectUtil.isEmpty({});\n// => true\n\nObjectUtil.isEmpty({ a: 1 });\n// => false"
-      }
-    ],
-    "params": [
-      {
-        "title": "param",
-        "name": "object",
-        "lineNumber": 5,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "object to check",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 16,
-                      "offset": 15
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 16,
-                  "offset": 15
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 16,
-              "offset": 15
-            }
-          }
-        },
-        "type": {
-          "type": "NameExpression",
-          "name": "Object"
-        }
-      }
-    ],
-    "properties": [],
-    "returns": [
-      {
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "Returns a boolean if the object is empty or not.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 49,
-                      "offset": 48
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 49,
-                  "offset": 48
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 49,
-              "offset": 48
-            }
-          }
-        },
-        "title": "returns",
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      }
-    ],
-    "sees": [],
-    "throws": [],
-    "todos": [],
-    "kind": "module",
-    "name": "isEmpty",
-    "members": {
-      "global": [],
-      "inner": [],
-      "instance": [],
-      "events": [],
-      "static": []
-    },
-    "path": [
-      {
-        "name": "isEmpty",
-        "kind": "module"
-      }
-    ],
-    "namespace": "isEmpty"
+    "namespace": "readableBytes"
   },
   {
     "description": {
@@ -2799,7 +2068,7 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "SlugUtil"
+        "name": "Slug"
       },
       {
         "title": "name",
@@ -2828,37 +2097,37 @@
       },
       {
         "title": "example",
-        "description": "SlugUtil.slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nSlugUtil.slugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nSlugUtil.slugify('wïth speciäl chærs');\n// => 'with-special-chars'",
+        "description": "slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nslugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nslugify('wïth speciäl chærs');\n// => 'with-special-chars'",
         "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
-        "line": 1,
+        "line": 3,
         "column": 0
       },
       "end": {
-        "line": 18,
+        "line": 20,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 20,
+          "line": 22,
           "column": 0
         },
         "end": {
-          "line": 38,
+          "line": 40,
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/slug/methods/slugify.js"
+      "file": "/mnt/e/common-utils-pkg/src/slugify/slugify.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "SlugUtil.slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nSlugUtil.slugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nSlugUtil.slugify('wïth speciäl chærs');\n// => 'with-special-chars'"
+        "description": "slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nslugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nslugify('wïth speciäl chærs');\n// => 'with-special-chars'"
       }
     ],
     "params": [
@@ -3065,17 +2334,17 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "StorageUtil"
+        "name": "Storage"
       },
       {
         "title": "name",
         "description": null,
         "lineNumber": 4,
-        "name": "clear"
+        "name": "storageClear"
       },
       {
         "title": "example",
-        "description": "StorageUtil.clear();",
+        "description": "storageClear();",
         "lineNumber": 5
       }
     ],
@@ -3097,15 +2366,15 @@
         },
         "end": {
           "line": 11,
-          "column": 48
+          "column": 55
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/storage/methods/clear.js"
+      "file": "/mnt/e/common-utils-pkg/src/storageClear/storageClear.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "StorageUtil.clear();"
+        "description": "storageClear();"
       }
     ],
     "params": [],
@@ -3115,7 +2384,7 @@
     "throws": [],
     "todos": [],
     "kind": "module",
-    "name": "clear",
+    "name": "storageClear",
     "members": {
       "global": [],
       "inner": [],
@@ -3125,11 +2394,11 @@
     },
     "path": [
       {
-        "name": "clear",
+        "name": "storageClear",
         "kind": "module"
       }
     ],
-    "namespace": "clear"
+    "namespace": "storageClear"
   },
   {
     "description": {
@@ -3190,13 +2459,13 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "StorageUtil"
+        "name": "Storage"
       },
       {
         "title": "name",
         "description": null,
         "lineNumber": 4,
-        "name": "getItem"
+        "name": "storageGet"
       },
       {
         "title": "param",
@@ -3219,37 +2488,37 @@
       },
       {
         "title": "example",
-        "description": "StorageUtil.getItem('key');",
+        "description": "storageGet('key');",
         "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
-        "line": 3,
+        "line": 5,
         "column": 0
       },
       "end": {
-        "line": 13,
+        "line": 15,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 14,
+          "line": 16,
           "column": 0
         },
         "end": {
-          "line": 23,
+          "line": 25,
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/storage/methods/getItem.js"
+      "file": "/mnt/e/common-utils-pkg/src/storageGet/storageGet.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "StorageUtil.getItem('key');"
+        "description": "storageGet('key');"
       }
     ],
     "params": [
@@ -3381,7 +2650,7 @@
     "throws": [],
     "todos": [],
     "kind": "module",
-    "name": "getItem",
+    "name": "storageGet",
     "members": {
       "global": [],
       "inner": [],
@@ -3391,11 +2660,11 @@
     },
     "path": [
       {
-        "name": "getItem",
+        "name": "storageGet",
         "kind": "module"
       }
     ],
-    "namespace": "getItem"
+    "namespace": "storageGet"
   },
   {
     "description": {
@@ -3456,13 +2725,13 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "StorageUtil"
+        "name": "Storage"
       },
       {
         "title": "name",
         "description": null,
         "lineNumber": 4,
-        "name": "removeItem"
+        "name": "storageRemove"
       },
       {
         "title": "param",
@@ -3476,37 +2745,37 @@
       },
       {
         "title": "example",
-        "description": "StorageUtil.removeItem('key');",
+        "description": "storageRemove('key');",
         "lineNumber": 6
       }
     ],
     "loc": {
       "start": {
-        "line": 1,
+        "line": 3,
         "column": 0
       },
       "end": {
-        "line": 10,
+        "line": 12,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 11,
+          "line": 13,
           "column": 0
         },
         "end": {
-          "line": 11,
-          "column": 62
+          "line": 13,
+          "column": 65
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/storage/methods/removeItem.js"
+      "file": "/mnt/e/common-utils-pkg/src/storageRemove/storageRemove.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "StorageUtil.removeItem('key');"
+        "description": "storageRemove('key');"
       }
     ],
     "params": [
@@ -3578,7 +2847,7 @@
     "throws": [],
     "todos": [],
     "kind": "module",
-    "name": "removeItem",
+    "name": "storageRemove",
     "members": {
       "global": [],
       "inner": [],
@@ -3588,11 +2857,11 @@
     },
     "path": [
       {
-        "name": "removeItem",
+        "name": "storageRemove",
         "kind": "module"
       }
     ],
-    "namespace": "removeItem"
+    "namespace": "storageRemove"
   },
   {
     "description": {
@@ -3653,13 +2922,13 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "StorageUtil"
+        "name": "Storage"
       },
       {
         "title": "name",
         "description": null,
         "lineNumber": 4,
-        "name": "setItem"
+        "name": "storageSet"
       },
       {
         "title": "param",
@@ -3682,37 +2951,37 @@
       },
       {
         "title": "example",
-        "description": "StorageUtill.setItem('key', data);",
+        "description": "storageSet('key', data);",
         "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
-        "line": 3,
+        "line": 4,
         "column": 0
       },
       "end": {
-        "line": 13,
+        "line": 14,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 0
         },
         "end": {
-          "line": 14,
-          "column": 105
+          "line": 15,
+          "column": 108
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/storage/methods/setItem.js"
+      "file": "/mnt/e/common-utils-pkg/src/storageSet/storageSet.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "StorageUtill.setItem('key', data);"
+        "description": "storageSet('key', data);"
       }
     ],
     "params": [
@@ -3844,7 +3113,7 @@
     "throws": [],
     "todos": [],
     "kind": "module",
-    "name": "setItem",
+    "name": "storageSet",
     "members": {
       "global": [],
       "inner": [],
@@ -3854,11 +3123,11 @@
     },
     "path": [
       {
-        "name": "setItem",
+        "name": "storageSet",
         "kind": "module"
       }
     ],
-    "namespace": "setItem"
+    "namespace": "storageSet"
   },
   {
     "description": {
@@ -3869,7 +3138,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Convert an array to a string and combine on the delimiter passed.",
+              "value": "Splits a string to an array based on the delimiter passed.",
               "position": {
                 "start": {
                   "line": 1,
@@ -3878,8 +3147,8 @@
                 },
                 "end": {
                   "line": 1,
-                  "column": 66,
-                  "offset": 65
+                  "column": 59,
+                  "offset": 58
                 },
                 "indent": []
               }
@@ -3893,8 +3162,8 @@
             },
             "end": {
               "line": 1,
-              "column": 66,
-              "offset": 65
+              "column": 59,
+              "offset": 58
             },
             "indent": []
           }
@@ -3908,8 +3177,8 @@
         },
         "end": {
           "line": 1,
-          "column": 66,
-          "offset": 65
+          "column": 59,
+          "offset": 58
         }
       }
     },
@@ -3919,27 +3188,27 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "StringUtil"
+        "name": "Array"
       },
       {
         "title": "name",
         "description": null,
         "lineNumber": 4,
-        "name": "arrToString"
+        "name": "stringToArray"
       },
       {
         "title": "param",
-        "description": "array to convert to string",
+        "description": "string to convert to array",
         "lineNumber": 5,
         "type": {
           "type": "NameExpression",
-          "name": "Array"
+          "name": "String"
         },
-        "name": "array"
+        "name": "string"
       },
       {
         "title": "param",
-        "description": "characater to use in  combining to string",
+        "description": "where to split the string",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
@@ -3949,52 +3218,52 @@
       },
       {
         "title": "returns",
-        "description": "Returns a string from the array.",
+        "description": "Returns an array of the split string.",
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "Array"
         }
       },
       {
         "title": "example",
-        "description": "StringUtil.arrToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'",
+        "description": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
         "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 1,
+        "line": 3,
         "column": 0
       },
       "end": {
-        "line": 13,
+        "line": 15,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 14,
+          "line": 16,
           "column": 0
         },
         "end": {
-          "line": 14,
-          "column": 64
+          "line": 16,
+          "column": 69
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/string/methods/arrToString.js"
+      "file": "/mnt/e/common-utils-pkg/src/stringToArray/stringToArray.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "StringUtil.arrToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'"
+        "description": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']"
       }
     ],
     "params": [
       {
         "title": "param",
-        "name": "array",
+        "name": "string",
         "lineNumber": 5,
         "description": {
           "type": "root",
@@ -4004,7 +3273,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "array to convert to string",
+                  "value": "string to convert to array",
                   "position": {
                     "start": {
                       "line": 1,
@@ -4050,7 +3319,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "Array"
+          "name": "String"
         }
       },
       {
@@ -4065,7 +3334,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "characater to use in  combining to string",
+                  "value": "where to split the string",
                   "position": {
                     "start": {
                       "line": 1,
@@ -4074,8 +3343,8 @@
                     },
                     "end": {
                       "line": 1,
-                      "column": 42,
-                      "offset": 41
+                      "column": 26,
+                      "offset": 25
                     },
                     "indent": []
                   }
@@ -4089,8 +3358,8 @@
                 },
                 "end": {
                   "line": 1,
-                  "column": 42,
-                  "offset": 41
+                  "column": 26,
+                  "offset": 25
                 },
                 "indent": []
               }
@@ -4104,8 +3373,8 @@
             },
             "end": {
               "line": 1,
-              "column": 42,
-              "offset": 41
+              "column": 26,
+              "offset": 25
             }
           }
         },
@@ -4126,7 +3395,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a string from the array.",
+                  "value": "Returns an array of the split string.",
                   "position": {
                     "start": {
                       "line": 1,
@@ -4135,8 +3404,8 @@
                     },
                     "end": {
                       "line": 1,
-                      "column": 33,
-                      "offset": 32
+                      "column": 38,
+                      "offset": 37
                     },
                     "indent": []
                   }
@@ -4150,8 +3419,8 @@
                 },
                 "end": {
                   "line": 1,
-                  "column": 33,
-                  "offset": 32
+                  "column": 38,
+                  "offset": 37
                 },
                 "indent": []
               }
@@ -4165,15 +3434,15 @@
             },
             "end": {
               "line": 1,
-              "column": 33,
-              "offset": 32
+              "column": 38,
+              "offset": 37
             }
           }
         },
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "Array"
         }
       }
     ],
@@ -4181,7 +3450,7 @@
     "throws": [],
     "todos": [],
     "kind": "module",
-    "name": "arrToString",
+    "name": "stringToArray",
     "members": {
       "global": [],
       "inner": [],
@@ -4191,11 +3460,476 @@
     },
     "path": [
       {
-        "name": "arrToString",
+        "name": "stringToArray",
         "kind": "module"
       }
     ],
-    "namespace": "arrToString"
+    "namespace": "stringToArray"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Converts any value to a Boolean equivalent.",
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 44,
+                  "offset": 43
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 44,
+              "offset": 43
+            },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Note:",
+                  "position": {
+                    "start": {
+                      "line": 3,
+                      "column": 3,
+                      "offset": 47
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 8,
+                      "offset": 52
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 3,
+                  "column": 1,
+                  "offset": 45
+                },
+                "end": {
+                  "line": 3,
+                  "column": 10,
+                  "offset": 54
+                },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " If no user-defined array is passed, the default true values are: ",
+              "position": {
+                "start": {
+                  "line": 3,
+                  "column": 10,
+                  "offset": 54
+                },
+                "end": {
+                  "line": 3,
+                  "column": 76,
+                  "offset": 120
+                },
+                "indent": []
+              }
+            },
+            {
+              "type": "linkReference",
+              "identifier": "'true', 'yes', 'y', '1'",
+              "referenceType": "shortcut",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "'true', 'yes', 'y', '1'",
+                  "position": {
+                    "start": {
+                      "line": 3,
+                      "column": 77,
+                      "offset": 121
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 100,
+                      "offset": 144
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 3,
+                  "column": 76,
+                  "offset": 120
+                },
+                "end": {
+                  "line": 3,
+                  "column": 101,
+                  "offset": 145
+                },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": ".",
+              "position": {
+                "start": {
+                  "line": 3,
+                  "column": 101,
+                  "offset": 145
+                },
+                "end": {
+                  "line": 3,
+                  "column": 102,
+                  "offset": 146
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 3,
+              "column": 1,
+              "offset": 45
+            },
+            "end": {
+              "line": 3,
+              "column": 102,
+              "offset": 146
+            },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 102,
+          "offset": 146
+        }
+      }
+    },
+    "tags": [
+      {
+        "title": "module",
+        "description": null,
+        "lineNumber": 5,
+        "type": null,
+        "name": "Boolean"
+      },
+      {
+        "title": "name",
+        "description": null,
+        "lineNumber": 6,
+        "name": "toBoolean"
+      },
+      {
+        "title": "param",
+        "description": "value to check if true or false",
+        "lineNumber": 7,
+        "type": {
+          "type": "AllLiteral"
+        },
+        "name": "val"
+      },
+      {
+        "title": "param",
+        "description": "optional array of user defined true values",
+        "lineNumber": 8,
+        "type": {
+          "type": "OptionalType",
+          "expression": {
+            "type": "NameExpression",
+            "name": "Array"
+          }
+        },
+        "name": "trueValuesArr"
+      },
+      {
+        "title": "returns",
+        "description": "Returns a boolean equivalent of the value.",
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      },
+      {
+        "title": "example",
+        "description": "toBoolean('y');\n // => true\n\ntoBoolean(null);\n// => false",
+        "lineNumber": 10
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 5,
+        "column": 0
+      },
+      "end": {
+        "line": 22,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 31,
+          "column": 2
+        }
+      },
+      "file": "/mnt/e/common-utils-pkg/src/toBoolean/toBoolean.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "toBoolean('y');\n // => true\n\ntoBoolean(null);\n// => false"
+      }
+    ],
+    "params": [
+      {
+        "title": "param",
+        "name": "val",
+        "lineNumber": 7,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "value to check if true or false",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 32,
+                      "offset": 31
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 32,
+                  "offset": 31
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 32,
+              "offset": 31
+            }
+          }
+        },
+        "type": {
+          "type": "AllLiteral"
+        }
+      },
+      {
+        "title": "param",
+        "name": "trueValuesArr",
+        "lineNumber": 8,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "optional array of user defined true values",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 43,
+                      "offset": 42
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 43,
+                  "offset": 42
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 43,
+              "offset": 42
+            }
+          }
+        },
+        "type": {
+          "type": "OptionalType",
+          "expression": {
+            "type": "NameExpression",
+            "name": "Array"
+          }
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Returns a boolean equivalent of the value.",
+                  "position": {
+                    "start": {
+                      "line": 1,
+                      "column": 1,
+                      "offset": 0
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 43,
+                      "offset": 42
+                    },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": {
+                  "line": 1,
+                  "column": 1,
+                  "offset": 0
+                },
+                "end": {
+                  "line": 1,
+                  "column": 43,
+                  "offset": 42
+                },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 43,
+              "offset": 42
+            }
+          }
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "kind": "module",
+    "name": "toBoolean",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "toBoolean",
+        "kind": "module"
+      }
+    ],
+    "namespace": "toBoolean"
   },
   {
     "description": {
@@ -4256,7 +3990,7 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "StringUtil"
+        "name": "String"
       },
       {
         "title": "name",
@@ -4285,37 +4019,37 @@
       },
       {
         "title": "example",
-        "description": "StringUtil.toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'",
+        "description": "toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'",
         "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
-        "line": 1,
+        "line": 3,
         "column": 0
       },
       "end": {
-        "line": 12,
+        "line": 14,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 13,
+          "line": 15,
           "column": 0
         },
         "end": {
-          "line": 16,
+          "line": 18,
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/string/methods/toSentenceCase.js"
+      "file": "/mnt/e/common-utils-pkg/src/toSentenceCase/toSentenceCase.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "StringUtil.toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'"
+        "description": "toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'"
       }
     ],
     "params": [
@@ -4522,7 +4256,7 @@
         "description": null,
         "lineNumber": 3,
         "type": null,
-        "name": "StringUtil"
+        "name": "String"
       },
       {
         "title": "name",
@@ -4551,37 +4285,37 @@
       },
       {
         "title": "example",
-        "description": "StringUtil.toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'",
+        "description": "toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'",
         "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
-        "line": 3,
+        "line": 5,
         "column": 0
       },
       "end": {
-        "line": 14,
+        "line": 16,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 15,
+          "line": 17,
           "column": 0
         },
         "end": {
-          "line": 18,
+          "line": 20,
           "column": 2
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/string/methods/toTitleCase.js"
+      "file": "/mnt/e/common-utils-pkg/src/toTitleCase/toTitleCase.js"
     },
     "augments": [],
     "examples": [
       {
-        "description": "StringUtil.toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'"
+        "description": "toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'"
       }
     ],
     "params": [

@@ -1,25 +1,16 @@
-import ArrayUtil from './array/array.util';
-import BoolUtil from './boolean/boolean.util';
-import ColorUtil from './color/color.util';
-import CoreUtil from './core/core.util';
-import DateUtil from './date/date.util';
-import FileUtil from './file/file.util';
-import KeyUtil from './key/key.util';
-import ObjectUtil from './object/object.util';
-import SlugUtil from './slug/slug.util';
-import StorageUtil from './storage/storage.util';
-import StringUtil from './string/string.util';
-
-export {
-  ArrayUtil,
-  BoolUtil,
-  ColorUtil,
-  CoreUtil,
-  DateUtil,
-  FileUtil,
-  KeyUtil,
-  ObjectUtil,
-  SlugUtil,
-  StorageUtil,
-  StringUtil
-};
+export { default as arrayToString } from './arrayToString/arrayToString';
+export { default as colorBrightness } from './colorBrightness/colorBrightness';
+export { default as doTypesMatch } from './doTypesMatch/doTypesMatch';
+export { default as guid } from './guid/guid';
+export { default as invertColor } from './invertColor/invertColor';
+export { default as randomPastelColor } from './randomPastelColor/randomPastelColor';
+export { default as readableBytes } from './readableBytes/readableBytes';
+export { default as slugify } from './slugify/slugify';
+export { default as storageClear } from './storageClear/storageClear';
+export { default as storageGet } from './storageGet/storageGet';
+export { default as storageRemove } from './storageRemove/storageRemove';
+export { default as storageSet } from './storageSet/storageSet';
+export { default as stringToArray } from './stringToArray/stringToArray';
+export { default as toBoolean } from './toBoolean/toBoolean';
+export { default as toSentenceCase } from './toSentenceCase/toSentenceCase';
+export { default as toTitleCase } from './toTitleCase/toTitleCase';

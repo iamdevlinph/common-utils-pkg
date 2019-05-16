@@ -29,25 +29,31 @@
 <body>
   <div class="home-page">
     <section class="banner">
-      <a href="./index.html"><img src="./img/js-pkg.svg" alt="Logo" class="banner__logo" title="Common Utilities Package"></a>
+      <a href="./index.html"><img src="./img/js-pkg.svg" alt="Logo" class="banner__logo"
+          title="Common Utilities Package"></a>
     </section>
 
     <section class="color-only"></section>
 
     <section class="main">
       <h4 class="center">How to use?</h4>
-      <p>This package provides multiple utilities that you can import on demand.</p>
+      <!-- <p>This package provides multiple utilities that you can import on demand.</p> -->
 
-      <p>Right now, the available utilities are:</p>
+      <!-- <p>Right now, the available utilities are:</p>
       <ul class="styled" id="utils-list">
-      </ul>
+      </ul> -->
 
       <h5>ES6</h5>
-      <p>For ES6, you can import a single utility like this</p>
-      <pre><code class="javascript">import { ArrayUtil } from 'common-utils-pkg';</code></pre>
+      <p>For ES6, you can import a single method like this</p>
+      <pre><code class="javascript">import { randomPastelColor } from 'common-utils-pkg';</code></pre>
 
-      <p>Or you may choose to import multiple utilities like so</p>
-      <pre><code class="javascript">import { ArrayUtil, BoolUtil } from 'common-utils-pkg';</code></pre>
+      <p>Or you may choose to import multiple methods like so</p>
+      <pre><code class="javascript">import { randomPastelColor, stringToArray } from 'common-utils-pkg';</code></pre>
+
+      <p>Or you can also import all and store them to a variable</p>
+      <pre>
+        <code class="javascript">import * as UTILS from 'common-utils-pkg';</code>
+      </pre>
 
       <h5>Browser</h5>
       <p>You can also use this package directly in your browser by importing the script from UNPKG</p>
@@ -55,27 +61,29 @@
       <p>This adds the package to the <span class="bold">window</span> object. You can access the <span
           class="bold">common-utils-pkg</span> variable by</p>
       <pre><code class="javascript">window['common-utils-pkg]</code></pre>
-      <p>And it would be easier to assign the utilities to a variable like</p>
+      <p>And it would be easier to assign the methods to a variable like</p>
       <pre>
         <code class="javascript" id="utils-list-code">&#x3C;script&#x3E;
-          const ArrayUtil = window['common-utils-pkg'].ArrayUtil;
-          const BoolUtil = window['common-utils-pkg'].BoolUtil;
-          const ColorUtil = window['common-utils-pkg'].ColorUtil;
-          const FileUtil = window['common-utils-pkg'].FileUtil;
-          const StringUtil = window['common-utils-pkg'].StringUtil;
+          const randomPastelColor = window['common-utils-pkg'].randomPastelColor;
           &#x3C;/script&#x3E;
         </code>
       </pre>
-      <p>The usage in the browser is a bit complicated since the package exposes 5 available variables.</p>
+
+      <p>Or you can export the whole package into a variable.</p>
+      <pre>
+        <code class="javascript" id="utils-list-code">&#x3C;script&#x3E;
+          const UTILS = window['common-utils-pkg'];
+          &#x3C;/script&#x3E;
+        </code>
+      </pre>
 
       <h5>Usage</h5>
-      <p>When the utilities are ready for use, you can call the available method like so</p>
+      <!-- <p>When the methods are ready for use, you can call the available method like so</p> -->
       <pre>
-        <code class="javascript">ColorUtil.randomPastelColor()
-          // => "hsl(24.380295231593017,27.395530909987613%,86.86101287292395%)"
+        <code class="javascript">randomPastelColor();
 
-          ArrayUtil.strToArray('apple;banana;orange', ';');
-          // => ['apple', 'banana', 'orange']
+          /-- OR --/
+          UTILS.randomPastelColor();
         </code>
       </pre>
 

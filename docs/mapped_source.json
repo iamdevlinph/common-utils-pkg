@@ -1,59 +1,70 @@
 {
-  "ArrayUtil": [
+  "String": [
     {
-      "description": "Splits a string to an array based on the delimiter passed.",
+      "description": "Convert an array to a string and combine on the delimiter passed.",
       "args": [
         {
-          "description": "string to convert to array",
-          "param": "string",
-          "type": "String",
+          "description": "array to convert to string",
+          "param": "array",
+          "type": "Array",
           "optional": false
         },
         {
-          "description": "where to split the string",
+          "description": "characater to use in  combining to string",
           "param": "delimiter",
           "type": "String",
           "optional": false
         }
       ],
-      "module": "ArrayUtil",
-      "util": "strToArray",
+      "module": "String",
+      "method": "arrayToString",
       "returns": {
-        "desc": "Returns an array of the split string.",
-        "type": "Array"
+        "desc": "Returns a string from the array.",
+        "type": "String"
       },
-      "example": "ArrayUtil.strToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
-      "utilArgs": "strToArray(string, delimiter)"
-    }
-  ],
-  "BoolUtil": [
+      "example": "arrayToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'",
+      "utilArgs": "arrayToString(array, delimiter)"
+    },
     {
-      "description": "Converts any value to a Boolean equivalent.",
+      "description": "Converts a string to Sentence case.",
       "args": [
         {
-          "description": "value to check if true or false",
-          "param": "val",
-          "type": "*",
+          "description": "string to convert to Sentence case",
+          "param": "string",
+          "type": "String",
           "optional": false
-        },
-        {
-          "description": "optional array of user defined true values",
-          "param": "trueValuesArr",
-          "type": "Array",
-          "optional": true
         }
       ],
-      "module": "BoolUtil",
-      "util": "toBool",
+      "module": "String",
+      "method": "toSentenceCase",
       "returns": {
-        "desc": "Returns a boolean equivalent of the value.",
-        "type": "Boolean"
+        "desc": "Returns a Sentence case string.",
+        "type": "String"
       },
-      "example": "BoolUtil.toBool('y');\n // => true\n\nBoolUtil.toBool(null);\n// => false",
-      "utilArgs": "toBool(val, [trueValuesArr])"
+      "example": "toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'",
+      "utilArgs": "toSentenceCase(string)"
+    },
+    {
+      "description": "Converts a string to a Title Case.",
+      "args": [
+        {
+          "description": "string to convert to Title Case",
+          "param": "string",
+          "type": "String",
+          "optional": false
+        }
+      ],
+      "module": "String",
+      "method": "toTitleCase",
+      "returns": {
+        "desc": "Returns a Tile Case string.",
+        "type": "String"
+      },
+      "example": "toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'",
+      "utilArgs": "toTitleCase(string)"
     }
   ],
-  "ColorUtil": [
+  "Color": [
     {
       "description": "Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.\nWill always return with # symbol.",
       "args": [
@@ -70,14 +81,14 @@
           "optional": false
         }
       ],
-      "module": "ColorUtil",
-      "util": "brightness",
+      "module": "Color",
+      "method": "colorBrightness",
       "returns": {
         "desc": "Returns a manipulated HEX color",
         "type": "String"
       },
-      "example": "ColorUtil.brightness('#3CB878', 50);\n// => '#6EEAAA'\n\nColorUtil.brightness('#3CB878', -50);\n// => '#A8646'",
-      "utilArgs": "brightness(hex, amount)"
+      "example": "colorBrightness('#3CB878', 50);\n// => '#6EEAAA'\n\ncolorBrightness('#3CB878', -50);\n// => '#A8646'",
+      "utilArgs": "colorBrightness(hex, amount)"
     },
     {
       "description": "Inverts a HEX color.",
@@ -89,29 +100,29 @@
           "optional": false
         }
       ],
-      "module": "ColorUtil",
-      "util": "invertColor",
+      "module": "Color",
+      "method": "invertColor",
       "returns": {
         "desc": "Returns a HEX color string.",
         "type": "String"
       },
-      "example": "ColorUtil.invertColor('#E3CCA8');\n// => '#1C3357'\n\nColorUtil.invertColor('ccc');\n// => '#333333'",
+      "example": "invertColor('#E3CCA8');\n// => '#1C3357'\n\ninvertColor('ccc');\n// => '#333333'",
       "utilArgs": "invertColor(hex)"
     },
     {
       "description": "Get a random pastel color.",
       "args": [],
-      "module": "ColorUtil",
-      "util": "randomPastelColor",
+      "module": "Color",
+      "method": "randomPastelColor",
       "returns": {
         "desc": "Returns an HSL color.",
         "type": "String"
       },
-      "example": "ColorUtil.randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'",
+      "example": "randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'",
       "utilArgs": "randomPastelColor()"
     }
   ],
-  "CoreUtil": [
+  "Core": [
     {
       "description": "Checks if the type of the value is the expected type.",
       "args": [
@@ -128,17 +139,31 @@
           "optional": false
         }
       ],
-      "module": "CoreUtil",
-      "util": "argTypesMatch",
+      "module": "Core",
+      "method": "doTypesMatch",
       "returns": {
         "desc": "Returns a boolean if the type of the value matches to expectedType.",
         "type": "Boolean"
       },
-      "example": "CoreUtil.argTypesMatch(1, 'number');\n// => true\n\nCoreUtil.argTypesMatch('abc', 'number');\n// => false",
-      "utilArgs": "argTypesMatch(arg, expectedType)"
+      "example": "doTypesMatch(1, 'number');\n// => true\n\ndoTypesMatch('abc', 'number');\n// => false",
+      "utilArgs": "doTypesMatch(arg, expectedType)"
     }
   ],
-  "FileUtil": [
+  "Key": [
+    {
+      "description": "Generates a GUID.",
+      "args": [],
+      "module": "Key",
+      "method": "guid",
+      "returns": {
+        "desc": "guid string",
+        "type": "String"
+      },
+      "example": "guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\"",
+      "utilArgs": "guid()"
+    }
+  ],
+  "File": [
     {
       "description": "Converts a number of bytes to a human readable file size.",
       "args": [
@@ -155,52 +180,17 @@
           "optional": true
         }
       ],
-      "module": "FileUtil",
-      "util": "convertBytes",
+      "module": "File",
+      "method": "readableBytes",
       "returns": {
         "desc": "Returns a human readable file size.",
         "type": "String"
       },
-      "example": "FileUtil.convertBytes(1234);\n// => 1.205078125 kB\n\nFileUtil.convertBytes(1234, 2);\n// => 1.21 kB",
-      "utilArgs": "convertBytes(bytes, [decimals])"
+      "example": "readableBytes(1234);\n// => 1.205078125 kB\n\nreadableBytes(1234, 2);\n// => 1.21 kB",
+      "utilArgs": "readableBytes(bytes, [decimals])"
     }
   ],
-  "KeyUtil": [
-    {
-      "description": "Generates a GUID.",
-      "args": [],
-      "module": "KeyUtil",
-      "util": "guid",
-      "returns": {
-        "desc": "guid string",
-        "type": "String"
-      },
-      "example": "KeyUtil.guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\"",
-      "utilArgs": "guid()"
-    }
-  ],
-  "ObjectUtil": [
-    {
-      "description": "Check if a given object is empty.",
-      "args": [
-        {
-          "description": "object to check",
-          "param": "object",
-          "type": "Object",
-          "optional": false
-        }
-      ],
-      "module": "ObjectUtil",
-      "util": "isEmpty",
-      "returns": {
-        "desc": "Returns a boolean if the object is empty or not.",
-        "type": "Boolean"
-      },
-      "example": "ObjectUtil.isEmpty({});\n// => true\n\nObjectUtil.isEmpty({ a: 1 });\n// => false",
-      "utilArgs": "isEmpty(object)"
-    }
-  ],
-  "SlugUtil": [
+  "Slug": [
     {
       "description": "Converts a string into a slug for URL usage.",
       "args": [
@@ -211,24 +201,24 @@
           "optional": false
         }
       ],
-      "module": "SlugUtil",
-      "util": "slugify",
+      "module": "Slug",
+      "method": "slugify",
       "returns": {
         "desc": "Returns slug version of the string.",
         "type": "String"
       },
-      "example": "SlugUtil.slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nSlugUtil.slugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nSlugUtil.slugify('wïth speciäl chærs');\n// => 'with-special-chars'",
+      "example": "slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nslugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nslugify('wïth speciäl chærs');\n// => 'with-special-chars'",
       "utilArgs": "slugify(string)"
     }
   ],
-  "StorageUtil": [
+  "Storage": [
     {
       "description": "Removes all data stored in the local storage.",
       "args": [],
-      "module": "StorageUtil",
-      "util": "clear",
-      "example": "StorageUtil.clear();",
-      "utilArgs": "clear()"
+      "module": "Storage",
+      "method": "storageClear",
+      "example": "storageClear();",
+      "utilArgs": "storageClear()"
     },
     {
       "description": "Retrieves data from the local storage.",
@@ -240,14 +230,14 @@
           "optional": false
         }
       ],
-      "module": "StorageUtil",
-      "util": "getItem",
+      "module": "Storage",
+      "method": "storageGet",
       "returns": {
         "desc": "Returns data from the local storage. Returns '' if key is not found",
         "type": "Any"
       },
-      "example": "StorageUtil.getItem('key');",
-      "utilArgs": "getItem(key)"
+      "example": "storageGet('key');",
+      "utilArgs": "storageGet(key)"
     },
     {
       "description": "Removes an entry from the local storage.",
@@ -259,10 +249,10 @@
           "optional": false
         }
       ],
-      "module": "StorageUtil",
-      "util": "removeItem",
-      "example": "StorageUtil.removeItem('key');",
-      "utilArgs": "removeItem(key)"
+      "module": "Storage",
+      "method": "storageRemove",
+      "example": "storageRemove('key');",
+      "utilArgs": "storageRemove(key)"
     },
     {
       "description": "Stores data to the local storage.",
@@ -280,75 +270,64 @@
           "optional": false
         }
       ],
-      "module": "StorageUtil",
-      "util": "setItem",
-      "example": "StorageUtill.setItem('key', data);",
-      "utilArgs": "setItem(key, data)"
+      "module": "Storage",
+      "method": "storageSet",
+      "example": "storageSet('key', data);",
+      "utilArgs": "storageSet(key, data)"
     }
   ],
-  "StringUtil": [
+  "Array": [
     {
-      "description": "Convert an array to a string and combine on the delimiter passed.",
+      "description": "Splits a string to an array based on the delimiter passed.",
       "args": [
         {
-          "description": "array to convert to string",
-          "param": "array",
-          "type": "Array",
+          "description": "string to convert to array",
+          "param": "string",
+          "type": "String",
           "optional": false
         },
         {
-          "description": "characater to use in  combining to string",
+          "description": "where to split the string",
           "param": "delimiter",
           "type": "String",
           "optional": false
         }
       ],
-      "module": "StringUtil",
-      "util": "arrToString",
+      "module": "Array",
+      "method": "stringToArray",
       "returns": {
-        "desc": "Returns a string from the array.",
-        "type": "String"
+        "desc": "Returns an array of the split string.",
+        "type": "Array"
       },
-      "example": "StringUtil.arrToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'",
-      "utilArgs": "arrToString(array, delimiter)"
-    },
+      "example": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
+      "utilArgs": "stringToArray(string, delimiter)"
+    }
+  ],
+  "Boolean": [
     {
-      "description": "Converts a string to Sentence case.",
+      "description": "Converts any value to a Boolean equivalent.",
       "args": [
         {
-          "description": "string to convert to Sentence case",
-          "param": "string",
-          "type": "String",
+          "description": "value to check if true or false",
+          "param": "val",
+          "type": "*",
           "optional": false
-        }
-      ],
-      "module": "StringUtil",
-      "util": "toSentenceCase",
-      "returns": {
-        "desc": "Returns a Sentence case string.",
-        "type": "String"
-      },
-      "example": "StringUtil.toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'",
-      "utilArgs": "toSentenceCase(string)"
-    },
-    {
-      "description": "Converts a string to a Title Case.",
-      "args": [
+        },
         {
-          "description": "string to convert to Title Case",
-          "param": "string",
-          "type": "String",
-          "optional": false
+          "description": "optional array of user defined true values",
+          "param": "trueValuesArr",
+          "type": "Array",
+          "optional": true
         }
       ],
-      "module": "StringUtil",
-      "util": "toTitleCase",
+      "module": "Boolean",
+      "method": "toBoolean",
       "returns": {
-        "desc": "Returns a Tile Case string.",
-        "type": "String"
+        "desc": "Returns a boolean equivalent of the value.",
+        "type": "Boolean"
       },
-      "example": "StringUtil.toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'",
-      "utilArgs": "toTitleCase(string)"
+      "example": "toBoolean('y');\n // => true\n\ntoBoolean(null);\n// => false",
+      "utilArgs": "toBoolean(val, [trueValuesArr])"
     }
   ]
 }
