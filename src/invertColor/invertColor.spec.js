@@ -1,5 +1,3 @@
-/* global describe, it */
-
 import chai from 'chai';
 import invertHexColor from './invertColor';
 

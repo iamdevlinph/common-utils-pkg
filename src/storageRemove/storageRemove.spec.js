@@ -1,5 +1,3 @@
-/* global describe, it, before */
-
 import 'mock-local-storage';
 import chai from 'chai';
 import storageRemove from './storageRemove';
