@@ -12,7 +12,7 @@ import expects from '../expects/expects';
  *
  * storageSet('key', data);
  */
-const storageSet = (key, data) => window.localStorage.storageSet(key, LZString.compress(JSON.stringify(data)));
+const storageSet = (key, data) => window.localStorage.setItem(key, LZString.compress(JSON.stringify(data)));
 
 export default expects(
   storageSet,

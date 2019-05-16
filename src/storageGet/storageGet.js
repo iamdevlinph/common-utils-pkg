@@ -14,7 +14,7 @@ import expects from '../expects/expects';
  * storageGet('key');
  */
 const storageGet = (key) => {
-  let value = LZString.decompress(window.localStorage.storageGet(key));
+  let value = LZString.decompress(window.localStorage.getItem(key));
   try {
     value = JSON.parse(value);
   } catch (e) {
