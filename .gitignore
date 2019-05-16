@@ -14,3 +14,5 @@ coverage
 */_site
 */.sass-cache
 */.jekyll-metadata
+
+*yarn-error.log
