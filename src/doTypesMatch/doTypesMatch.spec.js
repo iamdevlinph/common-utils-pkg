@@ -1,7 +1,7 @@
 /* global describe, it */
 
 import chai from 'chai';
-import doTypesMatch from './doTypesMatch';
+import doTypesMatch from './doTypesMatchFn';
 
 chai.expect();
 

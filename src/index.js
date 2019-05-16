@@ -1,6 +1,6 @@
 export { default as arrayToString } from './arrayToString/arrayToString';
 export { default as colorBrightness } from './colorBrightness/colorBrightness';
-export { default as doTypesMatch } from './doTypesMatch/export';
+export { default as doTypesMatch } from './doTypesMatch/doTypesMatch';
 export { default as guid } from './guid/guid';
 export { default as invertColor } from './invertColor/invertColor';
 export { default as randomPastelColor } from './randomPastelColor/randomPastelColor';
