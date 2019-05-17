@@ -4,9 +4,8 @@ codecov:
 coverage:
   precision: 2
   round: down
-  range: "90...100"
   status:
-    patch: off
+    patch: false
     project:
       default:
         # basic
