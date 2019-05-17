@@ -67,6 +67,20 @@
       "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/toTitleCase/toTitleCase.js#L17-L20"
     }
   ],
+  "Browser": [
+    {
+      "description": "Detects browser being used.",
+      "args": [],
+      "module": "Browser",
+      "method": "browserDetect",
+      "returns": {
+        "desc": "Returns browser name",
+        "type": "String"
+      },
+      "example": "browserDetect();\n// => 'Chrome",
+      "utilArgs": "browserDetect()"
+    }
+  ],
   "Color": [
     {
       "description": "Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.\nWill always return with # symbol.",

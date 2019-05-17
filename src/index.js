@@ -1,4 +1,5 @@
 export { default as arrayToString } from './arrayToString/arrayToString';
+export { default as browserDetect } from './browserDetect/browserDetect';
 export { default as colorBrightness } from './colorBrightness/colorBrightness';
 export { default as doTypesMatch } from './doTypesMatch/doTypesMatch';
 export { default as guid } from './guid/guid';

@@ -6,6 +6,8 @@
  * */
 export function arrayToString(array: any[], delimiter: string): string;
 
+export function browserDetect(): string;
+
 export function colorBrightness(hex: string, amount: number): string;
 
 export function doTypesMatch(arg: any, expectedType: string): boolean;
