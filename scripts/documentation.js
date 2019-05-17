@@ -94,8 +94,12 @@ fs.readFile('docs/source.json', 'utf8', (err, data) => {
     });
     utilObj.args = getArgs(utilObj.args);
     utilObj.utilArgs = appendParamsToName(utilObj.method, utilObj.args);
-    utilObj.lineStart = val.context.loc.start.line;
-    utilObj.lineEnd = val.context.loc.end.line;
+    const lineStart = val.context.loc.start.line;
+    const lineEnd = val.context.loc.end.line;
+    const file = val.context.file.replace('/mnt/e/common-utils-pkg/', '');
+    const sourceUrl = `https://github.com/iamdevlinph/common-utils-pkg/blob/master/${file}#L${lineStart}-L${lineEnd}`;
+    utilObj.sourceUrl = sourceUrl;
+
     utils[moduleName].push(utilObj);
   });
   fs.writeFile('docs/mapped_source.json', JSON.stringify(utils, null, 2), (writeError) => {
