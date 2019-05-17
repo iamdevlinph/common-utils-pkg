@@ -96,7 +96,7 @@ fs.readFile('docs/source.json', 'utf8', (err, data) => {
     utilObj.utilArgs = appendParamsToName(utilObj.method, utilObj.args);
     const lineStart = val.context.loc.start.line;
     const lineEnd = val.context.loc.end.line;
-    const file = val.context.file.replace('/mnt/e/common-utils-pkg/', '');
+    const file = val.context.file.split('/common-utils-pkg/')[1];
     const sourceUrl = `https://github.com/iamdevlinph/common-utils-pkg/blob/master/${file}#L${lineStart}-L${lineEnd}`;
     utilObj.sourceUrl = sourceUrl;
 
