@@ -23,7 +23,9 @@
         "type": "String"
       },
       "example": "arrayToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'",
-      "utilArgs": "arrayToString(array, delimiter)"
+      "utilArgs": "arrayToString(array, delimiter)",
+      "lineStart": 16,
+      "lineEnd": 16
     },
     {
       "description": "Converts a string to Sentence case.",
@@ -42,7 +44,9 @@
         "type": "String"
       },
       "example": "toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'",
-      "utilArgs": "toSentenceCase(string)"
+      "utilArgs": "toSentenceCase(string)",
+      "lineStart": 15,
+      "lineEnd": 18
     },
     {
       "description": "Converts a string to a Title Case.",
@@ -61,7 +65,9 @@
         "type": "String"
       },
       "example": "toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'",
-      "utilArgs": "toTitleCase(string)"
+      "utilArgs": "toTitleCase(string)",
+      "lineStart": 17,
+      "lineEnd": 20
     }
   ],
   "Color": [
@@ -88,7 +94,9 @@
         "type": "String"
       },
       "example": "colorBrightness('#3CB878', 50);\n// => '#6EEAAA'\n\ncolorBrightness('#3CB878', -50);\n// => '#A8646'",
-      "utilArgs": "colorBrightness(hex, amount)"
+      "utilArgs": "colorBrightness(hex, amount)",
+      "lineStart": 23,
+      "lineEnd": 50
     },
     {
       "description": "Inverts a HEX color.",
@@ -107,7 +115,9 @@
         "type": "String"
       },
       "example": "invertColor('#E3CCA8');\n// => '#1C3357'\n\ninvertColor('ccc');\n// => '#333333'",
-      "utilArgs": "invertColor(hex)"
+      "utilArgs": "invertColor(hex)",
+      "lineStart": 27,
+      "lineEnd": 45
     },
     {
       "description": "Get a random pastel color.",
@@ -119,7 +129,9 @@
         "type": "String"
       },
       "example": "randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'",
-      "utilArgs": "randomPastelColor()"
+      "utilArgs": "randomPastelColor()",
+      "lineStart": 12,
+      "lineEnd": 17
     }
   ],
   "Core": [
@@ -146,7 +158,9 @@
         "type": "Boolean"
       },
       "example": "doTypesMatch(1, 'number');\n// => true\n\ndoTypesMatch('abc', 'number');\n// => false",
-      "utilArgs": "doTypesMatch(arg, expectedType)"
+      "utilArgs": "doTypesMatch(arg, expectedType)",
+      "lineStart": 20,
+      "lineEnd": 42
     }
   ],
   "Key": [
@@ -160,7 +174,9 @@
         "type": "String"
       },
       "example": "guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\"",
-      "utilArgs": "guid()"
+      "utilArgs": "guid()",
+      "lineStart": 12,
+      "lineEnd": 17
     }
   ],
   "File": [
@@ -187,7 +203,9 @@
         "type": "String"
       },
       "example": "readableBytes(1234);\n// => 1.205078125 kB\n\nreadableBytes(1234, 2);\n// => 1.21 kB",
-      "utilArgs": "readableBytes(bytes, [decimals])"
+      "utilArgs": "readableBytes(bytes, [decimals])",
+      "lineStart": 21,
+      "lineEnd": 28
     }
   ],
   "Slug": [
@@ -208,7 +226,9 @@
         "type": "String"
       },
       "example": "slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nslugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nslugify('wïth speciäl chærs');\n// => 'with-special-chars'",
-      "utilArgs": "slugify(string)"
+      "utilArgs": "slugify(string)",
+      "lineStart": 22,
+      "lineEnd": 40
     }
   ],
   "Storage": [
@@ -218,7 +238,9 @@
       "module": "Storage",
       "method": "storageClear",
       "example": "storageClear();",
-      "utilArgs": "storageClear()"
+      "utilArgs": "storageClear()",
+      "lineStart": 11,
+      "lineEnd": 11
     },
     {
       "description": "Retrieves data from the local storage.",
@@ -237,7 +259,9 @@
         "type": "Any"
       },
       "example": "storageGet('key');",
-      "utilArgs": "storageGet(key)"
+      "utilArgs": "storageGet(key)",
+      "lineStart": 16,
+      "lineEnd": 25
     },
     {
       "description": "Removes an entry from the local storage.",
@@ -252,7 +276,9 @@
       "module": "Storage",
       "method": "storageRemove",
       "example": "storageRemove('key');",
-      "utilArgs": "storageRemove(key)"
+      "utilArgs": "storageRemove(key)",
+      "lineStart": 13,
+      "lineEnd": 13
     },
     {
       "description": "Stores data to the local storage.",
@@ -273,7 +299,9 @@
       "module": "Storage",
       "method": "storageSet",
       "example": "storageSet('key', data);",
-      "utilArgs": "storageSet(key, data)"
+      "utilArgs": "storageSet(key, data)",
+      "lineStart": 15,
+      "lineEnd": 15
     }
   ],
   "Array": [
@@ -300,7 +328,9 @@
         "type": "Array"
       },
       "example": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
-      "utilArgs": "stringToArray(string, delimiter)"
+      "utilArgs": "stringToArray(string, delimiter)",
+      "lineStart": 16,
+      "lineEnd": 16
     }
   ],
   "Boolean": [
@@ -327,7 +357,9 @@
         "type": "Boolean"
       },
       "example": "toBoolean('y');\n // => true\n\ntoBoolean(null);\n// => false",
-      "utilArgs": "toBoolean(val, [trueValuesArr])"
+      "utilArgs": "toBoolean(val, [trueValuesArr])",
+      "lineStart": 23,
+      "lineEnd": 31
     }
   ]
 }

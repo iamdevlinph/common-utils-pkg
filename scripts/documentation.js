@@ -94,6 +94,8 @@ fs.readFile('docs/source.json', 'utf8', (err, data) => {
     });
     utilObj.args = getArgs(utilObj.args);
     utilObj.utilArgs = appendParamsToName(utilObj.method, utilObj.args);
+    utilObj.lineStart = val.context.loc.start.line;
+    utilObj.lineEnd = val.context.loc.end.line;
     utils[moduleName].push(utilObj);
   });
   fs.writeFile('docs/mapped_source.json', JSON.stringify(utils, null, 2), (writeError) => {
