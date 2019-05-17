@@ -10,7 +10,14 @@
   font-family: monospace;
   padding-top: 50px;
   margin-top: -50px;
+  display: inline-block;
 }
+
+.util__source {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
 .util p {
   padding-left: 20px;
 }

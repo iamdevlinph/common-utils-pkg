@@ -33,6 +33,7 @@
         var utilSection = document.createElement('section');
         utilSection.setAttribute('class', 'util');
         utilSection.innerHTML = '<h5 class="util__func" id="' + val.method + '">' + val.utilArgs + '</h5>' +
+        '<a target="source" href="' + val.sourceUrl + '" class="dashed util__source">source</a>' +
         '<hr class="divider--fade" />' +
         '<p class="util__desc">' + val.description + '</p>' +
         '<div class="util__section arg ' + (val.args.length > 0 ? '' : 'hidden') + '">' +
