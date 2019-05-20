@@ -5,7 +5,7 @@ import expects from '../expects/expects';
  *
  * @module String
  * @name arrayToString
- * @param {Array} array array to convert to string
+ * @param {AnyArray} array array to convert to string
  * @param {String} delimiter characater to use in  combining to string
  * @returns {String} Returns a string from the array.
  * @example
