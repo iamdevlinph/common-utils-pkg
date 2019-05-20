@@ -81,13 +81,13 @@
     }
 
     function checkIfCustomType(type) {
-      var pseudoType = type;
+      var pseudoType = ` ${type} `;
       switch(type) {
         case 'AnyArray':
-          pseudoType = 'Any []';
+          pseudoType = ' Any [ ] ';
           break;
         case 'StringArray':
-          pseudoType = 'String []';
+          pseudoType = ' String [ ] ';
           break;
       }
       return pseudoType;
