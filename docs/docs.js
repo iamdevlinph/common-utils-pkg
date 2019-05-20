@@ -45,7 +45,7 @@
         '<div class="util__section return">' +
           '<span class="bold">Returns</span>' +
           '<p class="">' +
-            '<span class="return__type">(' + val.returns.type + ') </span>' +
+            '<span class="return__type">(' + checkIfCustomType(val.returns.type) + ') </span>' +
             '<span class="return__desc">' + val.returns.desc + '</span>' +
           '</p>' +
         '</div>' : '') + (val.example ?
@@ -70,6 +70,7 @@
     function formatArgs(args) {
       var argsText = '';
       _(args).forEach(function (val) {
+        val.type = checkIfCustomType(val.type);
         argsText += '<li>' +
           '<span class="arg__name">' + val.param + ' </span>' +
           '<span class="arg__type">(' + val.type + ') </span>' +
@@ -77,6 +78,19 @@
         '</li>';
       });
       return argsText;
+    }
+
+    function checkIfCustomType(type) {
+      var pseudoType = type;
+      switch(type) {
+        case 'AnyArray':
+          pseudoType = 'Any []';
+          break;
+        case 'StringArray':
+          pseudoType = 'String []';
+          break;
+      }
+      return pseudoType;
     }
 
   });

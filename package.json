@@ -36,15 +36,18 @@
     "lz-string": "1.4.4"
   },
   "scripts": {
+    "make:indexjs": "node scripts/makeIndexJs.js",
+    "make:typedef": "node scripts/makeTypings.js",
+    "make:files": "npm run make:indexjs && npm run make:typedef",
     "build:clean": "rimraf lib",
-    "build": "npm run build:clean && webpack --env dev && webpack --env build && cp -r src/ts/* lib/",
+    "build": "npm run build:clean && webpack --env dev && webpack --env build && cp -r src/index.d.ts lib/",
     "cover:serve": "npm run cover && node_modules/http-server/bin/http-server coverage/lcov-report -o",
     "cover": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text node_modules/mocha/bin/_mocha -r @babel/register -r mock-local-storage --colors src/**/*.spec.js && node_modules/codecov/bin/codecov",
     "docu:serve": "npm run docu && node_modules/http-server/bin/http-server docs/ -o",
     "docu": "node_modules/documentation/bin/documentation.js build src/index.js -f json > docs/source.json && node scripts/documentation.js",
     "lint:install": "npm i lint-staged husky",
     "lint": "node_modules/eslint/bin/eslint.js src/",
-    "prepare": "npm run lint && npm run cover && npm run build",
+    "prepare": "npm run lint && npm run cover && npm run make:files && npm run build",
     "test:watch": "node_modules/mocha/bin/_mocha -r @babel/register -r mock-local-storage --colors -w src/**/*.spec.js",
     "test": "node_modules/mocha/bin/_mocha -r @babel/register -r mock-local-storage --colors src/**/*.spec.js"
   },
@@ -57,6 +60,7 @@
     "*.js": [
       "npm run lint",
       "npm run cover",
+      "npm run make:files",
       "git add"
     ]
   },

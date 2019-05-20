@@ -7,7 +7,7 @@ import expects from '../expects/expects';
  * @name stringToArray
  * @param {String} string string to convert to array
  * @param {String} delimiter where to split the string
- * @returns {Array} Returns an array of the split string.
+ * @returns {StringArray} Returns an array of the split string.
  * @example
  *
  * stringToArray('apple;banana;orange', ';');

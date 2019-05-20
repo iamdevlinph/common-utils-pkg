@@ -1,7 +1,7 @@
 const fs = require('fs');
 const COLORS = require('./colors');
 
-console.info(`${COLORS.BgBlue}${COLORS.FgWhite}START documentation generation${COLORS.end}`);
+console.info(`\n${COLORS.BgBlue}${COLORS.FgWhite}START documentation generation${COLORS.end}`);
 console.info(`${COLORS.FgGreen}source.json file has been generated${COLORS.end}\n`);
 console.info(`${COLORS.FgYellow}START clean up of source.json${COLORS.end}`);
 

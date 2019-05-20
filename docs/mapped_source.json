@@ -6,7 +6,7 @@
         {
           "description": "array to convert to string",
           "param": "array",
-          "type": "Array",
+          "type": "AnyArray",
           "optional": false
         },
         {
@@ -78,7 +78,8 @@
         "type": "String"
       },
       "example": "browserDetect();\n// => 'Chrome",
-      "utilArgs": "browserDetect()"
+      "utilArgs": "browserDetect()",
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/browserDetect/browserDetect.js#L12-L48"
     }
   ],
   "Color": [
@@ -325,7 +326,7 @@
       "method": "stringToArray",
       "returns": {
         "desc": "Returns an array of the split string.",
-        "type": "Array"
+        "type": "StringArray"
       },
       "example": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
       "utilArgs": "stringToArray(string, delimiter)",
@@ -345,7 +346,7 @@
         {
           "description": "optional array of user defined true values",
           "param": "trueValuesArr",
-          "type": "Array",
+          "type": "AnyArray",
           "optional": true
         }
       ],

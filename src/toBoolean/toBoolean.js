@@ -1,6 +1,6 @@
 import expects from '../expects/expects';
 
-const predefinedTrueValues = ['true', 'yes', 'y', '1'];
+const predefinedTrueValues = ['true', 'yes', 'y', '1', 1];
 
 /**
  * Converts any value to a Boolean equivalent.
@@ -10,7 +10,7 @@ const predefinedTrueValues = ['true', 'yes', 'y', '1'];
  * @module Boolean
  * @name toBoolean
  * @param {*} val value to check if true or false
- * @param {Array} [trueValuesArr] optional array of user defined true values
+ * @param {AnyArray} [trueValuesArr] optional array of user defined true values
  * @returns {Boolean} Returns a boolean equivalent of the value.
  * @example
  *
