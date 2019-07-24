@@ -91,10 +91,11 @@ Read more about the methods available [here](https://iamdevlinph.github.io/commo
 <!-- ![typedef](./docs/img/ts-type-def.png) -->
 
 # Contributing
-1. Create a folder under `src/` and name the folder with the same name as the method.
-2. Create `methodName.js` and `methodName.spec.js`
+1.Create a folder under `src/` and name the folder with the same name as the method.
 
-The directory should look like this:
+2.Create `methodName.js` and `methodName.spec.js`
+
+The full directory should look like this:
 ```
 src/
   methodName/
@@ -102,6 +103,26 @@ src/
     - methodName.spec.js
 ```
 
+3.If the method you are authoring has expected parameters then import `expects`
+
+```js
+import expects from '../expects/expects';
+```
+
+Wrap your exported function with `expects`
+```js
+export default expects(
+  methodName,
+  'methodName',
+  { // required parameters
+    0: 'string', // 1st parameter is required and is a string
+    1: 'number', // 2nd parameter is required and is a number
+  },
+  { // optional parameters
+    3: 'number' // 3rd parameter is optional but is a number
+  }
+)
+```
 
 <!-- Have something to pitch in? Open a [pull request](https://github.com/iamdevlinph/common-utils-pkg/pulls) or an [issue](https://github.com/iamdevlinph/common-utils-pkg/issues/new). -->
 
