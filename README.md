@@ -91,7 +91,19 @@ Read more about the methods available [here](https://iamdevlinph.github.io/commo
 <!-- ![typedef](./docs/img/ts-type-def.png) -->
 
 # Contributing
-Have something to pitch in? Open a [pull request](https://github.com/iamdevlinph/common-utils-pkg/pulls) or an [issue](https://github.com/iamdevlinph/common-utils-pkg/issues/new).
+1. Create a folder under `src/` and name the folder with the same name as the method.
+2. Create `methodName.js` and `methodName.spec.js`
+
+The directory should look like this:
+```
+src/
+  methodName/
+    - methodName.js
+    - methodName.spec.js
+```
+
+
+<!-- Have something to pitch in? Open a [pull request](https://github.com/iamdevlinph/common-utils-pkg/pulls) or an [issue](https://github.com/iamdevlinph/common-utils-pkg/issues/new). -->
 
 <!-- ## Commands
 Run by `npm run <script>`
