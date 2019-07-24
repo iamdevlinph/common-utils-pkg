@@ -119,7 +119,7 @@ export default expects(
     1: 'number', // 2nd parameter is required and is a number
   },
   { // optional parameters
-    3: 'number' // 3rd parameter is optional but is a number
+    2: 'number' // 3rd parameter is optional but is a number
   }
 )
 ```
