@@ -1,5 +1,4 @@
 {
-  "eslint.autoFixOnSave": true,
   "files.exclude": {
     "**/.nyc_output": true
   },

@@ -1,6 +1,6 @@
 import expects from '../expects/expects';
 
-const predefinedTrueValues = ['true', 'yes', 'y', '1', 1];
+const predefinedTrueValues = [true, 'true', 'yes', 'y', '1', 1];
 
 /**
  * Converts any value to a Boolean equivalent.
