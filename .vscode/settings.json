@@ -1,9 +1,10 @@
 {
   "files.exclude": {
-    "**/.nyc_output": true
+    // "**/dist": false,
   },
-  "search.exclude": {
-    "**/coverage": true,
-    "**/.nyc_output": true
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "typescript.tsdk": "node_modules/typescript/lib",
 }

@@ -16,3 +16,6 @@ coverage
 */.jekyll-metadata
 
 *yarn-error.log
+
+docs-ts
+dist

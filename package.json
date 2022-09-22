@@ -1,88 +1,7 @@
 {
   "name": "common-utils-pkg",
-  "version": "3.1.1",
+  "version": "4.0.0-alpha",
   "description": "A package of commonly used JavaScript utilities.",
-  "main": "./lib/common-utils-pkg.min.js",
-  "types": "./lib/index.d.ts",
-  "devDependencies": {
-    "@babel/core": "7.1.6",
-    "@babel/preset-env": "7.1.6",
-    "@babel/register": "7.0.0",
-    "babel-eslint": "10.0.1",
-    "babel-loader": "8.0.4",
-    "babel-plugin-istanbul": "5.1.0",
-    "chai": "4.2.0",
-    "codecov": "3.1.0",
-    "cross-env": "5.2.0",
-    "documentation": "9.0.0-alpha.1",
-    "eslint": "5.9.0",
-    "eslint-config-airbnb": "17.1.0",
-    "eslint-loader": "2.1.1",
-    "eslint-plugin-import": "2.14.0",
-    "http-server": "0.11.1",
-    "husky": "1.2.0",
-    "istanbul": "0.4.5",
-    "lint-staged": "8.1.0",
-    "mocha": "5.2.0",
-    "mock-local-storage": "1.1.7",
-    "nyc": "13.1.0",
-    "rimraf": "2.6.2",
-    "uglifyjs-webpack-plugin": "2.0.1",
-    "webpack": "4.26.1",
-    "webpack-cli": "3.1.2",
-    "yargs": "12.0.5"
-  },
-  "dependencies": {
-    "lz-string": "1.4.4"
-  },
-  "scripts": {
-    "make:indexjs": "node scripts/makeIndexJs.js",
-    "make:typedef": "node scripts/makeTypings.js",
-    "make:files": "npm run make:indexjs && npm run make:typedef",
-    "build:clean": "rimraf lib",
-    "build": "npm run build:clean && webpack --env dev && webpack --env build && cp -r src/index.d.ts lib/",
-    "cover:serve": "npm run cover && node_modules/http-server/bin/http-server coverage/lcov-report -o",
-    "cover": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text node_modules/mocha/bin/_mocha -r @babel/register -r mock-local-storage --colors src/**/*.spec.js && node_modules/codecov/bin/codecov",
-    "docu:serve": "npm run docu && node_modules/http-server/bin/http-server docs/ -o",
-    "docu": "node_modules/documentation/bin/documentation.js build src/index.js -f json > docs/source.json && node scripts/documentation.js",
-    "lint:install": "npm i lint-staged husky",
-    "lint": "node_modules/eslint/bin/eslint.js src/",
-    "prepare": "npm run lint && npm run cover && npm run make:files && npm run build",
-    "test:watch": "node_modules/mocha/bin/_mocha -r @babel/register -r mock-local-storage --colors -w src/**/*.spec.js",
-    "test": "node_modules/mocha/bin/_mocha -r @babel/register -r mock-local-storage --colors src/**/*.spec.js"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint",
-      "npm run cover",
-      "npm run make:files",
-      "git add"
-    ]
-  },
-  "nyc": {
-    "register": "@babel/register",
-    "include": [
-      "src/**/*.js"
-    ],
-    "require": [
-      "@babel/register"
-    ],
-    "reporter": [
-      "lcov",
-      "text"
-    ],
-    "sourceMap": false,
-    "instrument": false
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/iamdevlinph/common-utils-pkg.git"
-  },
   "keywords": [
     "utilities",
     "npm",
@@ -91,12 +10,54 @@
     "es6",
     "functions"
   ],
-  "author": "iamdevlinph",
-  "license": "ISC",
+  "homepage": "https://common-utils-pkg.js.org/",
   "bugs": {
     "url": "https://github.com/iamdevlinph/common-utils-pkg/issues"
   },
-  "homepage": "https://common-utils-pkg.js.org/",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iamdevlinph/common-utils-pkg.git"
+  },
+  "license": "ISC",
+  "author": "iamdevlinph",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "docs-ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "docu:create": "typedoc src/index.ts --out ./docs-ts",
+    "docu:serve": "http-server ./docs-ts/index.html",
+    "format:check": "eslint ./src",
+    "format:fix": "eslint ./src --fix",
+    "test:ci": "jest --no-cache",
+    "test:clear": "jest --clearCache"
+  },
+  "dependencies": {
+    "lz-string": "1.4.4"
+  },
+  "devDependencies": {
+    "@types/jest": "29.0.3",
+    "@typescript-eslint/eslint-plugin": "5.38.0",
+    "@typescript-eslint/parser": "5.38.0",
+    "eslint": "8.23.1",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-simple-import-sort": "8.0.0",
+    "http-server": "14.1.1",
+    "husky": "8.0.1",
+    "jest": "29.0.3",
+    "mock-local-storage": "1.1.23",
+    "prettier": "2.7.1",
+    "shell-quote": "1.7.3",
+    "ts-jest": "29.0.1",
+    "typedoc": "0.23.15",
+    "typescript": "4.8.3"
+  },
   "engines": {
     "node": ">= 8"
   }
