@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run unit tests
+      - name: Run code coverage
         run: yarn test:ci
 
       - name: Upload coverage to Codecov
