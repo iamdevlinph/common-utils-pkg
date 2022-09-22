@@ -1,38 +1,7 @@
 {
   "name": "common-utils-pkg",
-  "version": "4.0.0",
+  "version": "4.0.0-alpha",
   "description": "A package of commonly used JavaScript utilities.",
-  "main": "./lib/common-utils-pkg.min.js",
-  "types": "./lib/index.d.ts",
-  "devDependencies": {
-    "eslint": "8.23.1",
-    "http-server": "14.1.1",
-    "husky": "8.0.1",
-    "lint-staged": "13.0.3",
-    "mock-local-storage": "1.1.23",
-    "typescript": "4.8.3"
-  },
-  "dependencies": {
-    "lz-string": "1.4.4"
-  },
-  "scripts": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint",
-      "npm run cover",
-      "npm run make:files",
-      "git add"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/iamdevlinph/common-utils-pkg.git"
-  },
   "keywords": [
     "utilities",
     "npm",
@@ -41,12 +10,49 @@
     "es6",
     "functions"
   ],
-  "author": "iamdevlinph",
-  "license": "ISC",
+  "homepage": "https://common-utils-pkg.js.org/",
   "bugs": {
     "url": "https://github.com/iamdevlinph/common-utils-pkg/issues"
   },
-  "homepage": "https://common-utils-pkg.js.org/",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iamdevlinph/common-utils-pkg.git"
+  },
+  "license": "ISC",
+  "author": "iamdevlinph",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "docs-ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "docu:create": "typedoc src/index.ts --out ./docs-ts",
+    "docu:serve": "http-server ./docs-ts/index.html",
+    "format:check": "eslint ./src",
+    "format:fix": "eslint ./src --fix"
+  },
+  "dependencies": {
+    "lz-string": "1.4.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.38.0",
+    "@typescript-eslint/parser": "5.38.0",
+    "eslint": "8.23.1",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-simple-import-sort": "8.0.0",
+    "http-server": "14.1.1",
+    "husky": "8.0.1",
+    "mock-local-storage": "1.1.23",
+    "prettier": "2.7.1",
+    "shell-quote": "1.7.3",
+    "typedoc": "0.23.15",
+    "typescript": "4.8.3"
+  },
   "engines": {
     "node": ">= 8"
   }
