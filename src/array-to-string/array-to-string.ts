@@ -5,7 +5,7 @@
  * @name arrayToString
  * @param array array to convert to string
  * @param delimiter  characater to use in combining to string
- * @returns Returns a string from the array.
+ * @returns returns a string from the array
  *
  * @example
  *
