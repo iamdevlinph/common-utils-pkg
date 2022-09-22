@@ -1,9 +1,6 @@
 name: Running code coverage
 
-on:
-  push:
-    branches-ignore:
-      - 'develop'
+on: [push, pull_request]
 
 jobs:
   setup:
