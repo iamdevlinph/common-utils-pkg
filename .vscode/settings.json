@@ -1,6 +1,6 @@
 {
   "files.exclude": {
-    "**/dist": false,
+    // "**/dist": false,
   },
   "[typescript]": {
     "editor.formatOnSave": true,
