@@ -10,12 +10,10 @@ A package of commonly used JavaScript utilities.
 [![node version][node-img]][node-url]
 [![build][travis-img]][travis-url]
 [![coverage][codecov-img]][codecov-url]
-[![dev deps][devdeps-img]][devdeps-url]
 [![downloads][downloads-img]][downloads-url]
 
 #### Repo Details
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/iamdevlinph/common-utils-pkg.svg?style=flat-square)](https://greenkeeper.io/)
 [![open issues][issues-img]][issues-url]
 [![open prs][pr-img]][pr-url]
 ![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=7200)
