@@ -6,7 +6,7 @@
  *
  * @module Browser
  * @name browserDetect
- * @returns {String} returns browser name
+ * @returns returns browser name
  * @example
  *
  * browserDetect();

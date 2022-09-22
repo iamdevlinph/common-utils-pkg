@@ -78,8 +78,8 @@
     "declaration": true,
     "outDir": "./dist",
     "removeComments": true,
-    "lib": ["esnext"]
+    "lib": ["esnext"],
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "**/*.d.ts"],
   "exclude": ["node_modules"]
 }
