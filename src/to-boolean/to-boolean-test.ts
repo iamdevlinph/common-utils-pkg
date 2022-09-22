@@ -2,26 +2,26 @@ import { toBoolean } from './to-boolean';
 
 describe('toBoolean', () => {
   it('should return Bolean', () => {
-    expect(toBoolean(true)).toBe(true);
-    expect(toBoolean('true')).toBe(true);
-    expect(toBoolean('yes')).toBe(true);
-    expect(toBoolean('y')).toBe(true);
-    expect(toBoolean(1)).toBe(true);
-    expect(toBoolean('1')).toBe(true);
+    expect(toBoolean(true)).toEqual(true);
+    expect(toBoolean('true')).toEqual(true);
+    expect(toBoolean('yes')).toEqual(true);
+    expect(toBoolean('y')).toEqual(true);
+    expect(toBoolean(1)).toEqual(true);
+    expect(toBoolean('1')).toEqual(true);
 
-    expect(toBoolean(false)).toBe(false);
-    expect(toBoolean('false')).toBe(false);
-    expect(toBoolean('no')).toBe(false);
-    expect(toBoolean('n')).toBe(false);
-    expect(toBoolean(0)).toBe(false);
-    expect(toBoolean('0')).toBe(false);
+    expect(toBoolean(false)).toEqual(false);
+    expect(toBoolean('false')).toEqual(false);
+    expect(toBoolean('no')).toEqual(false);
+    expect(toBoolean('n')).toEqual(false);
+    expect(toBoolean(0)).toEqual(false);
+    expect(toBoolean('0')).toEqual(false);
 
     // user-supplied array of true values
-    expect(toBoolean('a', ['a'])).toBe(true);
-    expect(toBoolean('b', ['a'])).toBe(false);
-    expect(toBoolean('c', ['a', 'b', 'c'])).toBe(true);
+    expect(toBoolean('a', ['a'])).toEqual(true);
+    expect(toBoolean('b', ['a'])).toEqual(false);
+    expect(toBoolean('c', ['a', 'b', 'c'])).toEqual(true);
 
-    expect(toBoolean(null)).toBe(false);
-    expect(toBoolean(undefined)).toBe(false);
+    expect(toBoolean(null)).toEqual(false);
+    expect(toBoolean(undefined)).toEqual(false);
   });
 });

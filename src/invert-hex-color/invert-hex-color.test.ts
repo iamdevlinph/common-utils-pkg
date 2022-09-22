@@ -7,7 +7,7 @@ describe('invertHexColor', () => {
   });
 
   it('should convert a hex color to an opposite color', () => {
-    expect(invertHexColor('E3CCA8')).toBe('#1C3357');
-    expect(invertHexColor('ccc')).toBe('#333333');
+    expect(invertHexColor('E3CCA8')).toEqual('#1C3357');
+    expect(invertHexColor('ccc')).toEqual('#333333');
   });
 });
