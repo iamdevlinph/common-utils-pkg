@@ -1,9 +1,8 @@
-name: Running lint checks and build
+name: Running deployment of documentation to gh-pages
 
 on:
-  push:
-    branches-ignore:
-      - 'main'
+  release:
+    types: [created]
 
 jobs:
   setup:
@@ -15,8 +14,8 @@ jobs:
         with:
           node-version: '10.x'
 
-  format-check:
-    name: Check code format and build app
+  run-documentation:
+    name: Run documentation
     runs-on: ubuntu-latest
     needs: setup # Need to wait for setup
     steps:
@@ -36,8 +35,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run linter
-        run: yarn format:check
+      - name: Run documentation create
+        run: yarn docu:create
 
-      - name: Build the app
-        run: yarn build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs # The folder the action should deploy.

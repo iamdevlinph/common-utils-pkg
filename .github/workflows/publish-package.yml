@@ -1,9 +1,8 @@
-name: Running lint checks and build
+name: Running publish package
 
 on:
-  push:
-    branches-ignore:
-      - 'main'
+  release:
+    types: [created]
 
 jobs:
   setup:
@@ -15,8 +14,8 @@ jobs:
         with:
           node-version: '10.x'
 
-  format-check:
-    name: Check code format and build app
+  publish-package:
+    name: Run publish package
     runs-on: ubuntu-latest
     needs: setup # Need to wait for setup
     steps:
@@ -36,8 +35,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run linter
-        run: yarn format:check
-
       - name: Build the app
         run: yarn build
+
+      - name: Publish the package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
