@@ -2,7 +2,7 @@ name: Running deployment of documentation to gh-pages
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   setup:
