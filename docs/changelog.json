@@ -1,5 +1,12 @@
 [
   {
+    "version": "4.0.0",
+    "description": [
+      "Migrated to TypeScript",
+      "Removes the feature where an error is thrown when a wrong type is supplied since we're already on TypeScript"
+    ]
+  },
+  {
     "version": "3.1.1",
     "description": [
       "[Update] Boolean | toBoolean()"

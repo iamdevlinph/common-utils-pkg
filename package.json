@@ -1,6 +1,6 @@
 {
   "name": "common-utils-pkg",
-  "version": "4.0.0-alpha",
+  "version": "4.0.1-alpha",
   "description": "A package of commonly used JavaScript utilities.",
   "keywords": [
     "utilities",
@@ -25,15 +25,16 @@
   "files": [
     "dist/",
     "README.md",
-    "LICENSE",
-    "docs-ts"
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsc",
-    "docu:create": "typedoc src/index.ts --out ./docs-ts",
+    "docu:html": "typedoc src/index.ts --out ./docs-ts",
+    "docu:json": "typedoc src/index.ts --json ./docs-ts/docs.json",
     "docu:serve": "http-server ./docs-ts/index.html",
     "format:check": "eslint ./src",
     "format:fix": "eslint ./src --fix",
+    "prepublishOnly": "yarn build",
     "test:ci": "jest --no-cache",
     "test:clear": "jest --clearCache"
   },
