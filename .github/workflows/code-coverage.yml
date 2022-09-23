@@ -13,7 +13,7 @@ jobs:
           node-version: '10.x'
 
   unit-test:
-    name: Unit test
+    name: Code coverage
     runs-on: ubuntu-latest
     needs: setup # Need to wait for setup
     steps:
