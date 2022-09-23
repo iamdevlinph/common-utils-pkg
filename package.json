@@ -1,6 +1,6 @@
 {
   "name": "common-utils-pkg",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A package of commonly used JavaScript utilities.",
   "keywords": [
     "utilities",
