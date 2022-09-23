@@ -3,14 +3,16 @@ import LZString from 'lz-string';
 /**
  * Retrieves data from the local storage.
  *
+ * @version 1.9.0
  * @module Storage
  * @name storageGet
- * @param key key to retrieve
- * @returns Returns data from the local storage. Returns '' if key is not found
+ * @param {String} key key to retrieve
+ * @returns {Any} Returns data from the local storage. Returns '' if key is not found
  * @example
  *
  * storageGet('key');
  */
+
 export const storageGet = (key: string): unknown | string => {
   let value = LZString.decompress(window.localStorage.getItem(key));
   try {

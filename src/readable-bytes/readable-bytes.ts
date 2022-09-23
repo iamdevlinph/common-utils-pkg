@@ -3,11 +3,12 @@ const isWholeNum = (number) => number % 1 === 0;
 /**
  * Converts a number of bytes to a human readable file size.
  *
+ * @version 1.0.0
  * @module File
  * @name readableBytes
- * @param bytes number of bytes to show
- * @param decimals optional number of decimals to show
- * @returns returns a human readable file size
+ * @param {Number} bytes number of bytes to show
+ * @param {Number} [decimals] optional number of decimals to show
+ * @returns {String} Returns a human readable file size.
  * @example
  *
  * readableBytes(1234);

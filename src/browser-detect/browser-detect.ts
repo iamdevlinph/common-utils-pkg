@@ -4,9 +4,10 @@
 /**
  * Detects browser being used.
  *
+ * @version 3.1.0
  * @module Browser
  * @name browserDetect
- * @returns returns browser name
+ * @returns {String} Returns browser name
  * @example
  *
  * browserDetect();

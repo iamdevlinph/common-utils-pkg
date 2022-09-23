@@ -10,10 +10,11 @@ const padZero = (str: string, len = 0) => {
 /**
  * Inverts a HEX color.
  *
+ * @version 1.6.1
  * @module Color
- * @name invertHexColor
- * @param hex hex color to convert
- * @returns returns a HEX color string
+ * @name invertColor
+ * @param {String} hex hex color to convert
+ * @returns {String} Returns a HEX color string.
  * @example
  *
  * invertColor('#E3CCA8');
@@ -22,6 +23,7 @@ const padZero = (str: string, len = 0) => {
  * invertColor('ccc');
  * // => '#333333'
  */
+
 export const invertHexColor = (hex: string) => {
   let newHex = hex;
   if (newHex.indexOf('#') === 0) {

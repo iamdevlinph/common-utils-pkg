@@ -1,9 +1,10 @@
 /**
  * Get a random pastel color.
  *
+ * @version 1.0.0
  * @module Color
  * @name randomPastelColor
- * @returns returns an HSL pastel color
+ * @returns {String} Returns an HSL color.
  * @example
  *
  * randomPastelColor();

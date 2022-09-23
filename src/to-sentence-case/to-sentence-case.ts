@@ -1,10 +1,11 @@
 /**
  * Converts a string to Sentence case.
  *
+ * @version 1.0.0
  * @module String
  * @name toSentenceCase
- * @param string string to convert to Sentence case
- * @returns returns a Sentence case string.
+ * @param {String} string string to convert to Sentence case
+ * @returns {String} Returns a Sentence case string.
  * @example
  *
  * toSentenceCase('THE QUICK BROWN FOX');

@@ -5,13 +5,21 @@ const predefinedTrueValues = [true, 'true', 'yes', 'y', '1', 1];
  *
  * **Note:** If no user-defined array is passed, the default true values are:
  *
- * [true, 'true', 'yes', 'y', '1', 1].
+ * ['true', 'yes', 'y', '1'].
  *
+ * @version 3.1.1
  * @module Boolean
  * @name toBoolean
- * @param val value to check if true or false
- * @param trueValuesArr optional array of user defined true values
- * @returns returns a boolean equivalent of the value.
+ * @param {*} val value to check if true or false
+ * @param {AnyArray} [trueValuesArr] optional array of user defined true values
+ * @returns {Boolean} Returns a boolean equivalent of the value.
+ * @example
+ *
+ * toBoolean('y');
+ *  // => true
+ *
+ * toBoolean(null);
+ * // => false
  */
 export const toBoolean = (
   val: boolean | string | number,
