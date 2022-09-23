@@ -1,6 +1,6 @@
 {
   "name": "common-utils-pkg",
-  "version": "4.0.0-alpha",
+  "version": "4.0.0",
   "description": "A package of commonly used JavaScript utilities.",
   "keywords": [
     "utilities",
@@ -25,15 +25,15 @@
   "files": [
     "dist/",
     "README.md",
-    "LICENSE",
-    "docs-ts"
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsc",
-    "docu:create": "typedoc src/index.ts --out ./docs-ts",
-    "docu:serve": "http-server ./docs-ts/index.html",
+    "docu:create": "node_modules/documentation/bin/documentation.js build src/index.ts --pe ts --re ts --re d.ts -f json > docs/source.json && node scripts/documentation.js",
+    "docu:serve": "yarn docu:create && node_modules/http-server/bin/http-server docs/ -o",
     "format:check": "eslint ./src",
     "format:fix": "eslint ./src --fix",
+    "prepublishOnly": "yarn build",
     "test:ci": "jest --no-cache",
     "test:clear": "jest --clearCache"
   },
@@ -44,6 +44,7 @@
     "@types/jest": "29.0.3",
     "@typescript-eslint/eslint-plugin": "5.38.0",
     "@typescript-eslint/parser": "5.38.0",
+    "documentation": "14.0.0",
     "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
@@ -55,7 +56,6 @@
     "prettier": "2.7.1",
     "shell-quote": "1.7.3",
     "ts-jest": "29.0.1",
-    "typedoc": "0.23.15",
     "typescript": "4.8.3"
   },
   "engines": {

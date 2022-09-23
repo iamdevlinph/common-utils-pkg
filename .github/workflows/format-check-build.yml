@@ -1,6 +1,9 @@
-name: Running code coverage
+name: Running lint checks and build
 
-on: [push]
+on:
+  push:
+    branches-ignore:
+      - 'main'
 
 jobs:
   setup:
@@ -12,8 +15,8 @@ jobs:
         with:
           node-version: '10.x'
 
-  unit-test:
-    name: Code coverage
+  format-check:
+    name: Check code format and build app
     runs-on: ubuntu-latest
     needs: setup # Need to wait for setup
     steps:
@@ -33,8 +36,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run code coverage
-        run: yarn test:ci
+      - name: Run linter
+        run: yarn format:check
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+      - name: Build the app
+        run: yarn build

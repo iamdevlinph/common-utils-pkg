@@ -1,6 +1,8 @@
-name: Running code coverage
+name: Running publish package
 
-on: [push]
+on:
+  release:
+    types: [created]
 
 jobs:
   setup:
@@ -12,8 +14,8 @@ jobs:
         with:
           node-version: '10.x'
 
-  unit-test:
-    name: Code coverage
+  publish-package:
+    name: Run publish package
     runs-on: ubuntu-latest
     needs: setup # Need to wait for setup
     steps:
@@ -33,8 +35,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run code coverage
-        run: yarn test:ci
+      - name: Build the app
+        run: yarn build
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+      - name: Publish the package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -22,11 +22,13 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
   },
-  ignorePatterns: ['lint-staged.config.js', 'src/**/*.js', 'scripts/**/*.js'], // ignore all js files for now
+  ignorePatterns: ['lint-staged.config.js'], // ignore all js files for now
   overrides: [
     {
-      files: ['**/*.tsx', '**/*.ts', '**/*.js'],
-      rules: {},
+      files: ['scripts/*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
     },
   ],
   globals: {

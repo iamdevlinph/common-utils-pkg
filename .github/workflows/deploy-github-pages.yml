@@ -1,6 +1,8 @@
-name: Running code coverage
+name: Running deployment of documentation to gh-pages
 
-on: [push]
+on:
+  release:
+    types: [created]
 
 jobs:
   setup:
@@ -12,8 +14,8 @@ jobs:
         with:
           node-version: '10.x'
 
-  unit-test:
-    name: Code coverage
+  run-documentation:
+    name: Run documentation
     runs-on: ubuntu-latest
     needs: setup # Need to wait for setup
     steps:
@@ -33,8 +35,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run code coverage
-        run: yarn test:ci
+      - name: Run documentation create
+        run: yarn docu:create
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs # The folder the action should deploy.

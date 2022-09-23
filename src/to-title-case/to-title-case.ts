@@ -3,10 +3,11 @@
 /**
  * Converts a string to a Title Case.
  *
+ * @version 1.0.0
  * @module String
  * @name toTitleCase
- * @param string string to convert to Title Case
- * @returns returns a Tile Case string
+ * @param {String} string string to convert to Title Case
+ * @returns {String} Returns a Tile Case string.
  * @example
  *
  * toTitleCase('the quick brown fox');

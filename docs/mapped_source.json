@@ -24,7 +24,27 @@
       },
       "example": "arrayToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'",
       "utilArgs": "arrayToString(array, delimiter)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/arrayToString/arrayToString.js#L16-L16"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/array-to-string/array-to-string.ts#L16-L17"
+    },
+    {
+      "description": "Converts a string into a slug for URL usage.",
+      "args": [
+        {
+          "description": "string to convert to slug",
+          "param": "string",
+          "type": "String",
+          "optional": false
+        }
+      ],
+      "module": "String",
+      "method": "slugify",
+      "returns": {
+        "desc": "Returns slug version of the string.",
+        "type": "String"
+      },
+      "example": "slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nslugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nslugify('wïth speciäl chærs');\n// => 'with-special-chars'",
+      "utilArgs": "slugify(string)",
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/slugify/slugify.ts#L21-L39"
     },
     {
       "description": "Converts a string to Sentence case.",
@@ -44,7 +64,7 @@
       },
       "example": "toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'",
       "utilArgs": "toSentenceCase(string)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/toSentenceCase/toSentenceCase.js#L15-L18"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/to-sentence-case/to-sentence-case.ts#L14-L17"
     },
     {
       "description": "Converts a string to a Title Case.",
@@ -64,7 +84,7 @@
       },
       "example": "toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'",
       "utilArgs": "toTitleCase(string)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/toTitleCase/toTitleCase.js#L17-L20"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/to-title-case/to-title-case.ts#L16-L22"
     }
   ],
   "Browser": [
@@ -79,7 +99,7 @@
       },
       "example": "browserDetect();\n// => 'Chrome",
       "utilArgs": "browserDetect()",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/browserDetect/browserDetect.js#L12-L48"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/browser-detect/browser-detect.ts#L17-L52"
     }
   ],
   "Color": [
@@ -107,7 +127,7 @@
       },
       "example": "colorBrightness('#3CB878', 50);\n// => '#6EEAAA'\n\ncolorBrightness('#3CB878', -50);\n// => '#A8646'",
       "utilArgs": "colorBrightness(hex, amount)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/colorBrightness/colorBrightness.js#L23-L50"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/color-brightness/color-brightness.ts#L23-L52"
     },
     {
       "description": "Inverts a HEX color.",
@@ -127,7 +147,7 @@
       },
       "example": "invertColor('#E3CCA8');\n// => '#1C3357'\n\ninvertColor('ccc');\n// => '#333333'",
       "utilArgs": "invertColor(hex)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/invertColor/invertColor.js#L27-L45"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/invert-hex-color/invert-hex-color.ts#L27-L46"
     },
     {
       "description": "Get a random pastel color.",
@@ -140,35 +160,7 @@
       },
       "example": "randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'",
       "utilArgs": "randomPastelColor()",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/randomPastelColor/randomPastelColor.js#L12-L17"
-    }
-  ],
-  "Core": [
-    {
-      "description": "Checks if the type of the value is the expected type.",
-      "args": [
-        {
-          "description": "any value to check",
-          "param": "arg",
-          "type": "*",
-          "optional": false
-        },
-        {
-          "description": "the type to check the value against",
-          "param": "expectedType",
-          "type": "String",
-          "optional": false
-        }
-      ],
-      "module": "Core",
-      "method": "doTypesMatch",
-      "returns": {
-        "desc": "Returns a boolean if the type of the value matches to expectedType.",
-        "type": "Boolean"
-      },
-      "example": "doTypesMatch(1, 'number');\n// => true\n\ndoTypesMatch('abc', 'number');\n// => false",
-      "utilArgs": "doTypesMatch(arg, expectedType)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/doTypesMatch/doTypesMatchFn.js#L20-L42"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/random-pastel-color/random-pastel-color.ts#L13-L18"
     }
   ],
   "Key": [
@@ -183,7 +175,7 @@
       },
       "example": "guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\"",
       "utilArgs": "guid()",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/guid/guid.js#L12-L17"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/guid/guid.ts#L14-L20"
     }
   ],
   "File": [
@@ -211,29 +203,7 @@
       },
       "example": "readableBytes(1234);\n// => 1.205078125 kB\n\nreadableBytes(1234, 2);\n// => 1.21 kB",
       "utilArgs": "readableBytes(bytes, [decimals])",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/readableBytes/readableBytes.js#L21-L28"
-    }
-  ],
-  "Slug": [
-    {
-      "description": "Converts a string into a slug for URL usage.",
-      "args": [
-        {
-          "description": "string to convert to slug",
-          "param": "string",
-          "type": "String",
-          "optional": false
-        }
-      ],
-      "module": "Slug",
-      "method": "slugify",
-      "returns": {
-        "desc": "Returns slug version of the string.",
-        "type": "String"
-      },
-      "example": "slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nslugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nslugify('wïth speciäl chærs');\n// => 'with-special-chars'",
-      "utilArgs": "slugify(string)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/slugify/slugify.js#L22-L40"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/readable-bytes/readable-bytes.ts#L20-L30"
     }
   ],
   "Storage": [
@@ -244,7 +214,7 @@
       "method": "storageClear",
       "example": "storageClear();",
       "utilArgs": "storageClear()",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/storageClear/storageClear.js#L11-L11"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/storage-clear/storage-clear.ts#L12-L12"
     },
     {
       "description": "Retrieves data from the local storage.",
@@ -264,7 +234,7 @@
       },
       "example": "storageGet('key');",
       "utilArgs": "storageGet(key)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/storageGet/storageGet.js#L16-L25"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/storage-get/storage-get.ts#L16-L25"
     },
     {
       "description": "Removes an entry from the local storage.",
@@ -280,7 +250,7 @@
       "method": "storageRemove",
       "example": "storageRemove('key');",
       "utilArgs": "storageRemove(key)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/storageRemove/storageRemove.js#L13-L13"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/storage-remove/storage-remove.ts#L12-L13"
     },
     {
       "description": "Stores data to the local storage.",
@@ -302,7 +272,7 @@
       "method": "storageSet",
       "example": "storageSet('key', data);",
       "utilArgs": "storageSet(key, data)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/storageSet/storageSet.js#L15-L15"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/storage-set/storage-set.ts#L15-L16"
     }
   ],
   "Array": [
@@ -330,7 +300,7 @@
       },
       "example": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
       "utilArgs": "stringToArray(string, delimiter)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/stringToArray/stringToArray.js#L16-L16"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/string-to-array/string-to-array.ts#L15-L16"
     }
   ],
   "Boolean": [
@@ -358,7 +328,7 @@
       },
       "example": "toBoolean('y');\n // => true\n\ntoBoolean(null);\n// => false",
       "utilArgs": "toBoolean(val, [trueValuesArr])",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/master/src/toBoolean/toBoolean.js#L23-L31"
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/to-boolean/to-boolean.ts#L24-L39"
     }
   ]
 }

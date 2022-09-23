@@ -77,7 +77,7 @@
     "target": "es6",
     "declaration": true,
     "outDir": "./dist",
-    "removeComments": true,
+    // "removeComments": true,
     "lib": ["esnext", "dom"],
   },
   "include": ["src/**/*"],

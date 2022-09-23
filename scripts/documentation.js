@@ -1,8 +1,12 @@
 const fs = require('fs');
 const COLORS = require('./colors');
 
-console.info(`\n${COLORS.BgBlue}${COLORS.FgWhite}START documentation generation${COLORS.end}`);
-console.info(`${COLORS.FgGreen}source.json file has been generated${COLORS.end}\n`);
+console.info(
+  `\n${COLORS.BgBlue}${COLORS.FgWhite}START documentation generation${COLORS.end}`
+);
+console.info(
+  `${COLORS.FgGreen}source.json file has been generated${COLORS.end}\n`
+);
 console.info(`${COLORS.FgYellow}START clean up of source.json${COLORS.end}`);
 
 // assuming only that the description is just plain text
@@ -34,7 +38,7 @@ function getArgs(params) {
       description: val.description,
       param: val.name,
       type: getParamType(val),
-      optional: (val.type.type === 'OptionalType')
+      optional: val.type.type === 'OptionalType',
     });
   });
   return returnArgs;
@@ -61,14 +65,15 @@ const utils = {};
 fs.readFile('docs/source.json', 'utf8', (err, data) => {
   const methods = JSON.parse(data);
   methods.forEach((val) => {
+    const MODULE_NAME_IDX = 1;
     // create a module entry if it doesnt exist yet
-    const moduleName = val.tags[0].name;
+    const moduleName = val.tags[MODULE_NAME_IDX].name;
     if (!(moduleName in utils)) {
       utils[moduleName] = [];
     }
     const utilObj = {
       description: getDesc(val.description.children[0].children),
-      args: []
+      args: [],
     };
     val.tags.forEach((tag) => {
       switch (tag.title) {
@@ -84,7 +89,7 @@ fs.readFile('docs/source.json', 'utf8', (err, data) => {
         case 'returns':
           utilObj.returns = {
             desc: tag.description,
-            type: tag.type.name
+            type: tag.type.name,
           };
           break;
         case 'example':
@@ -97,17 +102,27 @@ fs.readFile('docs/source.json', 'utf8', (err, data) => {
     const lineStart = val.context.loc.start.line;
     const lineEnd = val.context.loc.end.line;
     const file = val.context.file.split('/common-utils-pkg/')[1];
-    const sourceUrl = `https://github.com/iamdevlinph/common-utils-pkg/blob/master/${file}#L${lineStart}-L${lineEnd}`;
+    const sourceUrl = `https://github.com/iamdevlinph/common-utils-pkg/blob/main/${file}#L${lineStart}-L${lineEnd}`;
     utilObj.sourceUrl = sourceUrl;
 
     utils[moduleName].push(utilObj);
   });
-  fs.writeFile('docs/mapped_source.json', JSON.stringify(utils, null, 2), (writeError) => {
-    if (writeError) {
-      console.info(`${COLORS.FgRed}ERROR mapped_source.json not generated${COLORS.end}`);
-    } else {
-      console.info(`${COLORS.FgGreen}generated mapped_source.json${COLORS.end}`);
+  fs.writeFile(
+    'docs/mapped_source.json',
+    JSON.stringify(utils, null, 2),
+    (writeError) => {
+      if (writeError) {
+        console.info(
+          `${COLORS.FgRed}ERROR mapped_source.json not generated${COLORS.end}`
+        );
+      } else {
+        console.info(
+          `${COLORS.FgGreen}generated mapped_source.json${COLORS.end}`
+        );
+      }
+      console.info(
+        `${COLORS.BgBlue}${COLORS.FgWhite}END documentation generation${COLORS.end}`
+      );
     }
-    console.info(`${COLORS.BgBlue}${COLORS.FgWhite}END documentation generation${COLORS.end}`);
-  });
+  );
 });

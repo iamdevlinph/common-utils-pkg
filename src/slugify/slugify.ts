@@ -1,10 +1,11 @@
 /**
  * Converts a string into a slug for URL usage.
  *
- * @module Slug
+ * @version 2.1.0
+ * @module String
  * @name slugify
- * @param string string to convert to slug
- * @returns returns slug version of the string.
+ * @param {String} string string to convert to slug
+ * @returns {String} Returns slug version of the string.
  * @example
  *
  * slugify('The quick brown fox');

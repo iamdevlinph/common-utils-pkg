@@ -1,6 +1,9 @@
-name: Running code coverage
+name: Running code tests
 
-on: [push]
+on:
+  push:
+    branches-ignore:
+      - 'main'
 
 jobs:
   setup:
@@ -12,8 +15,8 @@ jobs:
         with:
           node-version: '10.x'
 
-  unit-test:
-    name: Code coverage
+  run-tests:
+    name: Run code tests
     runs-on: ubuntu-latest
     needs: setup # Need to wait for setup
     steps:
@@ -33,8 +36,5 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run code coverage
+      - name: Run tests
         run: yarn test:ci
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1

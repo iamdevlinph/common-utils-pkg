@@ -5,11 +5,12 @@
  * Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.
  * Will always return with # symbol.
  *
+ * @version 1.7.1
  * @module Color
  * @name colorBrightness
- * @param hex color to change brightness
- * @param amount positive or negative percentage
- * @returns returns a manipulated HEX color
+ * @param {String} hex HEX color to change brightness
+ * @param {Number} amount positive or negative percentage
+ * @returns {String} Returns a manipulated HEX color
  * @example
  *
  * colorBrightness('#3CB878', 50);
@@ -18,6 +19,7 @@
  * colorBrightness('#3CB878', -50);
  * // => '#A8646'
  */
+
 export const colorBrightness = (hex: string, amount: number) => {
   let col = hex;
 
