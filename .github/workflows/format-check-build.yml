@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: '10.x'
 
-  unit-test:
-    name: Code coverage
+  format-check:
+    name: Check code format and build app
     runs-on: ubuntu-latest
     needs: setup # Need to wait for setup
     steps:
