@@ -1,8 +1,9 @@
 name: Running code tests
 
-on: [push, pull_request]
-  branches-ignore:
-    - 'main'
+on:
+  [push, pull_request]:
+    branches-ignore:
+      - 'main'
 
 jobs:
   setup:

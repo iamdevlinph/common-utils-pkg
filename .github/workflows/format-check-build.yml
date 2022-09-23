@@ -1,8 +1,9 @@
 name: Running lint checks and build
 
-on: [push, pull_request]
-  branches-ignore:
-    - 'main'
+on:
+  [push, pull_request]:
+    branches-ignore:
+      - 'main'
 
 jobs:
   setup:
