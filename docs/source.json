@@ -8,68 +8,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Convert an array to a string and combine on the delimiter passed.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 66,
-                  "offset": 65
-                },
-                "indent": []
-              }
+              "value": "Convert an array to a string and combine on the delimiter passed."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 66,
-              "offset": 65
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 66,
-          "offset": 65
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.0.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "String"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "arrayToString"
       },
       {
         "title": "param",
         "description": "array to convert to string",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "AnyArray"
@@ -79,7 +46,7 @@
       {
         "title": "param",
         "description": "characater to use in  combining to string",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -89,7 +56,7 @@
       {
         "title": "returns",
         "description": "Returns a string from the array.",
-        "lineNumber": 7,
+        "lineNumber": 8,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -98,31 +65,35 @@
       {
         "title": "example",
         "description": "arrayToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'",
-        "lineNumber": 8
+        "lineNumber": 9
       }
     ],
     "loc": {
       "start": {
-        "line": 3,
-        "column": 0
+        "line": 1,
+        "column": 0,
+        "index": 0
       },
       "end": {
-        "line": 15,
-        "column": 3
+        "line": 14,
+        "column": 3,
+        "index": 407
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 16,
-          "column": 0
+          "column": 0,
+          "index": 409
         },
         "end": {
-          "line": 16,
-          "column": 66
+          "line": 17,
+          "column": 24,
+          "index": 513
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/arrayToString/arrayToString.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/array-to-string/array-to-string.ts"
     },
     "augments": [],
     "examples": [
@@ -130,71 +101,11 @@
         "description": "arrayToString(['The', 'quick', 'brown'], '-');\n// => 'The-brown-fox'"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "array",
-        "lineNumber": 5,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "array to convert to string",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 27,
-                      "offset": 26
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 27,
-                  "offset": 26
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 27,
-              "offset": 26
-            }
-          }
-        },
-        "type": {
-          "type": "NameExpression",
-          "name": "AnyArray"
-        }
-      },
-      {
-        "title": "param",
-        "name": "delimiter",
         "lineNumber": 6,
         "description": {
           "type": "root",
@@ -204,49 +115,34 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "characater to use in  combining to string",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 42,
-                      "offset": 41
-                    },
-                    "indent": []
-                  }
+                  "value": "array to convert to string"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 42,
-                  "offset": 41
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 42,
-              "offset": 41
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AnyArray"
+        }
+      },
+      {
+        "title": "param",
+        "name": "delimiter",
+        "lineNumber": 7,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "characater to use in  combining to string"
+                }
+              ]
             }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -265,49 +161,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a string from the array.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 33,
-                      "offset": 32
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns a string from the array."
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 33,
-                  "offset": 32
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 33,
-              "offset": 32
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -319,6 +177,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.0.0",
     "kind": "module",
     "name": "arrayToString",
     "members": {
@@ -345,68 +205,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Detects browser being used.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 28,
-                  "offset": 27
-                },
-                "indent": []
-              }
+              "value": "Detects browser being used."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 28,
-              "offset": 27
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 28,
-          "offset": 27
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "3.1.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "Browser"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "browserDetect"
       },
       {
         "title": "returns",
         "description": "Returns browser name",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -415,31 +242,35 @@
       {
         "title": "example",
         "description": "browserDetect();\n// => 'Chrome",
-        "lineNumber": 6
+        "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
-        "line": 1,
-        "column": 0
+        "line": 4,
+        "column": 0,
+        "index": 78
       },
       "end": {
-        "line": 11,
-        "column": 3
+        "line": 15,
+        "column": 3,
+        "index": 273
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 12,
-          "column": 0
+          "line": 17,
+          "column": 0,
+          "index": 275
         },
         "end": {
-          "line": 48,
-          "column": 2
+          "line": 52,
+          "column": 2,
+          "index": 1004
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/browserDetect/browserDetect.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/browser-detect/browser-detect.ts"
     },
     "augments": [],
     "examples": [
@@ -447,6 +278,7 @@
         "description": "browserDetect();\n// => 'Chrome"
       }
     ],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -459,49 +291,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns browser name",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 21,
-                      "offset": 20
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns browser name"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 21,
-                  "offset": 20
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 21,
-              "offset": 20
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -513,6 +307,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "3.1.0",
     "kind": "module",
     "name": "browserDetect",
     "members": {
@@ -539,72 +335,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.\nWill always return with # symbol.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 2,
-                  "column": 34,
-                  "offset": 138
-                },
-                "indent": [
-                  1
-                ]
-              }
+              "value": "Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.\nWill always return with # symbol."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 2,
-              "column": 34,
-              "offset": 138
-            },
-            "indent": [
-              1
-            ]
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 2,
-          "column": 34,
-          "offset": 138
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.7.1",
+        "lineNumber": 4
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "type": null,
         "name": "Color"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 5,
+        "lineNumber": 6,
         "name": "colorBrightness"
       },
       {
         "title": "param",
         "description": "HEX color to change brightness",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -614,7 +373,7 @@
       {
         "title": "param",
         "description": "positive or negative percentage",
-        "lineNumber": 7,
+        "lineNumber": 8,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -624,7 +383,7 @@
       {
         "title": "returns",
         "description": "Returns a manipulated HEX color",
-        "lineNumber": 8,
+        "lineNumber": 9,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -633,31 +392,35 @@
       {
         "title": "example",
         "description": "colorBrightness('#3CB878', 50);\n// => '#6EEAAA'\n\ncolorBrightness('#3CB878', -50);\n// => '#A8646'",
-        "lineNumber": 9
+        "lineNumber": 10
       }
     ],
     "loc": {
       "start": {
-        "line": 6,
-        "column": 0
+        "line": 4,
+        "column": 0,
+        "index": 109
       },
       "end": {
-        "line": 22,
-        "column": 3
+        "line": 21,
+        "column": 3,
+        "index": 615
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 23,
-          "column": 0
+          "column": 0,
+          "index": 617
         },
         "end": {
-          "line": 50,
-          "column": 2
+          "line": 52,
+          "column": 2,
+          "index": 1271
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/colorBrightness/colorBrightness.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/color-brightness/color-brightness.ts"
     },
     "augments": [],
     "examples": [
@@ -665,71 +428,11 @@
         "description": "colorBrightness('#3CB878', 50);\n// => '#6EEAAA'\n\ncolorBrightness('#3CB878', -50);\n// => '#A8646'"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "hex",
-        "lineNumber": 6,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "HEX color to change brightness",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 31,
-                      "offset": 30
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 31,
-                  "offset": 30
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 31,
-              "offset": 30
-            }
-          }
-        },
-        "type": {
-          "type": "NameExpression",
-          "name": "String"
-        }
-      },
-      {
-        "title": "param",
-        "name": "amount",
         "lineNumber": 7,
         "description": {
           "type": "root",
@@ -739,49 +442,34 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "positive or negative percentage",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 32,
-                      "offset": 31
-                    },
-                    "indent": []
-                  }
+                  "value": "HEX color to change brightness"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 32,
-                  "offset": 31
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 32,
-              "offset": 31
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      },
+      {
+        "title": "param",
+        "name": "amount",
+        "lineNumber": 8,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "positive or negative percentage"
+                }
+              ]
             }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -800,49 +488,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a manipulated HEX color",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 32,
-                      "offset": 31
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns a manipulated HEX color"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 32,
-                  "offset": 31
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 32,
-              "offset": 31
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -854,6 +504,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.7.1",
     "kind": "module",
     "name": "colorBrightness",
     "members": {
@@ -880,403 +532,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Checks if the type of the value is the expected type.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 54,
-                  "offset": 53
-                },
-                "indent": []
-              }
+              "value": "Generates a GUID."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 54,
-              "offset": 53
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 54,
-          "offset": 53
-        }
-      }
+      ]
     },
     "tags": [
       {
-        "title": "module",
-        "description": null,
-        "lineNumber": 3,
-        "type": null,
-        "name": "Core"
+        "title": "version",
+        "description": "1.0.0",
+        "lineNumber": 3
       },
       {
-        "title": "name",
+        "title": "module",
         "description": null,
         "lineNumber": 4,
-        "name": "doTypesMatch"
-      },
-      {
-        "title": "param",
-        "description": "any value to check",
-        "lineNumber": 5,
-        "type": {
-          "type": "AllLiteral"
-        },
-        "name": "arg"
-      },
-      {
-        "title": "param",
-        "description": "the type to check the value against",
-        "lineNumber": 6,
-        "type": {
-          "type": "NameExpression",
-          "name": "String"
-        },
-        "name": "expectedType"
-      },
-      {
-        "title": "returns",
-        "description": "Returns a boolean if the type of the value matches to expectedType.",
-        "lineNumber": 7,
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      },
-      {
-        "title": "example",
-        "description": "doTypesMatch(1, 'number');\n// => true\n\ndoTypesMatch('abc', 'number');\n// => false",
-        "lineNumber": 8
-      }
-    ],
-    "loc": {
-      "start": {
-        "line": 4,
-        "column": 0
-      },
-      "end": {
-        "line": 19,
-        "column": 3
-      }
-    },
-    "context": {
-      "loc": {
-        "start": {
-          "line": 20,
-          "column": 0
-        },
-        "end": {
-          "line": 42,
-          "column": 2
-        }
-      },
-      "file": "/mnt/e/common-utils-pkg/src/doTypesMatch/doTypesMatchFn.js"
-    },
-    "augments": [],
-    "examples": [
-      {
-        "description": "doTypesMatch(1, 'number');\n// => true\n\ndoTypesMatch('abc', 'number');\n// => false"
-      }
-    ],
-    "params": [
-      {
-        "title": "param",
-        "name": "arg",
-        "lineNumber": 5,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "any value to check",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 19,
-                      "offset": 18
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 19,
-                  "offset": 18
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 19,
-              "offset": 18
-            }
-          }
-        },
-        "type": {
-          "type": "AllLiteral"
-        }
-      },
-      {
-        "title": "param",
-        "name": "expectedType",
-        "lineNumber": 6,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "the type to check the value against",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 36,
-                      "offset": 35
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 36,
-                  "offset": 35
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 36,
-              "offset": 35
-            }
-          }
-        },
-        "type": {
-          "type": "NameExpression",
-          "name": "String"
-        }
-      }
-    ],
-    "properties": [],
-    "returns": [
-      {
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "Returns a boolean if the type of the value matches to expectedType.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 68,
-                      "offset": 67
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 68,
-                  "offset": 67
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 68,
-              "offset": 67
-            }
-          }
-        },
-        "title": "returns",
-        "type": {
-          "type": "NameExpression",
-          "name": "Boolean"
-        }
-      }
-    ],
-    "sees": [],
-    "throws": [],
-    "todos": [],
-    "kind": "module",
-    "name": "doTypesMatch",
-    "members": {
-      "global": [],
-      "inner": [],
-      "instance": [],
-      "events": [],
-      "static": []
-    },
-    "path": [
-      {
-        "name": "doTypesMatch",
-        "kind": "module"
-      }
-    ],
-    "namespace": "doTypesMatch"
-  },
-  {
-    "description": {
-      "type": "root",
-      "children": [
-        {
-          "type": "paragraph",
-          "children": [
-            {
-              "type": "text",
-              "value": "Generates a GUID.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 18,
-                  "offset": 17
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 18,
-              "offset": 17
-            },
-            "indent": []
-          }
-        }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 18,
-          "offset": 17
-        }
-      }
-    },
-    "tags": [
-      {
-        "title": "module",
-        "description": null,
-        "lineNumber": 3,
         "type": null,
         "name": "Key"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "guid"
       },
       {
         "title": "returns",
         "description": "guid string",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -1285,31 +569,35 @@
       {
         "title": "example",
         "description": "guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\"",
-        "lineNumber": 6
+        "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
         "line": 1,
-        "column": 0
+        "column": 0,
+        "index": 0
       },
       "end": {
-        "line": 11,
-        "column": 3
+        "line": 12,
+        "column": 3,
+        "index": 185
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 12,
-          "column": 0
+          "line": 14,
+          "column": 0,
+          "index": 187
         },
         "end": {
-          "line": 17,
-          "column": 2
+          "line": 20,
+          "column": 2,
+          "index": 396
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/guid/guid.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/guid/guid.ts"
     },
     "augments": [],
     "examples": [
@@ -1317,6 +605,7 @@
         "description": "guid();\n// => \"0153a717-3ba2-b1ac-67f1-49db6551a28d\""
       }
     ],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -1329,49 +618,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "guid string",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 12,
-                      "offset": 11
-                    },
-                    "indent": []
-                  }
+                  "value": "guid string"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 12,
-                  "offset": 11
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 12,
-              "offset": 11
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -1383,6 +634,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.0.0",
     "kind": "module",
     "name": "guid",
     "members": {
@@ -1409,68 +662,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Inverts a HEX color.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 21,
-                  "offset": 20
-                },
-                "indent": []
-              }
+              "value": "Inverts a HEX color."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 21,
-              "offset": 20
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 21,
-          "offset": 20
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.6.1",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "Color"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "invertColor"
       },
       {
         "title": "param",
         "description": "hex color to convert",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -1480,7 +700,7 @@
       {
         "title": "returns",
         "description": "Returns a HEX color string.",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -1489,31 +709,35 @@
       {
         "title": "example",
         "description": "invertColor('#E3CCA8');\n// => '#1C3357'\n\ninvertColor('ccc');\n// => '#333333'",
-        "lineNumber": 7
+        "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 12,
-        "column": 0
+        "line": 10,
+        "column": 0,
+        "index": 225
       },
       "end": {
-        "line": 26,
-        "column": 3
+        "line": 25,
+        "column": 3,
+        "index": 514
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 27,
-          "column": 0
+          "column": 0,
+          "index": 516
         },
         "end": {
-          "line": 45,
-          "column": 2
+          "line": 46,
+          "column": 2,
+          "index": 1226
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/invertColor/invertColor.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/invert-hex-color/invert-hex-color.ts"
     },
     "augments": [],
     "examples": [
@@ -1521,11 +745,12 @@
         "description": "invertColor('#E3CCA8');\n// => '#1C3357'\n\ninvertColor('ccc');\n// => '#333333'"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "hex",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "description": {
           "type": "root",
           "children": [
@@ -1534,49 +759,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "hex color to convert",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 21,
-                      "offset": 20
-                    },
-                    "indent": []
-                  }
+                  "value": "hex color to convert"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 21,
-                  "offset": 20
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 21,
-              "offset": 20
-            }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -1595,49 +782,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a HEX color string.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 28,
-                      "offset": 27
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns a HEX color string."
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 28,
-                  "offset": 27
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 28,
-              "offset": 27
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -1649,6 +798,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.6.1",
     "kind": "module",
     "name": "invertColor",
     "members": {
@@ -1675,68 +826,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Get a random pastel color.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 27,
-                  "offset": 26
-                },
-                "indent": []
-              }
+              "value": "Get a random pastel color."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 27,
-              "offset": 26
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 27,
-          "offset": 26
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.0.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "Color"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "randomPastelColor"
       },
       {
         "title": "returns",
         "description": "Returns an HSL color.",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -1745,31 +863,35 @@
       {
         "title": "example",
         "description": "randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'",
-        "lineNumber": 6
+        "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
         "line": 1,
-        "column": 0
+        "column": 0,
+        "index": 0
       },
       "end": {
-        "line": 11,
-        "column": 3
+        "line": 12,
+        "column": 3,
+        "index": 257
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 12,
-          "column": 0
+          "line": 13,
+          "column": 0,
+          "index": 258
         },
         "end": {
-          "line": 17,
-          "column": 2
+          "line": 18,
+          "column": 2,
+          "index": 430
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/randomPastelColor/randomPastelColor.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/random-pastel-color/random-pastel-color.ts"
     },
     "augments": [],
     "examples": [
@@ -1777,6 +899,7 @@
         "description": "randomPastelColor();\n// => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'"
       }
     ],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [
@@ -1789,49 +912,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns an HSL color.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 22,
-                      "offset": 21
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns an HSL color."
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 22,
-                  "offset": 21
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 22,
-              "offset": 21
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -1843,6 +928,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.0.0",
     "kind": "module",
     "name": "randomPastelColor",
     "members": {
@@ -1869,68 +956,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Converts a number of bytes to a human readable file size.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 58,
-                  "offset": 57
-                },
-                "indent": []
-              }
+              "value": "Converts a number of bytes to a human readable file size."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 58,
-              "offset": 57
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 58,
-          "offset": 57
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.0.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "File"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "readableBytes"
       },
       {
         "title": "param",
         "description": "number of bytes to show",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -1940,7 +994,7 @@
       {
         "title": "param",
         "description": "optional number of decimals to show",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "OptionalType",
           "expression": {
@@ -1953,7 +1007,7 @@
       {
         "title": "returns",
         "description": "Returns a human readable file size.",
-        "lineNumber": 7,
+        "lineNumber": 8,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -1962,31 +1016,35 @@
       {
         "title": "example",
         "description": "readableBytes(1234);\n// => 1.205078125 kB\n\nreadableBytes(1234, 2);\n// => 1.21 kB",
-        "lineNumber": 8
+        "lineNumber": 9
       }
     ],
     "loc": {
       "start": {
-        "line": 5,
-        "column": 0
+        "line": 3,
+        "column": 0,
+        "index": 50
       },
       "end": {
-        "line": 20,
-        "column": 3
+        "line": 19,
+        "column": 3,
+        "index": 460
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 21,
-          "column": 0
+          "line": 20,
+          "column": 0,
+          "index": 461
         },
         "end": {
-          "line": 28,
-          "column": 2
+          "line": 30,
+          "column": 2,
+          "index": 882
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/readableBytes/readableBytes.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/readable-bytes/readable-bytes.ts"
     },
     "augments": [],
     "examples": [
@@ -1994,71 +1052,11 @@
         "description": "readableBytes(1234);\n// => 1.205078125 kB\n\nreadableBytes(1234, 2);\n// => 1.21 kB"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "bytes",
-        "lineNumber": 5,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "number of bytes to show",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 24,
-                      "offset": 23
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 24,
-                  "offset": 23
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 24,
-              "offset": 23
-            }
-          }
-        },
-        "type": {
-          "type": "NameExpression",
-          "name": "Number"
-        }
-      },
-      {
-        "title": "param",
-        "name": "decimals",
         "lineNumber": 6,
         "description": {
           "type": "root",
@@ -2068,49 +1066,34 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "optional number of decimals to show",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 36,
-                      "offset": 35
-                    },
-                    "indent": []
-                  }
+                  "value": "number of bytes to show"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 36,
-                  "offset": 35
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 36,
-              "offset": 35
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        }
+      },
+      {
+        "title": "param",
+        "name": "decimals",
+        "lineNumber": 7,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "optional number of decimals to show"
+                }
+              ]
             }
-          }
+          ]
         },
         "type": {
           "type": "OptionalType",
@@ -2132,49 +1115,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a human readable file size.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 36,
-                      "offset": 35
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns a human readable file size."
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 36,
-                  "offset": 35
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 36,
-              "offset": 35
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -2186,6 +1131,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.0.0",
     "kind": "module",
     "name": "readableBytes",
     "members": {
@@ -2212,68 +1159,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Converts a string into a slug for URL usage.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 45,
-                  "offset": 44
-                },
-                "indent": []
-              }
+              "value": "Converts a string into a slug for URL usage."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 45,
-              "offset": 44
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 45,
-          "offset": 44
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "2.1.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
-        "name": "Slug"
+        "name": "String"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "slugify"
       },
       {
         "title": "param",
         "description": "string to convert to slug",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -2283,7 +1197,7 @@
       {
         "title": "returns",
         "description": "Returns slug version of the string.",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -2292,31 +1206,35 @@
       {
         "title": "example",
         "description": "slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nslugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nslugify('wïth speciäl chærs');\n// => 'with-special-chars'",
-        "lineNumber": 7
+        "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 3,
-        "column": 0
+        "line": 1,
+        "column": 0,
+        "index": 0
       },
       "end": {
-        "line": 20,
-        "column": 3
+        "line": 19,
+        "column": 3,
+        "index": 453
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 22,
-          "column": 0
+          "line": 21,
+          "column": 0,
+          "index": 455
         },
         "end": {
-          "line": 40,
-          "column": 2
+          "line": 39,
+          "column": 2,
+          "index": 1301
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/slugify/slugify.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/slugify/slugify.ts"
     },
     "augments": [],
     "examples": [
@@ -2324,11 +1242,12 @@
         "description": "slugify('The quick brown fox');\n// => 'the-quick-brown-fox'\n\nslugify('A. more-Complicated string!..');\n// => 'a-more-complicated-string'\n\nslugify('wïth speciäl chærs');\n// => 'with-special-chars'"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "string",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "description": {
           "type": "root",
           "children": [
@@ -2337,49 +1256,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "string to convert to slug",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 26,
-                      "offset": 25
-                    },
-                    "indent": []
-                  }
+                  "value": "string to convert to slug"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 26,
-                  "offset": 25
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 26,
-              "offset": 25
-            }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -2398,49 +1279,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns slug version of the string.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 36,
-                      "offset": 35
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns slug version of the string."
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 36,
-                  "offset": 35
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 36,
-              "offset": 35
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -2452,6 +1295,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "2.1.0",
     "kind": "module",
     "name": "slugify",
     "members": {
@@ -2478,92 +1323,63 @@
           "children": [
             {
               "type": "text",
-              "value": "Removes all data stored in the local storage.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 46,
-                  "offset": 45
-                },
-                "indent": []
-              }
+              "value": "Removes all data stored in the local storage."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 46,
-              "offset": 45
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 46,
-          "offset": 45
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.9.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "Storage"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "storageClear"
       },
       {
         "title": "example",
         "description": "storageClear();",
-        "lineNumber": 5
+        "lineNumber": 6
       }
     ],
     "loc": {
       "start": {
         "line": 1,
-        "column": 0
+        "column": 0,
+        "index": 0
       },
       "end": {
-        "line": 10,
-        "column": 3
+        "line": 11,
+        "column": 3,
+        "index": 155
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 11,
-          "column": 0
+          "line": 12,
+          "column": 0,
+          "index": 156
         },
         "end": {
-          "line": 11,
-          "column": 55
+          "line": 12,
+          "column": 62,
+          "index": 218
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/storageClear/storageClear.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/storage-clear/storage-clear.ts"
     },
     "augments": [],
     "examples": [
@@ -2571,12 +1387,15 @@
         "description": "storageClear();"
       }
     ],
+    "implements": [],
     "params": [],
     "properties": [],
     "returns": [],
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.9.0",
     "kind": "module",
     "name": "storageClear",
     "members": {
@@ -2603,68 +1422,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Retrieves data from the local storage.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 39,
-                  "offset": 38
-                },
-                "indent": []
-              }
+              "value": "Retrieves data from the local storage."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 39,
-              "offset": 38
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 39,
-          "offset": 38
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.9.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "Storage"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "storageGet"
       },
       {
         "title": "param",
         "description": "key to retrieve",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -2674,7 +1460,7 @@
       {
         "title": "returns",
         "description": "Returns data from the local storage. Returns '' if key is not found",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "NameExpression",
           "name": "Any"
@@ -2683,31 +1469,35 @@
       {
         "title": "example",
         "description": "storageGet('key');",
-        "lineNumber": 7
+        "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 5,
-        "column": 0
+        "line": 3,
+        "column": 0,
+        "index": 35
       },
       "end": {
-        "line": 15,
-        "column": 3
+        "line": 14,
+        "column": 3,
+        "index": 306
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 16,
-          "column": 0
+          "column": 0,
+          "index": 308
         },
         "end": {
           "line": 25,
-          "column": 2
+          "column": 2,
+          "index": 586
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/storageGet/storageGet.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/storage-get/storage-get.ts"
     },
     "augments": [],
     "examples": [
@@ -2715,11 +1505,12 @@
         "description": "storageGet('key');"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "key",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "description": {
           "type": "root",
           "children": [
@@ -2728,49 +1519,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "key to retrieve",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 16,
-                      "offset": 15
-                    },
-                    "indent": []
-                  }
+                  "value": "key to retrieve"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 16,
-                  "offset": 15
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 16,
-              "offset": 15
-            }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -2789,49 +1542,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns data from the local storage. Returns '' if key is not found",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 68,
-                      "offset": 67
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns data from the local storage. Returns '' if key is not found"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 68,
-                  "offset": 67
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 68,
-              "offset": 67
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -2843,6 +1558,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.9.0",
     "kind": "module",
     "name": "storageGet",
     "members": {
@@ -2869,68 +1586,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Removes an entry from the local storage.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 41,
-                  "offset": 40
-                },
-                "indent": []
-              }
+              "value": "Removes an entry from the local storage."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 41,
-              "offset": 40
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 41,
-          "offset": 40
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.9.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "Storage"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "storageRemove"
       },
       {
         "title": "param",
         "description": "key of the entry to remove",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -2940,31 +1624,35 @@
       {
         "title": "example",
         "description": "storageRemove('key');",
-        "lineNumber": 6
+        "lineNumber": 7
       }
     ],
     "loc": {
       "start": {
-        "line": 3,
-        "column": 0
+        "line": 1,
+        "column": 0,
+        "index": 0
       },
       "end": {
-        "line": 12,
-        "column": 3
+        "line": 11,
+        "column": 3,
+        "index": 204
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 13,
-          "column": 0
+          "line": 12,
+          "column": 0,
+          "index": 205
         },
         "end": {
           "line": 13,
-          "column": 65
+          "column": 38,
+          "index": 289
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/storageRemove/storageRemove.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/storage-remove/storage-remove.ts"
     },
     "augments": [],
     "examples": [
@@ -2972,11 +1660,12 @@
         "description": "storageRemove('key');"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "key",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "description": {
           "type": "root",
           "children": [
@@ -2985,49 +1674,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "key of the entry to remove",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 27,
-                      "offset": 26
-                    },
-                    "indent": []
-                  }
+                  "value": "key of the entry to remove"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 27,
-                  "offset": 26
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 27,
-              "offset": 26
-            }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -3040,6 +1691,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.9.0",
     "kind": "module",
     "name": "storageRemove",
     "members": {
@@ -3066,68 +1719,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Stores data to the local storage.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 34,
-                  "offset": 33
-                },
-                "indent": []
-              }
+              "value": "Stores data to the local storage."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 34,
-              "offset": 33
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 34,
-          "offset": 33
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.9.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "Storage"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "storageSet"
       },
       {
         "title": "param",
         "description": "name of the entry",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -3137,7 +1757,7 @@
       {
         "title": "param",
         "description": "data to store in the local storage",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "AllLiteral"
         },
@@ -3146,31 +1766,35 @@
       {
         "title": "example",
         "description": "storageSet('key', data);",
-        "lineNumber": 7
+        "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 4,
-        "column": 0
+        "line": 3,
+        "column": 0,
+        "index": 35
       },
       "end": {
         "line": 14,
-        "column": 3
+        "column": 3,
+        "index": 277
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 15,
-          "column": 0
+          "column": 0,
+          "index": 278
         },
         "end": {
-          "line": 15,
-          "column": 108
+          "line": 16,
+          "column": 76,
+          "index": 412
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/storageSet/storageSet.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/storage-set/storage-set.ts"
     },
     "augments": [],
     "examples": [
@@ -3178,11 +1802,12 @@
         "description": "storageSet('key', data);"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "key",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "description": {
           "type": "root",
           "children": [
@@ -3191,49 +1816,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "name of the entry",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 18,
-                      "offset": 17
-                    },
-                    "indent": []
-                  }
+                  "value": "name of the entry"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 18,
-                  "offset": 17
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 18,
-              "offset": 17
-            }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -3243,7 +1830,7 @@
       {
         "title": "param",
         "name": "data",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "description": {
           "type": "root",
           "children": [
@@ -3252,49 +1839,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "data to store in the local storage",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 35,
-                      "offset": 34
-                    },
-                    "indent": []
-                  }
+                  "value": "data to store in the local storage"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 35,
-                  "offset": 34
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 35,
-              "offset": 34
-            }
-          }
+          ]
         },
         "type": {
           "type": "AllLiteral"
@@ -3306,6 +1855,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.9.0",
     "kind": "module",
     "name": "storageSet",
     "members": {
@@ -3332,68 +1883,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Splits a string to an array based on the delimiter passed.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 59,
-                  "offset": 58
-                },
-                "indent": []
-              }
+              "value": "Splits a string to an array based on the delimiter passed."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 59,
-              "offset": 58
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 59,
-          "offset": 58
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.0.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "Array"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "stringToArray"
       },
       {
         "title": "param",
         "description": "string to convert to array",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -3403,7 +1921,7 @@
       {
         "title": "param",
         "description": "where to split the string",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -3413,7 +1931,7 @@
       {
         "title": "returns",
         "description": "Returns an array of the split string.",
-        "lineNumber": 7,
+        "lineNumber": 8,
         "type": {
           "type": "NameExpression",
           "name": "StringArray"
@@ -3422,31 +1940,35 @@
       {
         "title": "example",
         "description": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
-        "lineNumber": 8
+        "lineNumber": 9
       }
     ],
     "loc": {
       "start": {
-        "line": 3,
-        "column": 0
+        "line": 1,
+        "column": 0,
+        "index": 0
       },
       "end": {
-        "line": 15,
-        "column": 3
+        "line": 14,
+        "column": 3,
+        "index": 402
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 16,
-          "column": 0
+          "line": 15,
+          "column": 0,
+          "index": 403
         },
         "end": {
           "line": 16,
-          "column": 69
+          "column": 26,
+          "index": 497
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/stringToArray/stringToArray.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/string-to-array/string-to-array.ts"
     },
     "augments": [],
     "examples": [
@@ -3454,71 +1976,11 @@
         "description": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "string",
-        "lineNumber": 5,
-        "description": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "string to convert to array",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 27,
-                      "offset": 26
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 27,
-                  "offset": 26
-                },
-                "indent": []
-              }
-            }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 27,
-              "offset": 26
-            }
-          }
-        },
-        "type": {
-          "type": "NameExpression",
-          "name": "String"
-        }
-      },
-      {
-        "title": "param",
-        "name": "delimiter",
         "lineNumber": 6,
         "description": {
           "type": "root",
@@ -3528,49 +1990,34 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "where to split the string",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 26,
-                      "offset": 25
-                    },
-                    "indent": []
-                  }
+                  "value": "string to convert to array"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 26,
-                  "offset": 25
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 26,
-              "offset": 25
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      },
+      {
+        "title": "param",
+        "name": "delimiter",
+        "lineNumber": 7,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "where to split the string"
+                }
+              ]
             }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -3589,49 +2036,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns an array of the split string.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 38,
-                      "offset": 37
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns an array of the split string."
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 38,
-                  "offset": 37
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 38,
-              "offset": 37
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -3643,6 +2052,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.0.0",
     "kind": "module",
     "name": "stringToArray",
     "members": {
@@ -3669,35 +2080,9 @@
           "children": [
             {
               "type": "text",
-              "value": "Converts any value to a Boolean equivalent.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 44,
-                  "offset": 43
-                },
-                "indent": []
-              }
+              "value": "Converts any value to a Boolean equivalent."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 44,
-              "offset": 43
-            },
-            "indent": []
-          }
+          ]
         },
         {
           "type": "paragraph",
@@ -3707,154 +2092,50 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Note:",
-                  "position": {
-                    "start": {
-                      "line": 3,
-                      "column": 3,
-                      "offset": 47
-                    },
-                    "end": {
-                      "line": 3,
-                      "column": 8,
-                      "offset": 52
-                    },
-                    "indent": []
-                  }
+                  "value": "Note:"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 3,
-                  "column": 1,
-                  "offset": 45
-                },
-                "end": {
-                  "line": 3,
-                  "column": 10,
-                  "offset": 54
-                },
-                "indent": []
-              }
+              ]
             },
             {
               "type": "text",
-              "value": " If no user-defined array is passed, the default true values are: ",
-              "position": {
-                "start": {
-                  "line": 3,
-                  "column": 10,
-                  "offset": 54
-                },
-                "end": {
-                  "line": 3,
-                  "column": 76,
-                  "offset": 120
-                },
-                "indent": []
-              }
-            },
-            {
-              "type": "linkReference",
-              "identifier": "'true', 'yes', 'y', '1'",
-              "referenceType": "shortcut",
-              "children": [
-                {
-                  "type": "text",
-                  "value": "'true', 'yes', 'y', '1'",
-                  "position": {
-                    "start": {
-                      "line": 3,
-                      "column": 77,
-                      "offset": 121
-                    },
-                    "end": {
-                      "line": 3,
-                      "column": 100,
-                      "offset": 144
-                    },
-                    "indent": []
-                  }
-                }
-              ],
-              "position": {
-                "start": {
-                  "line": 3,
-                  "column": 76,
-                  "offset": 120
-                },
-                "end": {
-                  "line": 3,
-                  "column": 101,
-                  "offset": 145
-                },
-                "indent": []
-              }
-            },
-            {
-              "type": "text",
-              "value": ".",
-              "position": {
-                "start": {
-                  "line": 3,
-                  "column": 101,
-                  "offset": 145
-                },
-                "end": {
-                  "line": 3,
-                  "column": 102,
-                  "offset": 146
-                },
-                "indent": []
-              }
+              "value": " If no user-defined array is passed, the default true values are:"
             }
-          ],
-          "position": {
-            "start": {
-              "line": 3,
-              "column": 1,
-              "offset": 45
-            },
-            "end": {
-              "line": 3,
-              "column": 102,
-              "offset": 146
-            },
-            "indent": []
-          }
-        }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
+          ]
         },
-        "end": {
-          "line": 3,
-          "column": 102,
-          "offset": 146
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "['true', 'yes', 'y', '1']."
+            }
+          ]
         }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "3.1.1",
+        "lineNumber": 7
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 5,
+        "lineNumber": 8,
         "type": null,
         "name": "Boolean"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 6,
+        "lineNumber": 9,
         "name": "toBoolean"
       },
       {
         "title": "param",
         "description": "value to check if true or false",
-        "lineNumber": 7,
+        "lineNumber": 10,
         "type": {
           "type": "AllLiteral"
         },
@@ -3863,7 +2144,7 @@
       {
         "title": "param",
         "description": "optional array of user defined true values",
-        "lineNumber": 8,
+        "lineNumber": 11,
         "type": {
           "type": "OptionalType",
           "expression": {
@@ -3876,7 +2157,7 @@
       {
         "title": "returns",
         "description": "Returns a boolean equivalent of the value.",
-        "lineNumber": 9,
+        "lineNumber": 12,
         "type": {
           "type": "NameExpression",
           "name": "Boolean"
@@ -3885,31 +2166,35 @@
       {
         "title": "example",
         "description": "toBoolean('y');\n // => true\n\ntoBoolean(null);\n// => false",
-        "lineNumber": 10
+        "lineNumber": 13
       }
     ],
     "loc": {
       "start": {
-        "line": 5,
-        "column": 0
+        "line": 3,
+        "column": 0,
+        "index": 66
       },
       "end": {
-        "line": 22,
-        "column": 3
+        "line": 23,
+        "column": 3,
+        "index": 575
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 23,
-          "column": 0
+          "line": 24,
+          "column": 0,
+          "index": 576
         },
         "end": {
-          "line": 31,
-          "column": 2
+          "line": 39,
+          "column": 2,
+          "index": 911
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/toBoolean/toBoolean.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/to-boolean/to-boolean.ts"
     },
     "augments": [],
     "examples": [
@@ -3917,11 +2202,12 @@
         "description": "toBoolean('y');\n // => true\n\ntoBoolean(null);\n// => false"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "val",
-        "lineNumber": 7,
+        "lineNumber": 10,
         "description": {
           "type": "root",
           "children": [
@@ -3930,49 +2216,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "value to check if true or false",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 32,
-                      "offset": 31
-                    },
-                    "indent": []
-                  }
+                  "value": "value to check if true or false"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 32,
-                  "offset": 31
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 32,
-              "offset": 31
-            }
-          }
+          ]
         },
         "type": {
           "type": "AllLiteral"
@@ -3981,7 +2229,7 @@
       {
         "title": "param",
         "name": "trueValuesArr",
-        "lineNumber": 8,
+        "lineNumber": 11,
         "description": {
           "type": "root",
           "children": [
@@ -3990,49 +2238,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "optional array of user defined true values",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 43,
-                      "offset": 42
-                    },
-                    "indent": []
-                  }
+                  "value": "optional array of user defined true values"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 43,
-                  "offset": 42
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 43,
-              "offset": 42
-            }
-          }
+          ]
         },
         "type": {
           "type": "OptionalType",
@@ -4054,49 +2264,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a boolean equivalent of the value.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 43,
-                      "offset": 42
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns a boolean equivalent of the value."
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 43,
-                  "offset": 42
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 43,
-              "offset": 42
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -4108,6 +2280,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "3.1.1",
     "kind": "module",
     "name": "toBoolean",
     "members": {
@@ -4134,68 +2308,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Converts a string to Sentence case.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 36,
-                  "offset": 35
-                },
-                "indent": []
-              }
+              "value": "Converts a string to Sentence case."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 36,
-              "offset": 35
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 36,
-          "offset": 35
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.0.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "String"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "toSentenceCase"
       },
       {
         "title": "param",
         "description": "string to convert to Sentence case",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -4205,7 +2346,7 @@
       {
         "title": "returns",
         "description": "Returns a Sentence case string.",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -4214,31 +2355,35 @@
       {
         "title": "example",
         "description": "toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'",
-        "lineNumber": 7
+        "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 3,
-        "column": 0
+        "line": 1,
+        "column": 0,
+        "index": 0
       },
       "end": {
-        "line": 14,
-        "column": 3
+        "line": 13,
+        "column": 3,
+        "index": 311
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 15,
-          "column": 0
+          "line": 14,
+          "column": 0,
+          "index": 312
         },
         "end": {
-          "line": 18,
-          "column": 2
+          "line": 17,
+          "column": 2,
+          "index": 473
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/toSentenceCase/toSentenceCase.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/to-sentence-case/to-sentence-case.ts"
     },
     "augments": [],
     "examples": [
@@ -4246,11 +2391,12 @@
         "description": "toSentenceCase('THE QUICK BROWN FOX');\n// => 'The quick brown fox'"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "string",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "description": {
           "type": "root",
           "children": [
@@ -4259,49 +2405,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "string to convert to Sentence case",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 35,
-                      "offset": 34
-                    },
-                    "indent": []
-                  }
+                  "value": "string to convert to Sentence case"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 35,
-                  "offset": 34
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 35,
-              "offset": 34
-            }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -4320,49 +2428,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a Sentence case string.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 32,
-                      "offset": 31
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns a Sentence case string."
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 32,
-                  "offset": 31
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 32,
-              "offset": 31
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -4374,6 +2444,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.0.0",
     "kind": "module",
     "name": "toSentenceCase",
     "members": {
@@ -4400,68 +2472,35 @@
           "children": [
             {
               "type": "text",
-              "value": "Converts a string to a Title Case.",
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 35,
-                  "offset": 34
-                },
-                "indent": []
-              }
+              "value": "Converts a string to a Title Case."
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 35,
-              "offset": 34
-            },
-            "indent": []
-          }
+          ]
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 35,
-          "offset": 34
-        }
-      }
+      ]
     },
     "tags": [
       {
+        "title": "version",
+        "description": "1.0.0",
+        "lineNumber": 3
+      },
+      {
         "title": "module",
         "description": null,
-        "lineNumber": 3,
+        "lineNumber": 4,
         "type": null,
         "name": "String"
       },
       {
         "title": "name",
         "description": null,
-        "lineNumber": 4,
+        "lineNumber": 5,
         "name": "toTitleCase"
       },
       {
         "title": "param",
         "description": "string to convert to Title Case",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -4471,7 +2510,7 @@
       {
         "title": "returns",
         "description": "Returns a Tile Case string.",
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -4480,31 +2519,35 @@
       {
         "title": "example",
         "description": "toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'",
-        "lineNumber": 7
+        "lineNumber": 8
       }
     ],
     "loc": {
       "start": {
-        "line": 5,
-        "column": 0
+        "line": 3,
+        "column": 0,
+        "index": 47
       },
       "end": {
-        "line": 16,
-        "column": 3
+        "line": 15,
+        "column": 3,
+        "index": 344
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 17,
-          "column": 0
+          "line": 16,
+          "column": 0,
+          "index": 345
         },
         "end": {
-          "line": 20,
-          "column": 2
+          "line": 22,
+          "column": 6,
+          "index": 529
         }
       },
-      "file": "/mnt/e/common-utils-pkg/src/toTitleCase/toTitleCase.js"
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/to-title-case/to-title-case.ts"
     },
     "augments": [],
     "examples": [
@@ -4512,11 +2555,12 @@
         "description": "toTitleCase('the quick brown fox');\n// => 'The Quick Brown Fox'"
       }
     ],
+    "implements": [],
     "params": [
       {
         "title": "param",
         "name": "string",
-        "lineNumber": 5,
+        "lineNumber": 6,
         "description": {
           "type": "root",
           "children": [
@@ -4525,49 +2569,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "string to convert to Title Case",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 32,
-                      "offset": 31
-                    },
-                    "indent": []
-                  }
+                  "value": "string to convert to Title Case"
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 32,
-                  "offset": 31
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 32,
-              "offset": 31
-            }
-          }
+          ]
         },
         "type": {
           "type": "NameExpression",
@@ -4586,49 +2592,11 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a Tile Case string.",
-                  "position": {
-                    "start": {
-                      "line": 1,
-                      "column": 1,
-                      "offset": 0
-                    },
-                    "end": {
-                      "line": 1,
-                      "column": 28,
-                      "offset": 27
-                    },
-                    "indent": []
-                  }
+                  "value": "Returns a Tile Case string."
                 }
-              ],
-              "position": {
-                "start": {
-                  "line": 1,
-                  "column": 1,
-                  "offset": 0
-                },
-                "end": {
-                  "line": 1,
-                  "column": 28,
-                  "offset": 27
-                },
-                "indent": []
-              }
+              ]
             }
-          ],
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 1,
-              "offset": 0
-            },
-            "end": {
-              "line": 1,
-              "column": 28,
-              "offset": 27
-            }
-          }
+          ]
         },
         "title": "returns",
         "type": {
@@ -4640,6 +2608,8 @@
     "sees": [],
     "throws": [],
     "todos": [],
+    "yields": [],
+    "version": "1.0.0",
     "kind": "module",
     "name": "toTitleCase",
     "members": {
