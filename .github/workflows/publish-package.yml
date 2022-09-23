@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-node@v1 # Used to install node environment
         with:
           node-version: '10.x'
+          registry-url: 'https://registry.npmjs.org'
 
   publish-package:
     name: Run publish package
