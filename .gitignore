@@ -19,3 +19,6 @@ coverage
 
 docs-ts
 dist
+
+env.sh
+.env
