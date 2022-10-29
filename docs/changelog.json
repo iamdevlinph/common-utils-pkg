@@ -1,5 +1,9 @@
 [
   {
+    "version": "4.0.8",
+    "description": ["[Add] Array | arrayRemoveItem"]
+  },
+  {
     "version": "4.0.0",
     "description": [
       "Migrated to TypeScript",
