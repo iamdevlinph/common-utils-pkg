@@ -1,3 +1,4 @@
+export * from './array-remove-item';
 export * from './array-to-string';
 export * from './browser-detect';
 export * from './color-brightness';
