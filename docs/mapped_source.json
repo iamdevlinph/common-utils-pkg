@@ -1,4 +1,58 @@
 {
+  "Array": [
+    {
+      "description": "Removes provided element from an array.",
+      "args": [
+        {
+          "description": "array to remove element from",
+          "param": "array",
+          "type": "StringArray",
+          "optional": false
+        },
+        {
+          "description": "element to remove from the array",
+          "param": "toRemove",
+          "type": "String",
+          "optional": false
+        }
+      ],
+      "module": "Array",
+      "method": "arrayRemoveItem",
+      "returns": {
+        "desc": "Returns an array without the removed element.",
+        "type": "StringArray"
+      },
+      "example": "arrayRemoveItem(['The', 'quick', 'brown'], 'The');\n// => ['quick', 'brown']",
+      "utilArgs": "arrayRemoveItem(array, toRemove)",
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/array-remove-item/array-remove-item.ts#L16-L18"
+    },
+    {
+      "description": "Splits a string to an array based on the delimiter passed.",
+      "args": [
+        {
+          "description": "string to convert to array",
+          "param": "string",
+          "type": "String",
+          "optional": false
+        },
+        {
+          "description": "where to split the string",
+          "param": "delimiter",
+          "type": "String",
+          "optional": false
+        }
+      ],
+      "module": "Array",
+      "method": "stringToArray",
+      "returns": {
+        "desc": "Returns an array of the split string.",
+        "type": "StringArray"
+      },
+      "example": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
+      "utilArgs": "stringToArray(string, delimiter)",
+      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/string-to-array/string-to-array.ts#L15-L16"
+    }
+  ],
   "String": [
     {
       "description": "Convert an array to a string and combine on the delimiter passed.",
@@ -273,34 +327,6 @@
       "example": "storageSet('key', data);",
       "utilArgs": "storageSet(key, data)",
       "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/storage-set/storage-set.ts#L15-L16"
-    }
-  ],
-  "Array": [
-    {
-      "description": "Splits a string to an array based on the delimiter passed.",
-      "args": [
-        {
-          "description": "string to convert to array",
-          "param": "string",
-          "type": "String",
-          "optional": false
-        },
-        {
-          "description": "where to split the string",
-          "param": "delimiter",
-          "type": "String",
-          "optional": false
-        }
-      ],
-      "module": "Array",
-      "method": "stringToArray",
-      "returns": {
-        "desc": "Returns an array of the split string.",
-        "type": "StringArray"
-      },
-      "example": "stringToArray('apple;banana;orange', ';');\n// => ['apple', 'banana', 'orange']",
-      "utilArgs": "stringToArray(string, delimiter)",
-      "sourceUrl": "https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/string-to-array/string-to-array.ts#L15-L16"
     }
   ],
   "Boolean": [
