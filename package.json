@@ -1,6 +1,6 @@
 {
   "name": "common-utils-pkg",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "A package of commonly used JavaScript utilities.",
   "keywords": [
     "utilities",
@@ -24,8 +24,7 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist/",
-    "!dist/**/*.ts",
-    "!dist/**/*.test.js",
+    "!dist/**/*.test.*",
     "README.md",
     "LICENSE"
   ],

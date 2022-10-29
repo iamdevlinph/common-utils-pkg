@@ -1,5 +1,9 @@
 [
   {
+    "version": "4.1.1",
+    "description": ["Bugfix: TypeScript files not published"]
+  },
+  {
     "version": "4.1.0",
     "description": ["[Add] Array | arrayRemoveItem"]
   },
