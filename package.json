@@ -24,6 +24,8 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist/",
+    "!dist/**/*.ts",
+    "!dist/**/*.test.js",
     "README.md",
     "LICENSE"
   ],
