@@ -8,28 +8,19 @@
   },
   {
     "version": "3.1.1",
-    "description": [
-      "[Update] Boolean | toBoolean()"
-    ]
+    "description": ["[Update] Boolean | toBoolean()"]
   },
   {
     "version": "3.1.0",
-    "description": [
-      "[Add] Browser | browserDetect()"
-    ]
+    "description": ["[Add] Browser | browserDetect()"]
   },
   {
     "version": "3.0.0",
-    "description": [
-      "Major revision!",
-      "Able to import each method separately"
-    ]
+    "description": ["Major revision!", "Able to import each method separately"]
   },
   {
     "version": "2.1.0",
-    "description": [
-      "Add SlugUtil.slugify()"
-    ]
+    "description": ["Add SlugUtil.slugify()"]
   },
   {
     "version": "2.0.5",
@@ -39,39 +30,27 @@
   },
   {
     "version": "2.0.4",
-    "description": [
-      "StorageUtil.getItem - return JSON.parse(data)"
-    ]
+    "description": ["StorageUtil.getItem - return JSON.parse(data)"]
   },
   {
     "version": "2.0.3",
-    "description": [
-      "Fix SSR issue where window is undefined"
-    ]
+    "description": ["Fix SSR issue where window is undefined"]
   },
   {
     "version": "2.0.2",
-    "description": [
-      "Transfer ownership"
-    ]
+    "description": ["Transfer ownership"]
   },
   {
     "version": "2.0.1",
-    "description": [
-      "Display method name on takes() error"
-    ]
+    "description": ["Display method name on takes() error"]
   },
   {
     "version": "2.0.0",
-    "description": [
-      "Update takes() to accept required and optional arguments"
-    ]
+    "description": ["Update takes() to accept required and optional arguments"]
   },
   {
     "version": "1.9.1",
-    "description": [
-      "Update typings"
-    ]
+    "description": ["Update typings"]
   },
   {
     "version": "1.9.0",
@@ -84,64 +63,43 @@
   },
   {
     "version": "1.8.0",
-    "description": [
-      "Add ObjectUtil.isEmpty()"
-    ]
+    "description": ["Add ObjectUtil.isEmpty()"]
   },
   {
     "version": "1.7.4",
-    "description": [
-      "Fix npm deploy from travis"
-    ]
+    "description": ["Fix npm deploy from travis"]
   },
   {
     "version": "1.7.3",
-    "description": [
-      "Update dependencies",
-      "Add greenkeeper"
-    ]
+    "description": ["Update dependencies", "Add greenkeeper"]
   },
   {
     "version": "1.7.2",
-    "description": [
-      "Travis"
-    ]
+    "description": ["Travis"]
   },
   {
     "version": "1.7.1",
-    "description": [
-      "Add ColorUtil.brightness"
-    ]
+    "description": ["Add ColorUtil.brightness"]
   },
   {
     "version": "1.6.2",
-    "description": [
-      "Changes to shield badge maxAge"
-    ]
+    "description": ["Changes to shield badge maxAge"]
   },
   {
     "version": "1.6.1",
-    "description": [
-      "Add ColorUtil.invertHexColor()"
-    ]
+    "description": ["Add ColorUtil.invertHexColor()"]
   },
   {
     "version": "1.6.0",
-    "description": [
-      "Overhaul on the structure"
-    ]
+    "description": ["Overhaul on the structure"]
   },
   {
     "version": "1.5.2",
-    "description": [
-      "Update dependencies"
-    ]
+    "description": ["Update dependencies"]
   },
   {
     "version": "1.5.1",
-    "description": [
-      "Add typing for CoreUtil.argTypesMatch()"
-    ]
+    "description": ["Add typing for CoreUtil.argTypesMatch()"]
   },
   {
     "version": "1.5.0",
@@ -154,27 +112,19 @@
   },
   {
     "version": "1.4.0",
-    "description": [
-      "Automated documentation"
-    ]
+    "description": ["Automated documentation"]
   },
   {
     "version": "1.3.0",
-    "description": [
-      "Add TypeScript type definitions for intellisense"
-    ]
+    "description": ["Add TypeScript type definitions for intellisense"]
   },
   {
     "version": "1.2.0",
-    "description": [
-      "Travis, Codecov, etc"
-    ]
+    "description": ["Travis, Codecov, etc"]
   },
   {
     "version": "1.1.0",
-    "description": [
-      "Code coverage"
-    ]
+    "description": ["Code coverage"]
   },
   {
     "version": "1.0.9",
