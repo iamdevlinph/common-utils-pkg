@@ -8,6 +8,203 @@
           "children": [
             {
               "type": "text",
+              "value": "Removes provided element from an array."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "version",
+        "description": "4.0.8",
+        "lineNumber": 3
+      },
+      {
+        "title": "module",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "Array"
+      },
+      {
+        "title": "name",
+        "description": null,
+        "lineNumber": 5,
+        "name": "arrayRemoveItem"
+      },
+      {
+        "title": "param",
+        "description": "array to remove element from",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "StringArray"
+        },
+        "name": "array"
+      },
+      {
+        "title": "param",
+        "description": "element to remove from the array",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        },
+        "name": "toRemove"
+      },
+      {
+        "title": "returns",
+        "description": "Returns an array without the removed element.",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "StringArray"
+        }
+      },
+      {
+        "title": "example",
+        "description": "arrayRemoveItem(['The', 'quick', 'brown'], 'The');\n// => ['quick', 'brown']",
+        "lineNumber": 9
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0,
+        "index": 0
+      },
+      "end": {
+        "line": 14,
+        "column": 3,
+        "index": 402
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 0,
+          "index": 404
+        },
+        "end": {
+          "line": 18,
+          "column": 2,
+          "index": 530
+        }
+      },
+      "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/array-remove-item/array-remove-item.ts"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "arrayRemoveItem(['The', 'quick', 'brown'], 'The');\n// => ['quick', 'brown']"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "array",
+        "lineNumber": 6,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "array to remove element from"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "StringArray"
+        }
+      },
+      {
+        "title": "param",
+        "name": "toRemove",
+        "lineNumber": 7,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "element to remove from the array"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Returns an array without the removed element."
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "StringArray"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "version": "4.0.8",
+    "kind": "module",
+    "name": "arrayRemoveItem",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "arrayRemoveItem",
+        "kind": "module"
+      }
+    ],
+    "namespace": "arrayRemoveItem"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
               "value": "Convert an array to a string and combine on the delimiter passed."
             }
           ]

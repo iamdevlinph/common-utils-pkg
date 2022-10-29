@@ -84,7 +84,25 @@ fs.readFile('docs/source.json', 'utf8', (err, data) => {
           utilObj.method = tag.name;
           break;
         case 'param':
-          utilObj.args.push(tag);
+          // for params that has multiple types
+          if (
+            tag.type.type === 'UnionType' &&
+            Array.isArray(tag.type.elements)
+          ) {
+            const types = [];
+            tag.type.elements.forEach((type) => types.push(type.name));
+            const modifiedTag = {
+              ...tag,
+              type: {
+                type: 'NameExpression',
+                name: types.join(' | '),
+              },
+            };
+
+            utilObj.args.push(modifiedTag);
+          } else {
+            utilObj.args.push(tag);
+          }
           break;
         case 'returns':
           utilObj.returns = {

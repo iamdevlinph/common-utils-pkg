@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # tsc --noEmit && lint-staged
-npx lint-staged
+tsc --noEmit && ./node_modules/.bin/lint-staged
