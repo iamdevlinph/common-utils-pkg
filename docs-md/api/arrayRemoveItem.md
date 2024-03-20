@@ -6,8 +6,8 @@ Removes provided element from an array.
 
 ### Parameters
 
-*   `array` **[Array][1]** of strings to remove element from
-*   `toRemove` **[String][2]** to remove from the array
+*   `array` **[array][1]** of strings to remove element from
+*   `toRemove` **[string][2]** to remove from the array
 
 ### Examples
 
@@ -16,7 +16,7 @@ arrayRemoveItem(['The', 'quick', 'brown'], 'The');
 // => ['quick', 'brown']
 ```
 
-Returns **[Array][1]** of strings without the removed element.
+Returns **[array][1]** of strings without the removed element.
 
 **Meta**
 

@@ -11,7 +11,7 @@ randomPastelColor();
 // => 'hsl(85.78009756824814,31.861668997564585%,90.94781190317771%)'
 ```
 
-Returns **[String][1]** Returns an HSL color.
+Returns **[string][1]** of HSL color.
 
 **Meta**
 

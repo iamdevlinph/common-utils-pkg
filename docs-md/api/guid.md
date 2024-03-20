@@ -11,7 +11,7 @@ guid();
 // => "0153a717-3ba2-b1ac-67f1-49db6551a28d"
 ```
 
-Returns **[String][1]** guid string
+Returns **[string][1]** of guid.
 
 **Meta**
 

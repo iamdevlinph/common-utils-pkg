@@ -11,7 +11,7 @@ browserDetect();
 // => 'Chrome
 ```
 
-Returns **[String][1]** Returns browser name
+Returns **[string][1]** of browser name.
 
 **Meta**
 

@@ -8,9 +8,9 @@
  * @version 1.7.1
  * @module Color
  * @name colorBrightness
- * @param {String} hex HEX color to change brightness
- * @param {Number} amount positive or negative percentage
- * @returns {String} Returns a manipulated HEX color
+ * @param {string} hex HEX color to change brightness
+ * @param {number} amount positive or negative percentage
+ * @returns {string} of manipulated HEX color.
  * @example
  *
  * colorBrightness('#3CB878', 50);

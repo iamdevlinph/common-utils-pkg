@@ -6,7 +6,7 @@ Inverts a HEX color.
 
 ### Parameters
 
-*   `hex` **[String][1]** hex color to convert
+*   `hex` **[string][1]** hex color to convert
 
 ### Examples
 
@@ -18,7 +18,7 @@ invertColor('ccc');
 // => '#333333'
 ```
 
-Returns **[String][1]** Returns a HEX color string.
+Returns **[string][1]** of HEX color.
 
 **Meta**
 

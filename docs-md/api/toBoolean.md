@@ -11,7 +11,7 @@ Converts any value to a Boolean equivalent.
 ### Parameters
 
 *   `val` **any** value to check if true or false
-*   `trueValuesArr` **AnyArray?** optional array of user defined true values
+*   `trueValuesArr` **[array][1]** of user defined true values (optional, default `true,'true','yes','y','1',1`)
 
 ### Examples
 
@@ -23,13 +23,15 @@ toBoolean(null);
 // => false
 ```
 
-Returns **[Boolean][1]** Returns a boolean equivalent of the value.
+Returns **[boolean][2]** equivalent of the value.
 
 **Meta**
 
 *   **version**: 3.1.1
 
-[1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
 
 * Source: [to-boolean.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/to-boolean/to-boolean.ts#L24-L39)

@@ -6,7 +6,7 @@ Retrieves data from the local storage.
 
 ### Parameters
 
-*   `key` **[String][1]** key to retrieve
+*   `key` **[string][1]** to retrieve
 
 ### Examples
 
@@ -14,7 +14,7 @@ Retrieves data from the local storage.
 storageGet('key');
 ```
 
-Returns **Any** Returns data from the local storage. Returns '' if key is not found
+Returns **any** data from the local storage. Returns '' if key is not found
 
 **Meta**
 

@@ -41,7 +41,6 @@ const methodDirectory = await getDirectories('src/');
  * Loop each directory to generate markdown
  */
 methodDirectory.forEach(async (methodName) => {
-  console.log('🍉 ~ methodDirectory.forEach ~ methodName:', methodName);
   const directory = `src/${methodName}/${methodName}.ts`;
   // const directory = 'src/array-remove-item/array-remove-item.ts';
   /**
@@ -60,12 +59,6 @@ methodDirectory.forEach(async (methodName) => {
   const moduleName = jsonFormat[0].tags[1].name;
   const codeLineStart = jsonFormat[0].context.loc.start.line;
   const codeLineEnd = jsonFormat[0].context.loc.end.line;
-  // console.log('🍉 ~ methodDirectory.forEach ~ jsonFormat[0]:', jsonFormat[0]);
-  // console.log(
-  //   '🍉 ~ methodDirectory.forEach ~ jsonFormat[0]:',
-  //   jsonFormat[0].context.loc
-  // );
-  // const OUTPUT_PATH = OUTPUT_DIR + moduleName;
   const OUTPUT_PATH = OUTPUT_DIR;
   if (!fs.existsSync(OUTPUT_PATH)) {
     fs.mkdirSync(OUTPUT_PATH);

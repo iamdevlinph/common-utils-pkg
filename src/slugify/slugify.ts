@@ -4,8 +4,8 @@
  * @version 2.1.0
  * @module String
  * @name slugify
- * @param {String} string string to convert to slug
- * @returns {String} Returns slug version of the string.
+ * @param {string} string to convert to slug
+ * @returns {string} slug version of the string.
  * @example
  *
  * slugify('The quick brown fox');

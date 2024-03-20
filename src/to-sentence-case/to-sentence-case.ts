@@ -4,8 +4,8 @@
  * @version 1.0.0
  * @module String
  * @name toSentenceCase
- * @param {String} string string to convert to Sentence case
- * @returns {String} Returns a Sentence case string.
+ * @param {string} string to convert to Sentence case
+ * @returns {string} in sentence case.
  * @example
  *
  * toSentenceCase('THE QUICK BROWN FOX');

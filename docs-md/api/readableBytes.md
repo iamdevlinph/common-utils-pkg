@@ -6,8 +6,8 @@ Converts a number of bytes to a human readable file size.
 
 ### Parameters
 
-*   `bytes` **[Number][1]** number of bytes to show
-*   `decimals` **[Number][1]?** optional number of decimals to show
+*   `bytes` **[number][1]** of bytes to show
+*   `decimals` **[number][1]?** optional number of decimals to show
 
 ### Examples
 
@@ -19,7 +19,7 @@ readableBytes(1234, 2);
 // => 1.21 kB
 ```
 
-Returns **[String][2]** Returns a human readable file size.
+Returns **[string][2]** of human readable file size.
 
 **Meta**
 

@@ -6,7 +6,7 @@ Stores data to the local storage.
 
 ### Parameters
 
-*   `key` **[String][1]** name of the entry
+*   `key` **[string][1]** name of the entry
 *   `data` **any** data to store in the local storage
 
 ### Examples

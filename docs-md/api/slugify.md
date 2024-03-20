@@ -6,7 +6,7 @@ Converts a string into a slug for URL usage.
 
 ### Parameters
 
-*   `string` **[String][1]** string to convert to slug
+*   `string` **[string][1]** to convert to slug
 
 ### Examples
 
@@ -21,7 +21,7 @@ slugify('wïth speciäl chærs');
 // => 'with-special-chars'
 ```
 
-Returns **[String][1]** Returns slug version of the string.
+Returns **[string][1]** slug version of the string.
 
 **Meta**
 

@@ -7,8 +7,8 @@ Will always return with # symbol.
 
 ### Parameters
 
-*   `hex` **[String][1]** HEX color to change brightness
-*   `amount` **[Number][2]** positive or negative percentage
+*   `hex` **[string][1]** HEX color to change brightness
+*   `amount` **[number][2]** positive or negative percentage
 
 ### Examples
 
@@ -20,7 +20,7 @@ colorBrightness('#3CB878', -50);
 // => '#A8646'
 ```
 
-Returns **[String][1]** Returns a manipulated HEX color
+Returns **[string][1]** of manipulated HEX color.
 
 **Meta**
 

@@ -6,7 +6,7 @@ Converts a string to Sentence case.
 
 ### Parameters
 
-*   `string` **[String][1]** string to convert to Sentence case
+*   `string` **[string][1]** to convert to Sentence case
 
 ### Examples
 
@@ -15,7 +15,7 @@ toSentenceCase('THE QUICK BROWN FOX');
 // => 'The quick brown fox'
 ```
 
-Returns **[String][1]** Returns a Sentence case string.
+Returns **[string][1]** in sentence case.
 
 **Meta**
 

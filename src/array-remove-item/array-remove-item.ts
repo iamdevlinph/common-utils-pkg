@@ -4,9 +4,9 @@
  * @version 4.0.8
  * @module Array
  * @name arrayRemoveItem
- * @param {StringArray} array array to remove element from
- * @param {String} toRemove element to remove from the array
- * @returns {StringArray} Returns an array without the removed element.
+ * @param {array} array of strings to remove element from
+ * @param {string} toRemove to remove from the array
+ * @returns {array} of strings without the removed element.
  * @example
  *
  * arrayRemoveItem(['The', 'quick', 'brown'], 'The');

@@ -7,7 +7,7 @@
  * @version 3.1.0
  * @module Browser
  * @name browserDetect
- * @returns {String} Returns browser name
+ * @returns {string} of browser name.
  * @example
  *
  * browserDetect();

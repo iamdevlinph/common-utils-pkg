@@ -6,8 +6,8 @@ Convert an array to a string and combine on the delimiter passed.
 
 ### Parameters
 
-*   `array` **AnyArray** array to convert to string
-*   `delimiter` **[String][1]** characater to use in  combining to string
+*   `array` **[array][1]** to convert to string
+*   `delimiter` **[string][2]** characater to use in combining to string
 
 ### Examples
 
@@ -16,13 +16,15 @@ arrayToString(['The', 'quick', 'brown'], '-');
 // => 'The-brown-fox'
 ```
 
-Returns **[String][1]** Returns a string from the array.
+Returns **[string][2]** from the array.
 
 **Meta**
 
 *   **version**: 1.0.0
 
-[1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 
 * Source: [array-to-string.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/array-to-string/array-to-string.ts#L16-L17)

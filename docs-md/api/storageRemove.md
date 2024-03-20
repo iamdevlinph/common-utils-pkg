@@ -6,7 +6,7 @@ Removes an entry from the local storage.
 
 ### Parameters
 
-*   `key` **[String][1]** key of the entry to remove
+*   `key` **[string][1]** of the entry to remove
 
 ### Examples
 

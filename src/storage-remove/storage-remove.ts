@@ -4,7 +4,7 @@
  * @version 1.9.0
  * @module Storage
  * @name storageRemove
- * @param {String} key key of the entry to remove
+ * @param {string} key of the entry to remove
  * @example
  *
  * storageRemove('key');

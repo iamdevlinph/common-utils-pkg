@@ -6,7 +6,7 @@ Converts a string to a Title Case.
 
 ### Parameters
 
-*   `string` **[String][1]** string to convert to Title Case
+*   `string` **[string][1]** to convert to Title Case
 
 ### Examples
 
@@ -15,7 +15,7 @@ toTitleCase('the quick brown fox');
 // => 'The Quick Brown Fox'
 ```
 
-Returns **[String][1]** Returns a Tile Case string.
+Returns **[string][1]** in Title Case.
 
 **Meta**
 

@@ -6,8 +6,8 @@
  * @version 1.0.0
  * @module String
  * @name toTitleCase
- * @param {String} string string to convert to Title Case
- * @returns {String} Returns a Tile Case string.
+ * @param {string} string to convert to Title Case
+ * @returns {string} in Title Case.
  * @example
  *
  * toTitleCase('the quick brown fox');
