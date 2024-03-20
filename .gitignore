@@ -21,3 +21,6 @@ dist
 
 env.sh
 .env
+
+# docusaurus
+.docusaurus
