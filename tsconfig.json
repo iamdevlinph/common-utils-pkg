@@ -85,5 +85,5 @@
     "typeRoots": ["./types", "./node_modules/@types"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "src/**/*.test.ts"]
+  "exclude": ["node_modules", "src/**/*.test.ts", "docusaurus.config.ts"]
 }
