@@ -58,6 +58,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+    announcementBar: {
+      id: 'new_look',
+      content: 'Welcome to the new look!',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: true,
+    },
     // Replace with your project's social card
     image: 'img/js-pkg.png',
     colorMode: {
