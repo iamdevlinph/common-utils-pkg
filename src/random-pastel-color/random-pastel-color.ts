@@ -4,7 +4,7 @@
  * @version 1.0.0
  * @module Color
  * @name randomPastelColor
- * @returns {String} Returns an HSL color.
+ * @returns {string} of HSL color.
  * @example
  *
  * randomPastelColor();

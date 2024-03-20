@@ -4,9 +4,9 @@
  * @version 1.0.0
  * @module String
  * @name arrayToString
- * @param {AnyArray} array array to convert to string
- * @param {String} delimiter characater to use in  combining to string
- * @returns {String} Returns a string from the array.
+ * @param {array} array to convert to string
+ * @param {string} delimiter characater to use in combining to string
+ * @returns {string} from the array.
  * @example
  *
  * arrayToString(['The', 'quick', 'brown'], '-');

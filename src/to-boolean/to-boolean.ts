@@ -11,8 +11,8 @@ const predefinedTrueValues = [true, 'true', 'yes', 'y', '1', 1];
  * @module Boolean
  * @name toBoolean
  * @param {*} val value to check if true or false
- * @param {AnyArray} [trueValuesArr] optional array of user defined true values
- * @returns {Boolean} Returns a boolean equivalent of the value.
+ * @param {array} [trueValuesArr=true, 'true', 'yes', 'y', '1', 1] of user defined true values
+ * @returns {boolean} equivalent of the value.
  * @example
  *
  * toBoolean('y');

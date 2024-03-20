@@ -6,8 +6,8 @@ import LZString from 'lz-string';
  * @version 1.9.0
  * @module Storage
  * @name storageGet
- * @param {String} key key to retrieve
- * @returns {Any} Returns data from the local storage. Returns '' if key is not found
+ * @param {string} key to retrieve
+ * @returns {*} data from the local storage. Returns '' if key is not found
  * @example
  *
  * storageGet('key');

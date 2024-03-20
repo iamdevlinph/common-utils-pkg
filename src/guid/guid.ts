@@ -4,7 +4,7 @@
  * @version 1.0.0
  * @module Key
  * @name guid
- * @returns {String} guid string
+ * @returns {string} of guid.
  * @example
  *
  * guid();

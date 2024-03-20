@@ -6,9 +6,9 @@ const isWholeNum = (number) => number % 1 === 0;
  * @version 1.0.0
  * @module File
  * @name readableBytes
- * @param {Number} bytes number of bytes to show
- * @param {Number} [decimals] optional number of decimals to show
- * @returns {String} Returns a human readable file size.
+ * @param {number} bytes of bytes to show
+ * @param {number} [decimals] optional number of decimals to show
+ * @returns {string} of human readable file size.
  * @example
  *
  * readableBytes(1234);

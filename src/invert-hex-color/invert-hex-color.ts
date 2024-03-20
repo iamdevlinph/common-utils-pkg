@@ -13,8 +13,8 @@ const padZero = (str: string, len = 0) => {
  * @version 1.6.1
  * @module Color
  * @name invertColor
- * @param {String} hex hex color to convert
- * @returns {String} Returns a HEX color string.
+ * @param {string} hex hex color to convert
+ * @returns {string} of HEX color.
  * @example
  *
  * invertColor('#E3CCA8');

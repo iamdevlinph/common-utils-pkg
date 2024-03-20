@@ -1,10 +1,8 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts', '!src/**/index.ts'],
-  coverageDirectory: './coverage',
-  testPathIgnorePatterns: ['dist/*'],
-  coveragePathIgnorePatterns: ['<rootDir>/src/index.ts'],
+  roots: ['<rootDir>/src'],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  },
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 };

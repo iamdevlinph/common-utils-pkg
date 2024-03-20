@@ -1,5 +1,4 @@
 node_modules/*
-package-lock.json
 
 # build files
 lib/
@@ -22,3 +21,7 @@ dist
 
 env.sh
 .env
+
+# docusaurus
+.docusaurus
+build/

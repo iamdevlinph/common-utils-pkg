@@ -72,14 +72,18 @@
 
 // https://www.tsmean.com/articles/how-to-write-a-typescript-library/
 {
+  "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "module": "commonjs",
+    "baseUrl": ".",
+    // "module": "ES2015", // in docusaurus
     "target": "es6",
     "declaration": true,
     "outDir": "./dist",
     // "removeComments": true,
     "lib": ["esnext", "dom"],
+    "types": ["jest"],
+    "typeRoots": ["./types", "./node_modules/@types"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/**/*.test.ts"]
 }

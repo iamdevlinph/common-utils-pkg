@@ -6,7 +6,7 @@ import LZString from 'lz-string';
  * @version 1.9.0
  * @module Storage
  * @name storageSet
- * @param {String} key name of the entry
+ * @param {string} key name of the entry
  * @param {*} data data to store in the local storage
  * @example
  *

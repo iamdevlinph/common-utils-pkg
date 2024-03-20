@@ -4,9 +4,9 @@
  * @version 1.0.0
  * @module Array
  * @name stringToArray
- * @param {String} string string to convert to array
- * @param {String} delimiter where to split the string
- * @returns {StringArray} Returns an array of the split string.
+ * @param {string} string to convert to array
+ * @param {string} delimiter character where to split the string
+ * @returns {array} of the split string.
  * @example
  *
  * stringToArray('apple;banana;orange', ';');
