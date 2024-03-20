@@ -24,3 +24,4 @@ env.sh
 
 # docusaurus
 .docusaurus
+build/

@@ -1,48 +1,69 @@
 ---
 slug: /
 sidebar_position: 1
+id: getting-started
+sidebar_label: Getting started
 ---
+
+Welcome to the new look!
 
 # Getting started
 
-Let's discover **Docusaurus in less than 5 minutes**.
+![img](img/js-pkg.png#center)
 
-## Getting Started
+## :tada: `v4` is here
 
-Get started by **creating a new site**.
+v4 is just migrating the code base to TypeScript. Kindly refer to the [changelog](https://common-utils-pkg.js.org/changelog.html) for more info.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### Installation
 
-### What you'll need
+NPM
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+```
+npm i --save common-utils-pkg
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Yarn
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
+```
+yarn add common-utils-pkg
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+### Usage
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+#### ES6
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+```
+// Specific methods
+
+import { randomPastelColor } from 'common-utils-pkg';
+randomPastelColor();
+```
+
+```
+// All methods
+
+import * as UTILS from 'common-utils-pkg';
+UTILS.randomPastelColor();
+```
+
+#### Browser
+
+```
+<script src="https://unpkg.com/common-utils-pkg"></script>
+<script>
+  // Specific methods
+
+  const randomPastelColor = window['common-utils-pkg].randomPastelColor;
+  randomPastelColor();
+</script>
+```
+
+```
+<script>
+  // All methods
+
+  const UTILS = window['common-utils-pkg'];
+  UTILS.randomPastelColor();
+</script>
+```
