@@ -60,6 +60,11 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/js-pkg.png',
+    colorMode: {
+      defaultMode: 'dark',
+      // disableSwitch: false,
+      // respectPrefersColorScheme: false,
+    },
     // algolia: {
     //   // The application ID provided by Algolia
     //   appId: 'YOUR_APP_ID',
