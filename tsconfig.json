@@ -75,12 +75,14 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "ES2015",
+    // "module": "ES2015", // in docusaurus
     "target": "es6",
     "declaration": true,
     "outDir": "./dist",
     // "removeComments": true,
-    "lib": ["esnext", "dom"]
+    "lib": ["esnext", "dom"],
+    "types": ["jest"],
+    "typeRoots": ["./types", "./node_modules/@types"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "src/**/*.test.ts"]
