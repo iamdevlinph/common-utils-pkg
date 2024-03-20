@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcommon_utils_pkg=self.webpackChunkcommon_utils_pkg||[]).push([[139],{2861:e=>{e.exports=JSON.parse('{"title":"API","description":"API reference for available methods.","slug":"/category/api","permalink":"/category/api","navigation":{"previous":{"title":"Getting started","permalink":"/"},"next":{"title":"API","permalink":"/api/"}}}')}}]);
