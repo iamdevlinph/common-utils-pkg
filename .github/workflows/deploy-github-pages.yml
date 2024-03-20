@@ -1,8 +1,9 @@
 name: Running deployment of documentation to gh-pages
 
-# on:
-#   release:
-#     types: [published]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   setup:
@@ -36,7 +37,10 @@ jobs:
         run: yarn install
 
       - name: Run documentation create
-        run: yarn docu:create
+        run: yarn docusaurus:generate
+
+      - name: Run docusaurus build
+        run: yarn docusaurus:build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
