@@ -3,6 +3,7 @@ slug: /
 sidebar_position: 1
 id: getting-started
 sidebar_label: Getting started
+title: Getting started
 ---
 
 Welcome to the new look!
