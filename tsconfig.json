@@ -75,7 +75,7 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "commonjs",
+    "module": "ES2015",
     "target": "es6",
     "declaration": true,
     "outDir": "./dist",
@@ -83,5 +83,5 @@
     "lib": ["esnext", "dom"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/**/*.test.ts"]
 }
