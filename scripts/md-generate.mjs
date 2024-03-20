@@ -3,13 +3,16 @@ import fs from 'fs';
 import { readdir } from 'fs/promises';
 
 const OUTPUT_DIR = 'docs-md/api/';
+const SOURCE_DIR_URL =
+  'https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/';
 
 /**
- * Delete OUTPUT_DIR before building
- * then create again
+ * Check if OUTPUT_DIR exists before building
+ * create if needed
  */
-fs.rmSync(OUTPUT_DIR, { recursive: true, force: true });
-fs.mkdirSync(OUTPUT_DIR);
+if (!fs.existsSync(OUTPUT_DIR)) {
+  fs.mkdirSync(OUTPUT_DIR);
+}
 // generate the _category_.json for docusaurus again
 fs.writeFileSync(
   `${OUTPUT_DIR}/_category_.json`,
@@ -30,21 +33,23 @@ fs.writeFileSync(
 const getDirectories = async (source) =>
   (await readdir(source, { withFileTypes: true }))
     .filter((dirent) => dirent.isDirectory())
-    .map((dirent) => `src/${dirent.name}/${dirent.name}.ts`);
+    .map((dirent) => dirent.name);
 
 const methodDirectory = await getDirectories('src/');
 
 /**
  * Loop each directory to generate markdown
  */
-methodDirectory.forEach(async (directory) => {
+methodDirectory.forEach(async (methodName) => {
+  console.log('🍉 ~ methodDirectory.forEach ~ methodName:', methodName);
+  const directory = `src/${methodName}/${methodName}.ts`;
   // const directory = 'src/array-remove-item/array-remove-item.ts';
   /**
    * Get method info by getting as JSON first
    * since i don't know how to access this when formatting by markdown
    */
   const jsonFormat = await documentation
-    .build([directory])
+    .build([directory], { shallow: true })
     .then(documentation.formats.json)
     .then((jsonOutput) => JSON.parse(jsonOutput));
 
@@ -53,8 +58,15 @@ methodDirectory.forEach(async (directory) => {
    * Skip if already created
    */
   const moduleName = jsonFormat[0].tags[1].name;
-  const OUTPUT_PATH = OUTPUT_DIR + moduleName;
-  // const OUTPUT_PATH = OUTPUT_DIR;
+  const codeLineStart = jsonFormat[0].context.loc.start.line;
+  const codeLineEnd = jsonFormat[0].context.loc.end.line;
+  // console.log('🍉 ~ methodDirectory.forEach ~ jsonFormat[0]:', jsonFormat[0]);
+  // console.log(
+  //   '🍉 ~ methodDirectory.forEach ~ jsonFormat[0]:',
+  //   jsonFormat[0].context.loc
+  // );
+  // const OUTPUT_PATH = OUTPUT_DIR + moduleName;
+  const OUTPUT_PATH = OUTPUT_DIR;
   if (!fs.existsSync(OUTPUT_PATH)) {
     fs.mkdirSync(OUTPUT_PATH);
   }
@@ -68,19 +80,25 @@ methodDirectory.forEach(async (directory) => {
    *  - Method A
    *  - Method B
    */
-  const methodName = jsonFormat[0].tags[2].name;
-  const OUTPUT_FILE_PATH = OUTPUT_PATH + '/' + methodName + '.md';
+  const methodNameFull = jsonFormat[0].tags[2].name;
+  const OUTPUT_FILE_PATH = OUTPUT_PATH + '/' + methodNameFull + '.md';
   documentation
-    .build([directory])
+    .build([directory], { parseExtension: ['ts'] })
     .then(documentation.formats.md)
     .then((output) => {
-      console.log('🍉 ~ .then ~ output:', output);
       console.info('Writing to:', OUTPUT_FILE_PATH);
       // replace ##title with #title for docusaurus
-      const strippedOutput = output.replace(/^##\n?/m, '#');
-      // console.log('🍉 ~ .then ~ strippedOutput:', strippedOutput);
+      let strippedOutput = output.replace(/^##\n?/m, '#');
+
+      // Add file source to the bottom of markdown
+      const fileUrl = generateFileUrl(methodName, codeLineStart, codeLineEnd);
+      strippedOutput += `\n\n* Source: [${methodName}.ts](${fileUrl})`;
 
       // // output is a string of Markdown data
       fs.writeFileSync(OUTPUT_FILE_PATH, strippedOutput);
     });
 });
+
+function generateFileUrl(moduleName, lineStart, lineEnd) {
+  return `${SOURCE_DIR_URL}${moduleName}/${moduleName}.ts#L${lineStart}-L${lineEnd}`;
+}
