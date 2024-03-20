@@ -1,9 +1,9 @@
 name: Running deployment of documentation to gh-pages
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
 jobs:
   setup:
