@@ -72,35 +72,37 @@ const config: Config = {
       // disableSwitch: false,
       // respectPrefersColorScheme: false,
     },
-    // algolia: {
-    //   // The application ID provided by Algolia
-    //   appId: 'YOUR_APP_ID',
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'CKFAW48CDG',
 
-    //   // Public API key: it is safe to commit it
-    //   apiKey: 'YOUR_SEARCH_API_KEY',
+      // Public API key: it is safe to commit it
+      apiKey: 'ea188884aad4b0fc23cb79f0d7bc17af',
 
-    //   indexName: 'YOUR_INDEX_NAME',
+      indexName: 'common-utils-pkg-js',
 
-    //   // Optional: see doc section below
-    //   contextualSearch: true,
+      // Optional: see doc section below
+      contextualSearch: false,
 
-    //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-    //   externalUrlRegex: 'external\\.com|domain\\.com',
+      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      // externalUrlRegex: 'external\\.com|domain\\.com',
 
-    //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-    //   replaceSearchResultPathname: {
-    //     from: '/docs/', // or as RegExp: /\/docs\//
-    //     to: '/',
-    //   },
+      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      replaceSearchResultPathname: {
+        from: '/docs/', // or as RegExp: /\/docs\//
+        to: '/',
+      },
 
-    //   // Optional: Algolia search parameters
-    //   searchParameters: {},
+      // Optional: Algolia search parameters
+      // searchParameters: {},
 
-    //   // Optional: path for search page that enabled by default (`false` to disable it)
-    //   searchPagePath: 'search',
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      // searchPagePath: 'search',
 
-    //   //... other Algolia params
-    // },
+      //... other Algolia params
+
+      // debug: false,
+    },
     navbar: {
       title: 'Common Utilities Package',
       logo: {
