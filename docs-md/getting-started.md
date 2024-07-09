@@ -6,8 +6,6 @@ sidebar_label: Getting started
 title: Getting started
 ---
 
-Welcome to the new look!
-
 # Getting started
 
 ![img](img/js-pkg.png#center)
