@@ -8,7 +8,6 @@ A package of commonly used JavaScript utilities.
 
 [![npm version][npm-img]][npm-url]
 [![node version][node-img]][node-url]
-[![build][travis-img]][travis-url]
 [![coverage][codecov-img]][codecov-url]
 [![downloads][downloads-img]][downloads-url]
 
@@ -21,7 +20,7 @@ A package of commonly used JavaScript utilities.
 
 # :tada: `v4` is here
 
-v4 is just migrating the code base to TypeScript. Kindly refer to the [changelog](https://common-utils-pkg.js.org/changelog.html) for more info.
+v4 is just migrating the code base to TypeScript. Kindly refer to the [changelog](https://common-utils-pkg.js.org/changelog) for more info.
 
 ## `v3` is here
 
@@ -126,6 +125,15 @@ export default expects(
   }
 )
 ```
+
+# Deployment
+
+### Publish to NPM
+
+To publish version, just create a relase tag and a github workflow will automatically handle the publishing to npm.
+
+### Publish doc updates
+Doc updates should be automatically be deployed once merged to main by github action.
 
 <!-- Have something to pitch in? Open a [pull request](https://github.com/iamdevlinph/common-utils-pkg/pulls) or an [issue](https://github.com/iamdevlinph/common-utils-pkg/issues/new). -->
 
