@@ -29,7 +29,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --noEmit false",
     "docu:md:docusaurus": "node scripts/md-generate.mjs",
     "docu:create": "node_modules/documentation/bin/documentation.js build src/index.ts --pe ts --re ts --re d.ts -f json > docs/source.json && node scripts/documentation.js",
     "docu:serve": "yarn docu:create && node_modules/http-server/bin/http-server docs/ -o",
