@@ -5,6 +5,11 @@ id: changelog
 
 # Changelog
 
+
+##### 4.1.3
+
+- Fix build script not creating files
+
 ##### 4.1.2
 
 - **UPDATE** Remove barrel files to improve bundle size and test performance
