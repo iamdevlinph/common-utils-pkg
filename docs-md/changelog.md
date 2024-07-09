@@ -5,6 +5,10 @@ id: changelog
 
 # Changelog
 
+##### 4.1.2
+
+- **UPDATE** Remove barrel files to improve bundle size and test performance
+
 ##### March 20, 2024
 
 - **UPDATE** New look for the documentation using docusaurus
