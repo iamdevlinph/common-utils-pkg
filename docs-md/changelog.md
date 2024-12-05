@@ -5,6 +5,9 @@ id: changelog
 
 # Changelog
 
+##### 4.1.4
+
+- Moved all deps to devdeps
 
 ##### 4.1.3
 
