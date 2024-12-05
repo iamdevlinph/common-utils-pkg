@@ -126,7 +126,7 @@ export default expects(
 )
 ```
 
-# Deployment
+# Publishing
 
 ### Publish to NPM
 
