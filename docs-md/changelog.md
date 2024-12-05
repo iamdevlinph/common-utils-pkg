@@ -5,6 +5,12 @@ id: changelog
 
 # Changelog
 
+##### 4.1.5
+
+- TODO: Switch to pnpm
+- Fix issue not publishing correctly resulting to incorrect imports
+- Switch build to tsup
+
 ##### 4.1.4
 
 - Moved all deps to devdeps
