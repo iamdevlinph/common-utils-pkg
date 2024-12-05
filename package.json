@@ -28,6 +28,7 @@
     "README.md",
     "LICENSE"
   ],
+  "type": "module",
   "scripts": {
     "build": "tsc --noEmit false",
     "docu:md:docusaurus": "node scripts/md-generate.mjs",
