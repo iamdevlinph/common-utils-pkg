@@ -35,31 +35,31 @@
       },
       {
         "title": "param",
-        "description": "array to remove element from",
+        "description": "of strings to remove element from",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "StringArray"
+          "name": "array"
         },
         "name": "array"
       },
       {
         "title": "param",
-        "description": "element to remove from the array",
+        "description": "to remove from the array",
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "toRemove"
       },
       {
         "title": "returns",
-        "description": "Returns an array without the removed element.",
+        "description": "of strings without the removed element.",
         "lineNumber": 8,
         "type": {
           "type": "NameExpression",
-          "name": "StringArray"
+          "name": "array"
         }
       },
       {
@@ -71,26 +71,22 @@
     "loc": {
       "start": {
         "line": 1,
-        "column": 0,
-        "index": 0
+        "column": 0
       },
       "end": {
         "line": 14,
-        "column": 3,
-        "index": 402
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 16,
-          "column": 0,
-          "index": 404
+          "column": 0
         },
         "end": {
           "line": 18,
-          "column": 2,
-          "index": 530
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/array-remove-item/array-remove-item.ts"
@@ -115,7 +111,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "array to remove element from"
+                  "value": "of strings to remove element from"
                 }
               ]
             }
@@ -123,7 +119,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "StringArray"
+          "name": "array"
         }
       },
       {
@@ -138,7 +134,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "element to remove from the array"
+                  "value": "to remove from the array"
                 }
               ]
             }
@@ -146,7 +142,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -161,7 +157,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns an array without the removed element."
+                  "value": "of strings without the removed element."
                 }
               ]
             }
@@ -170,7 +166,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "StringArray"
+          "name": "array"
         }
       }
     ],
@@ -232,31 +228,31 @@
       },
       {
         "title": "param",
-        "description": "array to convert to string",
+        "description": "to convert to string",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "AnyArray"
+          "name": "array"
         },
         "name": "array"
       },
       {
         "title": "param",
-        "description": "characater to use in  combining to string",
+        "description": "characater to use in combining to string",
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "delimiter"
       },
       {
         "title": "returns",
-        "description": "Returns a string from the array.",
+        "description": "from the array.",
         "lineNumber": 8,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -268,26 +264,22 @@
     "loc": {
       "start": {
         "line": 1,
-        "column": 0,
-        "index": 0
+        "column": 0
       },
       "end": {
         "line": 14,
-        "column": 3,
-        "index": 407
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 16,
-          "column": 0,
-          "index": 409
+          "column": 0
         },
         "end": {
           "line": 17,
-          "column": 24,
-          "index": 513
+          "column": 24
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/array-to-string/array-to-string.ts"
@@ -312,7 +304,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "array to convert to string"
+                  "value": "to convert to string"
                 }
               ]
             }
@@ -320,7 +312,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "AnyArray"
+          "name": "array"
         }
       },
       {
@@ -335,7 +327,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "characater to use in  combining to string"
+                  "value": "characater to use in combining to string"
                 }
               ]
             }
@@ -343,7 +335,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -358,7 +350,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a string from the array."
+                  "value": "from the array."
                 }
               ]
             }
@@ -367,7 +359,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -429,11 +421,11 @@
       },
       {
         "title": "returns",
-        "description": "Returns browser name",
+        "description": "of browser name.",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -445,26 +437,22 @@
     "loc": {
       "start": {
         "line": 4,
-        "column": 0,
-        "index": 78
+        "column": 0
       },
       "end": {
         "line": 15,
-        "column": 3,
-        "index": 273
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 17,
-          "column": 0,
-          "index": 275
+          "column": 0
         },
         "end": {
           "line": 52,
-          "column": 2,
-          "index": 1004
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/browser-detect/browser-detect.ts"
@@ -488,7 +476,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns browser name"
+                  "value": "of browser name."
                 }
               ]
             }
@@ -497,7 +485,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -563,7 +551,7 @@
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "hex"
       },
@@ -573,17 +561,17 @@
         "lineNumber": 8,
         "type": {
           "type": "NameExpression",
-          "name": "Number"
+          "name": "number"
         },
         "name": "amount"
       },
       {
         "title": "returns",
-        "description": "Returns a manipulated HEX color",
+        "description": "of manipulated HEX color.",
         "lineNumber": 9,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -595,26 +583,22 @@
     "loc": {
       "start": {
         "line": 4,
-        "column": 0,
-        "index": 109
+        "column": 0
       },
       "end": {
         "line": 21,
-        "column": 3,
-        "index": 615
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 23,
-          "column": 0,
-          "index": 617
+          "column": 0
         },
         "end": {
           "line": 52,
-          "column": 2,
-          "index": 1271
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/color-brightness/color-brightness.ts"
@@ -647,7 +631,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -670,7 +654,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "Number"
+          "name": "number"
         }
       }
     ],
@@ -685,7 +669,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a manipulated HEX color"
+                  "value": "of manipulated HEX color."
                 }
               ]
             }
@@ -694,7 +678,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -756,11 +740,11 @@
       },
       {
         "title": "returns",
-        "description": "guid string",
+        "description": "of guid.",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -772,26 +756,22 @@
     "loc": {
       "start": {
         "line": 1,
-        "column": 0,
-        "index": 0
+        "column": 0
       },
       "end": {
         "line": 12,
-        "column": 3,
-        "index": 185
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 14,
-          "column": 0,
-          "index": 187
+          "column": 0
         },
         "end": {
           "line": 20,
-          "column": 2,
-          "index": 396
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/guid/guid.ts"
@@ -815,7 +795,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "guid string"
+                  "value": "of guid."
                 }
               ]
             }
@@ -824,7 +804,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -890,17 +870,17 @@
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "hex"
       },
       {
         "title": "returns",
-        "description": "Returns a HEX color string.",
+        "description": "of HEX color.",
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -912,26 +892,22 @@
     "loc": {
       "start": {
         "line": 10,
-        "column": 0,
-        "index": 225
+        "column": 0
       },
       "end": {
         "line": 25,
-        "column": 3,
-        "index": 514
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 27,
-          "column": 0,
-          "index": 516
+          "column": 0
         },
         "end": {
           "line": 46,
-          "column": 2,
-          "index": 1226
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/invert-hex-color/invert-hex-color.ts"
@@ -964,7 +940,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -979,7 +955,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a HEX color string."
+                  "value": "of HEX color."
                 }
               ]
             }
@@ -988,7 +964,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -1050,11 +1026,11 @@
       },
       {
         "title": "returns",
-        "description": "Returns an HSL color.",
+        "description": "of HSL color.",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -1066,26 +1042,22 @@
     "loc": {
       "start": {
         "line": 1,
-        "column": 0,
-        "index": 0
+        "column": 0
       },
       "end": {
         "line": 12,
-        "column": 3,
-        "index": 257
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 13,
-          "column": 0,
-          "index": 258
+          "column": 0
         },
         "end": {
           "line": 18,
-          "column": 2,
-          "index": 430
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/random-pastel-color/random-pastel-color.ts"
@@ -1109,7 +1081,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns an HSL color."
+                  "value": "of HSL color."
                 }
               ]
             }
@@ -1118,7 +1090,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -1180,11 +1152,11 @@
       },
       {
         "title": "param",
-        "description": "number of bytes to show",
+        "description": "of bytes to show",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "Number"
+          "name": "number"
         },
         "name": "bytes"
       },
@@ -1196,18 +1168,18 @@
           "type": "OptionalType",
           "expression": {
             "type": "NameExpression",
-            "name": "Number"
+            "name": "number"
           }
         },
         "name": "decimals"
       },
       {
         "title": "returns",
-        "description": "Returns a human readable file size.",
+        "description": "of human readable file size.",
         "lineNumber": 8,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -1219,26 +1191,22 @@
     "loc": {
       "start": {
         "line": 3,
-        "column": 0,
-        "index": 50
+        "column": 0
       },
       "end": {
         "line": 19,
-        "column": 3,
-        "index": 460
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 20,
-          "column": 0,
-          "index": 461
+          "column": 0
         },
         "end": {
           "line": 30,
-          "column": 2,
-          "index": 882
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/readable-bytes/readable-bytes.ts"
@@ -1263,7 +1231,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "number of bytes to show"
+                  "value": "of bytes to show"
                 }
               ]
             }
@@ -1271,7 +1239,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "Number"
+          "name": "number"
         }
       },
       {
@@ -1296,7 +1264,7 @@
           "type": "OptionalType",
           "expression": {
             "type": "NameExpression",
-            "name": "Number"
+            "name": "number"
           }
         }
       }
@@ -1312,7 +1280,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a human readable file size."
+                  "value": "of human readable file size."
                 }
               ]
             }
@@ -1321,7 +1289,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -1383,21 +1351,21 @@
       },
       {
         "title": "param",
-        "description": "string to convert to slug",
+        "description": "to convert to slug",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "string"
       },
       {
         "title": "returns",
-        "description": "Returns slug version of the string.",
+        "description": "slug version of the string.",
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -1409,26 +1377,22 @@
     "loc": {
       "start": {
         "line": 1,
-        "column": 0,
-        "index": 0
+        "column": 0
       },
       "end": {
         "line": 19,
-        "column": 3,
-        "index": 453
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 21,
-          "column": 0,
-          "index": 455
+          "column": 0
         },
         "end": {
           "line": 39,
-          "column": 2,
-          "index": 1301
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/slugify/slugify.ts"
@@ -1453,7 +1417,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "string to convert to slug"
+                  "value": "to convert to slug"
                 }
               ]
             }
@@ -1461,7 +1425,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -1476,7 +1440,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns slug version of the string."
+                  "value": "slug version of the string."
                 }
               ]
             }
@@ -1485,7 +1449,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -1554,26 +1518,22 @@
     "loc": {
       "start": {
         "line": 1,
-        "column": 0,
-        "index": 0
+        "column": 0
       },
       "end": {
         "line": 11,
-        "column": 3,
-        "index": 155
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 12,
-          "column": 0,
-          "index": 156
+          "column": 0
         },
         "end": {
           "line": 12,
-          "column": 62,
-          "index": 218
+          "column": 62
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/storage-clear/storage-clear.ts"
@@ -1646,21 +1606,20 @@
       },
       {
         "title": "param",
-        "description": "key to retrieve",
+        "description": "to retrieve",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "key"
       },
       {
         "title": "returns",
-        "description": "Returns data from the local storage. Returns '' if key is not found",
+        "description": "data from the local storage. Returns '' if key is not found",
         "lineNumber": 7,
         "type": {
-          "type": "NameExpression",
-          "name": "Any"
+          "type": "AllLiteral"
         }
       },
       {
@@ -1672,26 +1631,22 @@
     "loc": {
       "start": {
         "line": 3,
-        "column": 0,
-        "index": 35
+        "column": 0
       },
       "end": {
         "line": 14,
-        "column": 3,
-        "index": 306
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 16,
-          "column": 0,
-          "index": 308
+          "column": 0
         },
         "end": {
           "line": 25,
-          "column": 2,
-          "index": 586
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/storage-get/storage-get.ts"
@@ -1716,7 +1671,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "key to retrieve"
+                  "value": "to retrieve"
                 }
               ]
             }
@@ -1724,7 +1679,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -1739,7 +1694,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns data from the local storage. Returns '' if key is not found"
+                  "value": "data from the local storage. Returns '' if key is not found"
                 }
               ]
             }
@@ -1747,8 +1702,7 @@
         },
         "title": "returns",
         "type": {
-          "type": "NameExpression",
-          "name": "Any"
+          "type": "AllLiteral"
         }
       }
     ],
@@ -1810,11 +1764,11 @@
       },
       {
         "title": "param",
-        "description": "key of the entry to remove",
+        "description": "of the entry to remove",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "key"
       },
@@ -1827,26 +1781,22 @@
     "loc": {
       "start": {
         "line": 1,
-        "column": 0,
-        "index": 0
+        "column": 0
       },
       "end": {
         "line": 11,
-        "column": 3,
-        "index": 204
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 12,
-          "column": 0,
-          "index": 205
+          "column": 0
         },
         "end": {
           "line": 13,
-          "column": 38,
-          "index": 289
+          "column": 38
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/storage-remove/storage-remove.ts"
@@ -1871,7 +1821,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "key of the entry to remove"
+                  "value": "of the entry to remove"
                 }
               ]
             }
@@ -1879,7 +1829,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -1947,7 +1897,7 @@
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "key"
       },
@@ -1969,26 +1919,22 @@
     "loc": {
       "start": {
         "line": 3,
-        "column": 0,
-        "index": 35
+        "column": 0
       },
       "end": {
         "line": 14,
-        "column": 3,
-        "index": 277
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 15,
-          "column": 0,
-          "index": 278
+          "column": 0
         },
         "end": {
           "line": 16,
-          "column": 76,
-          "index": 412
+          "column": 76
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/storage-set/storage-set.ts"
@@ -2021,7 +1967,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -2107,31 +2053,31 @@
       },
       {
         "title": "param",
-        "description": "string to convert to array",
+        "description": "to convert to array",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "string"
       },
       {
         "title": "param",
-        "description": "where to split the string",
+        "description": "character where to split the string",
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "delimiter"
       },
       {
         "title": "returns",
-        "description": "Returns an array of the split string.",
+        "description": "of the split string.",
         "lineNumber": 8,
         "type": {
           "type": "NameExpression",
-          "name": "StringArray"
+          "name": "array"
         }
       },
       {
@@ -2143,26 +2089,22 @@
     "loc": {
       "start": {
         "line": 1,
-        "column": 0,
-        "index": 0
+        "column": 0
       },
       "end": {
         "line": 14,
-        "column": 3,
-        "index": 402
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 15,
-          "column": 0,
-          "index": 403
+          "column": 0
         },
         "end": {
           "line": 16,
-          "column": 26,
-          "index": 497
+          "column": 26
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/string-to-array/string-to-array.ts"
@@ -2187,7 +2129,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "string to convert to array"
+                  "value": "to convert to array"
                 }
               ]
             }
@@ -2195,7 +2137,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -2210,7 +2152,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "where to split the string"
+                  "value": "character where to split the string"
                 }
               ]
             }
@@ -2218,7 +2160,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -2233,7 +2175,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns an array of the split string."
+                  "value": "of the split string."
                 }
               ]
             }
@@ -2242,7 +2184,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "StringArray"
+          "name": "array"
         }
       }
     ],
@@ -2340,24 +2282,25 @@
       },
       {
         "title": "param",
-        "description": "optional array of user defined true values",
+        "description": "of user defined true values",
         "lineNumber": 11,
         "type": {
           "type": "OptionalType",
           "expression": {
             "type": "NameExpression",
-            "name": "AnyArray"
+            "name": "array"
           }
         },
-        "name": "trueValuesArr"
+        "name": "trueValuesArr",
+        "default": "true,'true','yes','y','1',1"
       },
       {
         "title": "returns",
-        "description": "Returns a boolean equivalent of the value.",
+        "description": "equivalent of the value.",
         "lineNumber": 12,
         "type": {
           "type": "NameExpression",
-          "name": "Boolean"
+          "name": "boolean"
         }
       },
       {
@@ -2369,26 +2312,22 @@
     "loc": {
       "start": {
         "line": 3,
-        "column": 0,
-        "index": 66
+        "column": 0
       },
       "end": {
         "line": 23,
-        "column": 3,
-        "index": 575
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 24,
-          "column": 0,
-          "index": 576
+          "column": 0
         },
         "end": {
           "line": 39,
-          "column": 2,
-          "index": 911
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/to-boolean/to-boolean.ts"
@@ -2435,19 +2374,17 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "optional array of user defined true values"
+                  "value": "of user defined true values"
                 }
               ]
             }
           ]
         },
         "type": {
-          "type": "OptionalType",
-          "expression": {
-            "type": "NameExpression",
-            "name": "AnyArray"
-          }
-        }
+          "type": "NameExpression",
+          "name": "array"
+        },
+        "default": "true,'true','yes','y','1',1"
       }
     ],
     "properties": [],
@@ -2461,7 +2398,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a boolean equivalent of the value."
+                  "value": "equivalent of the value."
                 }
               ]
             }
@@ -2470,7 +2407,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "Boolean"
+          "name": "boolean"
         }
       }
     ],
@@ -2532,21 +2469,21 @@
       },
       {
         "title": "param",
-        "description": "string to convert to Sentence case",
+        "description": "to convert to Sentence case",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "string"
       },
       {
         "title": "returns",
-        "description": "Returns a Sentence case string.",
+        "description": "in sentence case.",
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -2558,26 +2495,22 @@
     "loc": {
       "start": {
         "line": 1,
-        "column": 0,
-        "index": 0
+        "column": 0
       },
       "end": {
         "line": 13,
-        "column": 3,
-        "index": 311
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 14,
-          "column": 0,
-          "index": 312
+          "column": 0
         },
         "end": {
           "line": 17,
-          "column": 2,
-          "index": 473
+          "column": 2
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/to-sentence-case/to-sentence-case.ts"
@@ -2602,7 +2535,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "string to convert to Sentence case"
+                  "value": "to convert to Sentence case"
                 }
               ]
             }
@@ -2610,7 +2543,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -2625,7 +2558,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a Sentence case string."
+                  "value": "in sentence case."
                 }
               ]
             }
@@ -2634,7 +2567,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -2696,21 +2629,21 @@
       },
       {
         "title": "param",
-        "description": "string to convert to Title Case",
+        "description": "to convert to Title Case",
         "lineNumber": 6,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         },
         "name": "string"
       },
       {
         "title": "returns",
-        "description": "Returns a Tile Case string.",
+        "description": "in Title Case.",
         "lineNumber": 7,
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       },
       {
@@ -2722,26 +2655,22 @@
     "loc": {
       "start": {
         "line": 3,
-        "column": 0,
-        "index": 47
+        "column": 0
       },
       "end": {
         "line": 15,
-        "column": 3,
-        "index": 344
+        "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
           "line": 16,
-          "column": 0,
-          "index": 345
+          "column": 0
         },
         "end": {
           "line": 22,
-          "column": 6,
-          "index": 529
+          "column": 6
         }
       },
       "file": "/home/iamdevlinph/projects/iamdevlinph/common-utils-pkg/src/to-title-case/to-title-case.ts"
@@ -2766,7 +2695,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "string to convert to Title Case"
+                  "value": "to convert to Title Case"
                 }
               ]
             }
@@ -2774,7 +2703,7 @@
         },
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
@@ -2789,7 +2718,7 @@
               "children": [
                 {
                   "type": "text",
-                  "value": "Returns a Tile Case string."
+                  "value": "in Title Case."
                 }
               ]
             }
@@ -2798,7 +2727,7 @@
         "title": "returns",
         "type": {
           "type": "NameExpression",
-          "name": "String"
+          "name": "string"
         }
       }
     ],
