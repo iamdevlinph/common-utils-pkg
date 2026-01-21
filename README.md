@@ -27,11 +27,15 @@ v4 is just migrating the code base to TypeScript. Kindly refer to the [changelog
 Version 3 introduces a code-breaking change. Each method is exported independently instead of having them under a "category utility". Read more on how to use it [here](https://iamdevlinph.github.io/common-utils-pkg/usage.html).
 
 ## Installation
+
 NPM
+
 ```
 npm i --save common-utils-pkg
 ```
+
 Yarn
+
 ```
 yarn add common-utils-pkg
 ```
@@ -82,22 +86,25 @@ Read more about the usage [here](https://iamdevlinph.github.io/common-utils-pkg/
 Read more about the methods available [here](https://iamdevlinph.github.io/common-utils-pkg/docs.html)
 
 ## Features
-* Transpile ES6 to ES5 using [Babel](https://github.com/babel/babel)
-* Coverage using [Istanbul](https://github.com/gotwarlost/istanbul) with [nyc](https://github.com/istanbuljs/nyc) and report by [Codecov](https://github.com/codecov/codecov-node)
-* Create the bundle using [webpack](https://github.com/webpack/webpack)
-* Run tests using [Mocha](https://github.com/mochajs/mocha) and [chai](https://github.com/chaijs/chai)
-* Lint stuff using [ESLint](https://github.com/eslint/eslint)
-* Build status by [Travis](https://github.com/travis-ci/travis-ci)
-* Precommit using [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky)
-* Provides TypeScript type definitions
+
+- Transpile ES6 to ES5 using [Babel](https://github.com/babel/babel)
+- Coverage using [Istanbul](https://github.com/gotwarlost/istanbul) with [nyc](https://github.com/istanbuljs/nyc) and report by [Codecov](https://github.com/codecov/codecov-node)
+- Create the bundle using [webpack](https://github.com/webpack/webpack)
+- Run tests using [Mocha](https://github.com/mochajs/mocha) and [chai](https://github.com/chaijs/chai)
+- Lint stuff using [ESLint](https://github.com/eslint/eslint)
+- Build status by [Travis](https://github.com/travis-ci/travis-ci)
+- Precommit using [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky)
+- Provides TypeScript type definitions
 <!-- ![typedef](./docs/img/ts-type-def.png) -->
 
 # Contributing
+
 1.Create a folder under `src/` and name the folder with the same name as the method.
 
 2.Create `methodName.js` and `methodName.spec.js`
 
 The full directory should look like this:
+
 ```
 src/
   methodName/
@@ -112,19 +119,27 @@ import expects from '../expects/expects';
 ```
 
 Wrap your exported function with `expects`
+
 ```js
 export default expects(
   methodName,
   'methodName',
-  { // required parameters
+  {
+    // required parameters
     0: 'string', // 1st parameter is required and is a string
     1: 'number', // 2nd parameter is required and is a number
   },
-  { // optional parameters
-    2: 'number' // 3rd parameter is optional but is a number
+  {
+    // optional parameters
+    2: 'number', // 3rd parameter is optional but is a number
   }
-)
+);
 ```
+
+### Scripts
+
+- `yarn docusaurus:generate` - generate new files. Will auto refresh page
+- `yarn docusaurus:start` - start up the docu page
 
 # Publishing
 
@@ -133,6 +148,7 @@ export default expects(
 To publish version, just create a relase tag and a github workflow will automatically handle the publishing to npm.
 
 ### Publish doc updates
+
 Doc updates should be automatically be deployed once merged to main by github action.
 
 <!-- Have something to pitch in? Open a [pull request](https://github.com/iamdevlinph/common-utils-pkg/pulls) or an [issue](https://github.com/iamdevlinph/common-utils-pkg/issues/new). -->

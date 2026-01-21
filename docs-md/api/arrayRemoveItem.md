@@ -6,17 +6,20 @@ Removes provided element from an array.
 
 ### Parameters
 
-*   `array` **[array][1]** of strings to remove element from
-*   `toRemove` **[string][2]** to remove from the array
+*   `array` **[array][1]** of strings | numbers to remove element from
+*   `toRemove` **([string][2] | [number][3])** to remove from the array
 
 ### Examples
 
 ```javascript
 arrayRemoveItem(['The', 'quick', 'brown'], 'The');
 // => ['quick', 'brown']
+
+arrayRemoveItem([2, 4, 1], 4);
+// => [2, 1]
 ```
 
-Returns **[array][1]** of strings without the removed element.
+Returns **[array][1]** without the removed element.
 
 **Meta**
 
@@ -26,5 +29,7 @@ Returns **[array][1]** of strings without the removed element.
 
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
+[3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-* Source: [array-remove-item.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/array-remove-item/array-remove-item.ts#L16-L18)
+
+* Source: [array-remove-item.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/array-remove-item/array-remove-item.ts#L19-L24)
