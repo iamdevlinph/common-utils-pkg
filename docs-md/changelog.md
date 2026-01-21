@@ -5,6 +5,10 @@ id: changelog
 
 # Changelog
 
+##### 4.1.6
+
+- Update `arrayRemoveItem` to support number
+
 ##### 4.1.5
 
 - TODO: Switch to pnpm
