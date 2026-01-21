@@ -35,7 +35,7 @@ const config: Config = {
       {
         docs: {
           path: 'docs-md',
-          routeBasePath: '/',
+          routeBasePath: '/api',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
