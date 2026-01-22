@@ -24,7 +24,6 @@ const getDirectories = async (source) =>
     .map((dirent) => dirent.name);
 
 const methodDirectory = await getDirectories('src/');
-console.log('🍉debuu ~ methodDirectory:', methodDirectory);
 
 // generate the _category_.json for docusaurus again
 // fs.writeFileSync(
