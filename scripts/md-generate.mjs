@@ -13,18 +13,6 @@ const SOURCE_DIR_URL =
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR);
 }
-// generate the _category_.json for docusaurus again
-// fs.writeFileSync(
-//   `${OUTPUT_DIR}/_category_.json`,
-//   JSON.stringify({
-//     label: 'API',
-//     position: 2,
-//     link: {
-//       type: 'generated-index',
-//       description: 'API reference for available methods.',
-//     },
-//   })
-// );
 
 /**
  * Get all method paths from src/
@@ -36,6 +24,23 @@ const getDirectories = async (source) =>
     .map((dirent) => dirent.name);
 
 const methodDirectory = await getDirectories('src/');
+console.log('🍉debuu ~ methodDirectory:', methodDirectory);
+
+// generate the _category_.json for docusaurus again
+// fs.writeFileSync(
+//   `${OUTPUT_DIR}/_category_.json`,
+//   JSON.stringify({
+//     type: 'category',
+//     label: 'API',
+//     position: 2,
+//     link: {
+//       type: 'generated-index',
+//       description: 'API reference for available methods.',
+//       slug: '/api',
+//     },
+//     items: ['api'],
+//   })
+// );
 
 /**
  * Loop each directory to generate markdown
