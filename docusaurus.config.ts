@@ -53,6 +53,9 @@ const config: Config = {
         theme: {
           customCss: './src-docusaurus/css/custom.css',
         },
+        googleTagManager: {
+          containerId: 'G-J633J2X891',
+        },
       } satisfies Preset.Options,
     ],
   ],
