@@ -75,7 +75,7 @@ const config: Config = {
       // Public API key: it is safe to commit it
       apiKey: 'adb8f04cf88389128677f5ff758faf9d',
 
-      indexName: 'common-utils-pkg-js',
+      indexName: 'common-utils-pkg-js-v2',
 
       // Optional: see doc section below
       contextualSearch: true,
