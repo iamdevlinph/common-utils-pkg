@@ -28,7 +28,7 @@ export const toBoolean = (
   let valToTest;
   try {
     valToTest = val.toString().toLowerCase();
-  } catch (e) {
+  } catch {
     valToTest = val;
   }
   return (

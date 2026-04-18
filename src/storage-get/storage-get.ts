@@ -18,7 +18,7 @@ export const storageGet = (key: string): unknown | string => {
   try {
     value = JSON.parse(value);
   } catch (e) {
-    console.error('[storageGet] key was not found in the storage');
+    console.error('[storageGet] key was not found in the storage', e);
   }
 
   return value;
