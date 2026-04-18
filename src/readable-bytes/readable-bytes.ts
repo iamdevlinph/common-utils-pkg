@@ -1,4 +1,4 @@
-const isWholeNum = (number) => number % 1 === 0;
+const isWholeNum = (number: number) => number % 1 === 0;
 
 /**
  * Converts a number of bytes to a human readable file size.

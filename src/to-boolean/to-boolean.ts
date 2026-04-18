@@ -33,7 +33,7 @@ export const toBoolean = (
   }
   return (
     ([...predefinedTrueValues, ...trueValuesArr] as string[]).indexOf(
-      valToTest
+      valToTest as string
     ) > -1
   );
 };
