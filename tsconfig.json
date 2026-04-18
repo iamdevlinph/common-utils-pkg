@@ -74,7 +74,6 @@
 {
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "baseUrl": ".",
     // "module": "ES2015", // in docusaurus
     "target": "es6",
     "declaration": true,

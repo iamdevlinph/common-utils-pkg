@@ -14,12 +14,16 @@ import LZString from 'lz-string';
  */
 
 export const storageGet = (key: string): unknown | string => {
-  let value = LZString.decompress(window.localStorage.getItem(key));
-  try {
-    value = JSON.parse(value);
-  } catch (e) {
-    console.error('[storageGet] key was not found in the storage');
-  }
+  const raw = window.localStorage.getItem(key);
+  if (!raw) return null;
 
-  return value;
+  const decompressed = LZString.decompress(raw);
+  if (!decompressed) return null;
+
+  try {
+    return JSON.parse(decompressed);
+  } catch (e) {
+    console.error('[storageGet] Failed to parse value for key:', key, e);
+    return decompressed;
+  }
 };

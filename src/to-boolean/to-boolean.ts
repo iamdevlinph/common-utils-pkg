@@ -28,12 +28,12 @@ export const toBoolean = (
   let valToTest;
   try {
     valToTest = val.toString().toLowerCase();
-  } catch (e) {
+  } catch {
     valToTest = val;
   }
   return (
     ([...predefinedTrueValues, ...trueValuesArr] as string[]).indexOf(
-      valToTest
+      valToTest as string
     ) > -1
   );
 };

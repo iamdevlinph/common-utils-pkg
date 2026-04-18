@@ -5,6 +5,11 @@ id: changelog
 
 # Changelog
 
+##### 4.1.7
+
+- Update depedencies
+- Update node engine to v24.12
+
 ##### 4.1.6
 
 - Update `arrayRemoveItem` to support number
