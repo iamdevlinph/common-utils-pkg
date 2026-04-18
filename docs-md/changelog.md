@@ -8,7 +8,7 @@ id: changelog
 ##### 4.1.7
 
 - Update depedencies
-- Update node engine to v24.12
+- Update package.json node engine to >=20.19
 
 ##### 4.1.6
 
