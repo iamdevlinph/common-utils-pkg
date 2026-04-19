@@ -6,9 +6,9 @@ sidebar_label: Getting started
 title: Getting started
 ---
 
-Welcome to the new look!
+# Common Utilities Package
 
-# Getting started
+A package of commonly used JavaScript utilities.
 
 ![img](img/js-pkg.png#center)
 
