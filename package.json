@@ -31,9 +31,6 @@
   ],
   "scripts": {
     "build": "rm -rf dist/; tsup",
-    "docu:md:docusaurus": "node scripts/md-generate.mjs",
-    "docu:create": "node_modules/documentation/bin/documentation.js build src/index.ts --pe ts --re ts --re d.ts -f json > docs/source.json && node scripts/documentation.js",
-    "docu:serve": "yarn docu:create && node_modules/http-server/bin/http-server docs/ -o",
     "format:check": "eslint ./src",
     "format:fix": "eslint ./src --fix",
     "prepublishOnly": "yarn build",
@@ -68,7 +65,7 @@
     "@typescript-eslint/eslint-plugin": "8.58.2",
     "@typescript-eslint/parser": "8.58.2",
     "clsx": "2.1.1",
-    "documentation": "14.0.3",
+    "documentation": "13.2.5",
     "eslint": "10.2.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.5",

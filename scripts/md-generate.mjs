@@ -2,7 +2,7 @@ import * as documentation from 'documentation';
 import fs from 'fs';
 import { readdir } from 'fs/promises';
 
-const OUTPUT_DIR = 'docs-md/api/';
+const OUTPUT_DIR = 'docs-md/api';
 const SOURCE_DIR_URL =
   'https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/';
 
