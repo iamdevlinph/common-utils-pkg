@@ -12,10 +12,6 @@ A package of commonly used JavaScript utilities.
 
 ![img](img/js-pkg.png#center)
 
-## :tada: `v4` is here
-
-v4 is just migrating the code base to TypeScript. Kindly refer to the [changelog](https://common-utils-pkg.js.org/changelog.html) for more info.
-
 ### Installation
 
 NPM
