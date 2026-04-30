@@ -23,4 +23,4 @@ Returns **any** data from the local storage. Returns '' if key is not found
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 
-* Source: [storage-get.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/storage-get/storage-get.ts#L16-L25)
+* Source: [storage-get.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/storage-get/storage-get.ts#L16-L29)
