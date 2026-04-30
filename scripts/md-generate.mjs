@@ -12,6 +12,9 @@ const SOURCE_DIR_URL =
  */
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR);
+} else {
+  // delete if already exists
+  fs.rmSync(OUTPUT_DIR, { recursive: true, force: true });
 }
 
 /**
@@ -60,7 +63,12 @@ methodDirectory.forEach(async (methodName) => {
    * Create needed folders
    * Skip if already created
    */
-  const moduleName = jsonFormat[0].tags[1].name;
+  // if has @ignore, will be empty
+  // this method won't be included in the documentation
+  if (jsonFormat.length === 0) {
+    return;
+  }
+  // const moduleName = jsonFormat[0].tags[1].name;
   const codeLineStart = jsonFormat[0].context.loc.start.line;
   const codeLineEnd = jsonFormat[0].context.loc.end.line;
   const OUTPUT_PATH = OUTPUT_DIR;
