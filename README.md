@@ -3,7 +3,7 @@
 A package of commonly used JavaScript utilities.
 
 <p align="center">
-  <img width="100%" src="/static/img/js-pkg.png">
+  <img src="/static/img/js-pkg.png">
 </p>
 
 #### Package Details
