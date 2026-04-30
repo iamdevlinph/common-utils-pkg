@@ -2,7 +2,7 @@
 
 A package of commonly used JavaScript utilities.
 
-[Site](https://iamdevlinph.github.io/common-utils-pkg/) | [Docs](https://iamdevlinph.github.io/common-utils-pkg/docs.html)
+![img](/static/img/js-pkg.png#center)
 
 #### Package Details
 
@@ -17,14 +17,6 @@ A package of commonly used JavaScript utilities.
 [![open prs][pr-img]][pr-url]
 ![code size](https://img.shields.io/github/languages/code-size/iamdevlinph/common-utils-pkg.svg?style=flat-square&maxAge=7200)
 [![contributors][contributor-img]][contributor-url]
-
-# :tada: `v4` is here
-
-v4 is just migrating the code base to TypeScript. Kindly refer to the [changelog](https://common-utils-pkg.js.org/changelog) for more info.
-
-## `v3` is here
-
-Version 3 introduces a code-breaking change. Each method is exported independently instead of having them under a "category utility". Read more on how to use it [here](https://iamdevlinph.github.io/common-utils-pkg/usage.html).
 
 ## Installation
 
@@ -85,7 +77,7 @@ Read more about the usage [here](https://iamdevlinph.github.io/common-utils-pkg/
 
 Read more about the methods available [here](https://iamdevlinph.github.io/common-utils-pkg/docs.html)
 
-## Features
+<!-- ## Features
 
 - Transpile ES6 to ES5 using [Babel](https://github.com/babel/babel)
 - Coverage using [Istanbul](https://github.com/gotwarlost/istanbul) with [nyc](https://github.com/istanbuljs/nyc) and report by [Codecov](https://github.com/codecov/codecov-node)
@@ -94,46 +86,22 @@ Read more about the methods available [here](https://iamdevlinph.github.io/commo
 - Lint stuff using [ESLint](https://github.com/eslint/eslint)
 - Build status by [Travis](https://github.com/travis-ci/travis-ci)
 - Precommit using [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky)
-- Provides TypeScript type definitions
+- Provides TypeScript type definitions -->
 <!-- ![typedef](./docs/img/ts-type-def.png) -->
 
 # Contributing
 
 1.Create a folder under `src/` and name the folder with the same name as the method.
 
-2.Create `methodName.js` and `methodName.spec.js`
+2.Create `methodName.ts` and `methodName.test.ts`
 
 The full directory should look like this:
 
 ```
 src/
-  methodName/
-    - methodName.js
-    - methodName.spec.js
-```
-
-3.If the method you are authoring has expected parameters then import `expects`
-
-```js
-import expects from '../expects/expects';
-```
-
-Wrap your exported function with `expects`
-
-```js
-export default expects(
-  methodName,
-  'methodName',
-  {
-    // required parameters
-    0: 'string', // 1st parameter is required and is a string
-    1: 'number', // 2nd parameter is required and is a number
-  },
-  {
-    // optional parameters
-    2: 'number', // 3rd parameter is optional but is a number
-  }
-);
+  method-name/
+    - method-name.ts
+    - method-name.test.ts
 ```
 
 ### Scripts

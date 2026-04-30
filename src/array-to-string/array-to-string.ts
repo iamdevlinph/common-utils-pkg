@@ -1,6 +1,7 @@
 /**
  * Convert an array to a string and combine on the delimiter passed.
  *
+ * @ignore Removed v4.2.0
  * @version 1.0.0
  * @module String
  * @name arrayToString

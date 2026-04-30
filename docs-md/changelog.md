@@ -5,6 +5,11 @@ id: changelog
 
 # Changelog
 
+##### 4.2.0
+
+- Removed `arrayToString` -> `Array.prototype.join`
+- Removed `stringToArray` -> `String.prototype.split`
+
 ##### 4.1.7
 
 - Update depedencies
