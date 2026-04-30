@@ -2,7 +2,9 @@
 
 A package of commonly used JavaScript utilities.
 
-![img](/static/img/js-pkg.png#center)
+<p align="center">
+  <img src="/static/img/js-pkg.png">
+</p>
 
 #### Package Details
 
