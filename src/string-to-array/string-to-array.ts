@@ -1,6 +1,7 @@
 /**
  * Splits a string to an array based on the delimiter passed.
  *
+ * @ignore Removed v4.2.0
  * @version 1.0.0
  * @module Array
  * @name stringToArray
