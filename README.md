@@ -2,7 +2,7 @@
 
 A package of commonly used JavaScript utilities.
 
-[Docs](https://common-utils-pkg.js.org/)
+![img](/static/img/js-pkg.png#center)
 
 #### Package Details
 
