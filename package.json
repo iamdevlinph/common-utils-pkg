@@ -96,10 +96,9 @@
       "last 5 safari version"
     ]
   },
-  "engines": {
-    "node": ">=20.19"
-  },
-  "resolutions": {
-    "webpackbar": "^7.0.0"
+  "pnpm": {
+    "overrides": {
+      "webpackbar": "^7.0.0"
+    }
   }
 }

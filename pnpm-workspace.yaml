@@ -1,0 +1,13 @@
+allowBuilds:
+  core-js: set this to true or false
+  esbuild: set this to true or false
+  unrs-resolver: set this to true or false
+minimumReleaseAgeExclude:
+  - parse-path@5.0.0
+  - parse-url@8.1.0
+  - braces@3.0.3
+  - micromatch@4.0.8
+  - ansi-html@0.0.8
+  - vue-template-compiler@3.0.0
+  - serialize-javascript@7.0.3
+  - serialize-javascript@7.0.5
