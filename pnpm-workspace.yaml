@@ -1,7 +1,7 @@
 allowBuilds:
-  core-js: set this to true or false
-  esbuild: set this to true or false
-  unrs-resolver: set this to true or false
+  core-js: true
+  esbuild: false
+  unrs-resolver: false
 minimumReleaseAgeExclude:
   - parse-path@5.0.0
   - parse-url@8.1.0

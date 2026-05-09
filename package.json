@@ -100,5 +100,11 @@
     "overrides": {
       "webpackbar": "^7.0.0"
     }
+  },
+  "overrides": {
+    "webpackbar": "^7.0.0"
+  },
+  "resolutions": {
+    "webpackbar": "^7.0.0"
   }
 }
