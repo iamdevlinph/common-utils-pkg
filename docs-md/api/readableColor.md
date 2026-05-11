@@ -38,7 +38,7 @@ Returns **[string][1]** light/dark hex value.
 
 **Meta**
 
-*   **version**: 4.2.1
+*   **version**: 4.3.0
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 

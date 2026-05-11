@@ -5,7 +5,7 @@ id: changelog
 
 # Changelog
 
-##### 4.2.1
+##### 4.3.0
 
 - **NEW:** `Colors -> readableColor` - get light/dark mode color for text readability
 

@@ -1,7 +1,7 @@
 /**
  * Returns a readable light/dark color based on the provided HEX value. User can provide custom light/dark values.
  *
- * @version 4.2.1
+ * @version 4.3.0
  * @module Color
  * @name readableColor
  * @param {string} hex HEX color to change brightness
