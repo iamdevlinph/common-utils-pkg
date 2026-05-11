@@ -6,6 +6,7 @@ export { guid } from './guid/guid';
 export { invertHexColor } from './invert-hex-color/invert-hex-color';
 export { randomPastelColor } from './random-pastel-color/random-pastel-color';
 export { readableBytes } from './readable-bytes/readable-bytes';
+export { readableColor } from './readable-color/readable-color';
 export { slugify } from './slugify/slugify';
 export { storageClear } from './storage-clear/storage-clear';
 export { storageGet } from './storage-get/storage-get';

@@ -5,6 +5,10 @@ id: changelog
 
 # Changelog
 
+##### 4.3.0
+
+- **NEW:** `Colors -> readableColor` - get light/dark mode color for text readability
+
 ##### 4.2.0
 
 - Removed `arrayToString` -> `Array.prototype.join`
