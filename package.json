@@ -37,7 +37,7 @@
     "test:ci": "jest --no-cache",
     "test:clear": "jest --clearCache",
     "docusaurus": "docusaurus",
-    "docusaurus:generate": "node scripts/md-generate.mjs",
+    "docusaurus:generate": "node scripts/md-generate.mjs && node scripts/generate-index.mjs",
     "docusaurus:start": "docusaurus start",
     "docusaurus:build": "docusaurus build",
     "docusaurus:swizzle": "docusaurus swizzle",
