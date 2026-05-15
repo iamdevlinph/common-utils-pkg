@@ -51,7 +51,7 @@ const config: Config = {
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
         theme: {
-          customCss: './src-docusaurus/css/custom.css',
+          customCss: './css/custom.css',
         },
         gtag: {
           trackingID: 'G-J633J2X891',
