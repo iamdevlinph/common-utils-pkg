@@ -73,3 +73,12 @@ img[src*='#center'] {
     var(--ifm-color-emphasis-100) 100%
   );
 }
+
+code * {
+  font-family: 'Fira Code';
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url(./FiraCode-Regular.ttf);
+}

@@ -30,6 +30,7 @@
     "LICENSE"
   ],
   "scripts": {
+    "dev": "pnpm docusaurus:start",
     "build": "rm -rf dist/; npm run generate-index; tsup",
     "format:check": "eslint ./src",
     "format:fix": "eslint ./src --fix",
@@ -49,12 +50,12 @@
     "generate-index": "node scripts/generate-index.mjs"
   },
   "dependencies": {
-    "@docusaurus/plugin-google-gtag": "3.9.2",
     "lz-string": "1.5.0"
   },
   "devDependencies": {
     "@docusaurus/core": "3.10.1",
     "@docusaurus/module-type-aliases": "3.10.1",
+    "@docusaurus/plugin-google-gtag": "3.9.2",
     "@docusaurus/preset-classic": "3.10.1",
     "@docusaurus/tsconfig": "3.10.1",
     "@docusaurus/types": "3.10.1",
