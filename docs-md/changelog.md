@@ -5,6 +5,11 @@ id: changelog
 
 # Changelog
 
+##### 4.3.1
+
+- Update `readableBytes` to support minimum unit
+- Update `readableBytes(number, options?)` to accept optional `options` object as 2nd parameter for decimal and minimum unit
+
 ##### 4.3.0
 
 - **NEW:** `Colors -> readableColor` - get light/dark mode color for text readability

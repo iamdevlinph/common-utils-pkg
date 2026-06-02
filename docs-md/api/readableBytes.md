@@ -7,7 +7,10 @@ Converts a number of bytes to a human readable file size.
 ### Parameters
 
 *   `bytes` **[number][1]** of bytes to show
-*   `decimals` **[number][1]?** optional number of decimals to show
+*   `options` **[Object][2]?** user provided options object
+
+    *   `options.decimals` **[number][1]?** optional number of decimals to show
+    *   `options.minUnit` **(`"byte(s)"` | `"kB"` | `"MB"` | `"GB"` | `"TB"` | `"PB"`)?** minimum unit to display; if undefined, the most appropriate unit is selected automatically
 
 ### Examples
 
@@ -19,7 +22,7 @@ readableBytes(1234, 2);
 // => 1.21 kB
 ```
 
-Returns **[string][2]** of human readable file size.
+Returns **[string][3]** of human readable file size.
 
 **Meta**
 
@@ -27,7 +30,9 @@ Returns **[string][2]** of human readable file size.
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 
-* Source: [readable-bytes.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/readable-bytes/readable-bytes.ts#L20-L30)
+* Source: [readable-bytes.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/readable-bytes/readable-bytes.ts#L23-L26)
