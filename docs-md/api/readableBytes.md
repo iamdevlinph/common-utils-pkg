@@ -18,8 +18,14 @@ Converts a number of bytes to a human readable file size.
 readableBytes(1234);
 // => 1.205078125 kB
 
-readableBytes(1234, 2);
+readableBytes(1234, { decimals: 2 });
 // => 1.21 kB
+
+readableBytes(500, { minUnit: 'kB' });
+// => 0.48828125 kB
+
+readableBytes(500, { decimals: 2, minUnit: 'kB' });
+// => 0.49 kB kB
 ```
 
 Returns **[string][3]** of human readable file size.
@@ -35,4 +41,4 @@ Returns **[string][3]** of human readable file size.
 [3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 
-* Source: [readable-bytes.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/readable-bytes/readable-bytes.ts#L23-L26)
+* Source: [readable-bytes.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/readable-bytes/readable-bytes.ts#L29-L32)
