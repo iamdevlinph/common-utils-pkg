@@ -5,6 +5,10 @@ id: changelog
 
 # Changelog
 
+##### 4.3.2
+
+- Fix issue build is not generating types
+
 ##### 4.3.1
 
 - Update `readableBytes` to support minimum unit
