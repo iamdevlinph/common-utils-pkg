@@ -5,7 +5,12 @@ id: changelog
 
 # Changelog
 
+##### 4.3.4
+- Trying to fix some publish workflow issue
+
+
 ##### 4.3.3
+
 - Some changes to bundling
 - Replace eslint and prettier with biome
 
