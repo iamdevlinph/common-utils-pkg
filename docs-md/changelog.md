@@ -5,6 +5,10 @@ id: changelog
 
 # Changelog
 
+##### 4.3.3
+- Some changes to bundling
+- Replace eslint and prettier with biome
+
 ##### 4.3.2
 
 - Fix issue build is not generating types
