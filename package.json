@@ -27,7 +27,7 @@
   "scripts": {
     "dev": "pnpm docusaurus:start",
     "build": "rm -rf dist/; npm run generate-index; tsup",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "pnpm run build",
     "test:ci": "jest --no-cache",
     "test:clear": "jest --clearCache",
     "docusaurus": "docusaurus",
