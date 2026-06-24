@@ -12,5 +12,5 @@
     "source.sortMembers": "explicit",
     "source.biome": "explicit",
     "source.fixAll.biome": "explicit"
-  },
+  }
 }

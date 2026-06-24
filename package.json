@@ -2,14 +2,7 @@
   "name": "common-utils-pkg",
   "version": "4.3.2",
   "description": "A package of commonly used JavaScript utilities.",
-  "keywords": [
-    "utilities",
-    "npm",
-    "module",
-    "javascript",
-    "es6",
-    "functions"
-  ],
+  "keywords": ["utilities", "npm", "module", "javascript", "es6", "functions"],
   "homepage": "https://common-utils-pkg.js.org/",
   "bugs": {
     "url": "https://github.com/iamdevlinph/common-utils-pkg/issues"
@@ -30,12 +23,7 @@
       "require": "./dist/index.js"
     }
   },
-  "files": [
-    "dist/",
-    "!dist/**/*.test.*",
-    "README.md",
-    "LICENSE"
-  ],
+  "files": ["dist/", "!dist/**/*.test.*", "README.md", "LICENSE"],
   "scripts": {
     "dev": "pnpm docusaurus:start",
     "build": "rm -rf dist/; npm run generate-index; tsup",
@@ -64,26 +52,18 @@
     "lz-string": "1.5.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.5.0",
+    "@docusaurus/core": "3.10.1",
     "@docusaurus/module-type-aliases": "3.10.1",
     "@docusaurus/plugin-google-gtag": "3.9.2",
     "@docusaurus/preset-classic": "3.10.1",
     "@docusaurus/tsconfig": "3.10.1",
     "@docusaurus/types": "3.10.1",
-    "@biomejs/biome": "2.5.0",
-    "@docusaurus/core": "3.10.1",
-    "@eslint/eslintrc": "3.3.5",
-    "@eslint/js": "10.0.1",
     "@mdx-js/react": "3.1.1",
     "@types/jest": "30.0.0",
     "@types/node": "25.6.0",
-    "@typescript-eslint/eslint-plugin": "8.58.2",
-    "@typescript-eslint/parser": "8.58.2",
     "clsx": "2.1.1",
     "documentation": "13.2.5",
-    "eslint": "10.2.0",
-    "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-prettier": "5.5.5",
-    "eslint-plugin-simple-import-sort": "13.0.0",
     "http-server": "14.1.1",
     "husky": "9.1.7",
     "jest": "30.3.0",
@@ -99,11 +79,7 @@
     "typescript": "6.0.2"
   },
   "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.5%", "not dead", "not op_mini all"],
     "development": [
       "last 3 chrome version",
       "last 3 firefox version",
