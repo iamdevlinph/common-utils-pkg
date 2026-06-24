@@ -1,6 +1,6 @@
 {
   "name": "common-utils-pkg",
-  "version": "4.3.3",
+  "version": "4.3.4",
   "description": "A package of commonly used JavaScript utilities.",
   "keywords": ["utilities", "npm", "module", "javascript", "es6", "functions"],
   "homepage": "https://common-utils-pkg.js.org/",
