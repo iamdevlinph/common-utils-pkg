@@ -25,8 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v6
+        name: Install pnpm
+        with:
+          version: 11.2.2
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -36,7 +38,7 @@ jobs:
           cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Format and lint with Biome
         run: pnpm exec biome check .
