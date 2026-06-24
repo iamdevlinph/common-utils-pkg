@@ -18,7 +18,6 @@ jobs:
         name: Install pnpm
         with:
           version: 11.2.2
-          cache: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
