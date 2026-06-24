@@ -3,11 +3,16 @@
     // "**/dist": false
   },
   "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "js/ts.tsdk.path": "node_modules/typescript/lib",
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
+    "source.organizeImports.biome": "explicit",
+    "source.sortMembers": "explicit",
+    "source.biome": "explicit",
+    "source.fixAll.biome": "explicit"
   }
 }

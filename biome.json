@@ -1,0 +1,136 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.0/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!!**/dist",
+      "!lint-staged.config.js",
+      "!jest.config.js",
+      "!babel.config.js"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "expand": "auto",
+    "useEditorconfig": true,
+    "includes": ["**"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "none",
+      "complexity": {
+        "noArguments": "error",
+        "noUselessTypeConstraint": "error"
+      },
+      "correctness": {
+        "noConstAssign": "off",
+        "noGlobalObjectCalls": "off",
+        "noInvalidBuiltinInstantiation": "off",
+        "noInvalidConstructorSuper": "off",
+        "noSetterReturn": "off",
+        "noUndeclaredVariables": "off",
+        "noUnreachable": "off",
+        "noUnreachableSuper": "off",
+        "noUnusedVariables": "error"
+      },
+      "style": {
+        "noCommonJs": "error",
+        "noNamespace": "error",
+        "useArrayLiterals": "error",
+        "useAsConstAssertion": "error",
+        "useBlockStatements": "off",
+        "useConsistentArrowReturn": "off",
+        "useConst": "error",
+        "useSpreadOverApply": "error"
+      },
+      "suspicious": {
+        "noClassAssign": "off",
+        "noDuplicateClassMembers": "off",
+        "noDuplicateEnumValues": "error",
+        "noDuplicateObjectKeys": "off",
+        "noDuplicateParameters": "off",
+        "noExplicitAny": "error",
+        "noExtraNonNullAssertion": "error",
+        "noFunctionAssign": "off",
+        "noImportAssign": "off",
+        "noMisleadingInstantiator": "error",
+        "noNonNullAssertedOptionalChain": "error",
+        "noRedeclare": "off",
+        "noUnsafeDeclarationMerging": "error",
+        "noUnsafeNegation": "off",
+        "noUnusedExpressions": "off",
+        "noVar": "error",
+        "noWith": "off",
+        "useGetterReturn": "off",
+        "useNamespaceKeyword": "error"
+      }
+    },
+    "includes": [
+      "**",
+      "!**/lint-staged.config.js",
+      "!lib/*",
+      "!docs/*",
+      "!coverage/*",
+      "!**/docusaurus.config.ts",
+      "**",
+      "!lib/*",
+      "!docs/*",
+      "!coverage/*",
+      "!**/docusaurus.config.ts"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    },
+    "globals": ["window"]
+  },
+  "html": {
+    "formatter": {
+      "indentScriptAndStyle": false,
+      "selfCloseVoidElements": "always"
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["scripts/*.js"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noCommonJs": "off"
+          }
+        }
+      }
+    }
+  ],
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}

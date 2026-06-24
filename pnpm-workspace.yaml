@@ -12,3 +12,5 @@ minimumReleaseAgeExclude:
   - vue-template-compiler@3.0.0
   - serialize-javascript@7.0.3
   - serialize-javascript@7.0.5
+overrides:
+  webpackbar: "7.0.0"

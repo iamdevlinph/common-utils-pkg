@@ -1,15 +1,8 @@
 {
   "name": "common-utils-pkg",
-  "version": "4.3.2",
+  "version": "4.3.3",
   "description": "A package of commonly used JavaScript utilities.",
-  "keywords": [
-    "utilities",
-    "npm",
-    "module",
-    "javascript",
-    "es6",
-    "functions"
-  ],
+  "keywords": ["utilities", "npm", "module", "javascript", "es6", "functions"],
   "homepage": "https://common-utils-pkg.js.org/",
   "bugs": {
     "url": "https://github.com/iamdevlinph/common-utils-pkg/issues"
@@ -23,17 +16,17 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist/",
-    "!dist/**/*.test.*",
-    "README.md",
-    "LICENSE"
-  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist/", "!dist/**/*.test.*", "README.md", "LICENSE"],
   "scripts": {
     "dev": "pnpm docusaurus:start",
     "build": "rm -rf dist/; npm run generate-index; tsup",
-    "format:check": "eslint ./src",
-    "format:fix": "eslint ./src --fix",
     "prepublishOnly": "yarn build",
     "test:ci": "jest --no-cache",
     "test:clear": "jest --clearCache",
@@ -47,31 +40,29 @@
     "docusaurus:serve": "docusaurus serve",
     "docusaurus:write-translations": "docusaurus write-translations",
     "docusaurus:write-heading-ids": "docusaurus write-heading-ids",
-    "generate-index": "node scripts/generate-index.mjs"
+    "generate-index": "node scripts/generate-index.mjs",
+    "format": "biome format --write",
+    "lint": "biome lint",
+    "check": "biome check",
+    "fix": "biome check --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "lz-string": "1.5.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.5.0",
     "@docusaurus/core": "3.10.1",
     "@docusaurus/module-type-aliases": "3.10.1",
     "@docusaurus/plugin-google-gtag": "3.9.2",
     "@docusaurus/preset-classic": "3.10.1",
     "@docusaurus/tsconfig": "3.10.1",
     "@docusaurus/types": "3.10.1",
-    "@eslint/eslintrc": "3.3.5",
-    "@eslint/js": "10.0.1",
     "@mdx-js/react": "3.1.1",
     "@types/jest": "30.0.0",
     "@types/node": "25.6.0",
-    "@typescript-eslint/eslint-plugin": "8.58.2",
-    "@typescript-eslint/parser": "8.58.2",
     "clsx": "2.1.1",
     "documentation": "13.2.5",
-    "eslint": "10.2.0",
-    "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-prettier": "5.5.5",
-    "eslint-plugin-simple-import-sort": "13.0.0",
     "http-server": "14.1.1",
     "husky": "9.1.7",
     "jest": "30.3.0",
@@ -87,15 +78,18 @@
     "typescript": "6.0.2"
   },
   "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.5%", "not dead", "not op_mini all"],
     "development": [
       "last 3 chrome version",
       "last 3 firefox version",
       "last 5 safari version"
     ]
-  }
+  },
+  "overrides": {
+    "webpackbar": "7.0.0"
+  },
+  "resolutions": {
+    "webpackbar": "7.0.0"
+  },
+  "packageManager": "pnpm@11.2.2"
 }

@@ -1,13 +1,15 @@
-name: Running code coverage
+name: autofix.ci
 
-on: [push]
+on:
+  pull_request:
+  push:
+    branches: ["main"]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  code-coverage:
-    name: Code coverage
+  autofix:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,8 +27,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
-      - name: Run test
-        run: pnpm run test:ci
+      - name: Format and lint with Biome
+        run: pnpm exec biome check --write .
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+      - name: Run autofix.ci
+        uses: autofix-ci/action@v1.3
