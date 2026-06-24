@@ -39,8 +39,6 @@
   "scripts": {
     "dev": "pnpm docusaurus:start",
     "build": "rm -rf dist/; npm run generate-index; tsup",
-    "format:check": "eslint ./src",
-    "format:fix": "eslint ./src --fix",
     "prepublishOnly": "yarn build",
     "test:ci": "jest --no-cache",
     "test:clear": "jest --clearCache",
