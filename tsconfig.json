@@ -8,13 +8,7 @@
     "declarationMap": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "types": [
-      "jest"
-    ]
+    "types": ["jest"]
   },
-  "include": [
-    "src",
-    "**/*.test.ts",
-    "**/*.spec.ts"
-  ]
+  "include": ["src", "**/*.test.ts", "**/*.spec.ts"]
 }
