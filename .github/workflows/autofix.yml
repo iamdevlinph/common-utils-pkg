@@ -1,27 +1,16 @@
-name: Running lint checks and build
+name: autofix.ci
 
 on:
+  pull_request:
   push:
-    branches-ignore:
-      - "main"
+    branches: ["main"]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  setup:
-    name: Setup environment
+  autofix:
     runs-on: ubuntu-latest
-    steps:
-      - name: Installing node.js
-        uses: actions/setup-node@v1 # Used to install node environment
-        with:
-          node-version: "10.x"
-
-  format-check:
-    name: Check code format and build app
-    runs-on: ubuntu-latest
-    needs: setup # Need to wait for setup
     steps:
       - uses: actions/checkout@v4
 
@@ -39,4 +28,7 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Format and lint with Biome
-        run: pnpm exec biome check .
+        run: pnpm exec biome check --write .
+
+      - name: Run autofix.ci
+        uses: autofix-ci/action@v1.3
