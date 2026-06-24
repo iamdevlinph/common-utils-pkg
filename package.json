@@ -1,8 +1,15 @@
 {
   "name": "common-utils-pkg",
-  "version": "4.3.2",
+  "version": "4.3.3",
   "description": "A package of commonly used JavaScript utilities.",
-  "keywords": ["utilities", "npm", "module", "javascript", "es6", "functions"],
+  "keywords": [
+    "utilities",
+    "npm",
+    "module",
+    "javascript",
+    "es6",
+    "functions"
+  ],
   "homepage": "https://common-utils-pkg.js.org/",
   "bugs": {
     "url": "https://github.com/iamdevlinph/common-utils-pkg/issues"
@@ -23,7 +30,12 @@
       "require": "./dist/index.js"
     }
   },
-  "files": ["dist/", "!dist/**/*.test.*", "README.md", "LICENSE"],
+  "files": [
+    "dist/",
+    "!dist/**/*.test.*",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "dev": "pnpm docusaurus:start",
     "build": "rm -rf dist/; npm run generate-index; tsup",
@@ -78,7 +90,11 @@
     "typescript": "6.0.2"
   },
   "browserslist": {
-    "production": [">0.5%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 3 chrome version",
       "last 3 firefox version",
