@@ -6,19 +6,9 @@ permissions:
   contents: read
 
 jobs:
-  setup:
-    name: Setup environment
-    runs-on: ubuntu-latest
-    steps:
-      - name: Installing node.js
-        uses: actions/setup-node@v1 # Used to install node environment
-        with:
-          node-version: "10.x"
-
-  unit-test:
+  code-coverage:
     name: Code coverage
     runs-on: ubuntu-latest
-    needs: setup # Need to wait for setup
     steps:
       - uses: actions/checkout@v4
 
@@ -35,8 +25,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
-      - name: Run code coverage
-        run: pnpm exec test:ci
+      - name: Run test
+        run: pnpm run test:ci
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
