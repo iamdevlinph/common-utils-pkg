@@ -2,14 +2,7 @@
   "name": "common-utils-pkg",
   "version": "4.4.0",
   "description": "A package of commonly used JavaScript utilities.",
-  "keywords": [
-    "utilities",
-    "npm",
-    "module",
-    "javascript",
-    "es6",
-    "functions"
-  ],
+  "keywords": ["utilities", "npm", "module", "javascript", "es6", "functions"],
   "homepage": "https://common-utils-pkg.js.org/",
   "bugs": {
     "url": "https://github.com/iamdevlinph/common-utils-pkg/issues"
@@ -30,12 +23,7 @@
       "require": "./dist/index.js"
     }
   },
-  "files": [
-    "dist/",
-    "!dist/**/*.test.*",
-    "README.md",
-    "LICENSE"
-  ],
+  "files": ["dist/", "!dist/**/*.test.*", "README.md", "LICENSE"],
   "scripts": {
     "dev": "pnpm docusaurus:start",
     "build": "rm -rf dist/; npm run generate-index; tsup",
@@ -43,7 +31,7 @@
     "test:ci": "jest --no-cache",
     "test:clear": "jest --clearCache",
     "docusaurus": "docusaurus",
-    "docusaurus:generate": "node scripts/md-generate.mjs; npm run generate-index",
+    "docusaurus:generate": "node scripts/md-generate.mjs && pnpm run generate-index",
     "docusaurus:start": "docusaurus start",
     "docusaurus:build": "docusaurus build",
     "docusaurus:swizzle": "docusaurus swizzle",
@@ -64,12 +52,12 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.0",
-    "@docusaurus/core": "3.10.1",
-    "@docusaurus/module-type-aliases": "3.10.1",
-    "@docusaurus/plugin-google-gtag": "3.9.2",
-    "@docusaurus/preset-classic": "3.10.1",
-    "@docusaurus/tsconfig": "3.10.1",
-    "@docusaurus/types": "3.10.1",
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/plugin-google-gtag": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
     "@mdx-js/react": "3.1.1",
     "@types/jest": "30.0.0",
     "@types/node": "25.6.0",
@@ -77,7 +65,7 @@
     "documentation": "13.2.5",
     "http-server": "14.1.1",
     "husky": "9.1.7",
-    "jest": "30.3.0",
+    "jest": "30.4.2",
     "lint-staged": "16.4.0",
     "mock-local-storage": "1.1.24",
     "prettier": "3.8.3",
@@ -85,16 +73,12 @@
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "shell-quote": "1.9.0",
-    "ts-jest": "29.1.2",
+    "ts-jest": "29.4.11",
     "tsup": "8.3.5",
     "typescript": "6.0.2"
   },
   "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.5%", "not dead", "not op_mini all"],
     "development": [
       "last 3 chrome version",
       "last 3 firefox version",
