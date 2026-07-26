@@ -1,5 +1,7 @@
 import LZString from 'lz-string';
 
+import { safeJsonParse } from '../safe-json-parse/safe-json-parse';
+
 /**
  * Retrieves data from the local storage.
  *
@@ -20,10 +22,13 @@ export const storageGet = (key: string): unknown | string => {
   const decompressed = LZString.decompress(raw);
   if (!decompressed) return null;
 
-  try {
-    return JSON.parse(decompressed);
-  } catch (e) {
-    console.error('[storageGet] Failed to parse value for key:', key, e);
-    return decompressed;
-  }
+  const jsonParseResult = safeJsonParse(decompressed);
+  if (jsonParseResult.ok) return jsonParseResult.value;
+
+  console.error(
+    '[storageGet] Failed to parse value for key:',
+    key,
+    jsonParseResult.error
+  );
+  return decompressed;
 };
