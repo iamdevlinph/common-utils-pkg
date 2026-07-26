@@ -41,11 +41,14 @@
     "docusaurus:write-translations": "docusaurus write-translations",
     "docusaurus:write-heading-ids": "docusaurus write-heading-ids",
     "generate-index": "node scripts/generate-index.mjs",
-    "format": "biome format --write",
-    "lint": "biome lint",
+    "format": "biome check --write .",
+    "format:check": "biome check .",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
     "check": "biome check",
     "fix": "biome check --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "lz-string": "1.5.0"
@@ -91,5 +94,10 @@
   "resolutions": {
     "webpackbar": "7.0.0"
   },
-  "packageManager": "pnpm@11.2.2"
+  "packageManager": "pnpm@11.2.2",
+  "lint-staged": {
+    "*": [
+      "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
+    ]
+  }
 }
