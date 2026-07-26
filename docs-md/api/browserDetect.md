@@ -20,4 +20,4 @@ Returns **[string][1]** of browser name.
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 
-* Source: [browser-detect.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/browser-detect/browser-detect.ts#L17-L52)
+* Source: [browser-detect.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/browser-detect/browser-detect.ts#L16-L51)

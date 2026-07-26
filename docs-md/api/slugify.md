@@ -30,4 +30,4 @@ Returns **[string][1]** slug version of the string.
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 
-* Source: [slugify.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/slugify/slugify.ts#L21-L39)
+* Source: [slugify.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/slugify/slugify.ts#L21-L37)

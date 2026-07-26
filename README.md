@@ -85,7 +85,6 @@ Read more about the methods available [here](https://iamdevlinph.github.io/commo
 - Coverage using [Istanbul](https://github.com/gotwarlost/istanbul) with [nyc](https://github.com/istanbuljs/nyc) and report by [Codecov](https://github.com/codecov/codecov-node)
 - Create the bundle using [webpack](https://github.com/webpack/webpack)
 - Run tests using [Mocha](https://github.com/mochajs/mocha) and [chai](https://github.com/chaijs/chai)
-- Lint stuff using [ESLint](https://github.com/eslint/eslint)
 - Build status by [Travis](https://github.com/travis-ci/travis-ci)
 - Precommit using [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky)
 - Provides TypeScript type definitions -->
@@ -132,7 +131,6 @@ Run by `npm run <script>`
 * `docu:serve` - Serve the documentation page. Open at `http://localhost:8080/`.
 * `docu` - Generated a `.json` documentation file that will be used by the `docs.html` page.
 * `lint:install` - Install precommit related tools. It sometimes doesn't install properly.
-* `lint` - Runs the ESLint linter on the `src/` folder.
 * `precommit` - The precommit hook which runs `lint-staged` to lint staged files on commit.
 * `prepare` - Runs `build` before publishing a new version of the package.
 * `test:watch` - Re-run tests on file changes.

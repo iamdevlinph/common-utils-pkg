@@ -5,6 +5,10 @@ id: changelog
 
 # Changelog
 
+##### 4.4.2
+
+- Remove obsolete ESLint suppressions and unused packages
+
 ##### 4.4.1
 
 - Add baseline coverage for documentation/index generation and dependency
