@@ -6,8 +6,8 @@
   `.nvmrc` and pnpm 11.2.2 from `package.json`; do not substitute npm or yarn.
 - Install with `pnpm install --frozen-lockfile`. Add dependencies with
   `pnpm add -E` so versions remain exact.
-- The package builds strict ES2020 TypeScript with tsup into CommonJS, ESM, and
-  declaration outputs. Tests use Jest with ts-jest; formatting and linting use
+- The package builds strict ES2020 TypeScript with esbuild and tsc into CommonJS,
+  ESM, and declaration outputs. Tests use Vitest; formatting and linting use
   Biome. Treat Biome as authoritative over legacy ESLint/Prettier references.
 
 ## Source And Generated Files
@@ -29,7 +29,7 @@
 
 - Match existing structure and reuse existing types and helpers. Keep changes
   minimal, localized, and limited to the requested behavior.
-- Add or update the smallest focused colocated Jest tests for behavior changes.
+- Add or update the smallest focused colocated Vitest tests for behavior changes.
 - After adding, updating, moving, or removing source code, use the project
   `$verify-source-changes` skill to determine the next SemVer version, update
   `docs-md/changelog.md`, regenerate documentation and exports, then inspect

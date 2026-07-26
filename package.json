@@ -9,7 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/iamdevlinph/common-utils-pkg.git"
+    "url": "git+https://github.com/iamdevlinph/common-utils-pkg.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "license": "ISC",
   "author": "iamdevlinph",
@@ -18,18 +22,25 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
     }
   },
   "files": ["dist/", "!dist/**/*.test.*", "README.md", "LICENSE"],
   "scripts": {
     "dev": "pnpm docusaurus:start",
-    "build": "rm -rf dist/; npm run generate-index; tsup",
+    "build": "pnpm run generate-index && node scripts/build.mjs",
+    "typecheck": "pnpm exec tsc -p tsconfig.json --noEmit",
+    "test": "pnpm run build && pnpm run test:ci",
     "prepublishOnly": "pnpm run build",
-    "test:ci": "jest --no-cache",
-    "test:clear": "jest --clearCache",
+    "test:ci": "vitest run --globals",
+    "pack:check": "pnpm pack --dry-run",
     "docusaurus": "docusaurus",
     "docusaurus:generate": "node scripts/md-generate.mjs && pnpm run generate-index",
     "docusaurus:start": "docusaurus start",
@@ -56,29 +67,20 @@
   "devDependencies": {
     "@biomejs/biome": "2.5.0",
     "@docusaurus/core": "3.10.2",
-    "@docusaurus/module-type-aliases": "3.10.2",
-    "@docusaurus/plugin-google-gtag": "3.10.2",
     "@docusaurus/preset-classic": "3.10.2",
-    "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
     "@mdx-js/react": "3.1.1",
-    "@types/jest": "30.0.0",
     "@types/node": "25.6.0",
-    "clsx": "2.1.1",
     "documentation": "13.2.5",
-    "http-server": "14.1.1",
+    "esbuild": "0.25.0",
     "husky": "9.1.7",
-    "jest": "30.4.2",
     "lint-staged": "16.4.0",
     "mock-local-storage": "1.1.24",
-    "prettier": "3.8.3",
     "prism-react-renderer": "2.4.1",
     "react": "19.2.5",
     "react-dom": "19.2.5",
-    "shell-quote": "1.9.0",
-    "ts-jest": "29.4.11",
-    "tsup": "8.3.5",
-    "typescript": "6.0.2"
+    "typescript": "7.0.1-rc",
+    "vitest": "4.1.10"
   },
   "browserslist": {
     "production": [">0.5%", "not dead", "not op_mini all"],

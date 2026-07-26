@@ -85,7 +85,6 @@ Read more about the methods available [here](https://iamdevlinph.github.io/commo
 - Coverage using [Istanbul](https://github.com/gotwarlost/istanbul) with [nyc](https://github.com/istanbuljs/nyc) and report by [Codecov](https://github.com/codecov/codecov-node)
 - Create the bundle using [webpack](https://github.com/webpack/webpack)
 - Run tests using [Mocha](https://github.com/mochajs/mocha) and [chai](https://github.com/chaijs/chai)
-- Lint stuff using [ESLint](https://github.com/eslint/eslint)
 - Build status by [Travis](https://github.com/travis-ci/travis-ci)
 - Precommit using [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky)
 - Provides TypeScript type definitions -->
@@ -113,9 +112,39 @@ src/
 
 # Publishing
 
-### Publish to NPM
+Maintainers should validate a release locally before publishing:
 
-To publish version, just create a relase tag and a github workflow will automatically handle the publishing to npm.
+```sh
+pnpm run typecheck
+pnpm test
+pnpm run pack:check
+```
+
+Configure **Settings → Trusted Publisher** for this package on npmjs.com:
+
+| Setting | Value |
+| --- | --- |
+| Provider | GitHub Actions |
+| Organization / user | `iamdevlinph` |
+| Repository | `common-utils-pkg` |
+| Workflow filename | `publish-package.yml` |
+| Environment | *(blank)* |
+| Allowed action | `npm publish` |
+
+Enter only the workflow filename, not its full path. Trusted Publishing uses
+OIDC; do not add `NPM_TOKEN`, `NODE_AUTH_TOKEN`, or a package PAT. It requires a
+GitHub-hosted runner, Node 22.14 or newer, and npm 11.5.1 or newer. The workflow
+uses Node 24 (from `.nvmrc`), verifies npm 11.5.1 or newer, and uses pnpm 11.2.2.
+
+To release, update the version in `package.json`, create and push the matching
+tag `v<version>`, then publish a GitHub Release for that tag. The workflow
+requires the release tag to equal `v` plus the package version.
+
+If publishing fails only because of external configuration, rerun the failed
+job. If code or workflow changes are required, publish a new version unless the
+failed tag was never released and is intentionally recreated. After the first
+successful OIDC publish, delete the obsolete GitHub `NPM_TOKEN` secret and set
+npm publishing access to require two-factor authentication and disallow tokens.
 
 ### Publish doc updates
 
@@ -132,7 +161,6 @@ Run by `npm run <script>`
 * `docu:serve` - Serve the documentation page. Open at `http://localhost:8080/`.
 * `docu` - Generated a `.json` documentation file that will be used by the `docs.html` page.
 * `lint:install` - Install precommit related tools. It sometimes doesn't install properly.
-* `lint` - Runs the ESLint linter on the `src/` folder.
 * `precommit` - The precommit hook which runs `lint-staged` to lint staged files on commit.
 * `prepare` - Runs `build` before publishing a new version of the package.
 * `test:watch` - Re-run tests on file changes.

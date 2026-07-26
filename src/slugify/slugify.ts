@@ -23,7 +23,6 @@ export const slugify = (string: string) => {
   const b = 'aaaaaaaaceeeeghiiiimnnnoooooprssstuuuuuwxyz------';
   const p = new RegExp(a.split('').join('|'), 'g');
 
-  /* eslint-disable no-useless-escape */
   // https://gist.github.com/hagemann/382adfc57adbd5af078dc93feef01fe1
   return string
     .toString()
@@ -35,5 +34,4 @@ export const slugify = (string: string) => {
     .replace(/\-\-+/g, '-') // Replace multiple - with single -
     .replace(/^-+/, '') // Trim - from start of text
     .replace(/-+$/, ''); // Trim - from end of text
-  /* eslint-enable no-useless-escape */
 };

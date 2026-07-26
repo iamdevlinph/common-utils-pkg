@@ -1,5 +1,4 @@
 // https://css-tricks.com/snippets/javascript/lighten-darken-color/
-/* eslint-disable no-bitwise, eqeqeq */
 
 /**
  * Brightens or darkens a HEX color based on the amount specified. Behaves like the SASS lighen and darken.

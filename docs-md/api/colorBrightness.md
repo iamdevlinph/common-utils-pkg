@@ -31,4 +31,4 @@ Returns **[string][1]** of manipulated HEX color.
 [2]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
 
-* Source: [color-brightness.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/color-brightness/color-brightness.ts#L23-L52)
+* Source: [color-brightness.ts](https://github.com/iamdevlinph/common-utils-pkg/blob/main/src/color-brightness/color-brightness.ts#L22-L51)

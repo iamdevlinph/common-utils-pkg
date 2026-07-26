@@ -36,5 +36,8 @@
   },
   "files.readonlyInclude": {
     "**/routeTree.gen.ts": true
+  },
+  "files.exclude": {
+    "**/dist": false
   }
 }
