@@ -22,7 +22,7 @@ Returns **[object][2]** the parsed value or parse error
 
 **Meta**
 
-*   **version**: 4.3.4
+*   **version**: 4.4.0
 
 [1]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 

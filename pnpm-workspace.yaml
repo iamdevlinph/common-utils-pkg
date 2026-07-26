@@ -13,4 +13,14 @@ minimumReleaseAgeExclude:
   - serialize-javascript@7.0.3
   - serialize-javascript@7.0.5
 overrides:
+  esbuild: "0.25.0"
+  serialize-javascript: "7.0.5"
+  uuid: "11.1.1"
+  parse-path: "5.0.0"
+  parse-url: "8.1.0"
+  braces: "3.0.3"
+  micromatch: "4.0.8"
+  ansi-html: "0.0.8"
+  "@babel/core": "7.29.7"
+  "documentation@13.2.5>vue-template-compiler": "-"
   webpackbar: "7.0.0"

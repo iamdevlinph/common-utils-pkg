@@ -5,6 +5,13 @@ id: changelog
 
 # Changelog
 
+##### 4.4.1
+
+- Add baseline coverage for documentation/index generation and dependency
+  security remediation
+- Keep the dev-only `brace-expansion` advisory open until its unpublished
+  `5.0.8` fix is available; production dependencies audit clean
+
 ##### 4.4.0
 
 - **NEW:** `JSON -> safeJsonParse` - parse JSON without throwing and return a

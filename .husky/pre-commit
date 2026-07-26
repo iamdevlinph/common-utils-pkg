@@ -1,1 +1,1 @@
-pnpm check --write --staged --no-errors-on-unmatched
+pnpm precommit

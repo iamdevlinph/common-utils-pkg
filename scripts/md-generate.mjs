@@ -11,7 +11,7 @@ const SOURCE_DIR_URL =
  * create if needed
  */
 if (!fs.existsSync(OUTPUT_DIR)) {
-  fs.mkdirSync(OUTPUT_DIR);
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 } else {
   // delete if already exists
   fs.rmSync(OUTPUT_DIR, { recursive: true, force: true });
@@ -47,17 +47,15 @@ const methodDirectory = await getDirectories('src/');
 /**
  * Loop each directory to generate markdown
  */
-methodDirectory.forEach(async (methodName) => {
+for (const methodName of methodDirectory) {
   const directory = `src/${methodName}/${methodName}.ts`;
   // const directory = 'src/array-remove-item/array-remove-item.ts';
   /**
    * Get method info by getting as JSON first
    * since i don't know how to access this when formatting by markdown
    */
-  const jsonFormat = await documentation
-    .build([directory], { shallow: true })
-    .then(documentation.formats.json)
-    .then((jsonOutput) => JSON.parse(jsonOutput));
+  const jsonOutput = await documentation.build([directory], { shallow: true });
+  const jsonFormat = JSON.parse(await documentation.formats.json(jsonOutput));
 
   /**
    * Create needed folders
@@ -66,7 +64,7 @@ methodDirectory.forEach(async (methodName) => {
   // if has @ignore, will be empty
   // this method won't be included in the documentation
   if (jsonFormat.length === 0) {
-    return;
+    continue;
   }
   // const moduleName = jsonFormat[0].tags[1].name;
   const codeLineStart = jsonFormat[0].context.loc.start.line;
@@ -85,24 +83,23 @@ methodDirectory.forEach(async (methodName) => {
    *  - Method A
    *  - Method B
    */
-  const methodNameFull = jsonFormat[0].tags[2].name;
+  const nameTag = jsonFormat[0].tags.find((tag) => tag.title === 'name');
+  const methodNameFull = nameTag?.name ?? jsonFormat[0].name;
   const OUTPUT_FILE_PATH = OUTPUT_PATH + '/' + methodNameFull + '.md';
-  documentation
+  const markdownOutput = await documentation
     .build([directory], { parseExtension: ['ts'], shallow: true })
-    .then(documentation.formats.md)
-    .then((output) => {
-      console.info('Writing to:', OUTPUT_FILE_PATH);
-      // replace ##title with #title for docusaurus
-      let strippedOutput = output.replace(/^##\n?/m, '#');
+    .then(documentation.formats.md);
+  console.info('Writing to:', OUTPUT_FILE_PATH);
+  // replace ##title with #title for docusaurus
+  let strippedOutput = markdownOutput.replace(/^##\n?/m, '#');
 
-      // Add file source to the bottom of markdown
-      const fileUrl = generateFileUrl(methodName, codeLineStart, codeLineEnd);
-      strippedOutput += `\n\n* Source: [${methodName}.ts](${fileUrl})`;
+  // Add file source to the bottom of markdown
+  const fileUrl = generateFileUrl(methodName, codeLineStart, codeLineEnd);
+  strippedOutput += `\n\n* Source: [${methodName}.ts](${fileUrl})`;
 
-      // // output is a string of Markdown data
-      fs.writeFileSync(OUTPUT_FILE_PATH, strippedOutput);
-    });
-});
+  // output is a string of Markdown data
+  fs.writeFileSync(OUTPUT_FILE_PATH, strippedOutput);
+}
 
 function generateFileUrl(moduleName, lineStart, lineEnd) {
   return `${SOURCE_DIR_URL}${moduleName}/${moduleName}.ts#L${lineStart}-L${lineEnd}`;
