@@ -5,12 +5,6 @@ id: changelog
 
 # Changelog
 
-##### 4.4.2
-
-- Remove obsolete ESLint suppressions and unused packages
-- Configure npm Trusted Publishing with OIDC and strict release tag validation
-- Update TypeScript to 7.0.1-rc, align testing/builds with Vitest and esbuild,
-  and preserve bundled declaration outputs
 
 ##### 4.4.1
 
@@ -18,6 +12,10 @@ id: changelog
   security remediation
 - Keep the dev-only `brace-expansion` advisory open until its unpublished
   `5.0.8` fix is available; production dependencies audit clean
+- Remove obsolete ESLint suppressions and unused packages
+- Configure npm Trusted Publishing with OIDC and strict release tag validation
+- Update TypeScript to 7.0.1-rc, align testing/builds with Vitest and esbuild,
+  and preserve bundled declaration outputs
 
 ##### 4.4.0
 
