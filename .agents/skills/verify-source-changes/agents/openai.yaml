@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Source Changes"
+  short_description: "Version, document, and verify source changes"
+  default_prompt: "Use $verify-source-changes to version, document, and validate pending source changes."

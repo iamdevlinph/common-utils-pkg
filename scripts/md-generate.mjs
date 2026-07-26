@@ -88,7 +88,7 @@ methodDirectory.forEach(async (methodName) => {
   const methodNameFull = jsonFormat[0].tags[2].name;
   const OUTPUT_FILE_PATH = OUTPUT_PATH + '/' + methodNameFull + '.md';
   documentation
-    .build([directory], { parseExtension: ['ts'] })
+    .build([directory], { parseExtension: ['ts'], shallow: true })
     .then(documentation.formats.md)
     .then((output) => {
       console.info('Writing to:', OUTPUT_FILE_PATH);
