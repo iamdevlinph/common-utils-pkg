@@ -26,7 +26,7 @@ description: >-
    `src/index.ts`.
 5. Inspect changelog and generated changes. Keep only updates caused by the
    source change.
-6. Run the relevant focused Jest test, then:
+6. Run the relevant focused Vitest test, then:
    - `pnpm exec biome check .`
    - `pnpm run test:ci`
    - `pnpm run build`

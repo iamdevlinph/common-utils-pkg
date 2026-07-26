@@ -38,7 +38,7 @@ describe('safeJsonParse', () => {
 
   it('returns caught values unchanged', () => {
     const parseError = { reason: 'invalid JSON' };
-    jest.spyOn(JSON, 'parse').mockImplementationOnce(() => {
+    vi.spyOn(JSON, 'parse').mockImplementationOnce(() => {
       throw parseError;
     });
 

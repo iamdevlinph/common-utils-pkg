@@ -8,6 +8,9 @@ id: changelog
 ##### 4.4.2
 
 - Remove obsolete ESLint suppressions and unused packages
+- Configure npm Trusted Publishing with OIDC and strict release tag validation
+- Update TypeScript to 7.0.1-rc, align testing/builds with Vitest and esbuild,
+  and preserve bundled declaration outputs
 
 ##### 4.4.1
 
