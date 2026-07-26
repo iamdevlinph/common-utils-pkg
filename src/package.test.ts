@@ -46,7 +46,7 @@ describe('package publishing configuration', () => {
       'npm publish package-artifact/*.tgz --access public'
     );
     expect(workflow).not.toMatch(
-      /NPM_TOKEN|NODE_AUTH_TOKEN|npm.pkg.github.com/
+      /NPM_TOKEN|NODE_AUTH_TOKEN|npm\.pkg\.github\.com/
     );
   });
 });
