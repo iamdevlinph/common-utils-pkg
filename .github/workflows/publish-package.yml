@@ -77,4 +77,4 @@ jobs:
           path: package-artifact
 
       - name: Publish
-        run: npm publish package-artifact/*.tgz --access public
+        run: npm publish ./package-artifact/*.tgz --access public

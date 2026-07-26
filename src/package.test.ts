@@ -43,7 +43,7 @@ describe('package publishing configuration', () => {
     expect(workflow).toContain('actions/upload-artifact@v7');
     expect(workflow).toContain('actions/download-artifact@v8');
     expect(workflow).toContain(
-      'npm publish package-artifact/*.tgz --access public'
+      'npm publish ./package-artifact/*.tgz --access public'
     );
     expect(workflow).not.toMatch(
       /NPM_TOKEN|NODE_AUTH_TOKEN|npm\.pkg\.github\.com/
