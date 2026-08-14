@@ -12,6 +12,7 @@ minimumReleaseAgeExclude:
   - vue-template-compiler@3.0.0
   - serialize-javascript@7.0.3
   - serialize-javascript@7.0.5
+  - nanoid@3.3.18
 overrides:
   esbuild: "0.25.0"
   serialize-javascript: "7.0.5"
@@ -24,3 +25,9 @@ overrides:
   "@babel/core": "7.29.7"
   "documentation@13.2.5>vue-template-compiler": "-"
   webpackbar: "7.0.0"
+  brace-expansion: "1.1.18"
+  postcss: "8.5.23"
+  fast-uri: "3.1.5"
+  js-yaml: "4.3.1"
+  "documentation@13.2.5>js-yaml": "3.15.1"
+  nanoid: "3.3.18"
