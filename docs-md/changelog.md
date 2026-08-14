@@ -5,6 +5,9 @@ id: changelog
 
 # Changelog
 
+##### 4.4.1
+
+- Fix vulnerability issues
 
 ##### 4.4.0
 
@@ -15,6 +18,7 @@ id: changelog
 - Fix API documentation generation for utilities with TypeScript imports
 
 ##### 4.3.4
+
 - Trying to fix some publish workflow issue
 - Some changes to bundling
 - Replace eslint and prettier with biome
