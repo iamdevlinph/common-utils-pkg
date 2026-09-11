@@ -80,7 +80,7 @@
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "typescript": "7.0.1-rc",
-    "vitest": "4.1.10"
+    "vitest": "4.1.11"
   },
   "browserslist": {
     "production": [">0.5%", "not dead", "not op_mini all"],
