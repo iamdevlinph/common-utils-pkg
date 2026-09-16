@@ -34,16 +34,21 @@
 
 ## Changes And Verification
 
+- Before work, classify the requested behavior and load only the project skills
+  and skill-owned references needed for that work and its validation.
 - Match existing structure and reuse existing types and helpers. Keep changes
   minimal, localized, and limited to the requested behavior.
+- Keep shared configuration and behavior in one source of truth at the narrowest
+  shared scope. Do not change architecture, core module boundaries, or project
+  paradigms without explicit approval.
 - Add or update focused colocated Vitest tests for changed contracts,
   regressions, and meaningful boundaries, using one representative case per
   equivalent behavior. Preserve existing assertions unless behavior
   intentionally changes; skip redundant and implementation-detail cases.
-- After adding, updating, moving, or removing source code, use the project
-  `$verify-source-changes` skill to determine the next SemVer version, update
-  `docs-md/changelog.md`, regenerate documentation and exports, then inspect
-  generated changes and run the required checks.
+- For changes under `src`, use `$verify-source-changes`; it routes test-only
+  work to focused testing and production-source work to testing plus release
+  preparation.
+- For Docusaurus appearance or interaction work, use `$docs-site-ui`.
 - Do not use `format` or `fix` scripts for read-only validation because they
   rewrite files. Inspect generated changes after build or documentation
   generation.
@@ -62,7 +67,13 @@
 
 - `TEMPLATE_AGENTS.md` is a staged reusable reference; active guidance lives in
   this file and applicable project skills under `.agents/skills`.
+- Read and preserve `PLANS.md` when it exists. Create it only for real durable
+  product context, decisions, roadmap/status, or resume-worthy milestones; do
+  not invent history or use it as a per-change changelog.
 - When `codex-kit project status` reports `reconciliation required`, use the
   global `$codex-kit-reconcile-agents` skill. Preserve local rules, merge only
-  applicable reusable guidance, validate changes, and run
-  `codex-kit project mark-applied` only after validation succeeds.
+  applicable reusable guidance, and validate changes. Never run
+  `codex-kit project sync` on the user's behalf. Run
+  `codex-kit project mark-applied` only after an eligible user-run init or sync,
+  an initial `reconciliation required` status, and successful reconciliation
+  and validation.
